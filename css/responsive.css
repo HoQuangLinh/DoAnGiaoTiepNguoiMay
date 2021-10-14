@@ -596,3 +596,9 @@
     margin-left: 91.66667%;
   }
 }
+
+@media (min-width: 1400px) {
+  .grid.wide {
+    max-width: 1340px;
+  }
+}
