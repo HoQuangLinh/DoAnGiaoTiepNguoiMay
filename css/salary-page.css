@@ -137,19 +137,20 @@ body{
 }
 /* content holder */
 .content-holder{
-    width: 1110px;
+    width: 1140px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 .content{
-    width: 700px;
+    padding: 24px;
+    width: auto;
     height: auto;
     float: left;
 }
 .content-title{
     background-color: #F2F2F2;
-    margin: 50px;
+    margin: 26px;
     margin-bottom: 25px;
     padding: 15px 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -158,6 +159,70 @@ body{
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
+}
+.statistical-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 20px;
+}
+.statistical-item{
+    display: block;
+    width: 325px;
+    height: auto;
+    float: left;
+    border: 1px solid #00BFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px;
+}
+.statistical-item .item-caption{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    border-bottom: 1px solid #00BFFF;
+}
+.statistical-item .item-body{
+    padding: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.statistical-item .item-body .item-job-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.statistical-item .item-body .item-job-content .title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1 1 0%;
+}
+.statistical-item .item-body .item-job-content .title a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.statistical-item .item-body .item-job-content .title a:hover{
+    color: #ffc107;
+}
+.statistical-item .item-body .item-job-content .salary{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
 }
 .sidebar{
     float: left;
