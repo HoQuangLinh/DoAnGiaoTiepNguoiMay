@@ -281,9 +281,67 @@ body{
 .clearfix{
     clear: both;
 }
-.high-salary{
-    margin-top: 16px;
+/* blog list */
+.blog{
+    margin: auto;
     padding: 24px;
-    width: 100%;
+    width: 1092px;
     height: auto;
+}
+.blog .title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+}
+.blog-list{
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 8px;
+    padding: 24px;
+    width: 96%;
+}
+.blog-list .blog-item{
+    width: 236px;
+    padding: 8px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #00BFFF;
+}
+.blog-list .blog-item:hover{
+    border: 1px solid #ffc107;
+}
+.blog-list .blog-item:hover > .item-title > a{
+    color: #ffc107;
+}
+.blog-list .blog-item > a > img{
+    width: 100%;
+}
+.blog-list .blog-item .item-type{
+    padding: 12px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #D43C3C;
+}
+.blog-list .blog-item .item-title{
+    padding: 12px;
+}
+.blog-list .blog-item .item-title a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+}
+.blog-list .blog-item .item-content{
+    padding: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
 }
