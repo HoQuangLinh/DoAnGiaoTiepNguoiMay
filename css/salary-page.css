@@ -1,20 +1,20 @@
 body{
     margin: 0px;
     background-size: cover;
-    background-color: #fff;
+    background-color: #f7f7f7;
 }
 .header{
     background-color: #30C1FF;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: inline-flex;
     height: auto;
-    align-items: center;
 }
 /* logo */
 .logo{
     max-width: 100px;
     padding-left: 43px;
     padding-bottom: 5px;
+    float: left;
 }
 .logo > a{
     text-decoration: none;
@@ -32,6 +32,7 @@ body{
 .searchbar{
     margin: auto;
     display: flex;
+    float: left;
     align-items: center;
     border-radius: 16px;
     background-color: #fff;
@@ -141,10 +142,12 @@ body{
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
+    flex-direction: column;
 }
 .content{
     padding: 24px;
-    width: auto;
+    width: 59%;
     height: auto;
     float: left;
 }
@@ -224,14 +227,63 @@ body{
     font-size: 13px;
     color: rgba(0, 0, 0, 0.7);
 }
-.sidebar{
-    float: left;
+.see-more{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
 }
-.sidebar a img{
-    width: 400px;
+.see-more .see-more-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.see-more .see-more-text a{
+    text-decoration: none;
+    color: #00BFFF;
+}
+.content-share{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: right;
+}
+.content-share .content-group{
+    display: inline-flex;
+    align-items: center;
+}
+.content-share .content-group .share-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.content-share .content-group .icon{
+    margin-left: 8px;
+    display: inline-grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+}
+.content-share .content-group .icon span{
+    cursor: pointer;
+}
+.content-share .content-group .icon span img{
+    width: 22px;
+}
+.banner{
+    float: right;
+    width: 36%;
+}
+.banner a img{
     margin-top: 114px;
     cursor: pointer;
 }
 .clearfix{
     clear: both;
+}
+.high-salary{
+    margin-top: 16px;
+    padding: 24px;
+    width: 100%;
+    height: auto;
 }
