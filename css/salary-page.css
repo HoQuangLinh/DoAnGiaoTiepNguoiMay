@@ -11,16 +11,17 @@ body{
 }
 /* logo */
 .logo{
-    max-width: 100px;
-    padding-left: 43px;
-    padding-bottom: 5px;
+    width: auto;
+    margin: auto 0px;
+    padding-left: 40px;
+    flex-direction: column;
     float: left;
 }
 .logo > a{
     text-decoration: none;
     color: white;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
 }
@@ -138,8 +139,8 @@ body{
 }
 /* content holder */
 .content-holder{
-    width: 1140px;
     height: auto;
+    width: 1140px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
@@ -344,4 +345,51 @@ body{
     font-weight: normal;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.7);
+}
+/* footer */
+.main-footer{
+    background-color: #30C1FF;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 25px 150px;
+}
+.footer-box{
+    width: 300px;
+    height: auto;
+    float: left;
+    font-family: sans-serif;
+}
+.footer-box div{
+    float: left;
+    width: 100%;
+}
+.footer-box > ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.footer-box > ul > li > a{
+    display:  block;
+    font-size: small;
+    color: white;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+address p{
+    font-size: small;
+}
+.footer-box address a{
+    color: teal;
+    font-size: small;
+}
+.copy{
+    font-family: sans-serif;
+    padding: 25px;
+    text-align: center;
+    background-color: #30C1FF;
+    color: white;
+}
+.copy p{
+    margin: 0px;
 }
