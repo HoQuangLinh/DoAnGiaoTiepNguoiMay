@@ -13,9 +13,8 @@ body{
 .logo{
     width: auto;
     margin: auto 0px;
-    padding-left: 40px;
-    flex-direction: column;
     float: left;
+    padding-left: 25px;
 }
 .logo > a{
     text-decoration: none;
@@ -25,9 +24,9 @@ body{
     font-weight: 700;
     text-align: center;
 }
-.logo img{
+.logo > a > img{
     display: block;
-    margin: 0 auto 0 auto;
+    margin: 0 12px;
 }
 /* search bar */
 .searchbar{
@@ -350,41 +349,82 @@ body{
 .main-footer{
     background-color: #30C1FF;
     color: white;
-    width: auto;
+    width: 84%;
+    padding: 2% 8%;
     height: auto;
-    padding: 25px 150px;
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
 }
 .footer-box{
-    width: 300px;
-    height: auto;
-    float: left;
-    font-family: sans-serif;
-}
-.footer-box div{
     float: left;
     width: 100%;
+    height: auto;
+}
+.footer-box .first-box{
+    display: grid;
+    max-width: 400px;
+}
+.footer-box .first-box .description{
+    float: left;
+    padding: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+.footer-box .first-box .learn-more{
+    max-width: max-content;
+    height: 50px;
+    margin: 0 25px;
+    padding: 0 8px;
+    float: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.footer-box > h3{
+    margin: 12px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
 }
 .footer-box > ul{
     list-style-type: none;
-    margin: 0px;
+    margin: 25px 0;
     padding: 0px;
 }
+.footer-box > ul > li{
+    margin-bottom: 6px;
+}
 .footer-box > ul > li > a{
-    display:  block;
-    font-size: small;
-    color: white;
-    margin-bottom: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #fff;
     text-decoration: none;
 }
+address h3{
+    margin: 12px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+}
 address p{
-    font-size: small;
+    font-size: 15px;
+    margin: 25px 0;
 }
 .footer-box address a{
     color: teal;
-    font-size: small;
+    font-size: 15px;
 }
 .copy{
-    font-family: sans-serif;
+    font-family: Roboto;
     padding: 25px;
     text-align: center;
     background-color: #30C1FF;
