@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="../css/company-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="homepage.html">
+                    <img src="../images/salary_page/logo1.png" alt="Logo">
+                    FINDWORK
+                </a>
+            </div> <!-- Logo -->
+
+            <form class="searchbar">
+                <i class="material-icons prefix">search</i>
+                <div class="job">
+                    <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+                </div>
+                <i class="material-icons prefix">location_on</i>
+                <div class="local">
+                    <input type="search" name="s" placeholder="Tất cả địa điểm">
+                </div>
+                <button class="findjobs" type="submit">Tìm Việc</button>
+            </form> <!-- searchbar -->
+
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#">VIỆC LÀM</a></li>
+                    <li><a href="#">MỨC LƯƠNG</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CÔNG TY</a></li>
+                </ul>
+            </nav> <!-- navbar -->
+
+            <div class="noti_login">
+                <i class="material-icons prefix">notifications_none</i>
+                <div>
+                    <button class="login" type="submit">
+                        <i class="material-icons prefix">account_circle</i>
+                        Đăng Nhập
+                    </button>
+                </div>
+            </div>
+        </header> <!-- header -->
+
+        <section class="content-holder">
+            <article class="content-header">
+                <main>
+                    <div class="ch-title">
+                        KHÁM PHÁ VĂN HÓA CÔNG TY
+                    </div>
+                    <div class="ch-subtitle">
+                        Tìm hiểu văn hóa công ty và chọn cho bạn nơi làm việc phù hợp nhất.
+                    </div>
+                    <div class="filter">
+                        <div class="select-wrap">
+                            <ul class="default_option">
+                                <li>
+                                    <div class="option all">
+                                        Tất cả ngành nghề
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_ul">
+                                <li>
+                                    <div class="option bs">
+                                        Bác Sĩ
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option ds">
+                                        Dược Sĩ
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option cvm">
+                                        Chuyên Viên Marketing
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option da">
+                                        Data Analyst
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option ad">
+                                        Android Developer
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option jd">
+                                        Java Developer
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option more">
+                                        ...
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select-wrap">
+                            <ul class="default_option">
+                                <li>
+                                    <div class="option">
+                                        Tất cả khu vực
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_ul">
+                                <li>
+                                    <div class="option">
+                                        TP. Hồ Chí Minh
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option">
+                                        Ninh Thuận
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option">
+                                        Bình Thuận
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option">
+                                        Hà Nội
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option">
+                                        Hải Phòng
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option">
+                                        Vĩnh Long
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option">
+                                        ...
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="company-name">
+                            <input type="search" name="s" placeholder="Nhập tên công ty">
+                        </div>
+                        <div class="apply-filter">
+                            <button type="submit">Áp dụng bộ lọc</button>
+                        </div>
+                    </div>
+                </main>
+            </article> <!-- content -->
+
+            <article class="company-group">
+                <main>
+                    <div class="group-title">
+                        Các công ty đang tuyển dụng
+                    </div>
+                    <div class="company-box">
+                        <div class="prev">
+                        </div>
+                        <div class="company-list">
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company1.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            Ngân Hàng Thương Mại...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Ngân hàng Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.6
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company2.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            PwC Vietnam
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Kế toán Tư vấn Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.1
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company3.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            Ngân Hàng Thương Mại...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Ngân hàng Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.5
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company4.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            NAVIGOS GROUP
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Nhân sự
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.2
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company5.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            LG Vehicle Compo...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        IT Phần mềm
+                                    </div>
+                                    <div class="subtext">
+                                        Hà Nội
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.5
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company6.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            TẬP ĐOÀN VINGROU...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        
+                                    </div>
+                                    <div class="subtext">
+                                        
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.7
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company9.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            ALS - AVIATION LO...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Vận chuyển/Giao nhận
+                                    </div>
+                                    <div class="subtext">
+                                        Bắc Ninh, Hà Nội, Thái Nguyên
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.2
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company7.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            CÔNG TY CỔ PHẦN...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Xây dựng
+                                    </div>
+                                    <div class="subtext">
+                                        Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.4
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company8.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            FA Company
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        IT - Phần mềm
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Nẵng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.7
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next">
+                        </div>
+                    </div>
+                    <div class="group-title">
+                        Các công ty có lượt xem nhiều nhất
+                    </div>
+                    <div class="company-box">
+                        <div class="prev">
+                        </div>
+                        <div class="company-list">
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company1.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            Ngân Hàng Thương Mại...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Ngân hàng Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.6
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company2.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            PwC Vietnam
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Kế toán Tư vấn Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.1
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company3.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            Ngân Hàng Thương Mại...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Ngân hàng Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.5
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company4.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            NAVIGOS GROUP
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Nhân sự
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.2
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company5.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            LG Vehicle Compo...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        IT Phần mềm
+                                    </div>
+                                    <div class="subtext">
+                                        Hà Nội
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.5
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company6.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            TẬP ĐOÀN VINGROU...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        
+                                    </div>
+                                    <div class="subtext">
+                                        
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.7
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company9.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            ALS - AVIATION LO...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Vận chuyển/Giao nhận
+                                    </div>
+                                    <div class="subtext">
+                                        Bắc Ninh, Hà Nội, Thái Nguyên
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.2
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company7.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            CÔNG TY CỔ PHẦN...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Xây dựng
+                                    </div>
+                                    <div class="subtext">
+                                        Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.4
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company8.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            FA Company
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        IT - Phần mềm
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Nẵng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.7
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next">
+                        </div>
+                    </div>
+                    <div class="group-title">
+                        Các công ty có lượt theo dõi nhiều nhất
+                    </div>
+                    <div class="company-box">
+                        <div class="prev">
+                        </div>
+                        <div class="company-list">
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company1.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            Ngân Hàng Thương Mại...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Ngân hàng Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.6
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company2.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            PwC Vietnam
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Kế toán Tư vấn Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.1
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company3.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            Ngân Hàng Thương Mại...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Ngân hàng Tài chính/Đầu tư
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.5
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company4.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            NAVIGOS GROUP
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Nhân sự
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Năng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.2
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company5.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            LG Vehicle Compo...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        IT Phần mềm
+                                    </div>
+                                    <div class="subtext">
+                                        Hà Nội
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.5
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company6.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            TẬP ĐOÀN VINGROU...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        
+                                    </div>
+                                    <div class="subtext">
+                                        
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.7
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company9.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            ALS - AVIATION LO...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Vận chuyển/Giao nhận
+                                    </div>
+                                    <div class="subtext">
+                                        Bắc Ninh, Hà Nội, Thái Nguyên
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.2
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company7.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            CÔNG TY CỔ PHẦN...
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        Xây dựng
+                                    </div>
+                                    <div class="subtext">
+                                        Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.4
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company-item">
+                                <a href="">
+                                    <img src="../images/company-page/company8.png" alt="Company">
+                                </a>
+                                <div class="column1">
+                                    <div class="company-name">
+                                        <a href="">
+                                            FA Company
+                                        </a>
+                                    </div>
+                                    <div class="subtext">
+                                        IT - Phần mềm
+                                    </div>
+                                    <div class="subtext">
+                                        Đà Nẵng, Hà Nội, Hồ Chí Minh
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="rate">
+                                        4.7
+                                        <img src="../images/company-page/star.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next">
+                        </div>
+                    </div>
+                </main>
+            </article> <!-- company -->
+
+        </section> <!-- content holder -->
+
+        <footer class="main-footer">
+            <div class="footer-box">
+                <div class="first-box">
+                    <div class="logo">
+                        <a href="homepage.html">
+                            <img src="../images/salary_page/logo1.png" alt="Logo">
+                            FINDWORK
+                        </a>
+                    </div> <!-- Logo -->
+                    <div class="description">
+                        Nơi bạn có thể tìm được những
+                        ứng cử viên sáng giá cho công ty của bạn.
+                    </div>
+                    <button class="learn-more">Tìm hiểu thêm</button>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Ứng cử viên</h3>
+                <ul>
+                    <li><a href="#">Việc làm</a></li>
+                    <li><a href="#">Ngành nghề</a></li>
+                    <li><a href="#">Nộp hồ sơ</a></li>
+                    <li><a href="#">Doanh Nghiệp</a></li>
+                    <li><a href="#">Xác thực tài khoản</a></li>
+                    <li><a href="#">Nâng cấp tài khoản</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Nhà tuyển dụng</h3>
+                <ul>
+                    <li><a href="#">Đăng tuyển dụng</a></li>
+                    <li><a href="#">Tìm kiếm hồ sơ</a></li>
+                    <li><a href="#">Quản lý dự án</a></li>
+                    <li><a href="#">Xác thực tài khoản</a></li>
+                    <li><a href="#">Nâng cấp tài khoản</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản và điều kiện</a></li>
+                    <li><a href="#">Chính sách Bản quyền</a></li>
+                    <li><a href="#">Quy tắc ứng xử</a></li>
+                    <li><a href="#">Phí và lệ phí</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Danh sách trang</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Việc làm</a></li>
+                    <li><a href="#">Mức lương</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Công ty</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </footer><!-- footer -->
+        <div class="follow-us">
+            Follow us
+            <span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/facebook.png" alt="Visit on Facebook">
+                    </a>
+                </span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/twitter.png" alt="Visit on Twitter">
+                    </a>
+                </span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/linkedin.png" alt="Visit on Linkedin">
+                    </a>
+                </span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/youtube.png" alt="Visit on Youtube">
+                    </a>
+                </span>
+            </span>
+        </div>
+        <div class="copy">
+            <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+        </div>
+    </div>
+    
+
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script src="https://kit.fontawesome.com/85a68be3b3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script type="text/javascript">
+        // Script for combobox
+        $(document).ready(function () {
+            $(".default_option").click(function (e) {
+                for (const select of document.querySelectorAll(".select-wrap")) {
+                    if (!select.contains(e.target)) {
+                        select.classList.remove('active');
+                    }
+                }
+                $(this).parent().toggleClass("active");
+            })
+            $(".select_ul li").click(function (e) {
+                for (const select of document.querySelectorAll(".select-wrap")) {
+                    if (select.contains(e.target)) {
+                        var currentele = select.querySelector(".default_option li");
+                        currentele.textContent = e.target.textContent;
+                        select.classList.remove('active');
+                    }
+                }
+            })
+            $('.company-list').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+            });
+        })
+    </script>
+</body>
+
+</html>
