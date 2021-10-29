@@ -46,7 +46,7 @@
                     <li><a href="#">CÔNG TY</a></li>
                 </ul>
             </nav> <!-- navbar -->
-            
+
             <div class="noti_login">
                 <i class="material-icons prefix">notifications_none</i>
                 <div>
@@ -255,7 +255,7 @@
 
                     <div class="see-more">
                         <div class="see-more-text">
-                            <a href="">See more >></a>
+                            See more >>
                         </div>
                     </div>
 
@@ -390,7 +390,7 @@
                         </a>
                     </div> <!-- Logo -->
                     <div class="description">
-                        Nơi bạn có thể tìm được những 
+                        Nơi bạn có thể tìm được những
                         ứng cử viên sáng giá cho công ty của bạn.
                     </div>
                     <button class="learn-more">Tìm hiểu thêm</button>
@@ -472,9 +472,29 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.swipe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
+    <script>
+        const list = document.querySelector('.statistical-list');
+        const seeMore = document.querySelector(".see-more");
+
+        $(document).ready(function() {
+            $(".see-more").click(function(e) {
+                var item = document.querySelectorAll(".statistical-item")
+                for (var i = 0; i < item.length; i++) {
+                    list.appendChild(item[i].cloneNode(true));
+                }
+                for (var i = 0; i < item.length; i++) {
+                    list.appendChild(item[i].cloneNode(true));
+                }
+                seeMore.textContent = "";
+            })
+        })
+    </script>
+
 </body>
 
 </html>

@@ -233,19 +233,23 @@ body{
     color: rgba(0, 0, 0, 0.7);
 }
 .see-more{
-    margin-top: 16px;
-    margin-bottom: 16px;
+    width: max-content;
+    margin: 16px auto;
     text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .see-more .see-more-text{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-}
-.see-more .see-more-text a{
-    text-decoration: none;
+    font-size: 15px;
     color: #00BFFF;
+    padding: 12px;
+    border-radius: 5px;
+}
+.see-more .see-more-text:hover{
+    background-color: #F2F2F2;
 }
 .content-share{
     margin-top: 16px;
