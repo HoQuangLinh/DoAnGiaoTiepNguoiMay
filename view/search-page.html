@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <!-- Add grid css-->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/search-page.css" />
+    <!--add google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Add icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <div class="logo-img"></div>
+        <p class="logo-name">Findwork</p>
+      </div>
+      <!-- Search bar -->
+      <form action>
+        <div class="search-bar">
+          <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Tìm kiếm việc làm, công ty, kỹ năng..."
+              required
+              class="form-control"
+            />
+          </div>
+          <div class="address-input">
+            <i class="fa-solid fa-location-dot"></i>
+            <input
+              type="text"
+              placeholder="Tất cả địa điểm"
+              class="form-control"
+            />
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="search-btn">
+            <input type="submit" value="Find Work" />
+          </div>
+        </div>
+      </form>
+      <!-- Nav bar -->
+      <div class="nav-bar">
+        <div class="job-btn">VIỆC LÀM</div>
+        <div class="salary-btn">MỨC LƯƠNG</div>
+        <div class="blog-btn">BLOG</div>
+        <div class="company-btn">CÔNG TY</div>
+        <i class="notify-icon fa-solid fa-bell"></i>
+        <div class="login-btn"><i class="fa-solid fa-user"></i>Đăng nhập</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+:root {
+  --header-height: 89px;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#header {
+  background-color: #30c1ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 44px;
+}
+
+.logo .logo-img {
+  background: no-repeat center/contain url(../images/salary_page/logo1.png);
+  height: 57px;
+  width: 72px;
+  margin: auto;
+}
+.logo .logo-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.search-bar {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  width: calc(100% - 700px);
+  margin-left: 36px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.search-bar :focus {
+  outline: none;
+}
+
+.search-bar .search-input {
+  width: 50%;
+}
+.search-bar .address-input {
+  width: 35%;
+  padding-right: 5px;
+}
+.search-btn {
+  height: 100%;
+  width: 15%;
+}
+.search-bar .address-input input {
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 15px;
+  border: none;
+  width: calc(100% - 67px);
+}
+.search-bar .search-input input {
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 15px;
+  border: none;
+  width: calc(100% - 38px);
+  border-right: 1px solid #000;
+}
+
+.search-bar i {
+  padding-left: 12px;
+  font-size: 22px;
+  background: -webkit-linear-gradient(#00ffc8, #30bcfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-btn input {
+  background: #ffcf54;
+  border: 0px;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+.nav-bar .job-btn,
+.nav-bar .salary-btn,
+.nav-bar .blog-btn,
+.nav-bar .company-btn {
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  height: var(--header-height);
+  line-height: var(--header-height);
+}
+
+#header .nav-bar > .login-btn {
+  font-size: 14px;
+  color: #000;
+  border-radius: 8px;
+  width: 126px;
+  height: 38px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 38px;
+}
+.login-btn i {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 5px;
+}
+
+.nav-bar .notify-icon {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 20px;
+  border-left: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
