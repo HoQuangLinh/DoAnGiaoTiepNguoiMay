@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0px;
+  background-size: cover;
+  background-color: #f7f7f7;
+}
+.header {
+  background-color: #30c1ff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+/* logo */
+.logo {
+  margin-right: 25px;
+}
+.logo > a {
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo > a > img {
+  display: block;
+}
+/* search bar */
+.searchbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.searchbar > i {
+  color: #30c1ff;
+  font-size: 30px;
+  margin-left: 5px;
+}
+.searchbar .job {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.searchbar .job input {
+  width: 230px;
+  border: 0px;
+  outline: 0px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.searchbar .job::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 70%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.searchbar .local input {
+  width: 150px;
+  border: 0px;
+  outline: 0px;
+  font-size: 15px;
+}
+.searchbar .findjobs {
+  background-color: #ffcf54;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0px;
+  height: 40px;
+  border-radius: 0px 16px 16px 0px;
+  cursor: pointer;
+}
+/* nav-menu */
+.navbar {
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0px 12px;
+}
+.nav-menu > li {
+  display: inline-block;
+}
+.nav-menu > li > a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0 15px;
+  font-weight: 700;
+  font-family: Roboto;
+  font-size: 18px;
+  transition: all 0.3s ease 0s;
+}
+.nav-menu > li > a:hover {
+  background-color: #2196f3;
+}
+/* notification + login */
+.noti_login {
+  display: flex;
+  align-items: center;
+}
+.noti_login > i {
+  color: #fff;
+  font-size: 30px;
+  margin: 0px 20px 0px 0px;
+  cursor: pointer;
+}
+.noti_login .login {
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.noti_login .login i {
+  margin: 0px 10px 0px 0px;
+}
