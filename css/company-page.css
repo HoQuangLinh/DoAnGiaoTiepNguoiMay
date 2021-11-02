@@ -31,7 +31,7 @@ body{
 }
 /* search bar */
 .searchbar{
-    margin: 4px 24px;
+    margin: auto 24px;
     width: max-content;
     display: flex;
     float: center;
@@ -77,7 +77,7 @@ body{
     font-size: 18px;
     font-weight: 700;
     border: 0px;
-    height: 50px;
+    height: 40px;
     border-radius: 0px 16px 16px 0px;
     cursor: pointer;
 }
@@ -288,36 +288,30 @@ body{
 }
 .company-box{
     padding-bottom: 12px;
-    width: 98%;
+    width: 100%;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
 }
-.company-box .prev{
+.next-arrow, .prev-arrow{
+    position: absolute;
+    top: 50%;
     display: block;
-    content: "";
-    margin: 5px;
-    padding-right: 12px;
-    width: 12px;
-    height: 12px;
-    border: 6px solid;
-    border-radius: 4px;
-    border-color: transparent transparent #30C1FF #30C1FF;
-    transform: rotate(45deg);
+    padding: 0px;
+    color: #30C1FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-.company-box .next{
-    content: "";
-    margin: 4px;
-    padding-left: 12px;
-    width: 12px;
-    height: 12px;
-    border: 6px solid;
-    border-radius: 4px;
-    border-color: transparent transparent #30C1FF #30C1FF;
-    transform: rotate(-135deg);
+.next-arrow{
+    right: -25px;
+}
+.prev-arrow{
+    left: -25px;
 }
 .company-list{
-    width: 96%;
+    margin: 0px auto;
+    width: 94%;
 }
   /* the slides */
   .slick-slide {
