@@ -4,11 +4,14 @@ body{
     background-color: #f7f7f7;
 }
 .header{
+    position: sticky;
+    top: 0;
     background-color: #30C1FF;
     width: 100%;
     display: inline-grid;
     grid-template-columns: repeat(4, auto);
     gap: 10px;
+    z-index: 999;
 }
 /* logo */
 .logo{
@@ -140,6 +143,91 @@ body{
 }
 .noti_login .login i{
     margin: 0px 10px 0px 0px;
+}
+/* drop down login */
+.btn-dropdown{
+    position: relative;
+    margin-right: 12px;
+}
+.dropdown-not-login{
+    display: none;
+    position: absolute;
+    width: 380px;
+    background: #fff;
+    top: 52px;
+    right: 0;
+    color: #000;
+    z-index: 151;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: default;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    font-family: Roboto;
+    font-style: normal;
+}
+.dropdown-not-login.active{
+    display: block;
+}
+.dropdown-not-login .title{
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.dropdown-not-login .title .social-login{
+    display: flex;
+    padding-top: 15px;
+    font-weight: normal;
+    font-size: 15px;
+}
+.dropdown-not-login .title .social-login a{
+    width: 154px;
+    align-items: center;
+    margin-right: auto;
+    color: #555;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 8px 0 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    transition: all .3s;
+}
+.dropdown-not-login .title .social-login a:hover{
+    background-color: lightgray;
+}
+.dropdown-not-login .title .social-login a img{
+    width: 22px;
+    margin-right: 12px;
+}
+.dropdown-login, .dropdown-register{
+    padding: 12px 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.dropdown-login:hover{
+    background-color: rgb(241, 240, 240);
+}
+.dropdown-register:hover{
+    background-color: rgb(241, 240, 240);
+}
+.dropdown-login a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-login a img{
+    margin-right: 12px;
+}
+.dropdown-register a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-register a img{
+    margin-right: 12px;
 }
 /* content holder */
 .content-holder{
