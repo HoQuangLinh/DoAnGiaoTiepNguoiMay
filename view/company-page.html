@@ -42,49 +42,58 @@
 
             <nav class="navbar">
                 <ul class="nav-menu">
+                    <div class="close-btn">
+                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    </div>
                     <li><a href="#">VIỆC LÀM</a></li>
                     <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="company-page.html">CÔNG TY</a></li>
-                </ul>
-            </nav> <!-- navbar -->
-
-            <div class="noti_login">
-                <i class="material-icons prefix">notifications_none</i>
-                <div class="btn-dropdown">
-                    <button class="login" type="submit">
-                        <i class="material-icons prefix">account_circle</i>
-                        Đăng Nhập
-                    </button>
-                    <div class="dropdown-not-login">
-                        <div class="title">
-                            <span>Người tìm việc đăng nhập</span>
-                            <div class="social-login">
-                                <a href="">
-                                    <img src="../images/company-page/facebook.png" alt="">
-                                    <span>với Facebook</span> 
-                                </a>
-                                <a href="">
-                                    <img src="../images//company-page/google.png" alt="">
-                                    <span>với Google</span> 
-                                </a>
+                    <li class="login"><a href="">ĐĂNG NHẬP</a></li>
+                    <li class="register"><a href="">ĐĂNG KÝ</a></li>
+                    <li>
+                        <div class="noti_login">
+                            <i class="material-icons prefix">notifications_none</i>
+                            <div class="btn-dropdown">
+                                <button class="login" type="submit">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    Đăng Nhập
+                                </button>
+                                <div class="dropdown-not-login">
+                                    <div class="title">
+                                        <span>Người tìm việc đăng nhập</span>
+                                        <div class="social-login">
+                                            <a href="">
+                                                <img src="../images/company-page/facebook.png" alt="">
+                                                <span>với Facebook</span> 
+                                            </a>
+                                            <a href="">
+                                                <img src="../images//company-page/google.png" alt="">
+                                                <span>với Google</span> 
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-login">
+                                        <a href="">
+                                            <img src="../images/company-page/login.png" alt="">
+                                            <span>Đăng nhập</span> 
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-register">
+                                        <a href="">
+                                            <img src="../images/company-page/register.png" alt="">
+                                            <span>Tạo tài khoản mới</span> 
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="dropdown-login">
-                            <a href="">
-                                <img src="../images/company-page/login.png" alt="">
-                                <span>Đăng nhập</span> 
-                            </a>
-                        </div>
-                        <div class="dropdown-register">
-                            <a href="">
-                                <img src="../images/company-page/register.png" alt="">
-                                <span>Tạo tài khoản mới</span> 
-                            </a>
-                        </div>
-                    </div>
+                    </li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </div>
-            </div>
+            </nav> <!-- navbar -->
         </header> <!-- header -->
 
         <section class="content-holder">
@@ -998,12 +1007,40 @@
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 prevArrow: '<i class="fa fa-chevron-left fa-2x prev-arrow" aria-hidden="true"></i>',
-                nextArrow: '<i class="fa fa-chevron-right fa-2x next-arrow" aria-hidden="true"></i>'
+                nextArrow: '<i class="fa fa-chevron-right fa-2x next-arrow" aria-hidden="true"></i>',
+                responsive: [
+                    {
+                        breakpoint: 1260,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 755,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
             });
 
             $('.login').click(function(e) {
                 $('.dropdown-not-login').toggleClass('active');
             })
+        })
+
+        var menu = document.querySelector(".nav-menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
         })
     </script>
 </body>

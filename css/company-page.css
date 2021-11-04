@@ -4,13 +4,14 @@ body{
     background-color: #f7f7f7;
 }
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     background-color: #30C1FF;
     width: 100%;
-    display: inline-grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 999;
 }
 /* logo */
@@ -97,11 +98,21 @@ body{
     height: 50px;
 }
 .nav-menu{
+    display: flex;
+    justify-content: center;
     list-style: none;
-    margin: 0px 12px;
+    user-select: none;
+    margin: auto;
 }
 .nav-menu > li{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.nav-menu .login{
+    display: none;
+}
+.nav-menu .register{
+    display: none;
 }
 .nav-menu > li > a{
     color: white;
@@ -115,18 +126,30 @@ body{
 }
 .nav-menu > li > a:hover{
     background-color: #2196F3;
+    border-radius: 8px;
+}
+.close-btn{
+    display: none;
+}
+.menu-btn{
+    display: none;
 }
 /* notification + login */
 .noti_login{
-    margin: 0px 24px 0px 12px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    margin-left: 12px;
 }
 .noti_login > i{
     color: #fff;
     font-size: 30px;
     margin: 0px 20px 0px 0px;
+    padding: 4px;
     cursor: pointer;
+}
+.noti_login > i:hover{
+    background-color: #2196F3;
+    border-radius: 20px;
 }
 .noti_login .login{
     height: 40px;
@@ -150,23 +173,29 @@ body{
     margin-right: 12px;
 }
 .dropdown-not-login{
-    display: none;
     position: absolute;
     width: 380px;
     background: #fff;
     top: 52px;
     right: 0;
     color: #000;
-    z-index: 151;
+    z-index: 999;
     border: 1px solid #ccc;
     border-radius: 2px;
     cursor: default;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
     font-family: Roboto;
     font-style: normal;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: 0.2s;
+    transition-property: transform, opacity;
 }
 .dropdown-not-login.active{
-    display: block;
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
 }
 .dropdown-not-login .title{
     padding: 12px 24px;
@@ -236,7 +265,7 @@ body{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    margin: 0px auto;
+    margin: 55px auto 0px auto;
     background-color: #fff;
     flex-direction: column;
     display: flex;
@@ -296,6 +325,7 @@ body{
     border: 2px solid;
     border-color: transparent transparent black black;
     transform: rotate(-45deg);
+    transition: 0.2s;
 }
 .select-wrap .select_ul{
     list-style: none;
@@ -303,14 +333,17 @@ body{
     padding: 0;
     box-sizing: border-box;
     position: absolute;
-    top: 45px;
     left: 0;
     width: 100%;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    display: none;
+    visibility: hidden;
     z-index: 900;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: 0.2s;
+    transition-property: transform, opacity;
 }
 .select-wrap .select_ul li{
     padding: 10px 20px;
@@ -332,7 +365,9 @@ body{
     align-items: center;
 }
 .select-wrap.active .select_ul{
-    display: block;
+    visibility: visible;
+    transform: translateY(5px);
+    opacity: 1;
 }
 .select-wrap.active .default_option::before{
     transform: rotate(-225deg);
@@ -569,4 +604,73 @@ address p{
 }
 .copy p{
     margin: 0px;
+}
+
+/* responsive */
+@media (max-width: 1410px){
+    /* header */
+    .header{
+        padding: 4px -16px;
+    }
+    .navbar::after{
+        display: none;
+    }
+    .nav-menu{
+        background-color: #30C1FF;
+        position: fixed;
+        display: block;
+        top: 0;
+        right: -100%;
+        visibility: hidden;
+        overflow-y: auto;
+        padding: 50px 12px;
+        height: 100vh;
+        z-index: 900;
+        transition: 0.5s;
+        transition-property: right, visibility;
+    }
+    .nav-menu.active{
+        right: 0;
+        visibility: visible;
+    }
+    .close-btn{
+        display: block;
+        position: absolute;
+        color: #fff;
+        top: 0;
+        left: 0;
+        margin: 12px;
+        background-size: 40px;
+        background-position: center;
+        cursor: pointer;
+    }
+    .nav-menu .login{
+        display: block;
+        border-top: 1px solid #fff;
+    }
+    .nav-menu .register{
+        display: block;
+    }
+    .nav-menu li{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu li a{
+        width: 200px;
+    }
+    .menu-btn{
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        margin-right: 12px;
+    }
+    .noti_login{
+        display: none;
+    }
+}
+@media (max-width: 830px){
+    .searchbar{
+        display: none;
+    }
 }
