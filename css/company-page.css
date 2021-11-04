@@ -35,6 +35,7 @@ body{
 }
 /* search bar */
 .searchbar{
+    position: relative;
     margin: auto 24px;
     width: max-content;
     display: flex;
@@ -112,6 +113,9 @@ body{
     display: none;
 }
 .nav-menu .register{
+    display: none;
+}
+.nav-menu .search-sidebar{
     display: none;
 }
 .nav-menu > li > a{
@@ -607,7 +611,7 @@ address p{
 }
 
 /* responsive */
-@media (max-width: 1410px){
+@media (max-width: 1437px){
     /* header */
     .header{
         padding: 4px -16px;
@@ -623,7 +627,7 @@ address p{
         right: -100%;
         visibility: hidden;
         overflow-y: auto;
-        padding: 50px 12px;
+        padding: 60px 12px;
         height: 100vh;
         z-index: 900;
         transition: 0.5s;
@@ -657,7 +661,7 @@ address p{
         align-items: center;
     }
     .nav-menu li a{
-        width: 200px;
+        width: 210px;
     }
     .menu-btn{
         color: #fff;
@@ -672,5 +676,52 @@ address p{
 @media (max-width: 830px){
     .searchbar{
         display: none;
+    }
+    .nav-menu .search-sidebar{
+        display: block;
+    }
+    .nav-menu li a{
+        width: 250px;
+    }
+    .nav-menu .search-sidebar .job, .local{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 4px;
+        margin: 6px auto;
+        box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
+    }
+    .nav-menu .search-sidebar .job i{
+        color: #30C1FF;
+    }
+    .nav-menu .search-sidebar .job input{
+        outline: 0;
+        border: 0;
+        width: 248px;
+        font-size: small;
+    }
+    .nav-menu .search-sidebar .local i{
+        color: #30C1FF;
+    }
+    .nav-menu .search-sidebar .local input{
+        outline: 0;
+        border: 0;
+        width: 248px;
+        font-size: small;
+    }
+    .search-sidebar .findjobs-btn{
+        width: max-content;
+        background-color: #FFCF54;
+        color: #fff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        border: 0px;
+        padding: 6px 24px;
+        margin: 12px auto;
+        border-radius: 16px;
+        cursor: pointer;
+        box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
     }
 }
