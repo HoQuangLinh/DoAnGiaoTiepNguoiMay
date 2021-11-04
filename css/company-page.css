@@ -13,6 +13,7 @@ body{
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
 }
 /* logo */
 .logo{
@@ -35,31 +36,35 @@ body{
 }
 /* search bar */
 .searchbar{
+    width: 40%;
     position: relative;
     margin: auto 24px;
-    width: max-content;
     display: flex;
-    float: center;
     height: max-content;
     align-items: center;
     border-radius: 16px;
     background-color: #fff;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
 }
-.searchbar > i{
-    color: #30C1FF;
-    font-size: 30px;
-    margin-left: 5px;
+.searchbar .job, .local{
+    display: flex;
+    align-items: center;
 }
 .searchbar .job{
-    display: inline-flex;
+    width: 50%;
+}
+.searchbar .local{
+    width: 35%;
+}
+.searchbar .job i{
+    color: #30C1FF;
+    padding: 0 4px;
 }
 .searchbar .job input{
-    width: 270px;
+    width: 100%;
     border: 0px;
     outline: 0px;
     font-size: 15px;
-    margin-right: 10px;
 }
 .searchbar .job::after{
     content: "";
@@ -68,15 +73,19 @@ body{
     width: 1px;
     height: 25px;
 }
+.searchbar .local i{
+    color: #30C1FF;
+    padding: 0 4px;
+}
 .searchbar .local input{
-    width: 150px;
+    width: 100%;
     border: 0px;
     outline: 0px;
     font-size: 15px;
 }
 .searchbar .findjobs{
     float: right;
-    width: max-content;
+    width: 15%;
     background-color: #FFCF54;
     color: #fff;
     font-size: 18px;
@@ -413,7 +422,7 @@ body{
     font-size: 25px;
 }
 .company-box{
-    padding-bottom: 12px;
+    padding-bottom: 50px;
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
@@ -434,6 +443,22 @@ body{
 }
 .prev-arrow{
     left: -25px;
+}
+.slick-dots li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: lightgray;
+}
+.slick-dots li button:before{
+    display: none;
+    color: #30C1FF;
+}
+.slick-dots li.slick-active button {
+    border-radius: 100%;
+    background-color: #30C1FF;
 }
 .company-list{
     margin: 0px auto;
@@ -504,32 +529,35 @@ body{
 .main-footer{
     background-color: #30C1FF;
     color: white;
-    width: 84%;
-    padding: 2% 8%;
-    height: auto;
-    display: inline-grid;
-    grid-template-columns: repeat(5, auto);
-    gap: 20px;
-}
-.footer-box{
-    float: left;
     width: 100%;
     height: auto;
-    min-width: 200px;
+    display: flex;
 }
-.footer-box .first-box{
+.footer-box{
+    width: 1270px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.box{
+    float: left;
+    width: 20%;
+    height: auto;
+}
+.box .first-box{
     display: grid;
     max-width: 400px;
 }
-.footer-box .first-box .description{
+.box .first-box .description{
     float: left;
     padding: 25px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
 }
-.footer-box .first-box .learn-more{
+.box .first-box .learn-more{
     max-width: max-content;
     height: 50px;
     margin: 0 25px;
@@ -541,43 +569,33 @@ body{
     font-size: 16px;
     cursor: pointer;
 }
-.footer-box > h3{
+.box > h3{
     margin: 12px 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
 }
-.footer-box > ul{
+.box > ul{
     list-style-type: none;
     margin: 25px 0;
     padding: 0px;
 }
-.footer-box > ul > li{
-    margin-bottom: 6px;
+.box > ul > li{
+    margin-bottom: 8px;
 }
-.footer-box > ul > li > a{
+.box > ul > li > a{
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
     color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
-address h3{
-    margin: 12px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-}
-address p{
-    font-size: 15px;
-    margin: 25px 0;
-}
-.footer-box address a{
-    color: teal;
-    font-size: 15px;
+.box > ul > li > a:hover{
+    padding: 0px 6px;
+    font-weight: 500;
 }
 /* follow us */
 .follow-us{
@@ -590,6 +608,16 @@ address p{
     font-weight: bold;
     font-size: 22px;
     text-align: center;
+}
+.follow-us::before{
+    content: '';
+    border-top: 0.3px solid #fff;
+    margin: 12px 24px;
+}
+.follow-us::after{
+    content: '';
+    border-top: 0.3px solid #fff;
+    margin: 8px 24px;
 }
 .follow-us span{
     padding: 10px;
@@ -615,6 +643,9 @@ address p{
     /* header */
     .header{
         padding: 4px -16px;
+    }
+    .searchbar{
+        width: 66%;
     }
     .navbar::after{
         display: none;
@@ -672,8 +703,29 @@ address p{
     .noti_login{
         display: none;
     }
+    /* footer */
+    .box{
+        width: 33%;
+    }
+    .box .first-box{
+        padding: 0px 45px;
+    }
+    .box h3{
+        padding: 0px 70px;
+    }
+    .box ul{
+        padding: 0px 70px;
+    }
+}
+@media (max-width: 1288px){
+    /* header */
+    .searchbar{
+        width: 72%;
+    }
+    /* footer */
 }
 @media (max-width: 830px){
+    /* header */
     .searchbar{
         display: none;
     }
@@ -723,5 +775,33 @@ address p{
         border-radius: 16px;
         cursor: pointer;
         box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
+    }
+    /* footer */
+    .box{
+        width: 50%;
+    }
+    .box .first-box{
+        padding: 0px 55px;
+    }
+    .box h3{
+        padding: 0px 80px;
+    }
+    .box ul{
+        padding: 0px 80px;
+    }
+}
+@media (max-width: 600px){
+    /* footer */
+    .box{
+        width: 100%;
+    }
+    .box .first-box{
+        padding: 0px 75px;
+    }
+    .box h3{
+        padding: 0px 100px;
+    }
+    .box ul{
+        padding: 0px 100px;
     }
 }
