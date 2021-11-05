@@ -41,7 +41,9 @@
                 </div>
                 <button class="findjobs" type="submit">Tìm Việc</button>
             </form> <!-- searchbar -->
-
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
             <nav class="navbar">
                 <ul class="nav-menu">
                     <div class="close-btn">
@@ -107,9 +109,6 @@
                         </div>
                     </li>
                 </ul>
-                <div class="menu-btn">
-                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                </div>
             </nav> <!-- navbar -->
         </header> <!-- header -->
 
@@ -1051,15 +1050,18 @@
             })
         })
 
+        var navbar = document.querySelector(".navbar");
         var menu = document.querySelector(".nav-menu");
         var menuBtn = document.querySelector(".menu-btn");
         var closeBtn = document.querySelector(".close-btn");
 
         menuBtn.addEventListener("click", () => {
+            navbar.classList.add("active");
             menu.classList.add("active");
         })
 
         closeBtn.addEventListener("click", () => {
+            navbar.classList.remove("active");
             menu.classList.remove("active");
         })
     </script>
