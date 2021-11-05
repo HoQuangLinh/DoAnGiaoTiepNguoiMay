@@ -1064,6 +1064,13 @@
             navbar.classList.remove("active");
             menu.classList.remove("active");
         })
+
+        navbar.addEventListener("click", (e) => {
+            if (e.target == navbar) {
+                navbar.classList.remove("active");
+                menu.classList.remove("active");
+            }
+        })
     </script>
 </body>
 
