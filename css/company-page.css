@@ -280,10 +280,11 @@ body{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    margin: 55px 150px 0px 150px;
+    margin: 55px 10% 0px 10%;
     background-color: #fff;
     flex-direction: column;
     display: flex;
+    transition: 0.2s;
 }
 .content-header{
     width: 100%;
@@ -725,6 +726,10 @@ body{
         display: none;
     }
     /* content holder */
+    .content-holder{
+        margin: 55px 8% 0px 8%;
+        transition: 0.2s;
+    }
     .company-item{
         min-height: 405px;
         transition: 0.2s;
@@ -760,7 +765,8 @@ body{
     }
     /* content holder */
     .content-holder{
-        margin: 55px 90px 0px 90px;
+        margin: 55px 6% 0px 6%;
+        transition: 0.2s;
     }
     .company-item{
         min-height: 398px;
@@ -776,6 +782,10 @@ body{
     }
 }
 @media (max-width: 1080px){
+    .content-holder{
+        margin: 55px 5% 0px 5%;
+        transition: 0.2s;
+    }
     .company-item{
         min-height: 442px;
         transition: 0.2s;
@@ -847,7 +857,8 @@ body{
     }
     /* content holder */
     .content-holder{
-        margin: 55px 50px 0px 50px;
+        margin: 55px 4% 0px 4%;
+        transition: 0.2s;
     }
     .company-list{
         width: 84%;
@@ -879,9 +890,7 @@ body{
 }
 @media (max-width: 600px){
     /* content holder */
-    .content-holder{
-        margin: 55px 30px 0px 30px;
-    }
+    
     /* footer */
     .box{
         width: 100%;
