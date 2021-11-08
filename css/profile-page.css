@@ -2,12 +2,17 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+button {
+  cursor: pointer;
+}
 body {
+  font-family: Roboto;
   margin: 0px;
   background-size: cover;
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
-.header {
+.profile-header {
   background-color: #30c1ff;
   padding: 0 20px;
   display: flex;
@@ -81,7 +86,7 @@ body {
 .searchbar .findjobs {
   background-color: #ffcf54;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   border: 0px;
   height: 40px;
@@ -94,6 +99,7 @@ body {
 
 .nav-menu {
   display: flex;
+  align-items: center;
   list-style: none;
   margin: 0px 12px;
 }
@@ -139,4 +145,272 @@ body {
 }
 .noti_login .login i {
   margin: 0px 10px 0px 0px;
+}
+.management {
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 0 20px;
+}
+.management-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.management-item > img {
+  width: 25px;
+  margin-right: 10px;
+}
+.body-content {
+  padding: 0 150px;
+  padding-top: 20px;
+}
+.myprofile-card {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.myprofile-avatar {
+  border: 1px solid #000;
+  height: 75px;
+  width: 75px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myprofile-avatar .icon {
+  font-size: 40px;
+}
+.myprofile-name {
+  font-size: 18px;
+  padding: 5px;
+}
+.myprofile-desc {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myprofile-desc > p {
+  font-weight: 300;
+  font-style: italic;
+}
+.myprofile-desc > span {
+  font-weight: 600;
+}
+.progressbar {
+  margin: 5px 0;
+  width: 80%;
+  background-color: #cac5c5;
+  border-radius: 13px;
+}
+.progressbar > div {
+  background-color: #2a8cff;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 10px;
+  border-radius: 13px;
+}
+.btn-update-profile {
+  margin-top: 5px;
+  border: 1px solid #ff9900;
+  font-family: roboto;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #ff9900;
+}
+.profile-setting-card {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.profile-setting-heading {
+  padding: 8px;
+
+  background: #c4c4c4;
+}
+.profile-setting-heading > h3 {
+  font-size: 18px;
+}
+.profile-setting-body {
+  padding: 10px;
+}
+.profile-setting-file-upload {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px dashed #000000;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 10px;
+}
+.profile-setting-file-upload > .btn-submit {
+  margin-bottom: 5px;
+}
+.line {
+  height: 0;
+  border-bottom: 1px solid #000000;
+}
+.profile-setting-footer {
+  padding: 10px;
+}
+.profile-setting-content {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.profile-setting-content > input {
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+}
+.hide-profile-card {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.hide-profile-heading {
+  padding: 8px;
+  background: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hide-profile-heading > h3 {
+  font-size: 18px;
+}
+.hide-profile-heading > p {
+  color: #f7941d;
+  font-size: 13px;
+  font-weight: 700;
+}
+.hide-profile-item > b {
+  font-size: 14px;
+}
+.hide-profile-body {
+  padding: 25px;
+}
+.hide-profile-body-input {
+  margin: 15px 0;
+  position: relative;
+}
+.hide-profile-body-input > input {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  padding: 7px;
+  font-size: 16px;
+  width: 100%;
+}
+.hide-profile-body-input > img {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.careers {
+}
+.careers .col {
+  padding: 5px;
+}
+.career-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.career-card-heading > h3 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.career-card-body {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+.career-card-body-title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.career-card-body-list {
+  width: 100%;
+  display: flex;
+}
+.career-card-body-item {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.btn-career {
+  border: none;
+  width: 35px;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+.company {
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 0 30px;
+}
+.company-header {
+  padding: 30px 0;
+  font-size: 18px;
+}
+.company-item {
+  padding: 15px 0;
+  margin: 0 15px;
+  border-bottom: 1px solid #c4c4c4;
+  align-items: center;
+}
+.company-item:first-child {
+  border-top: 1px solid #c4c4c4;
+}
+.company-item-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.company-item > .col-2 {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.company-item > .col-10 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.company-item-content {
+}
+.company-item-content .company-item-header {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.company-item-info > p {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 20px;
+  display: -webkit-box;
+
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
