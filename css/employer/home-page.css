@@ -215,3 +215,57 @@ header .login-nav .noti_login::before{
 .dropdown-register a img{
     margin-right: 12px;
 }
+/* content-holder */
+section{
+    padding: 20px 100px;
+}
+.banner{
+    position: relative;
+    height: 80vh;
+    background: url(../../images/emloyer-home-page/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-holder div h1{
+    margin: 40px 0px 20px 0px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.services{
+    display: inline-block;
+    width: 100%;
+}
+.services .top-service{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 60px;
+}
+.services .top-service .service{
+    height: 600px;
+    border: 1px solid #005385;
+    border-radius: 0px 0px 0px 100px;
+}
+.services .bot-service{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 400px;
+    border: 1px solid #005385;
+    border-radius: 100px 0px;
+}
+.companies .company-listbox{
+    padding: 20px 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 50px;
+}
+.company-listbox .company-item{
+    width: 100%;
+    background-color: lightgray;
+    height: 240px;
+}
