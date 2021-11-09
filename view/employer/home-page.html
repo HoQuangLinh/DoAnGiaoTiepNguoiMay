@@ -5,25 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employer Home</title>
+    <link rel="stylesheet" href="../../css/employer/home-page.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="homepage.html">
-                <img src="../images/salary_page/logo1.png" alt="Logo">
-                FINDWORK
-            </a>
-        </div> <!-- Logo -->
-
-        <div class="navbar">
-            <ul class="nav-menu">
-                <li class="menu-item"><a href="#">Dịch vụ</a></li>
-                <li class="menu-item"><a href="#">Giới thiệu</a></li>
-                <li class="menu-item"><a href="#">Liên hệ</a></li>
-                <li class="menu-item"><a href="#">Cho người tìm việc</a></li>
-            </ul>
+        <div class="left-column">
+            <div class="logo">
+                <a href="./home-page.html">
+                    <img src="../../images/salary_page/logo1.png" alt="Logo">
+                    FINDWORK
+                </a>
+            </div> <!-- Logo -->
+    
+            <div class="navbar">
+                <ul class="nav-menu">
+                    <li class="menu-item"><a href="#">Dịch vụ</a></li>
+                    <li class="menu-item"><a href="#">Giới thiệu</a></li>
+                    <li class="menu-item"><a href="#">Liên hệ</a></li>
+                    <li class="menu-item"><a href="#">Cho người tìm việc</a></li>
+                </ul>
+            </div> <!-- navbar -->
         </div>
-
+        
+        <div class="login-nav">
+            <div class="manage-btn">
+                <a href="">QUẢN LÝ TUYỂN DỤNG</a>
+            </div>
+            <div class="noti_login">
+                <div class="btn-noti">
+                    <i class="material-icons prefix">notifications_none</i>
+                </div>
+                <div class="btn-dropdown">
+                    <div class="login" type="submit">
+                        <i class="material-icons prefix">account_circle</i>
+                        Đăng Nhập
+                    </div>
+                    <div class="dropdown-not-login">
+                        <div class="title">
+                            <span>Nhà tuyển dụng đăng nhập</span>
+                            <div class="social-login">
+                                <a href="">
+                                    <img src="../../images/company-page/facebook.png" alt="">
+                                    <span>với Facebook</span>
+                                </a>
+                                <a href="">
+                                    <img src="../../images//company-page/google.png" alt="">
+                                    <span>với Google</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-login">
+                            <a href="">
+                                <img src="../../images/company-page/login.png" alt="">
+                                <span>Đăng nhập</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-register">
+                            <a href="">
+                                <img src="../../images/company-page/register.png" alt="">
+                                <span>Tạo tài khoản mới</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- login navigate -->
+        
     </header>
+
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.login').click(function (e) {
+                $('.dropdown-not-login').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 </html>

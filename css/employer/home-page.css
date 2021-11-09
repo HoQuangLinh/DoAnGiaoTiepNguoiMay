@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #005385;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
+    transition: 0.6s;
+}
+.left-column{
+    display: flex;
+    align-items: center;
+}
+/* logo */
+.left-column .logo{
+    width: auto;
+    margin: 0px 20px;
+}
+.left-column .logo a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.left-column .logo a img{
+    display: block;
+    margin: 0 12px;
+}
+/* navbar */
+.left-column .navbar{
+    position: relative;
+    margin-left: 36px;
+}
+.left-column .navbar .nav-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+    margin: auto;
+}
+.menu-item > a{
+    margin: auto 0px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 16px;
+    text-transform: uppercase;
+}
+.menu-item > a:hover{
+    background: #337AB7;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+/* login navigate */
+header .login-nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header .login-nav .manage-btn{
+    margin: auto 12px;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+}
+.manage-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+header .login-nav .noti_login{
+    display: flex;
+    align-items: center;
+}
+.noti_login .btn-noti{
+    color: #fff;
+    margin-right: 20px;
+}
+.noti_login .btn-noti i{
+    padding: 4px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.btn-noti i:hover{
+    background-color: #337AB7;
+    border-radius: 20px;
+}
+header .login-nav .noti_login::before{
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 0.8px;
+    height: 50px;
+    margin-right: 12px;
+}
+/* btn dropdown */
+.btn-dropdown{
+    position: relative;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.btn-dropdown .login{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 1px 6px;
+    user-select: none;
+}
+.btn-dropdown .login i{
+    font-size: 24px;
+    color: #000;
+    margin: 0px 10px 0px 0px;
+}
+.dropdown-not-login{
+    position: absolute;
+    width: 380px;
+    background: #fff;
+    top: 52px;
+    right: 0;
+    color: #000;
+    z-index: 999;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: default;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    font-family: Roboto;
+    font-style: normal;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: 0.2s;
+    transition-property: transform, opacity;
+}
+.dropdown-not-login.active{
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown-not-login .title{
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.dropdown-not-login .title .social-login{
+    display: flex;
+    padding-top: 15px;
+    font-weight: normal;
+    font-size: 15px;
+}
+.dropdown-not-login .title .social-login a{
+    width: 154px;
+    align-items: center;
+    margin-right: auto;
+    color: #555;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 8px 0 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    transition: all 0.3s ease;
+}
+.dropdown-not-login .title .social-login a:hover{
+    background-color: lightgray;
+}
+.dropdown-not-login .title .social-login a img{
+    width: 22px;
+    margin-right: 12px;
+}
+.dropdown-login, .dropdown-register{
+    padding: 12px 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.dropdown-login:hover{
+    background-color: rgb(241, 240, 240);
+}
+.dropdown-register:hover{
+    background-color: rgb(241, 240, 240);
+}
+.dropdown-login a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-login a img{
+    margin-right: 12px;
+}
+.dropdown-register a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-register a img{
+    margin-right: 12px;
+}
