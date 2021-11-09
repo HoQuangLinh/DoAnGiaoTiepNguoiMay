@@ -73,10 +73,11 @@ header .login-nav{
 }
 header .login-nav .manage-btn{
     margin: auto 12px;
-    padding: 8px 16px;
+    padding: 8px 0px;
     border: 1px solid #fff;
 }
 .manage-btn a{
+    padding: 8px 16px;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -235,28 +236,86 @@ section{
     font-size: 25px;
 }
 .services{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 .services .top-service{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    grid-template-columns: 50% auto;
     gap: 60px;
 }
 .services .top-service .service{
-    height: 600px;
+    display: block;
+    width: 100%;
+    height: auto;
     border: 1px solid #005385;
-    border-radius: 0px 0px 0px 100px;
+    border-radius: 0px 0px 0px 70px;
+    padding: 20px 60px;
+    flex-direction: column;
+}
+.service img{
+    max-height: 280px;
+}
+.service h3{
+    font-size: 22px;
+    line-height: 24px;
+    margin: 8px 0px;
+}
+.service span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #005385;
+}
+.service ul{
+    margin: 8px 0px 8px 18px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.service p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.service .btn-buy{
+    width: max-content;
+    border: 1px solid #005385;
+    cursor: pointer;
+    user-select: none;
+    padding: 16px 0px;
+    transition: 0.2s;
+}
+.service .btn-buy:hover{
+    border: 1px solid #fff;
+}
+.service .btn-buy a{
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #005385;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+.service .btn-buy a:hover{
+    background-color: #005385;
+    color: #fff;
 }
 .services .bot-service{
+    display: flex;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
-    height: 400px;
+    padding: 40px 60px;
     border: 1px solid #005385;
-    border-radius: 100px 0px;
+    border-radius: 70px 0px;
 }
+.bot-service img{
+    max-height: 280px;
+    margin-right: 40px;
+}
+
 .companies .company-listbox{
     padding: 20px 100px;
     width: 100%;
