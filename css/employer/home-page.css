@@ -234,6 +234,7 @@ header .login-nav .noti_login::before{
 /* content-holder */
 section{
     padding: 20px 100px;
+    transition: 0.2s;
 }
 .banner{
     width: 100%;
@@ -261,13 +262,13 @@ section{
 }
 .services .top-service{
     width: 100%;
-    display: flex;
-    grid-template-columns: 50% auto;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
 }
 .services .top-service .service{
+    float: left;
     display: block;
-    width: 100%;
     height: auto;
     border: 1px solid #005385;
     border-radius: 0px 0px 0px 70px;
@@ -275,7 +276,9 @@ section{
     flex-direction: column;
 }
 .service img{
-    max-height: 280px;
+    max-width: 100%;
+    height: 280px;
+    transition: 0.2s;
 }
 .service h3{
     font-size: 22px;
@@ -322,7 +325,9 @@ section{
     color: #fff;
 }
 .services .bot-service{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -332,7 +337,8 @@ section{
 }
 .bot-service img{
     max-height: 280px;
-    margin-right: 40px;
+    max-width: 100%;
+    transition: 0.2s;
 }
 .companies .company-listbox{
     padding: 10px 100px 20px;
@@ -548,6 +554,13 @@ footer{
         width: 1100px;
     }
 }
+@media (max-width: 1320px){
+    /* content holder */
+    .service img{
+        height: 200px;
+        transition: 0.2s;
+    }
+}
 @media (max-width: 1160px){
     .left-column .navbar{
         margin: 56px 0px;
@@ -608,12 +621,30 @@ footer{
     .menu-btn{
         display: block;
     }
+    /* content holder */
+    .bot-service img{
+        max-height: 240px;
+        transition: 0.2s;
+    }
     /* footer */
     .footer-box{
         width: 950px;
     }
     .box{
         width: 33.33%;
+    }
+}
+@media (max-width: 1100px){
+    /* content holder */
+    .services .top-service{
+        grid-template-columns: repeat(1, auto);
+    }
+    .service img{
+        height: 280px;
+        transition: 0.2s;
+    }
+    .services .bot-service{
+        grid-template-columns: repeat(1, auto);
     }
 }
 @media (max-width: 1020px){
@@ -623,6 +654,8 @@ footer{
     }
 }
 @media (max-width: 920px){
+    /* content holder */
+
     /* footer */
     .footer-box{
         width: 650px;
@@ -632,12 +665,21 @@ footer{
     }
 }
 @media (max-width: 770px){
+    /* content holder */
+    .service img{
+        height: 230px;
+        transition: 0.2s;
+    }
     /* footer */
     .footer-box{
         width: 550px;
     }
 }
 @media (max-width: 660px){
+    section{
+        padding: 20px;
+        transition: 0.2s;
+    }
     /* footer */
     .footer-box{
         width: 480px;
