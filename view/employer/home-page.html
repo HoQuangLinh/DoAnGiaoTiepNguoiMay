@@ -40,41 +40,30 @@
                     <li class="menu-item"><a href="#">Giới thiệu</a></li>
                     <li class="menu-item">
                         <a class="contact" href="#">Liên hệ</a>
-                        <div class="contact-card">
+                        <ul class="sub-item">
                             <h3>Liên hệ với chúng tôi qua gmail</h3>
-                            <table>
-                                <tr>
-                                    <td>Họ và tên*</td>
-                                    <td><input type="text" name="c_name" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Tên công ty</td>
-                                    <td><input type="text" name="c_company"></td>
-                                </tr>
-                                <tr>
-                                    <td>Số điện thoại*</td>
-                                    <td><input type="tel" name="c_phone"required></td>
-                                </tr>
-                                <tr>
-                                    <td>Địa chỉ email*</td>
-                                    <td><input type="email" name="c_email" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Nội dung</td>
-                                    <td>
-                                        <textarea name="c_message" cols="30" rows="5"></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><input class="btn-send" type="submit" name="c_send" value="Gửi"></td>
-                                </tr>
-                            </table>
+                            <li class="item-contact">
+                                <input type="text" name="c_name" placeholder="Họ và tên*" required>
+                            </li>
+                            <li class="item-contact">
+                                <input type="text" name="c_company" placeholder="Tên công ty"></li>
+                            <li class="item-contact">
+                                <input type="tel" name="c_phone" placeholder="Số điện thoại*"
+                                    required></li>
+                            <li class="item-contact">
+                                <input type="email" name="c_email" placeholder="Địa chỉ email*" required>
+                            </li>
+                            <li class="item-contact">
+                                <textarea name="c_message" cols="30" rows="5" placeholder="Nội dung"></textarea>
+                            </li>
+                            <li class="item-contact">
+                                <input class="btn-send" type="submit" name="c_send" value="Gửi">
+                            </li>
                             <div class="subtext">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                                 <p><b>Hồ Chí Minh:</b> 0123456789</p>
                             </div>
-                        </div>
+                        </ul>
                     </li>
                     <li class="menu-item"><a href="#">Cho người tìm việc</a></li>
                 </ul>
@@ -174,9 +163,9 @@
                     <h3>Quảng bá thương hiệu</h3>
                     <span>20,500,000 VND</span>
                     <ul>
-                        <li>Trang chủ VietnamWorks nhận được hơn 7 triệu lượt truy cập mỗi 
+                        <li>Trang chủ VietnamWorks nhận được hơn 7 triệu lượt truy cập mỗi
                             tháng từ các ứng viên và chuyên gia giỏi nhất tại Việt Nam</li>
-                        <li> Đặt Logo và Banner tại trang chủ sẽ là vị trí chiến lược để 
+                        <li> Đặt Logo và Banner tại trang chủ sẽ là vị trí chiến lược để
                             thu hút nhân tài</li>
                     </ul>
                     <p><br></p>
@@ -428,7 +417,8 @@
                 $('.dropdown-not-login').toggleClass('active');
             })
             $('.contact').click(function (e) {
-                $('.contact-card').toggleClass('active');
+                //$('.contact-card').toggleClass('active');
+                $(this).next('.sub-item').slideToggle();
             })
             $('.review-list').slick({
                 dots: true,
