@@ -397,6 +397,29 @@
                 slidesToScroll: 4,
                 prevArrow: '<i class="fa fa-chevron-left fa-2x prev-arrow" aria-hidden="true"></i>',
                 nextArrow: '<i class="fa fa-chevron-right fa-2x next-arrow" aria-hidden="true"></i>',
+                responsive: [
+                    {
+                        breakpoint: 1120,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 890,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
             })
 
             $('.menu-btn').click(function () {
