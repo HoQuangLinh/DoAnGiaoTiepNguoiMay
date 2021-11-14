@@ -38,7 +38,44 @@
                     </li>
                     <li class="menu-item"><a href="#">Dịch vụ</a></li>
                     <li class="menu-item"><a href="#">Giới thiệu</a></li>
-                    <li class="menu-item"><a href="#">Liên hệ</a></li>
+                    <li class="menu-item">
+                        <a class="contact" href="#">Liên hệ</a>
+                        <div class="contact-card">
+                            <h3>Liên hệ với chúng tôi qua gmail</h3>
+                            <table>
+                                <tr>
+                                    <td>Họ và tên*</td>
+                                    <td><input type="text" name="c_name" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Tên công ty</td>
+                                    <td><input type="text" name="c_company"></td>
+                                </tr>
+                                <tr>
+                                    <td>Số điện thoại*</td>
+                                    <td><input type="tel" name="c_phone"required></td>
+                                </tr>
+                                <tr>
+                                    <td>Địa chỉ email*</td>
+                                    <td><input type="email" name="c_email" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Nội dung</td>
+                                    <td>
+                                        <textarea name="c_message" cols="30" rows="5"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input class="btn-send" type="submit" name="c_send" value="Gửi"></td>
+                                </tr>
+                            </table>
+                            <div class="subtext">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p><b>Hồ Chí Minh:</b> 0123456789</p>
+                            </div>
+                        </div>
+                    </li>
                     <li class="menu-item"><a href="#">Cho người tìm việc</a></li>
                 </ul>
             </div> <!-- navbar -->
@@ -389,6 +426,9 @@
         $(document).ready(function () {
             $('.login').click(function (e) {
                 $('.dropdown-not-login').toggleClass('active');
+            })
+            $('.contact').click(function (e) {
+                $('.contact-card').toggleClass('active');
             })
             $('.review-list').slick({
                 dots: true,
