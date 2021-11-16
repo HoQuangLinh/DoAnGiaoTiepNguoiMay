@@ -167,6 +167,8 @@ body{
     border-radius: 20px;
 }
 .noti_login .login{
+    min-width: 110px;
+    max-width: 150px;
     height: 40px;
     font-size: 16px;
     font-weight: 400;
@@ -178,6 +180,11 @@ body{
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+}
+.noti_login .login div{
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 .noti_login .login i{
     margin: 0px 10px 0px 0px;
@@ -243,35 +250,26 @@ body{
     width: 22px;
     margin-right: 12px;
 }
-.dropdown-login, .dropdown-register{
+.dropdown{
     padding: 12px 12px;
     cursor: pointer;
     box-sizing: border-box;
     border-top: 0.5px solid rgba(0, 0, 0, 0.3);
 }
-.dropdown-login:hover{
+.dropdown:hover{
     background-color: rgb(241, 240, 240);
 }
-.dropdown-register:hover{
-    background-color: rgb(241, 240, 240);
-}
-.dropdown-login a{
+.dropdown a{
     text-decoration: none;
     display: flex;
     align-items: center;
     color: rgba(0, 0, 0, 0.5);
 }
-.dropdown-login a img{
-    margin-right: 12px;
-}
-.dropdown-register a{
-    text-decoration: none;
+.dropdown a div{
     display: flex;
     align-items: center;
-    color: rgba(0, 0, 0, 0.5);
-}
-.dropdown-register a img{
     margin-right: 12px;
+    min-width: 25px;
 }
 /* content holder */
 .content-holder{
