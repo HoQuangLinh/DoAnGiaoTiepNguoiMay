@@ -123,15 +123,17 @@
             </div>
             <div class="separator"></div>
             <div class="content-container">
-                <div class="infor-card">
-                    <div class="caption">
-                        <span>Họ và tên:</span>
-                    </div>
-                    <div class="content">
-                        <span>Nguyễn Tiến Đạt</span>
-                    </div>
-                    <div class="edit">
-                        <a href="">Chỉnh sửa</a>
+                <div class="container-infor">
+                    <div class="infor">
+                        <div class="caption">
+                            <span>Họ và tên:</span>
+                        </div>
+                        <div class="content">
+                            <span>Nguyễn Tiến Đạt</span>
+                        </div>
+                        <div class="edit">
+                            <span>Chỉnh sửa</span>
+                        </div>
                     </div>
                     <div class="collapsible">
                         <p>Some collapsible content. Click the button to toggle between showing and hiding the
@@ -140,39 +142,63 @@
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
-                <div class="infor-card">
-                    <div class="caption">
-                        <span>Địa chỉ email:</span>
+                <div class="container-infor">
+                    <div class="infor">
+                        <div class="caption">
+                            <span>Địa chỉ email:</span>
+                        </div>
+                        <div class="content">
+                            <span>abc@gmail.com</span>
+                        </div>
+                        <div class="edit">
+                            <span>Chỉnh sửa</span>
+                        </div>
                     </div>
-                    <div class="content">
-                        <span>abc@gmail.com</span>
-                    </div>
-                    <div class="edit">
-                        <a href="">Chỉnh sửa</a>
-                    </div>
-                </div>
-                <div class="infor-card">
-                    <div class="caption">
-                        <span>Mật khẩu:</span>
-                    </div>
-                    <div class="content">
-                        <span>****************</span>
-                    </div>
-                    <div class="edit">
-                        <a href="">Chỉnh sửa</a>
+                    <div class="collapsible">
+                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
+                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
-                <div class="infor-card">
-                    <div class="caption">
-                        <span>Xác minh danh tính:</span>
+                <div class="container-infor">
+                    <div class="infor">
+                        <div class="caption">
+                            <span>Mật khẩu:</span>
+                        </div>
+                        <div class="content">
+                            <span>****************</span>
+                        </div>
+                        <div class="edit">
+                            <span>Chỉnh sửa</span>
+                        </div>
                     </div>
-                    <div class="content">
-                        <span></span>
-                        <p>Xác minh danh tính của bạn để làm những việc như chạy quảng cáo
-                            về vấn đề xã hội, bầu cử hoặc chính trị</p>
+                    <div class="collapsible">
+                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
+                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="edit">
-                        <a href="">Chỉnh sửa</a>
+                </div>
+                <div class="container-infor">
+                    <div class="infor">
+                        <div class="caption">
+                            <span>Xác minh danh tính:</span>
+                        </div>
+                        <div class="content">
+                            <span></span>
+                            <p>Xác minh danh tính của bạn để làm những việc như chạy quảng cáo
+                                về vấn đề xã hội, bầu cử hoặc chính trị</p>
+                        </div>
+                        <div class="edit">
+                            <span>Chỉnh sửa</span>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
+                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
@@ -270,7 +296,8 @@
     </div>
 
 
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -279,11 +306,19 @@
             })
 
             $(".edit").click(function (e) {
-                for (const select of document.querySelectorAll(".collapsible")) {
-                    if (select.contains(e.target)) {
-                        select.classList.add('active');
-                    }
-                }
+                $header = $(this).parent();
+                //getting the next element
+                $content = $header.next();
+                console.log($content)
+                //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+                $content.slideToggle(500, function () {
+                    //execute this after slideToggle is done
+                    //change text of header based on visibility of content div
+                    $header.text(function () {
+                        //change text based on condition
+                        return;
+                    });
+                });
             })
         })
 
