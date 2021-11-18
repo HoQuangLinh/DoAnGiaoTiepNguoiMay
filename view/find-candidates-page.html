@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <!-- Add grid css-->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/find-candidates.css" />
+    <!--add google font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Add icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <div class="logo-img"></div>
+        <p class="logo-name">Findwork</p>
+      </div>
+      <!-- Nav bar -->
+      <div class="nav-bar">
+        <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
+        <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
+        <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+      </div>
+      <div class="profile-header">
+        <i class="notify-icon fa-solid fa-bell"></i>
+        <div class="profile-btn"><i class="fa-solid fa-user"></i>Mr. James</div>
+      </div>
+      <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
+      <div class="menu-mobile js-menu-mobile">
+        <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
+        <div class="mobile-menu-content js-menu-content">
+          <div class="profile-mobile row no-gutters">
+            <div class="col">
+              <div class="profile-img"></div>
+            </div>
+            <div class="col">
+              <div class="name">James Nguyen</div>
+              <div class="infor">Thông tin cá nhân</div>
+
+              <div class="sign-out">
+                <i class="fas fa-sign-out-alt"></i>Đăng xuất
+              </div>
+            </div>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <a class="job-posted-mobile" href="#"
+                ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
+              >
+            </li>
+            <li>
+              <a class="find-candidates-mobile" href="#"
+                ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
+              >
+            </li>
+            <li>
+              <a class="post-job-mobile" href="#"
+                ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
+              >
+            </li>
+          </ul>
+          <div>
+            <a class="notify-mobile" href="#"
+              ><i class="fas fa-bell"></i> Thông báo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="grid wide">
+      <div class="row search-bar">
+        <div class="col l-8 m-8 c-8 search-input">
+          <div class="row">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input
+              type="text"
+              placeholder="Tìm kiếm..."
+              required
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="col l-2 m-2 c-2">
+          <ul class="filter-search">
+            <li>
+              <a href="#">Tất cả</a
+              ><i
+                font-size:=""
+                15px=""
+                class="fa fa-caret-down"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li><a href="#">Tên</a></li>
+            <li><a href="#">Kỹ năng</a></li>
+            <li><a href="#">Công ty</a></li>
+            <li><a href="#">Chức danh</a></li>
+          </ul>
+        </div>
+        <div class="col l-2 m-2 c-2 search-btn">TÌM KIẾM</div>
+      </div>
+      <div class="row">
+        <div class="col l-3 m-4 c-0 filter-menu">
+          <form class="row" action="">
+            <div class="l-12 m-12 c-12">
+              <h3>BỘ LỌC</h3>
+              <p>Ngành nghề</p>
+              <ul>
+                <li class="init">
+                  Tất cả Ngành nghề
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+              <p>Nơi làm việc mong muốn</p>
+              <ul>
+                <li class="init">
+                  Quận/Huyện
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+              <ul>
+                <li class="init">
+                  Tỉnh/Thành phố
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+              <p>Địa chỉ</p>
+              <ul>
+                <li class="init">
+                  Quận/Huyện
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+              <ul>
+                <li class="init">
+                  Tỉnh/Thành phố
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+              <p>Lần cuối cập nhập hồ sơ</p>
+              <ul>
+                <li class="init">
+                  Bất kỳ
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+              <p>Năm kinh nghiệm</p>
+              <div class="row no-gutters">
+                <div class="l-6 m-6 c-6">
+                  <input
+                    style="width: 90%"
+                    class="form-control"
+                    placeholder="Từ"
+                    type="text"
+                  />
+                </div>
+                <div class="l-6 m-6 c-6">
+                  <input
+                    style="width: 100%"
+                    class="form-control"
+                    placeholder="Đến"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <p>Mức lương</p>
+              <div class="row no-gutters">
+                <div class="l-6 m-6 c-6">
+                  <input
+                    style="width: 90%"
+                    class="form-control"
+                    placeholder="Từ"
+                    type="text"
+                  />
+                </div>
+                <div class="l-6 m-6 c-6">
+                  <input
+                    style="width: 100%"
+                    class="form-control"
+                    placeholder="Đến"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <p>Cấp bậc</p>
+              <ul>
+                <li class="init">
+                  Bất kỳ
+                  <i class="fa fa-caret-down"></i>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col l-9 m-8 c-12">
+          <div class="row result-number">
+            “86” ỨNG VIÊN PHÙ HỜP CHO PHÉP TÌM KIẾM
+          </div>
+          <div class="col l-12 m-12 c-12">
+            <div class="row candidate-card">
+              <div class="candidate-img l-2 m-2 c-2"></div>
+              <div class="candidate-info l-10 m-10 c-10">
+                <div class="name">Nguyen Tien Dat</div>
+                <div class="job">Software Engineer</div>
+                <div class="phone">+888888888</div>
+
+                <div class="experience">3 Years</div>
+                <div class="current-company">FPT Software</div>
+                <div class="desired-salary">1000 USD</div>
+                <div class="address">
+                  T2, Street D1, High-tech Park, Tan Phu Ward, District 9, HCM
+                  City,
+                </div>
+              </div>
+              <div class="card-detail">Hồ sơ chi tiết</div>
+              <div class="save-card fas fa-bookmark"></div>
+            </div>
+            <div class="row candidate-card">
+              <div class="candidate-img l-2 m-2 c-2"></div>
+              <div class="candidate-info l-10 m-10 c-10">
+                <div class="name">James Nguyen</div>
+                <div class="job">Software Engineer</div>
+                <div class="phone">+888888888</div>
+
+                <div class="experience">3 Years</div>
+                <div class="current-company">FPT Software</div>
+                <div class="desired-salary">1000 USD</div>
+                <div class="address">
+                  T2, Street D1, High-tech Park, Tan Phu Ward, District 9, HCM
+                  City,
+                </div>
+              </div>
+              <div class="card-detail">Hồ sơ chi tiết</div>
+              <div class="save-card fas fa-bookmark"></div>
+            </div>
+            <div class="row candidate-card">
+              <div class="candidate-img l-2 m-2 c-2"></div>
+              <div class="candidate-info l-10 m-10 c-10">
+                <div class="name">Nguyen Tien Dat</div>
+                <div class="job">Software Engineer</div>
+                <div class="phone">+888888888</div>
+
+                <div class="experience">3 Years</div>
+                <div class="current-company">FPT Software</div>
+                <div class="desired-salary">1000 USD</div>
+                <div class="address">
+                  T2, Street D1, High-tech Park, Tan Phu Ward, District 9, HCM
+                  City,
+                </div>
+              </div>
+              <div class="card-detail">Hồ sơ chi tiết</div>
+              <div class="save-card fas fa-bookmark"></div>
+            </div>
+            <div class="row candidate-card">
+              <div class="candidate-img l-2 m-2 c-2"></div>
+              <div class="candidate-info l-10 m-10 c-10">
+                <div class="name">Nguyen Tien Dat</div>
+                <div class="job">Software Engineer</div>
+                <div class="phone">+888888888</div>
+
+                <div class="experience">3 Years</div>
+                <div class="current-company">FPT Software</div>
+                <div class="desired-salary">1000 USD</div>
+                <div class="address">
+                  T2, Street D1, High-tech Park, Tan Phu Ward, District 9, HCM
+                  City,
+                </div>
+              </div>
+              <div class="card-detail">Hồ sơ chi tiết</div>
+              <div class="save-card fas fa-bookmark"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const menuBtn = document.querySelector(".js-menu-bar");
+    const closeBtn = document.querySelector(".js-close-menu");
+    const menuMobile = document.querySelector(".js-menu-mobile");
+    const menuMobileChild = document.querySelector(".js-menu-content");
+    menuBtn.addEventListener("click", function (event) {
+      menuMobile.classList.add("menu-mobile-modal");
+    });
+    closeBtn.addEventListener("click", function (event) {
+      menuMobile.classList.remove("menu-mobile-modal");
+    });
+    menuMobile.addEventListener("click", function (event) {
+      menuMobile.classList.remove("menu-mobile-modal");
+    });
+    menuMobileChild.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  </script>
+</html>
