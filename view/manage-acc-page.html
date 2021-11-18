@@ -64,8 +64,10 @@
                     <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="company-page.html">CÔNG TY</a></li>
-                    <li class="login"><a href="">ĐĂNG NHẬP</a></li>
-                    <li class="register"><a href="">ĐĂNG KÝ</a></li>
+                    <li class="resp-item-fist"><a href="">Thông tin chung</a></li>
+                    <li class="resp-item"><a href="">Cập nhật hồ sơ</a></li>
+                    <li class="resp-item"><a href="">Quản lý tài khoản</a></li>
+                    <li class="resp-item"><a href="">Đăng xuất</a></li>
                     <li>
                         <div class="noti_login">
                             <i class="material-icons prefix">notifications_none</i>
@@ -136,10 +138,17 @@
                         </div>
                     </div>
                     <div class="collapsible">
-                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
-                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="visible">
+                            <div class="caption">
+                                <span>Họ và tên mới:</span>
+                            </div>
+                            <div class="content">
+                                <input type="text">
+                            </div>
+                            <div class="edit">
+                                <a href="">Lưu</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-infor">
@@ -155,10 +164,17 @@
                         </div>
                     </div>
                     <div class="collapsible">
-                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
-                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="visible">
+                            <div class="caption">
+                                <span>Địa chỉ email mới:</span>
+                            </div>
+                            <div class="content">
+                                <input type="email">
+                            </div>
+                            <div class="edit">
+                                <a href="">Lưu</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-infor">
@@ -174,10 +190,39 @@
                         </div>
                     </div>
                     <div class="collapsible">
-                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
-                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="visible">
+                            <div class="caption">
+                                <span>Mật khẩu hiện tại:</span>
+                            </div>
+                            <div class="content">
+                                <input type="password">
+                            </div>
+                            <div class="edit">
+                                
+                            </div>
+                        </div>
+                        <div class="visible-sub">
+                            <div class="caption">
+                                <span>Mật khẩu mới:</span>
+                            </div>
+                            <div class="content">
+                                <input type="password">
+                            </div>
+                            <div class="edit">
+                                
+                            </div>
+                        </div>
+                        <div class="visible">
+                            <div class="caption">
+                                <span>Xác nhận mật khẩu mới:</span>
+                            </div>
+                            <div class="content">
+                                <input type="password">
+                            </div>
+                            <div class="edit">
+                                <a href="">Đổi mật khẩu</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-infor">
@@ -195,10 +240,52 @@
                         </div>
                     </div>
                     <div class="collapsible">
-                        <p>Some collapsible content. Click the button to toggle between showing and hiding the
-                            collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="visible">
+                            <div class="caption">
+                                <span>Số CMND:</span>
+                            </div>
+                            <div class="content">
+                                <input type="number">
+                            </div>
+                            <div class="edit">
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <div class="visible-img">
+                            <div class="caption">
+                                <span>Mặt trước CMND:</span>
+                            </div>
+                            <div class="content">
+                                <img id="OpenImgUploadFront" src="../images/manage-acc-page/cmt-1.png" alt="Mặt trước CMND">
+                                <input id="ImgUploadFront" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                            </div>
+                            <div class="edit">
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <div class="visible-img">
+                            <div class="caption">
+                                <span>Mặt sau CMND:</span>
+                            </div>
+                            <div class="content">
+                                <img id="OpenImgUploadBack" src="../images/manage-acc-page/cmt-2.png" alt="Mặt sau CMND">
+                                <input id="ImgUploadBack" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                            </div>
+                            <div class="edit">
+                                
+                            </div>
+                        </div>
+                        <div class="visible">
+                            <div class="caption">
+                                
+                            </div>
+                            <div class="content">
+                                
+                            </div>
+                            <div class="edit">
+                                <a href="">Gửi xác minh</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,19 +393,27 @@
             })
 
             $(".edit").click(function (e) {
+                $edit = $(this);
                 $header = $(this).parent();
                 //getting the next element
                 $content = $header.next();
-                console.log($content)
                 //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
                 $content.slideToggle(500, function () {
                     //execute this after slideToggle is done
                     //change text of header based on visibility of content div
-                    $header.text(function () {
-                        //change text based on condition
-                        return;
+                    
+                    $edit.text(function () {
+                        return $content.is(":visible") ? "Thu gọn" : "Chỉnh sửa";
                     });
                 });
+            })
+
+            $('#OpenImgUploadFront').click(function (e) {
+                $('#ImgUploadFront').trigger('click');
+            })
+
+            $('#OpenImgUploadBack').click(function (e) {
+                $('#ImgUploadBack').trigger('click');
             })
         })
 

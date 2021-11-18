@@ -112,11 +112,13 @@ body{
     display: flex;
     align-items: center;
 }
-.nav-menu .login{
+.nav-menu .resp-item-fist{
     display: none;
+    text-transform: uppercase;
 }
-.nav-menu .register{
+.nav-menu .resp-item{
     display: none;
+    text-transform: uppercase;
 }
 .nav-menu .search-sidebar{
     display: none;
@@ -295,7 +297,7 @@ body{
 }
 .content-container{
     width: 100%;
-    margin-bottom: 180px;
+    margin-bottom: 150px;
 }
 .container-infor{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -306,37 +308,72 @@ body{
     max-width: 100%;
     padding: 30px;
 }
-.infor .caption{
+.caption{
     width: 20%;
     font-weight: bold;
     font-size: 16px;
 }
-.infor .content{
+.content{
     width: 70%;
     padding: 0px 20px;
     font-weight: normal;
     font-size: 16px;
 }
-.infor .content p{
+.content img{
+    max-height: 220px;
+    max-width: 100%;
+    cursor: pointer;
+}
+.content p{
     margin: 0;
     color: rgba(0, 0, 0, 0.5);
 }
-.infor .edit{
+.content input{
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 4px;
+    width: 50%;
+    font-size: 15px;
+}
+.edit{
     width: 10%;
     text-align: right;
     cursor: pointer;
     user-select: none;
+    color: #216FDB;
 }   
-.infor .edit span{
+.edit span{
+    font-weight: normal;
+    font-size: 16px;
+    color: #216FDB;
+}
+.edit a{
+    text-decoration: none;
     font-weight: normal;
     font-size: 16px;
     color: #216FDB;
 }
 .container-infor .collapsible{
-    padding: 10px 30px;
     display: none;
     background-color: #f7f7f7;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.collapsible .visible{
+    padding: 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.collapsible .visible-sub{
+    padding: 0px 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.collapsible .visible-img{
+    padding: 0px 30px 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: top;
 }
 /* footer */
 .main-footer{
@@ -508,11 +545,11 @@ body{
         background-position: center;
         cursor: pointer;
     }
-    .nav-menu .login{
+    .nav-menu .resp-item-fist{
         display: block;
         border-top: 1px solid #fff;
     }
-    .nav-menu .register{
+    .nav-menu .resp-item{
         display: block;
     }
     .nav-menu li{
@@ -615,7 +652,11 @@ body{
         box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
     }
     /* content holder */
-
+    .content-holder{
+        margin: 55px 4% 0px 4%;
+        padding: 0 30px;
+        transition: 0.2s;
+    }
     /* footer */
     .box{
         width: 50%;
@@ -633,7 +674,11 @@ body{
 }
 @media (max-width: 600px){
     /* content holder */
-    
+    .content-holder{
+        margin: 55px 2% 0px 2%;
+        padding: 0 10px;
+        transition: 0.2s;
+    }
     /* footer */
     .box{
         width: 100%;
