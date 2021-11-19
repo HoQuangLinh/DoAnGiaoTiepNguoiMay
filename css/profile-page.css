@@ -20,18 +20,19 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  height: 60px;
   z-index: 999;
   box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
 }
 /* logo */
-.logo {
+.header-logo {
   width: auto;
-  margin: 0px 0px;
-  float: left;
+  display: flex;
+  align-items: center;
+
   padding-left: 25px;
 }
-.logo > a {
+.header-logo > a {
   text-decoration: none;
   color: white;
   font-family: Roboto;
@@ -47,9 +48,9 @@ body {
 .searchbar {
   width: 40%;
   position: relative;
-  margin: auto 24px;
+  margin: 0 24px;
   display: flex;
-  height: max-content;
+
   align-items: center;
   border-radius: 16px;
   background-color: #fff;
@@ -95,11 +96,10 @@ body {
   font-size: 15px;
 }
 .searchbar .findjobs {
-  float: right;
   width: 17%;
   background-color: #ffcf54;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   border: 0px;
   height: 40px;
@@ -108,15 +108,13 @@ body {
 }
 /* nav-menu */
 .navbar {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
 }
 .nav-menu {
   display: flex;
-  justify-content: center;
+
   list-style: none;
   user-select: none;
-  margin: auto;
 }
 .nav-menu > li {
   display: flex;
@@ -135,7 +133,7 @@ body {
   color: white;
   text-decoration: none;
   display: block;
-  padding: 15px;
+  padding: 13px;
   font-weight: 700;
   font-family: Roboto;
   font-size: 18px;
@@ -287,7 +285,7 @@ body {
 .management {
   transition: top 0.5s;
   position: fixed;
-  top: 75px;
+  top: 60px;
   left: 0;
   width: 100%;
   z-index: 100;
