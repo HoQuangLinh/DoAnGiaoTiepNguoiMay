@@ -1,0 +1,151 @@
+.div_body{
+    height: 100vh;
+    display: flex;
+}
+.div_left{
+    width: 50%;
+    height: 100vh;
+    background-color: white
+}
+.btnBack{
+    width:130px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    color: #2A8CFF;
+    background-color:white;
+    font-weight: bold;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logosignup{
+    width: 100%;
+    margin-top: 100px;
+}
+.div_right{
+    width: 50%;
+    height: 100vh;
+    background-color: #2A8CFF;
+    position: fixed;
+    right: 0;
+    top: 0;
+   
+}
+.div_info{
+    width: 60%;
+    height: 85%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 80px;
+    margin-left: 150px; */
+    border-radius: 10px;
+}
+.title_signup{
+   margin-left: 30px;
+   margin-top: 20px;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+.txtUser{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+.name{
+    font-size: 15px;
+    color: #a19b9b; 
+}
+.div_username{
+    margin-top: 20px;
+}
+.form_input0{
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+    
+}
+.form_input1{
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+    
+}
+.form_input2{
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+}
+.form_input3{
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+}
+
+
+.div_titleSignup{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    display: flex;
+}
+.titleSignup{
+   
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    
+}
+.btnSignup{
+  
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+    color:#2A8CFF;
+    
+}
+.btnSignUp{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #2A8CFF;
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,194 @@
+.div_body{
+    height: 100vh;
+    display: flex;
+}
+.div_left{
+    width: 50%;
+    height: 100vh;
+    background-color: white
+}
+.btnBack{
+    width:130px;
+    height: 50px;
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    color: #2A8CFF;
+    background-color:white;
+    font-weight: bold;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ads-company{
+    position: fixed;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    margin-top: 350px;
+    
+}
+.logocompany{
+    width: 100%;
+}
+
+
+.div_right{
+    width: 50%;
+    height: 100vh;
+    background-color: #0f73ee;
+    position: fixed;
+    right: 0;
+    top: 0;
+   
+}
+.div_info{
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 80px;
+    margin-left: 150px; */
+    border-radius: 10px;
+}
+.title{
+   margin-left: 30px;
+   margin-top: 20px;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+.txtUser{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+.form_input1{
+    width: 300px;
+    height: 45px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+    
+}
+.form_input2{
+    width: 300px;
+    height: 45px;
+    margin-top: 20px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+}
+.checkshow{
+    width: 15px;
+    height: 15px;
+    margin-top: 180px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.showpass{
+    position: absolute;
+    top:234px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.pass{
+    display: flex;
+}
+.forgot{
+    margin-top: 180px;
+    margin-left: 90px;
+    color:#0f73ee;
+    cursor: pointer;
+}
+
+.titleSignup{
+    position: absolute;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 295px;
+    margin-left: 80px;
+    
+}
+.btnSignup{
+    position: absolute;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 295px;
+    margin-left:272px;
+    cursor: pointer;
+    color:#0f73ee;
+    
+}
+.btnSignin{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #0f73ee;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    cursor: pointer;
+}
+a{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -68%);
+}
+.btnFacebook{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -81%);
+    cursor: pointer;
+}
+.btnGmail{
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -92%);
+    cursor: pointer;
+}
+
+.logoface{
+    position:absolute;
+    top: 20%;
+    left: 6%;
+}
+.logoGmail{
+    position:absolute;
+    top: 20%;
+    left: 6%;
+}
