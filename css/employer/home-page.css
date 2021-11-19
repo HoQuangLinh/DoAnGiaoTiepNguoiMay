@@ -531,6 +531,7 @@ section{
 }
 .review-item .content{
     padding: 20px 20px 40px 20px;
+    min-height: 130px;
     font-size: 15px;
 }
 .postjob{

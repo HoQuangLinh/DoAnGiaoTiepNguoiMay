@@ -28,53 +28,109 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div id="header">
+    <header class="header">
       <div class="logo">
-        <div class="logo-img"></div>
-        <p class="logo-name">Findwork</p>
-      </div>
-      <!-- Search bar -->
-      <div class="search-bar">
-        <form action>
-          <div class="search-input">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input
-              type="text"
-              placeholder="Tìm kiếm việc làm, công ty, kỹ năng..."
-              required
-              class="form-control"
-            />
+          <a href="homepage.html">
+              <img src="../images/salary_page/logo1.png" alt="Logo">
+              FINDWORK
+          </a>
+      </div> <!-- Logo -->
+
+      <form class="searchbar">
+          <div class="job">
+              <i class="material-icons prefix">search</i>
+              <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
           </div>
-          <div class="address-input">
-            <i class="fa-solid fa-location-dot"></i>
-            <input
-              type="text"
-              placeholder="Tất cả địa điểm"
-              class="form-control"
-            />
-            <i class="fa-solid fa-caret-down"></i>
+          <div class="local">
+              <i class="material-icons prefix">location_on</i>
+              <input type="search" name="s" placeholder="Tất cả khu vực">
           </div>
-          <div class="search-btn">
-            <input type="submit" value="Find Work" />
-          </div>
-        </form>
+          <button class="findjobs" type="submit">Tìm Việc</button>
+      </form> <!-- searchbar -->
+      <div class="menu-btn">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </div>
-      <!-- Nav bar -->
-      <div class="nav-bar">
-        <div class="job-btn">VIỆC LÀM</div>
-        <div class="salary-btn">MỨC LƯƠNG</div>
-        <div class="blog-btn">BLOG</div>
-        <div class="company-btn">CÔNG TY</div>
-        <i class="notify-icon fa-solid fa-bell"></i>
-        <div class="login-btn"><i class="fa-solid fa-user"></i>Đăng nhập</div>
-      </div>
-    </div>
+      <nav class="navbar">
+          <ul class="nav-menu">
+              <div class="close-btn">
+                  <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+              </div>
+              <li class="search-sidebar">
+                  <form>
+                      <div class="job">
+                          <i class="material-icons prefix">search</i>
+                          <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+                      </div>
+                      <div class="local">
+                          <i class="material-icons prefix">location_on</i>
+                          <input type="search" name="s" placeholder="Tất cả khu vực">
+                      </div>
+                      <div class="findjobs-btn">
+                          Tìm Việc
+                      </div>
+                  </form> <!-- searchbar -->
+              </li>
+              <li><a href="#">VIỆC LÀM</a></li>
+              <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="company-page.html">CÔNG TY</a></li>
+              <li class="login"><a href="">ĐĂNG NHẬP</a></li>
+              <li class="register"><a href="">ĐĂNG KÝ</a></li>
+              <li>
+                  <div class="noti_login">
+                      <i class="material-icons prefix">notifications_none</i>
+                      <div class="btn-dropdown">
+                          <button class="login" type="submit">
+                              <i class="material-icons prefix">account_circle</i>
+                              <div>
+                                  Đăng nhập
+                              </div>
+                          </button>
+                          <div class="dropdown-not-login">
+                              <div class="title">
+                                  <span>Người tìm việc đăng nhập</span>
+                                  <div class="social-login">
+                                      <a href="">
+                                          <img src="../images/company-page/facebook.png" alt="">
+                                          <span>với Facebook</span>
+                                      </a>
+                                      <a href="">
+                                          <img src="../images//company-page/google.png" alt="">
+                                          <span>với Google</span>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="dropdown">
+                                  <a href="">
+                                      <div>
+                                          <img src="../images/company-page/login.png" alt="">
+                                      </div>
+                                      <span>Đăng nhập</span>
+                                  </a>
+                              </div>
+                              <div class="dropdown">
+                                  <a href="">
+                                      <div>
+                                          <img src="../images/company-page/register.png" alt="">
+                                      </div>
+                                      <span>Tạo tài khoản mới</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </nav> <!-- navbar -->
+  </header> <!-- header -->
+
     <div class="gird body">
       <div class="row filter"></div>
       <div class="row no-gutters">
@@ -397,5 +453,41 @@
         </div>
       </div>
     </div>
+
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+    <script type="text/javascript">
+        // Script for combobox
+        $(document).ready(function () {
+            $('.login').click(function (e) {
+                $('.dropdown-not-login').toggleClass('active');
+            })
+        })
+
+        var navbar = document.querySelector(".navbar");
+        var menu = document.querySelector(".nav-menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            navbar.classList.add("active");
+            menu.classList.add("active");
+        })
+
+        closeBtn.addEventListener("click", () => {
+            navbar.classList.remove("active");
+            menu.classList.remove("active");
+        })
+
+        navbar.addEventListener("click", (e) => {
+            if (e.target == navbar) {
+                navbar.classList.remove("active");
+                menu.classList.remove("active");
+            }
+        })
+    </script>
   </body>
 </html>
