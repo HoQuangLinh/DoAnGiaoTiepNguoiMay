@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/grid.css" />
+  <link rel="stylesheet" href="../css/profile-page.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/85a68be3b3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="profile-container">
+    <!--header-->
+    <header class="header">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="../images/salary_page/logo1.png" alt="Logo" />
+          FINDWORK
+        </a>
+      </div>
+      <!-- Logo -->
+
+      <form class="searchbar">
+        <div class="job">
+          <i class="material-icons prefix">search</i>
+          <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+        </div>
+        <div class="local">
+          <i class="material-icons prefix">location_on</i>
+          <input type="search" name="s" placeholder="Tất cả khu vực" />
+        </div>
+        <button class="findjobs" type="submit">Tìm Việc</button>
+      </form>
+      <!-- searchbar -->
+      <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <div class="close-btn">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+          </div>
+          <li class="search-sidebar">
+            <form>
+              <div class="job">
+                <i class="material-icons prefix">search</i>
+                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+              </div>
+              <div class="local">
+                <i class="material-icons prefix">location_on</i>
+                <input type="search" name="s" placeholder="Tất cả khu vực" />
+              </div>
+              <div class="findjobs-btn">Tìm Việc</div>
+            </form>
+            <!-- searchbar -->
+          </li>
+          <li><a href="#">VIỆC LÀM</a></li>
+          <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="company-page.html">CÔNG TY</a></li>
+          <li class="login"><a href="">ĐĂNG NHẬP</a></li>
+          <li class="register"><a href="">ĐĂNG KÝ</a></li>
+          <li>
+            <div class="noti_login">
+              <i class="material-icons prefix">notifications_none</i>
+              <div class="btn-dropdown">
+                <button class="login" type="submit">
+                  <i class="material-icons prefix">account_circle</i>
+                  Đăng Nhập
+                </button>
+                <div class="dropdown-not-login">
+                  <div class="title">
+                    <span>Người tìm việc đăng nhập</span>
+                    <div class="social-login">
+                      <a href="">
+                        <img src="../images/company-page/facebook.png" alt="" />
+                        <span>với Facebook</span>
+                      </a>
+                      <a href="">
+                        <img src="../images//company-page/google.png" alt="" />
+                        <span>với Google</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="dropdown-login">
+                    <a href="">
+                      <img src="../images/company-page/login.png" alt="" />
+                      <span>Đăng nhập</span>
+                    </a>
+                  </div>
+                  <div class="dropdown-register">
+                    <a href="">
+                      <img src="../images/company-page/register.png" alt="" />
+                      <span>Tạo tài khoản mới</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- navbar -->
+    </header>
+    <!--end header -->
+    <!--Mangagement-->
+    <div class="management">
+      <div class="management-item">
+        <img src="../images/profile-page/file.png" alt="" />
+        <p class="hide-on-mobile">Quản lý hồ sơ</p>
+      </div>
+      <div class="management-item">
+        <img src="../images/profile-page/mywork.png" alt="" />
+        <p class="hide-on-mobile">Việc làm của tôi</p>
+      </div>
+      <div class="management-item">
+        <img src="../images/profile-page/announce.png" alt="" />
+        <p class="hide-on-mobile">Thông báo việc làm</p>
+      </div>
+    </div>
+    <!--Mangagement-->
+    <!--Body-->
+    <div class="body-content">
+      <div class="row">
+        <div class="col-xl-4 col-lg-5">
+          <!--My Profile-->
+          <div class="myprofile-card">
+            <div class="myprofile-avatar">
+              <i class="fas fa-user icon"></i>
+            </div>
+            <div class="myprofile-name">
+              <h3>Nguyễn Đức Chí Đạt</h3>
+            </div>
+            <div class="myprofile-desc">
+              <p>Chức danh</p>
+              <span>Mới tốt nghiệp</span>
+              <p>Công ty gần đây nhất</p>
+              <p>Bằng cấp cao nhất</p>
+            </div>
+            <div class="myprofile-progress">
+              <p>
+                Mức độ hoàn chỉnh:
+                <b>Chưa hoàn chỉnh</b>
+              </p>
+            </div>
+            <div class="progressbar">
+              <div></div>
+            </div>
+            <button class="btn-update-profile">Cập nhật hồ sơ</button>
+          </div>
+          <!--My Profile-->
+          <!--Setting-->
+          <div class="profile-setting-card">
+            <div class="profile-setting-heading">
+              <h3>Cài đặt</h3>
+            </div>
+            <div class="profile-setting-body">
+              <b>Hồ sơ đính kèm</b>
+              <div class="profile-setting-file-upload">
+                <button class="btn-submit">Tải hồ sơ</button>
+                <p>
+                  Định dạng file chỉ có thể là .doc, .docx và pdf, files phải
+                  nhỏ hơn 2MB
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="profile-setting-footer">
+                <b>Cho phép tìm kiếm</b>
+                <div class="profile-setting-content">
+                  <p>Hồ sơ của bạn sẽ không hiển thị cho nhà tuyển dụng.</p>
+                  <input type="checkbox" name="" id="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Setting-->
+          <!--Hide Profile-->
+          <div class="hide-profile-card">
+            <div class="hide-profile-heading">
+              <h3>Ẩn hồ sơ của tôi</h3>
+              <p>Với những công ty này</p>
+            </div>
+            <div class="hide-profile-body">
+              <div class="hide-profile-body-item">
+                <b>Nhập email công ty (được đề nghị)</b>
+                <div class="hide-profile-body-input">
+                  <input placeholder="example@gmail.com" type="text" />
+                  <img src="../images/profile-page/add.png" alt="" />
+                </div>
+              </div>
+              <div class="hide-profile-body-item">
+                <b>Hoặc nhập tên công ty</b>
+                <div class="hide-profile-body-input">
+                  <input placeholder="Ít nhất phải có 3 kí tự" type="text" />
+                  <img src="../images/profile-page/add.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Hide Profile-->
+        </div>
+        <div class="col-xl-8 col-lg-7 padding-0">
+          <div class="row careers">
+            <div class="col-xl-4 col-lg-12 col-md-12">
+              <!--Career-->
+              <div class="career-card">
+                <div class="career-card-heading">
+                  <h3 style="color: #ff9900">10</h3>
+                </div>
+
+                <div class="career-card-body">
+                  <p class="career-card-body-title">
+                    Nhà tuyển dụng xem hồ sơ
+                  </p>
+                  <p>Kiểm tra nhà tuyển dụng xem hồ sơ</p>
+                </div>
+              </div>
+              <!--Career-->
+            </div>
+            <div class="col-xl-4 col-lg-12 col-md-12">
+              <!--Career-->
+              <div class="career-card">
+                <div class="career-card-heading">
+                  <h3 style="color: #28b446">8</h3>
+                </div>
+                <div class="career-card-body">
+                  <p class="career-card-body-title">Thông báo việc làm</p>
+                  <p>Quản lý thông báo việc làm</p>
+                </div>
+              </div>
+              <!--Career-->
+            </div>
+            <div class="col-xl-4 col-lg-12 col-md-12">
+              <!--Career-->
+              <div class="career-card">
+                <div class="career-card-heading">
+                  <h3 style="color: #2a8cff">3</h3>
+                </div>
+                <div class="career-card-body">
+                  <p class="career-card-body-title">Việc làm của tôi</p>
+
+                  <div class="career-card-body-list">
+                    <div class="career-card-body-item">
+                      <button style="background-color: #5fb661" class="btn-career">
+                        21
+                      </button>
+                      <span>Đã gửi</span>
+                    </div>
+                    <div class="career-card-body-item">
+                      <button style="background-color: #f59232" class="btn-career">
+                        12
+                      </button>
+                      <span>Đã xem</span>
+                    </div>
+                    <div class="career-card-body-item">
+                      <button style="background-color: #fd6a6a" class="btn-career">
+                        9
+                      </button>
+                      <span>Đã đóng</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Career-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="company">
+              <div class="company-header">
+                <h2>Việc làm bạn sẽ yêu thích</h2>
+              </div>
+              <div class="company-list">
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company1.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        Company Logo02 Senior Cloud Operations Engineer
+                        (Azure, AWS)
+                      </h3>
+                      <div class="company-item-info">
+                        <p>ROBERT BOSCH ENGINEERING VIETNAM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company2.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        Chuyên Viên Phát Triển Ứng Dụng Cho Mobile
+                      </h3>
+                      <div class="company-item-info">
+                        <p>CÔNG TY CỔ PHẦN CHỨNG KHOÁN TÂN VIỆT</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company3.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        Trưởng Nhóm An Toàn Thông Tin/ Số Lượng: 01
+                      </h3>
+                      <div class="company-item-info">
+                        <p>CÔNG TY CỔ PHẦN NETNAM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company4.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        Security Test Engineer – Sign on Bonus & Upto 20M
+                        Relocation Package...
+                      </h3>
+                      <div class="company-item-info">
+                        <p>
+                          LG VEHICLE COMPONENT SOLUTIONS DEVELOPMENT CENTER
+                          VIETNAM...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company5.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        Front End Developer (React Native, up to $2000)
+                      </h3>
+                      <div class="company-item-info">
+                        <p>CÔNG TY CỔ PHẦN KB FINA</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company6.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">DevOps Engineer</h3>
+                      <div class="company-item-info">
+                        <p>FORTNA VIETNAM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company7.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        Game FX Artist (Puzzle / Casual)
+                      </h3>
+                      <div class="company-item-info">
+                        <p>CÔNG TY CỔ PHẦN SUNDATA</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company8.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">
+                        An Toàn Thông Tin (Số Lượng: 5 Người)
+                      </h3>
+                      <div class="company-item-info">
+                        <p>
+                          NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT
+                          NAM...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+                <!--Company-->
+                <div class="company-item row">
+                  <div class="col-logo col-2">
+                    <img class="company-item-img" src="../images/profile-page/company9.png" alt="" />
+                  </div>
+                  <div class="col-content col-10">
+                    <div class="company-item-content">
+                      <h3 class="company-item-header">Java Engineer</h3>
+                      <div class="company-item-info">
+                        <p>BAN VIEN SOFTWARE</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Company-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+
+    <div class="box">
+      <div class="logo">
+        <a href="homepage.html">
+          <img src="../images/salary_page/logo1.png" alt="Logo" />
+          <p>FINDWORK</p>
+        </a>
+      </div>
+      <!-- Logo -->
+      <div class="description">
+        Nơi bạn có thể tìm được những ứng cử viên sáng giá cho công ty của
+        bạn.
+      </div>
+      <div class="learn-more">Tìm hiểu thêm</div>
+
+    </div>
+    <div class="box">
+      <h3>Ứng cử viên</h3>
+      <ul>
+        <li><a href="#">Việc làm</a></li>
+        <li><a href="#">Ngành nghề</a></li>
+        <li><a href="#">Nộp hồ sơ</a></li>
+        <li><a href="#">Doanh Nghiệp</a></li>
+        <li><a href="#">Xác thực tài khoản</a></li>
+        <li><a href="#">Nâng cấp tài khoản</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Nhà tuyển dụng</h3>
+      <ul>
+        <li><a href="#">Đăng tuyển dụng</a></li>
+        <li><a href="#">Tìm kiếm hồ sơ</a></li>
+        <li><a href="#">Quản lý dự án</a></li>
+        <li><a href="#">Xác thực tài khoản</a></li>
+        <li><a href="#">Nâng cấp tài khoản</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Chính sách</h3>
+      <ul>
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản và điều kiện</a></li>
+        <li><a href="#">Chính sách Bản quyền</a></li>
+        <li><a href="#">Quy tắc ứng xử</a></li>
+        <li><a href="#">Phí và lệ phí</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Danh sách trang</h3>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Việc làm</a></li>
+        <li><a href="#">Mức lương</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Công ty</a></li>
+      </ul>
+    </div>
+
+
+  </footer>
+  <!-- footer -->
+  <div class="follow-us">
+    Follow us
+    <span>
+      <span>
+        <a href="">
+          <img src="../images/salary_page/facebook.png" alt="Visit on Facebook" />
+        </a>
+      </span>
+      <span>
+        <a href="">
+          <img src="../images/salary_page/twitter.png" alt="Visit on Twitter" />
+        </a>
+      </span>
+      <span>
+        <a href="">
+          <img src="../images/salary_page/linkedin.png" alt="Visit on Linkedin" />
+        </a>
+      </span>
+      <span>
+        <a href="">
+          <img src="../images/salary_page/youtube.png" alt="Visit on Youtube" />
+        </a>
+      </span>
+    </span>
+  </div>
+  <div class="copy">
+    <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+  </div>
+</body>
+<script src="../js/profile-page.js"></script>
+
+</html>
