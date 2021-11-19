@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salary</title>
+    <title>Mức lương</title>
     <link rel="stylesheet" href="../css/salary-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,420 +27,404 @@
             </div> <!-- Logo -->
 
             <form class="searchbar">
-                <i class="material-icons prefix">search</i>
                 <div class="job">
+                    <i class="material-icons prefix">search</i>
                     <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
                 </div>
-                <i class="material-icons prefix">location_on</i>
                 <div class="local">
-                    <input type="search" name="s" placeholder="Tất cả địa điểm">
+                    <i class="material-icons prefix">location_on</i>
+                    <input type="search" name="s" placeholder="Tất cả khu vực">
                 </div>
                 <button class="findjobs" type="submit">Tìm Việc</button>
             </form> <!-- searchbar -->
-
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
             <nav class="navbar">
                 <ul class="nav-menu">
+                    <div class="close-btn">
+                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <li class="search-sidebar">
+                        <form>
+                            <div class="job">
+                                <i class="material-icons prefix">search</i>
+                                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+                            </div>
+                            <div class="local">
+                                <i class="material-icons prefix">location_on</i>
+                                <input type="search" name="s" placeholder="Tất cả khu vực">
+                            </div>
+                            <div class="findjobs-btn">
+                                Tìm Việc
+                            </div>
+                        </form> <!-- searchbar -->
+                    </li>
                     <li><a href="#">VIỆC LÀM</a></li>
-                    <li><a href="#">MỨC LƯƠNG</a></li>
+                    <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
                     <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CÔNG TY</a></li>
+                    <li><a href="company-page.html">CÔNG TY</a></li>
+                    <li class="login"><a href="">ĐĂNG NHẬP</a></li>
+                    <li class="register"><a href="">ĐĂNG KÝ</a></li>
+                    <li>
+                        <div class="noti_login">
+                            <i class="material-icons prefix">notifications_none</i>
+                            <div class="btn-dropdown">
+                                <button class="login" type="submit">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <div>
+                                        Đăng Nhập
+                                    </div>
+                                </button>
+                                <div class="dropdown-not-login">
+                                    <div class="title">
+                                        <span>Người tìm việc đăng nhập</span>
+                                        <div class="social-login">
+                                            <a href="">
+                                                <img src="../images/company-page/facebook.png" alt="">
+                                                <span>với Facebook</span>
+                                            </a>
+                                            <a href="">
+                                                <img src="../images//company-page/google.png" alt="">
+                                                <span>với Google</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="">
+                                            <div>
+                                                <img src="../images/company-page/login.png" alt="">
+                                            </div>
+                                            <span>Đăng nhập</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="">
+                                            <div>
+                                                <img src="../images/company-page/register.png" alt="">
+                                            </div>
+                                            <span>Tạo tài khoản mới</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav> <!-- navbar -->
-            
-            <div class="noti_login">
-                <i class="material-icons prefix">notifications_none</i>
-                <div>
-                    <button class="login" type="submit">
-                        <i class="material-icons prefix">account_circle</i>
-                        Đăng Nhập
-                    </button>
-                </div>
-            </div>
         </header> <!-- header -->
 
         <section class="content-holder">
-            <article class="content">
+            <article>
                 <main>
-                    <div class="content-title">
-                        Mức lương trung bình của các công việc phổ biến
-                    </div>
-                    <div class="statistical-list">
-                        <div class="statistical-item">
-                            <div class="item-caption">
-                                kế toán
-                            </div>
-                            <div class="item-body">
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Kế Toán Thanh Toán</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
+                    <div class="statiscal">
+                        <div class="content-title">
+                            Mức lương trung bình của các công việc phổ biến
+                        </div>
+                        <div class="statiscal-box">
+                            <div class="statistical-list">
+                                <div class="statistical-item">
+                                    <div class="item-caption">
+                                        kế toán
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Kế Toán Thanh Toán</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Kế Toán Tổng Hợp</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Kế Toán Trưởng</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Kế Toán Tổng Hợp</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
+                                <div class="statistical-item">
+                                    <div class="item-caption">
+                                        nhân sự
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Chuyên Viên Tuyển Dụng</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Nhân Viên Hành Chính Nhân Sự</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Trưởng Phòng Nhân Sự</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Kế Toán Trưởng</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
+                                <div class="statistical-item">
+                                    <div class="item-caption">
+                                        dịch vụ khách hàng
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Chuyên Viên Dịch Vụ Khách Hàng</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Nhân Viên Chăm Sóc Khách Hàng</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Trưởng Phòng Dịch Vụ Khách Hàng</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistical-item">
+                                    <div class="item-caption">
+                                        bán hàng
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Chuyên Viên Bán Hàng</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Nhân Viên Kinh Doanh</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Trưởng Phòng Kinh Doanh</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistical-item">
+                                    <div class="item-caption">
+                                        marketing
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Chuyên Viên Marketing</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Chuyên Viên Truyền Thông</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Trưởng Phòng Marketing</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistical-item">
+                                    <div class="item-caption">
+                                        it - phần mềm
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Android Developer</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">Java Developer</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                        <div class="item-job-content">
+                                            <span class="title">
+                                                <a href="#">PHP Developer</a>
+                                            </span>
+                                            <span class="salary">
+                                                $555
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="statistical-item">
-                            <div class="item-caption">
-                                nhân sự
-                            </div>
-                            <div class="item-body">
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Chuyên Viên Tuyển Dụng</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Nhân Viên Hành Chính Nhân Sự</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Trưởng Phòng Nhân Sự</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistical-item">
-                            <div class="item-caption">
-                                dịch vụ khách hàng
-                            </div>
-                            <div class="item-body">
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Chuyên Viên Dịch Vụ Khách Hàng</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Nhân Viên Chăm Sóc Khách Hàng</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Trưởng Phòng Dịch Vụ Khách Hàng</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistical-item">
-                            <div class="item-caption">
-                                bán hàng
-                            </div>
-                            <div class="item-body">
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Chuyên Viên Bán Hàng</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Nhân Viên Kinh Doanh</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Trưởng Phòng Kinh Doanh</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistical-item">
-                            <div class="item-caption">
-                                marketing
-                            </div>
-                            <div class="item-body">
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Chuyên Viên Marketing</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Chuyên Viên Truyền Thông</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Trưởng Phòng Marketing</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistical-item">
-                            <div class="item-caption">
-                                it - phần mềm
-                            </div>
-                            <div class="item-body">
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Android Developer</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">Java Developer</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                                <div class="item-job-content">
-                                    <span class="title">
-                                        <a href="#">PHP Developer</a>
-                                    </span>
-                                    <span class="salary">
-                                        $555
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="see-more">
-                        <div class="see-more-text">
-                            <a href="">See more >></a>
+                        <div class="see-more">
+                            <div class="see-more-text">
+                                Xem thêm...
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="content-share">
-                        <div class="content-group">
-                            <span class="share-text">Chia sẻ</span>
-                            <span class="icon">
-                                <span>
-                                    <img src="../images/salary_page/facebook.png" alt="Share on Facebook">
+                        <div class="content-share">
+                            <div class="content-group">
+                                <span class="share-text">Chia sẻ</span>
+                                <span class="icon">
+                                    <span>
+                                        <img src="../images/salary_page/facebook.png" alt="Share on Facebook">
+                                    </span>
+                                    <span>
+                                        <img src="../images/salary_page/messeger.png" alt="Share on Messeger">
+                                    </span>
+                                    <span>
+                                        <img src="../images/salary_page/twitter.png" alt="Share on Twitter">
+                                    </span>
+                                    <span>
+                                        <img src="../images/salary_page/linkedin.png" alt="Share on Linkedin">
+                                    </span>
+                                    <span>
+                                        <img src="../images/salary_page/link.png" alt="Copy the current link">
+                                    </span>
                                 </span>
-                                <span>
-                                    <img src="../images/salary_page/messeger.png" alt="Share on Messeger">
-                                </span>
-                                <span>
-                                    <img src="../images/salary_page/twitter.png" alt="Share on Twitter">
-                                </span>
-                                <span>
-                                    <img src="../images/salary_page/linkedin.png" alt="Share on Linkedin">
-                                </span>
-                                <span>
-                                    <img src="../images/salary_page/link.png" alt="Copy the current link">
-                                </span>
-                            </span>
+                            </div>
                         </div>
-                    </div>
-                </main>
-            </article> <!-- content -->
+                    </div> <!-- statiscal content -->
 
-            <section class="ads">
-                <div class="cycle-slideshow" data-cycle-slides="> a">
-                    <a href="">
-                        <img src="../images/salary_page/banner1.png" alt="Banner top">
-                    </a>
-                    <a href="#">
-                        <img src="../images/salary_page/banner2.png" alt="Banner top">
-                    </a>
-                    <a href="#">
-                        <img src="../images/salary_page/banner3.png" alt="Banner top">
-                    </a>
-                </div>
-                <div class="cycle-slideshow">
-                    <a href="">
-                        <img src="../images/salary_page/banner-bottom-2.jpg" alt="Banner bottom">
-                    </a>
-                </div>
-            </section> <!-- sidebar -->
-
-            <div class="clearfix"></div>
-
-            <article class="blog">
-                <main>
-                    <div class="title">
-                        Cẩm nang tìm việc
-                    </div>
-                    <div class="blog-list">
-                        <div class="blog-item">
+                    <div class="sidebar">
+                        <div class="cycle-slideshow" data-cycle-slides="> a">
                             <a href="">
-                                <img src="../images/salary_page/blog1.png" alt="Hình ảnh Blog">
+                                <img src="../images/salary_page/banner1.png" alt="Banner top">
                             </a>
-                            <div class="item-type">
-                                góc kỹ năng
-                            </div>
-                            <div class="item-title">
-                                <a href="">
-                                    Sử dụng thời gian hợp lí khi làm việc tại nhà
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                Bạn càng sử dụng thời gian hợp lí khi làm việc tại nhà, thì cuộc sống...
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="../images/salary_page/blog2.png" alt="Hình ảnh Blog">
+                            <a href="#">
+                                <img src="../images/salary_page/banner2.png" alt="Banner top">
                             </a>
-                            <div class="item-type">
-                                KIẾN THỨC KINH TẾ
-                            </div>
-                            <div class="item-title">
-                                <a href="">
-                                    Án lệ case law là gì và phân tích án lệ là gì?
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                Case law là gì? Case law là luật dựa trên các tiền lệ (các quyết định...
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="../images/salary_page/blog3.png" alt="Hình ảnh Blog">
+                            <a href="#">
+                                <img src="../images/salary_page/banner3.png" alt="Banner top">
                             </a>
-                            <div class="item-type">
-                                PHÁT TRIỂN BẢN THÂN
-                            </div>
-                            <div class="item-title">
-                                <a href="">
-                                    5 Dấu hiệu cảnh báo bạn đang kiệt sức trong công việc
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                Từ lâu, người ta vẫn hay đùa rằng “sinh nghề tử nghiệp”. Dù là lao...
-                            </div>
                         </div>
-                        <div class="blog-item">
-                            <a href="">
-                                <img src="../images/salary_page/blog4.png" alt="Hình ảnh Blog">
-                            </a>
-                            <div class="item-type">
-                                góc kỹ năng
-                            </div>
-                            <div class="item-title">
-                                <a href="">
-                                    7 cách tối ưu hóa hiệu quả cho người lần đầu làm việc từ xa
-                                </a>
-                            </div>
-                            <div class="item-content">
-                                Cách để tối ưu hóa hiệu quả, sáng tạo, tràn đầy cảm hứng cũng như...
-                            </div>
+                        <div>
+                            <img src="../images/salary_page/banner-bottom-2.jpg" alt="Banner bottom">
                         </div>
-                    </div>
+                    </div> <!-- sidebar -->
                 </main>
             </article>
         </section> <!-- content holder -->
 
         <footer class="main-footer">
             <div class="footer-box">
-                <div class="first-box">
-                    <div class="logo">
-                        <a href="homepage.html">
-                            <img src="../images/salary_page/logo1.png" alt="Logo">
-                            FINDWORK
-                        </a>
-                    </div> <!-- Logo -->
-                    <div class="description">
-                        Nơi bạn có thể tìm được những 
-                        ứng cử viên sáng giá cho công ty của bạn.
+                <div class="box">
+                    <div class="first-box">
+                        <div class="logo">
+                            <a href="homepage.html">
+                                <img src="../images/salary_page/logo1.png" alt="Logo">
+                                FINDWORK
+                            </a>
+                        </div> <!-- Logo -->
+                        <div class="description">
+                            Nơi bạn có thể tìm được những
+                            ứng cử viên sáng giá cho công ty của bạn.
+                        </div>
+                        <button class="learn-more">Tìm hiểu thêm</button>
                     </div>
-                    <button class="learn-more">Tìm hiểu thêm</button>
                 </div>
+                <div class="box">
+                    <h3>Ứng cử viên</h3>
+                    <ul>
+                        <li><a href="#">Việc làm</a></li>
+                        <li><a href="#">Ngành nghề</a></li>
+                        <li><a href="#">Nộp hồ sơ</a></li>
+                        <li><a href="#">Doanh Nghiệp</a></li>
+                        <li><a href="#">Xác thực tài khoản</a></li>
+                        <li><a href="#">Nâng cấp tài khoản</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Nhà tuyển dụng</h3>
+                    <ul>
+                        <li><a href="#">Đăng tuyển dụng</a></li>
+                        <li><a href="#">Tìm kiếm hồ sơ</a></li>
+                        <li><a href="#">Quản lý dự án</a></li>
+                        <li><a href="#">Xác thực tài khoản</a></li>
+                        <li><a href="#">Nâng cấp tài khoản</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản và điều kiện</a></li>
+                        <li><a href="#">Chính sách Bản quyền</a></li>
+                        <li><a href="#">Quy tắc ứng xử</a></li>
+                        <li><a href="#">Phí và lệ phí</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Danh sách trang</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Việc làm</a></li>
+                        <li><a href="#">Mức lương</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Công ty</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="footer-box">
-                <h3>Ứng cử viên</h3>
-                <ul>
-                    <li><a href="#">Việc làm</a></li>
-                    <li><a href="#">Ngành nghề</a></li>
-                    <li><a href="#">Nộp hồ sơ</a></li>
-                    <li><a href="#">Doanh Nghiệp</a></li>
-                    <li><a href="#">Xác thực tài khoản</a></li>
-                    <li><a href="#">Nâng cấp tài khoản</a></li>
-                </ul>
-            </div>
-            <div class="footer-box">
-                <h3>Nhà tuyển dụng</h3>
-                <ul>
-                    <li><a href="#">Đăng tuyển dụng</a></li>
-                    <li><a href="#">Tìm kiếm hồ sơ</a></li>
-                    <li><a href="#">Quản lý dự án</a></li>
-                    <li><a href="#">Xác thực tài khoản</a></li>
-                    <li><a href="#">Nâng cấp tài khoản</a></li>
-                </ul>
-            </div>
-            <div class="footer-box">
-                <h3>Chính sách</h3>
-                <ul>
-                    <li><a href="#">Chính sách bảo mật</a></li>
-                    <li><a href="#">Điều khoản và điều kiện</a></li>
-                    <li><a href="#">Chính sách Bản quyền</a></li>
-                    <li><a href="#">Quy tắc ứng xử</a></li>
-                    <li><a href="#">Phí và lệ phí</a></li>
-                </ul>
-            </div>
-            <div class="footer-box">
-                <h3>Danh sách trang</h3>
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Việc làm</a></li>
-                    <li><a href="#">Mức lương</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Công ty</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
         </footer><!-- footer -->
         <div class="follow-us">
-            Follow us
+            Theo dõi chúng tôi
             <span>
                 <span>
                     <a href="">
@@ -472,9 +456,55 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.swipe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
+    <script>
+        const list = document.querySelector('.statistical-list');
+        const seeMore = document.querySelector(".see-more");
+
+        $(document).ready(function () {
+            $(".see-more").click(function (e) {
+                var item = document.querySelectorAll(".statistical-item")
+                for (var i = 0; i < item.length; i++) {
+                    list.appendChild(item[i].cloneNode(true));
+                }
+                for (var i = 0; i < item.length; i++) {
+                    list.appendChild(item[i].cloneNode(true));
+                }
+                seeMore.textContent = "";
+            })
+
+            $('.login').click(function (e) {
+                $('.dropdown-not-login').toggleClass('active');
+            })
+        })
+
+        var navbar = document.querySelector(".navbar");
+        var menu = document.querySelector(".nav-menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            navbar.classList.add("active");
+            menu.classList.add("active");
+        })
+
+        closeBtn.addEventListener("click", () => {
+            navbar.classList.remove("active");
+            menu.classList.remove("active");
+        })
+
+        navbar.addEventListener("click", (e) => {
+            if (e.target == navbar) {
+                navbar.classList.remove("active");
+                menu.classList.remove("active");
+            }
+        })
+    </script>
+
 </body>
 
 </html>
