@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/intro-company.css" />
+    <link rel="stylesheet" href="../css/grid.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -14,32 +15,51 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
         rel="stylesheet" />
 
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
     <!--header-->
-    <header>
+    <header class="page-header">
         <ul>
             <li>
                 <a href="">
                     <i class="fas fa-home"></i>
                     <span>Đầu trang</span>
                 </a>
+
+            </li>
+            <li>
                 <a href="">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-user-friends"></i>
                     <span>Con người</span>
                 </a>
+            </li>
+            <li>
                 <a href="">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-info-circle"></i>
                     <span>Giới thiệu</span>
                 </a>
+            </li>
+            <li>
                 <a href="">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-briefcase"></i>
                     <span>Việc làm</span>
                 </a>
+            </li>
+            <li>
                 <a href="">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-building"></i>
                     <span>Văn phòng</span>
                 </a>
             </li>
@@ -49,15 +69,20 @@
 
     <!--Slider-->
     <div class="slider">
-        <img src="../images/intro-company/slider.png" alt="" />
+        <div class="slider-image">
+            <img src="../images/intro-company/slider.png" alt="" />
+        </div>
         <div class="slider-content">
-            <img src="../images/intro-company/sldier_company.png" alt="" />
             <div class="slider-info">
-                <h3>NAVIGOS GROUP VIỆT NAM JSC</h3>
-                <p>Đà Nẵng. Hà Nội, Hồ Chí Minh | https://www.navigos.com.vn</p>
-                <span>Nhân sự</span>
+                <img src="../images/intro-company/sldier_company.png" alt="" />
+                <div class="slider-desc">
+                    <h3>NAVIGOS GROUP VIỆT NAM JSC</h3>
+                    <p>Đà Nẵng. Hà Nội, Hồ Chí Minh | <a target="blank"
+                            href="https://www.navigosgroup.com">https://www.navigosgroup.com</a></p>
+                    <span>Nhân sự</span>
+                </div>
             </div>
-            <button class="btn-folow">Theo dõi</button>
+            <div class="btn-folow">Theo dõi (100)</div>
         </div>
     </div>
     <!--End slider-->
@@ -65,28 +90,36 @@
     <div class="body-container">
         <!--People-->
         <div class="people-container">
-            <div class="people-list">
+            <div class="people-container-header">
+                <h3>CON NGƯỜI</h3>
+                <div class="under-line"></div>
+            </div>
+            <div class="people-list ">
                 <div class="people-card">
                     <img src="../images//intro-company/people1.png" alt="" />
-                    <p class="people-card-name">Gaku Echizenya</p>
-                    <p class="people-card-position">Chủ tịch & CEO</p>
-                    <p class="people-card-desc">
-                        "Nếu bạn cảm thấy giúp đỡ người khác làm cuộc sống mình trở nên ý
-                        nghĩa hơn, bạn sẽ muốn trở thành một Dream Maker của Navigos
-                        Group."
-                    </p>
+                    <div class="people-card-body">
+                        <h3 class="people-card-name">Gaku Echizenya</h3>
+                        <p class="people-card-position">Chủ tịch & CEO</p>
+                        <p class="people-card-desc">
+                            "Nếu bạn cảm thấy giúp đỡ người khác làm cuộc sống mình trở nên ý
+                            nghĩa hơn, bạn sẽ muốn trở thành một Dream Maker của Navigos
+                            Group."
+                        </p>
+                    </div>
                 </div>
                 <div class="people-card">
                     <img src="../images//intro-company/people2.png" alt="" />
-                    <p class="people-card-name">Nguyễn Thị Vân Anh</p>
-                    <p class="people-card-position">Giám đốc kinh doanh</p>
-                    <p class="people-card-desc">
-                        "Tại Navigos Group, chúng tôi, các Dream Makers luôn làm việc như
-                        một chiến binh kiên cường, xây dựng giấc mơ sự nghiệp tuyệt vời
-                        cho mọi người. Hàng triệu giấc mơ nghề nghiệp đã được kiến tạo,
-                        cánh cửa thành công tại Navigos Group luôn mở rộng đón chào các
-                        nhân tài đến với chúng tôi…"
-                    </p>
+                    <div class="people-card-body">
+                        <h3 class="people-card-name">Nguyễn Thị Vân Anh</h3>
+                        <p class="people-card-position">Giám đốc kinh doanh</p>
+                        <p class="people-card-desc">
+                            "Tại Navigos Group, chúng tôi, các Dream Makers luôn làm việc như
+                            một chiến binh kiên cường, xây dựng giấc mơ sự nghiệp tuyệt vời
+                            cho mọi người. Hàng triệu giấc mơ nghề nghiệp đã được kiến tạo,
+                            cánh cửa thành công tại Navigos Group luôn mở rộng đón chào các
+                            nhân tài đến với chúng tôi…"
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,35 +127,41 @@
 
         <!--Intro-->
         <div class="intro-company-container">
-            <div class="intro-heading">
-                <h2>Giới thiệu</h2>
+            <div class="intro-container-header">
+                <h3>GIỚI THIỆU</h3>
+                <div class="under-line"></div>
             </div>
             <!--Intro-company-card-->
             <div class="intro-company-card">
-                <div class="intro-company-heading">
-                    <h3>VỀ NAVIGOS GROUP</h3>
+                <div class="intro-company-content">
+                    <div class="intro-company-heading">
+                        <h3>VỀ NAVIGOS GROUP</h3>
+                    </div>
+                    <p class="intro-company-paragrap">
+                        Nếu có ai đó hỏi “Làm việc tại Navigos Group là làm gì?”, thì hầu
+                        như tất cả đều tự hào trả lời rằng chúng tôi là “DREAM MAKERS”,
+                        những người kiến tạo giấc mơ. Lí do có được tên gọi này là vì mỗi
+                        ngày tại Navigos Group, “chúng tôi hỗ trợ nhà tuyển dụng và người
+                        tìm việc đạt được giấc mơ nghề nghiệp của mình”. Trong gần 2 thập kỷ
+                        hoạt động tích cực trong lĩnh vực tuyển dụng – nhân sự, các DREAM
+                        MAKERS đã luôn bền bỉ giúp đỡ hàng triệu giấc mơ nghề nghiệp trở
+                        thành hiện thực bằng các dịch vụ chuyên nghiệp và hiệu quả của
+                        VietnamWorks, công ty đầu tiên và lâu đời nhất Việt Nam cung cấp các
+                        dịch vụ tuyển dụng trực tuyến, và Navigos Search, công ty chuyên về
+                        các dịch vụ tuyển dụng nhân sự cấp cao hàng đầu trên cả nước. Năm
+                        2013, hành trình kiến tạo giấc mơ của chúng tôi được tiếp thêm sức
+                        mạnh khi Navigos Group vinh dự trở thành thành viên của tập đoàn
+                        en-japan, một tập đoàn quốc tế của Nhật Bản chuyên về các dịch vụ
+                        liên quan đến ngành nhân sự, từ đó tạo thêm nhiều bứt phá mới trên
+                        thị trường khi tiếp tục cho ra đời PRIMUS, một dịch vụ tuyển dụng
+                        mới dành riêng cho nhóm nhân sự cấp cao lương trên $3000, và nhiều
+                        dịch vụ khác trong thời gian sắp tới.
+                    </p>
                 </div>
-                <p>
-                    Nếu có ai đó hỏi “Làm việc tại Navigos Group là làm gì?”, thì hầu
-                    như tất cả đều tự hào trả lời rằng chúng tôi là “DREAM MAKERS”,
-                    những người kiến tạo giấc mơ. Lí do có được tên gọi này là vì mỗi
-                    ngày tại Navigos Group, “chúng tôi hỗ trợ nhà tuyển dụng và người
-                    tìm việc đạt được giấc mơ nghề nghiệp của mình”. Trong gần 2 thập kỷ
-                    hoạt động tích cực trong lĩnh vực tuyển dụng – nhân sự, các DREAM
-                    MAKERS đã luôn bền bỉ giúp đỡ hàng triệu giấc mơ nghề nghiệp trở
-                    thành hiện thực bằng các dịch vụ chuyên nghiệp và hiệu quả của
-                    VietnamWorks, công ty đầu tiên và lâu đời nhất Việt Nam cung cấp các
-                    dịch vụ tuyển dụng trực tuyến, và Navigos Search, công ty chuyên về
-                    các dịch vụ tuyển dụng nhân sự cấp cao hàng đầu trên cả nước. Năm
-                    2013, hành trình kiến tạo giấc mơ của chúng tôi được tiếp thêm sức
-                    mạnh khi Navigos Group vinh dự trở thành thành viên của tập đoàn
-                    en-japan, một tập đoàn quốc tế của Nhật Bản chuyên về các dịch vụ
-                    liên quan đến ngành nhân sự, từ đó tạo thêm nhiều bứt phá mới trên
-                    thị trường khi tiếp tục cho ra đời PRIMUS, một dịch vụ tuyển dụng
-                    mới dành riêng cho nhóm nhân sự cấp cao lương trên $3000, và nhiều
-                    dịch vụ khác trong thời gian sắp tới.
-                </p>
-                <img src="../images/intro-company/intro-company.png" alt="" />
+                <div class="intro-company-img">
+                    <img class="intro-company-img" src="../images/intro-company/intro-company.png" alt="" />
+                </div>
+
             </div>
 
             <!--End Intro-company-card-->
@@ -136,9 +175,9 @@
                     </div>
                     <div class="intro-blog-card-content">
                         <p>
-                            Kể từ năm 2013, Navigos Group công bố tầm nhìn dài hạn với tên
-                            gọi “Thành Công sau Tuyển Dụng” (Success After Joining). Đây là
-                            giá trị khác biệt mà duy nhất chỉ có tập đoàn Navigos Group sở
+                            Kể từ năm 2013,<b> Navigos Group</b> công bố tầm nhìn dài hạn với tên
+                            gọi <b>“Thành Công sau Tuyển Dụng”</b> (Success After Joining). Đây là
+                            giá trị khác biệt mà duy nhất chỉ có tập đoàn <b>Navigos Group</b> sở
                             hữu trên thị trường, thể hiện rõ ràng mong muốn trở thành đối
                             tác dài lâu cho sự thành công bền vững của ứng viên và các công
                             ty, chứ không chỉ đơn giản là một đối tác tuyển dụng thông
@@ -146,7 +185,8 @@
                         </p>
                         <p> Với khách hàng của mình, chúng tôi luôn không ngừng hỗ trợ khách hàng phát triển và giữ chân
                             nhân tài sau khi tuyển dụng thành công. Với người tìm việc, chúng tôi tiếp tục đồng hành
-                            cùng họ thăng tiến trong công việc mơ ước. Còn với chính chúng tôi, những DREAM MAKERS, tầm
+                            cùng họ thăng tiến trong công việc mơ ước. Còn với chính chúng tôi, những <b>DREAM
+                                MAKERS</b>, tầm
                             nhìn này tạo thêm nhiều thử thách thú vị, cổ vũ cho tinh thần đổi mới, sáng tạo, và cải tiến
                             không ngừng nghỉ và hơn hết giúp chúng tôi tìm được ý nghĩa to lớn hơn trong công việc hàng
                             ngày của mình.</p>
@@ -160,14 +200,18 @@
                     </div>
                     <div class="intro-blog-card-content">
                         <p>
-                            Vào những ngày đầu khi gia nhập công ty, tất cả các DREAM MAKERS đều sẽ được lắng nghe những
+                            Vào những ngày đầu khi gia nhập công ty, tất cả các <b>DREAM MAKERS</b> đều sẽ được lắng
+                            nghe những
                             chia sẻ về năm giá trị cốt lõi của tập đoàn từ chính những nhân vật cao cấp nhất của công
                             ty, kết hợp với buổi ăn trưa thân mật cùng với Tổng Giám Đốc Gaku Echizenya.
                         </p>
-                        <p>Trong suốt hành trình của các DREAM MAKERS tại Navigos Group, mỗi khi đạt được những thành
-                            tựu đáng kể cùng với thái độ làm việc thể hiện rõ nét các giá trị cốt lõi trên, DREAM MAKERS
-                            sẽ được tưởng thưởng và vinh danh trước toàn tập đoàn với các giải thưởng như SERVICE HERO
-                            hay SPIRIT AWARD. </p>
+                        <p>Trong suốt hành trình của các <b>DREAM MAKERS</b> tại <b>Navigos Group</b>, mỗi khi đạt được
+                            những thành
+                            tựu đáng kể cùng với thái độ làm việc thể hiện rõ nét các giá trị cốt lõi trên, <b>DREAM
+                                MAKERS</b>
+                            sẽ được tưởng thưởng và vinh danh trước toàn tập đoàn với các giải thưởng như <b>SERVICE
+                                HERO</b>
+                            hay <b> SPIRIT AWARD</b>. </p>
                     </div>
                 </div>
                 <!--End intro-blog-card-->
@@ -178,18 +222,21 @@
                     </div>
                     <div class="intro-blog-card-content">
                         <p>
-                            Để tiếp tục hành trình biến hàng triệu giấc mơ nghề nghiệp thành hiện thực, Navigos Group
+                            Để tiếp tục hành trình biến hàng triệu giấc mơ nghề nghiệp thành hiện thực, <b>Navigos
+                                Group</b>
                             luôn đón chào những ứng viên tài năng đến trải nghiệm và làm việc cùng tập đoàn. Nếu bạn có
                             khả năng và kinh nghiệm phù hợp, đừng ngần ngại ứng tuyển vào các công việc sẵn có của chúng
                             tôi để tận hưởng một môi trường làm việc lý tưởng cùng những phúc lợi tuyệt vời.
 
                         </p>
-                        <p> Và một khi bạn đã trở thành một DREAM MAKER, rời đi khỏi gia đình NAVIWORKS luôn là một
+                        <p> Và một khi bạn đã trở thành một <b>DREAM MAKER</b>, rời đi khỏi gia đình <b>NAVIWORKS</b>
+                            luôn là một
                             quyết định rất khó khăn, thậm chí nhiều người chuyển sang công ty khác thỉnh thoảng cũng thể
                             hiện sự nuối tiếc về quyết định của mình và sau đó lựa chọn quay trở lại. Bởi ở đây, tất cả
-                            các DREAM MAKERS đều như những thành viên khắng khít trong một gia đình lớn, cùng vui, cùng
+                            các <b>DREAM MAKERS</b> đều như những thành viên khắng khít trong một gia đình lớn, cùng
+                            vui, cùng
                             làm, cùng thể hiện đam mê, để trên tất cả, cùng thực hiện những công việc có ý nghĩa lớn với
-                            xã hội cùng Navigos Group.</p>
+                            xã hội cùng <b>Navigos Group</b>.</p>
                     </div>
                 </div>
                 <!--End intro-blog-card-->
@@ -200,7 +247,10 @@
 
         <!--Jobs-->
         <div class="jobs-container">
-            <h3>Việc làm </h3>
+            <div class="jobs-container-header">
+                <h3>Việc làm</h3>
+                <div class="under-line"></div>
+            </div>
             <div class="jobs-body">
                 <div class="jobs-body-heading">
                     <h3>Cơ hội việc làm dành cho bạn </h3>
@@ -208,123 +258,156 @@
                 <div class="jobs-body-list">
                     <!--job-body-card-->
                     <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
+                        <div class="job-body-card-left">
+                            <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
+
+                            <div class="job-body-desc-row">
+                                <div class="job-body-desc-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <p>Giám đốc trở lên</p>
+                                </div>
+                                <div class="job-body-desc-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Hà Nội</p>
+                                </div>
+                                <div class="job-body-desc-item">
+                                    <i class='bx bx-calendar-minus'></i>
+                                    <p>20/11/2021</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
+                        <div class="job-body-card-right">
+                            <button class="job-body-card-btn">Chi tiết</button>
                         </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
+
                     </div>
                     <!--End-job-body-card-->
-                    <!--job-body-card-->
-                    <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
-                    </div>
-                    <!--End-job-body-card-->
-                    <!--job-body-card-->
-                    <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
-                    </div>
-                    <!--End-job-body-card-->
-                    <!--job-body-card-->
-                    <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
-                    </div>
-                    <!--End-job-body-card-->
-                    <!--job-body-card-->
-                    <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
-                    </div>
-                    <!--End-job-body-card-->
-                    <!--job-body-card-->
-                    <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
-                    </div>
-                    <!--End-job-body-card-->
-                    <!--job-body-card-->
-                    <div class="job-body-card">
-                        <p class="job-body-position">Giám đốc đổi mới chuyên trách</p>
-                        <p class="job-body-desc-row">
-                        <div class="job-body-desc-item">
-                            <p>Giám đốc trở lên</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>Hà Nội</p>
-                        </div>
-                        <div class="job-body-desc-item">
-                            <p>20/11/2021</p>
-                        </div>
-                        </p>
-                    </div>
-                    <!--End-job-body-card-->
+                </div>
+                <div class="see-more-row">
+                    <button class="see-more-btn">Xem thêm</button>
                 </div>
             </div>
         </div>
 
         <!--End Jobs-->
+        <!--Space Working-->
+        <div class="space-working-container">
+            <div class="space-working-container-header">
+                <h3>Không gian làm việc</h3>
+                <div class="under-line"></div>
+            </div>
+            <div class="space-working-row">
+                <div class="space-working-img">
+                    <img src="../images/intro-company/space1.png" alt="">
+                </div>
+                <div class="space-working-img">
+                    <img src="../images/intro-company/space2.png" alt="">
+                </div>
+                <div class="space-working-img">
+                    <img src="../images/intro-company/space3.png" alt="">
+                </div>
+
+            </div>
+            <div class="pagination">
+                <span class="pagination-dot active"></span>
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot"></span>
+            </div>
+
+        </div>
+
+        <!--End space working-->
     </div>
     <!--End Body-->
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-col">
+            <h3>Thông tin liên hệ</h3>
+            <ul>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
+                </li>
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
+                </li>
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Công ty</h3>
+            <ul>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Dịch Vụ</a></li>
+                <li><a href="#">Bảo Mật Thông Tin</a></li>
+                <li><a href="#">Quy Định Sử Dụng</a></li>
+                <li><a href="#">Hỏi Đáp</a></li>
+                <li><a href="#">Nâng Cấp Tài Khoản</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Chính sách</h3>
+            <ul>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản và điều kiện</a></li>
+                <li><a href="#">Chính sách Bản quyền</a></li>
+                <li><a href="#">Quy tắc ứng xử</a></li>
+                <li><a href="#">Phí và lệ phí</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Danh sách trang</h3>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Quản lý tuyển dụng</a></li>
+                <li><a href="#">Cho người tìm việc</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--End footer-->
+    <!--Follow us-->
+    <div class="follow-us">
+        <b>Theo dõi chúng tôi</b>
+        <div class="follow-us-list-img">
+            <div class="follow-us-img-item">
+                <a href="">
+                    <img src="../../images/salary_page/facebook.png" alt="Visit on Facebook">
+                </a>
+            </div>
+            <div class="follow-us-img-item">
+                <a href="">
+                    <img src="../../images/salary_page/twitter.png" alt="Visit on Twitter">
+                </a>
+            </div>
+            <div class="follow-us-img-item">
+                <a href="">
+                    <img src="../../images/salary_page/linkedin.png" alt="Visit on Linkedin">
+                </a>
+            </div>
+            <div class="follow-us-img-item">
+                <a href="">
+                    <img src="../../images/salary_page/youtube.png" alt="Visit on Youtube">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="copy">
+        <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+    </div>
+
+
+    <!--End follow us-->
+    <script src="../js/intro-company.js"></script>
+
 </body>
 
 </html>

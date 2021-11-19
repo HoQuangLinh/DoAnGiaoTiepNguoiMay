@@ -287,7 +287,7 @@ body {
 .management {
   transition: top 0.5s;
   position: fixed;
-  top: 55px;
+  top: 75px;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -565,49 +565,47 @@ body {
 }
 /* footer */
 .main-footer {
-  margin-top: 20px;
-  background-color: #30c1ff;
+  margin-top: 50px;
+  padding: 20px 100px;
+
+  background-color: #2a8cff;
   color: white;
   width: 100%;
-  height: auto;
+
   display: flex;
 }
-.footer-box {
-  width: 1270px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 0px;
-}
+
 .box {
-  float: left;
+  padding: 15px;
   width: 20%;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+
   transition: 0.3s;
+  margin-right: 15px;
 }
-.box .first-box {
-  display: grid;
-  max-width: 400px;
-}
-.box .first-box .description {
-  float: left;
-  padding: 25px;
+
+.box .description {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
 }
-.box .first-box .learn-more {
-  max-width: max-content;
-  height: 50px;
-  margin: 0 25px;
-  padding: 0 8px;
-  float: left;
+.box .learn-more {
+  margin-top: 20px;
+
   font-family: Roboto;
-  font-style: normal;
+
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+  background-color: #efefef;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 10px 20px;
 }
 .box > h3 {
   margin: 12px 0;
@@ -616,6 +614,22 @@ body {
   font-weight: bold;
   font-size: 22px;
 }
+.logo {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.logo > a {
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.8px;
+}
+
 .box > ul {
   list-style-type: none;
   margin: 25px 0;
@@ -628,7 +642,7 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -641,7 +655,7 @@ body {
 .follow-us {
   display: grid;
   width: 100%;
-  background: #30c1ff;
+  background-color: #2a8cff;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
@@ -671,7 +685,7 @@ body {
   padding: 10px;
   font-size: small;
   text-align: center;
-  background-color: #30c1ff;
+  background-color: #2a8cff;
   color: #fff;
 }
 .copy p {
@@ -758,20 +772,6 @@ body {
   .noti_login {
     display: none;
   }
-  /* footer */
-  .box {
-    width: 33%;
-    transition: 0.3s;
-  }
-  .box .first-box {
-    padding: 0px 45px;
-  }
-  .box h3 {
-    padding: 0px 70px;
-  }
-  .box ul {
-    padding: 0px 70px;
-  }
 }
 
 @media (max-width: 1288px) {
@@ -785,23 +785,6 @@ body {
     visibility: visible;
     transition-property: visibility;
   }
-
-  /* footer */
-
-  .box {
-    width: 33%;
-    transition: 0.3s;
-  }
-  .box .first-box {
-    padding: 0px 45px;
-  }
-  .box h3 {
-    padding: 0px 70px;
-  }
-  .box ul {
-    padding: 0px 70px;
-  }
-  /* footer */
 }
 @media (max-width: 1024px) {
   .body-content {
@@ -873,21 +856,6 @@ body {
     cursor: pointer;
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
   }
-
-  /* footer */
-  .box {
-    width: 50%;
-    transition: 0.3s;
-  }
-  .box .first-box {
-    padding: 0px 55px;
-  }
-  .box h3 {
-    padding: 0px 80px;
-  }
-  .box ul {
-    padding: 0px 80px;
-  }
 }
 @media (max-width: 700px) {
   .col-logo {
@@ -949,19 +917,6 @@ body {
   }
   .body-content {
     padding: 0 30px;
-  }
-  .box {
-    width: 100%;
-    transition: 0.3s;
-  }
-  .box .first-box {
-    padding: 0px 75px;
-  }
-  .box h3 {
-    padding: 0px 100px;
-  }
-  .box ul {
-    padding: 0px 100px;
   }
 }
 @media (max-width: 413px) {
