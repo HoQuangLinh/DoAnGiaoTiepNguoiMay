@@ -90,6 +90,10 @@ a {
   font-size: 18px;
 }
 .btn-folow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
   background: #005385;
   padding: 10px 20px;
@@ -349,8 +353,11 @@ a {
 }
 .footer-col ul li {
   padding: 10px;
+
+  align-items: center;
 }
 .footer-col ul li a {
+  display: inline-flex;
   color: #fff;
   font-weight: 300;
   font-size: 15px;
@@ -381,4 +388,211 @@ a {
   color: #fff;
   background-color: #005385;
   padding: 10px 0;
+}
+@media (max-width: 1200px) {
+  .page-header {
+    justify-content: center;
+    padding: 0;
+  }
+  .page-header > ul {
+    padding: 0;
+  }
+  .intro-blogs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro-blog-card {
+    width: 46%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 951px) {
+  .slider-image {
+    padding-top: 40px;
+  }
+  .page-header ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .page-header ul li a {
+    font-size: 17px;
+  }
+  .slider-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .slider-desc > h3 {
+    font-size: 17px;
+  }
+  .slider-desc > p {
+    font-size: 14px;
+  }
+  .slider-desc > span {
+    font-size: 14px;
+  }
+  .people-container-header > h3 {
+    font-size: 23px;
+  }
+  .intro-container-header > h3 {
+    font-size: 23px;
+  }
+
+  .jobs-container-header > h3 {
+    font-size: 23px;
+  }
+  .space-working-container-header > h3 {
+    font-size: 23px;
+  }
+  .btn-folow {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .people-list {
+    flex-wrap: wrap;
+  }
+  .people-card {
+    width: 100%;
+  }
+  .people-card-desc {
+    font-size: 15px;
+  }
+  .intro-company-content {
+    width: 60%;
+  }
+  .intro-company-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+  .intro-company-img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .intro-company-paragrap {
+    font-size: 15px;
+  }
+  .intro-blog-card {
+    width: 100%;
+  }
+  .jobs-body-heading {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .jobs-body-list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .job-body-card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .job-body-card-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer {
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  .footer-col {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  .footer-col > h3 {
+    font-size: 20px;
+  }
+  .footer-col ul li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .body-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .page-header {
+    padding: 0 35px;
+  }
+  .page-header ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .page-header ul li {
+    padding: 0;
+    text-align: center;
+  }
+  .page-header ul li a {
+    font-size: 25px;
+  }
+  .page-header ul li a i {
+    margin-right: 0;
+    padding: 15px;
+  }
+  .job-body-card {
+    position: relative;
+  }
+
+  .job-body-card-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+    background-color: transparent;
+    color: #00b9f2;
+  }
+  .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 560px) {
+  .body-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hide-on-mobile-559 {
+    display: none;
+  }
+  .slider-info > img {
+    width: 25%;
+  }
+  .page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .page-header ul li a {
+    font-size: 20px;
+  }
+  .job-body-card-btn {
+    top: 0px;
+  }
+
+  .slider-desc > h3 {
+    font-size: 15px;
+  }
+  .btn-folow {
+    background-color: transparent;
+    color: #00b9f2;
+  }
+  .intro-company-paragrap {
+    margin-right: 0;
+  }
+  .intro-company-content {
+    width: 100%;
+  }
+  .intro-company-img {
+    display: none;
+  }
+  .job-body-desc-item {
+    margin-right: 5px;
+  }
+  .footer-col {
+    width: 100%;
+  }
 }

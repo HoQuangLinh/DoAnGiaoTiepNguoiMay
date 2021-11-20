@@ -89,7 +89,7 @@ button {
 }
 .menu > a > li {
   padding: 10px 15px;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
@@ -479,7 +479,7 @@ button {
     flex-direction: column;
     background-color: #00b9f2;
     padding-top: 13%;
-    width: 30%;
+    width: 24%;
     transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
@@ -599,17 +599,76 @@ button {
     width: 31%;
   }
 }
+@media (max-width: 950px) {
+  .navbar-mobile {
+    width: 30%;
+  }
+}
 @media (max-width: 800px) {
+  .main-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .box {
     width: 43%;
   }
+  .navbar-mobile {
+    width: 35%;
+  }
 }
 @media (max-width: 740px) {
+  .navbar-mobile {
+    width: 35%;
+    padding-top: 25%;
+  }
+  .navbar-mobile-btn-login {
+    font-size: 17px;
+  }
+  .navbar-mobile-btn-sign-up {
+    font-size: 17px;
+  }
+  .navbar-mobile-menu > a > li {
+    font-size: 16px;
+  }
+  .navbar-mobile-profile-circle {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 650px) {
+  .navbar-mobile {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
   .box {
     width: 100%;
   }
-}
 
+  .navbar-mobile {
+    width: 50%;
+    padding-top: 25%;
+  }
+  .navbar-mobile-btn-login {
+    font-size: 17px;
+  }
+  .navbar-mobile-btn-sign-up {
+    font-size: 17px;
+  }
+  .navbar-mobile-menu > a > li {
+    font-size: 16px;
+  }
+  .navbar-mobile-profile-circle {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 415px) {
+  .navbar-mobile {
+    width: 70%;
+    padding-top: 40%;
+  }
+}
 @keyframes rightToLeft {
   from {
     margin-right: -100%;

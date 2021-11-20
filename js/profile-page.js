@@ -1,5 +1,7 @@
 var prevScrollpos = window.pageYOffset;
-console.log(prevScrollpos);
+const dropdownProfile = document.querySelector(".dropdown-profile");
+const btnDropdow = document.querySelector(".btn-dropdown");
+const listCompany = document.querySelectorAll(".company-item");
 var handleSticky = () => {
   console.log(window.innerWidth);
   var prevScrollpos = window.pageYOffset;
@@ -41,4 +43,24 @@ const handleShowMeNuClick = () => {
   });
 };
 
+const handleShowDropDown = () => {
+  btnDropdow.addEventListener("click", () => {
+    console.log("test");
+    dropdownProfile.classList.add("active");
+  });
+};
+window.addEventListener("click", (e) => {
+  if (!dropdownProfile.contains(e.target) && !btnDropdow.contains(e.target)) {
+    dropdownProfile.classList.remove("active");
+  }
+});
+const handleCompanyItemClick = () => {
+  listCompany.forEach((company) => {
+    company.addEventListener("click", () => {
+      location.href = "./search-page.html";
+    });
+  });
+};
 handleShowMeNuClick();
+handleShowDropDown();
+handleCompanyItemClick();

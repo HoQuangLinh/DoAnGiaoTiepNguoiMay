@@ -12,6 +12,9 @@ body {
   background-size: cover;
   background-color: #fff;
 }
+a {
+  text-decoration: none;
+}
 .header {
   position: fixed;
   top: 0;
@@ -20,13 +23,13 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 60px;
+  justify-content: space-between;
+  height: 55px;
   z-index: 999;
   box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
 }
 /* logo */
 .header-logo {
-  width: auto;
   display: flex;
   align-items: center;
 
@@ -38,12 +41,14 @@ body {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.logo > a > img {
+.header-logo > a > img {
   display: block;
   margin: 0 12px;
 }
+
 /* search bar */
 .searchbar {
   width: 40%;
@@ -174,7 +179,7 @@ body {
   background-color: #2196f3;
   border-radius: 20px;
 }
-.noti_login .login {
+.btn-dropdown-login {
   height: 40px;
   font-size: 16px;
   font-weight: 400;
@@ -185,35 +190,50 @@ body {
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
+  padding: 10px;
 }
-.noti_login .login i {
-  margin: 0px 10px 0px 0px;
+.btn-dropdown-login i {
+  margin-right: 5px;
 }
 /* drop down login */
 .btn-dropdown {
   position: relative;
   margin-right: 12px;
 }
-.dropdown-not-login {
+.dropdown-profile {
+  transition: all 0.5s;
+  transform: translateY(-150%);
   position: absolute;
-  width: 380px;
+  width: 300px;
   background: #fff;
-  top: 52px;
+  top: 45px;
   right: 0;
   color: #000;
   z-index: 999;
   border: 1px solid #ccc;
   border-radius: 2px;
-  cursor: default;
+
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
   font-family: Roboto;
   font-style: normal;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(-5px);
-  transition: 0.2s;
-  transition-property: transform, opacity;
+
+  padding: 0;
+}
+.dropdown-profile.active {
+  transform: translateY(0);
+}
+.dropdown-profile > a > li {
+  list-style: none;
+  color: #333333;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.dropdown-profile > a > li > i {
+  margin-right: 10px;
 }
 .dropdown-not-login.active {
   pointer-events: all;
@@ -285,7 +305,7 @@ body {
 .management {
   transition: top 0.5s;
   position: fixed;
-  top: 60px;
+  top: 55px;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -298,6 +318,7 @@ body {
   padding: 10px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .management-item > img {
   width: 25px;
@@ -502,6 +523,8 @@ body {
 }
 
 .btn-career {
+  cursor: default;
+  user-select: none;
   border: none;
   width: 35px;
   text-align: center;
@@ -534,6 +557,7 @@ body {
 .company-item-img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .company-item > .col-2 {
@@ -549,8 +573,10 @@ body {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 .company-item-info > p {
+  cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
   color: #999;
@@ -691,7 +717,7 @@ body {
 }
 
 /* responsive */
-@media (max-width: 1437px) {
+@media (max-width: 1337px) {
   /* header */
   .header {
     padding: 4px -16px;
@@ -788,6 +814,12 @@ body {
   .body-content {
     padding: 0 50px;
   }
+  .main-footer {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 31%;
+  }
 }
 
 @media (max-width: 830px) {
@@ -854,6 +886,13 @@ body {
     cursor: pointer;
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
   }
+  .main-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .box {
+    width: 43%;
+  }
 }
 @media (max-width: 700px) {
   .col-logo {
@@ -915,6 +954,9 @@ body {
   }
   .body-content {
     padding: 0 30px;
+  }
+  .box {
+    width: 100%;
   }
 }
 @media (max-width: 413px) {
