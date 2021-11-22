@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    margin: 0px;
+    background-size: cover;
+    background-color: #f7f7f7;
+}
+
+/* content-holder */
+.content-holder{
+    height: auto;
+    max-width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    margin: 55px 10% 0px 10%;
+    padding: 0 80px;
+    background-color: #fff;
+    flex-direction: column;
+    display: flex;
+    transition: 0.2s;
+}
+.content-holder .content-title{
+    padding: 50px 0 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.separator{
+    border-bottom: 1px solid #000;
+}
+.content-container{
+    width: 100%;
+    margin-bottom: 150px;
+}
+.container-infor{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.container-infor .infor{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 30px;
+}
+.caption{
+    width: 20%;
+    font-weight: bold;
+    font-size: 16px;
+}
+.content{
+    width: 70%;
+    padding: 0px 20px;
+    font-weight: normal;
+    font-size: 16px;
+}
+.content img{
+    max-height: 220px;
+    max-width: 100%;
+    cursor: pointer;
+}
+.content p{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.content input{
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 4px;
+    width: 50%;
+    font-size: 15px;
+}
+.edit{
+    width: 10%;
+    text-align: right;
+    cursor: pointer;
+    user-select: none;
+    color: #216FDB;
+}   
+.edit span{
+    font-weight: normal;
+    font-size: 16px;
+    color: #216FDB;
+}
+.edit a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    color: #216FDB;
+}
+.container-infor .collapsible{
+    display: none;
+    background-color: #f7f7f7;
+}
+.collapsible .visible{
+    padding: 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.collapsible .visible-sub{
+    padding: 0px 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.collapsible .visible-img{
+    padding: 0px 30px 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: top;
+}
+/* footer */
+footer{
+    background: #005385;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.footer-box{
+    width: 1270px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    transition: 0.3s;
+}
+.box{
+    padding-left: 24px;
+    float: left;
+    width: 25%;
+    height: auto;
+    transition: 0.3s;
+}
+.box > h3{
+    margin: 12px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+}
+.box > ul{
+    list-style-type: none;
+    margin: 25px 0;
+    padding: 0px;
+}
+.box > ul > li{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.box > ul > li > i{
+    width: 24px;
+}
+.box > ul > li > a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.box > ul > li:hover{
+    padding: 0px 6px;
+    font-weight: 500;
+}
+.follow-us{
+    display: grid;
+    width: 100%;
+    background: #005385;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+.follow-us::before{
+    content: '';
+    border-top: 0.3px solid #fff;
+    margin: 12px 24px;
+}
+.follow-us::after{
+    content: '';
+    border-top: 0.3px solid #fff;
+    margin: 8px 24px;
+}
+.follow-us span{
+    padding: 10px;
+}
+.follow-us span a{
+    text-decoration: none;
+}
+.copy{
+    padding: 10px;
+    background: #005385;
+    text-align: center;
+    color: #fff;
+    font-size: small;
+}
