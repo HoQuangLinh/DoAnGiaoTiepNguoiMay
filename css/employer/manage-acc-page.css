@@ -71,6 +71,7 @@ body{
     padding: 4px;
     width: 50%;
     font-size: 15px;
+    transition: 0.2s;
 }
 .edit{
     width: 10%;
@@ -202,4 +203,39 @@ footer{
     text-align: center;
     color: #fff;
     font-size: small;
+}
+@media (max-width: 1288px){
+    /* header */
+
+    /* content holder */
+    .content input{
+        width: 60%;
+        transition: 0.2s;
+    }
+    /* footer */
+
+}
+@media (max-width: 830px){
+    /* content holder */
+    .content-holder{
+        margin: 55px 4% 0px 4%;
+        padding: 0 30px;
+        transition: 0.2s;
+    }
+    .content input{
+        width: 70%;
+        transition: 0.2s;
+    }
+}
+@media (max-width: 600px){
+    /* content holder */
+    .content-holder{
+        margin: 55px 2% 0px 2%;
+        padding: 0 10px;
+        transition: 0.2s;
+    }
+    .content input{
+        width: 80%;
+        transition: 0.2s;
+    }
 }
