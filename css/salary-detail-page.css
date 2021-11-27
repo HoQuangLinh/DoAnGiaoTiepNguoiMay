@@ -292,20 +292,20 @@ body {
   transition: 0.2s;
 }
 .content-holder .title {
-  padding: 20px;
+  padding: 20px 40px;
   font-family: Roboto;
   font-size: 35px;
   line-height: 41px;
   color: #f7941d;
 }
-.statistical-group {
+.statistical-grid {
     justify-content: center;
   display: grid;
   grid-template-columns: repeat(4, 22%);
-  gap: 30px;
-  margin: 20px;
+  gap: 42px;
+  margin: 20px 40px;
 }
-.statistical-group .card {
+.statistical-grid .card {
   box-sizing: border-box;
   display: block;
   padding: 5px;
@@ -334,9 +334,8 @@ body {
 .content-holder .filter{
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 40px;
     padding: 4px 0;
-    
 }
 .filter div{
     padding: 4px;
@@ -354,7 +353,31 @@ body {
     border: none;
     border-bottom: 0.5px solid black;
 }
-
+.statistical-container{
+  display: flex;
+}
+.statistical-container .chart{
+  flex-direction: column;
+  padding: 20px 20px 20px 40px;
+}
+.chart div{
+  padding-bottom: 10px;
+}
+.statistical-container .list{
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.list .list-header{
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  background-color: #30c1ff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.list-header div{
+  padding: 0px 20px;
+  color: #fff;
+}
 /* footer */
 .main-footer {
   background-color: #30c1ff;
