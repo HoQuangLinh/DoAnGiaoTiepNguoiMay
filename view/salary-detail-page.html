@@ -181,17 +181,137 @@
                 <div id="columnchart_values"></div>
                 <div id="chart_div"></div>
             </div>
-            <div class="list">
-                <div class="list-header">
-                    <div class="numeric">
-                        STT
+            <div class="sidebar">
+                <div class="list">
+                    <div class="list-header">
+                        <div class="numeric">
+                            STT
+                        </div>
+                        <div class="job-name">
+                            Tên công việc
+                        </div>
+                        <div class="quantity">
+                            Số lượt đăng kí
+                        </div>
                     </div>
-                    <div class="job-name">
-                        Tên công việc
+                    <div class="list-item">
+                        <div class="numeric">
+                            1
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
                     </div>
-                    <div class="quantity">
-                        Số lượt đăng kí
+                    <div class="list-item">
+                        <div class="numeric">
+                            2
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            120
+                        </div>
                     </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            3
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            4
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            5
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            6
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            7
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            8
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            9
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="numeric">
+                            10
+                        </div>
+                        <div class="job-name">
+                            Web Developer
+                        </div>
+                        <div class="quantity">
+                            100
+                        </div>
+                    </div>
+                </div>
+                <div class="cycle-slideshow banner" data-cycle-slides="> a">
+                    <a href="#">
+                        <img src="../images/salary_page/banner2.png" alt="Banner 1">
+                    </a>
+                    <a href="#">
+                        <img src="../images/salary_page/banner3.png" alt="Banner 2">
+                    </a>
                 </div>
             </div>
         </div>
@@ -360,8 +480,6 @@
                     bold: true,    // true or false
                     italic: false   // true of false
                 },
-                width: 700,
-                height: 500,
                 bar: { groupWidth: "70%" },
                 chartArea: { 'width': '80%', 'height': '70%' },
                 legend: { position: "none" },
@@ -376,13 +494,10 @@
             var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
             chart.draw(view, options);
         }
-    </script>
-    <script>
+
         google.charts.load('current', { packages: ['corechart', 'bar'] });
         google.charts.setOnLoadCallback(drawBasic);
-
         function drawBasic() {
-
             var data = google.visualization.arrayToDataTable([
                 ['Cấp bậc', 'Mức lương (VNĐ)',],
                 ['Senior', 40000000],
@@ -413,6 +528,11 @@
 
             chart.draw(data, options);
         }
+
+        $(window).resize(function(){
+            drawChart();
+            drawBasic();
+        });
     </script>
 </body>
 

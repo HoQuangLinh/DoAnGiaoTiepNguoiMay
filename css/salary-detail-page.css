@@ -174,6 +174,7 @@ body {
   border-radius: 20px;
 }
 .noti_login .login {
+  padding: 0 6px;
   min-width: 110px;
   max-width: 150px;
   height: 40px;
@@ -355,28 +356,79 @@ body {
 }
 .statistical-container{
   display: flex;
+  width: 100%;
 }
 .statistical-container .chart{
+  width: 60%;
+  float: left;
   flex-direction: column;
   padding: 20px 20px 20px 40px;
 }
-.chart div{
+.chart #columnchart_values{
+  width: 100%;
   padding-bottom: 10px;
+  min-height: 450px;
 }
-.statistical-container .list{
+.chart #chart_div{
+  width: 100%;
+  padding-bottom: 10px;
+  min-height: 360px;
+}
+.statistical-container .sidebar{
+  float: left;
+  width: 40%;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 40px 40px 20px 10px;
 }
 .list .list-header{
   width: 100%;
   display: flex;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #30c1ff;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
-.list-header div{
-  padding: 0px 20px;
+.list-header .numeric{
+  width: 20%;
+  padding: 0px 10px;
   color: #fff;
+}
+.list-header .job-name{
+  width: 40%;
+  padding: 0px 10px;
+  color: #fff;
+}
+.list-header .quantity{
+  width: 40%;
+  padding: 0px 10px;
+  color: #fff;
+}
+.list .list-item{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.list-item .numeric{
+  width: 20%;
+  padding: 0px 10px;
+}
+.list-item .job-name{
+  width: 40%;
+  padding: 0px 10px;
+}
+.list-item .quantity{
+  width: 40%;
+  padding: 0px 10px;
+}
+.sidebar .banner{
+  padding: 20px 0;
+}
+.banner a img{
+  width: 100%;
+  padding: 20px 0;
+  min-height: 400px;
 }
 /* footer */
 .main-footer {
