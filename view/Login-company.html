@@ -7,39 +7,56 @@
         <title>Company</title>
         <link rel="stylesheet" href="../css/Login-company.css">
         <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+        <link
         href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
         rel="stylesheet"
       />
     </head>
     <body>
         <div class="div_body">
-            <div class="div_left">    
-                <button class="btnBack">
-                    FINDWORK
-                </button>
-                <section class="ads-company">
-                    <div class="cycle-slideshow" data-cycle-slides="> a">
-                        <a href="">
-                            <img class="logocompany" src="../images/company.jpg" alt="Banner top">
-                        </a>
-                        <a href="#">
-                            <img class="logocompany" src="../images/signup2.jpg" alt="Banner top">
-                        </a>
-                        <a href="#">
-                            <img class="logocompany" src="../images/company2.jpg" alt="Banner top">
-                        </a>
-                    </div>
-                </section>
+            <div class="div_left">   
+                <div> 
+                    <button class="btnBack">
+                        FINDWORK
+                    </button>
+                </div>
+                <div>
+                    <section class="ads-company">
+                        <div class="cycle-slideshow" data-cycle-slides="> a">
+                            <a href="">
+                                <img class="logocompany" src="../images/company.jpg" alt="Banner top">
+                            </a>
+                            <a href="#">
+                                <img class="logocompany" src="../images/signup2.jpg" alt="Banner top">
+                            </a>
+                            <a href="#">
+                                <img class="logocompany" src="../images/company2.jpg" alt="Banner top">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="content">
+                    <div class="title_sologan">New Here?</div>
+                    <a class="sologan">FINDWORK sẽ dành cho bạn những gì bạn muốn.</a>
+                    <button class="btn_signup">Đăng kí</button>
+                </div>
 
             </div>
             <div class="div_right">
+                <div> 
+                    <button class="btnBack2">
+                        FINDWORK
+                    </button>
+                </div>
                 <div class="div_info">
                     <div class="title">
                         Đăng nhập
                     </div>
                     <div class="txtUser">
-                        <input class="form_input1" placeholder="  Tên đăng nhập"></input>
-                        <input class="form_input2" placeholder="  Mật khẩu"></input>
+                        <input class="form_input1" placeholder="Tên đăng nhập"></input>
+                        <input class="form_input2" placeholder="Mật khẩu"></input>
                     </div>
                     <div class="pass">
                         <div class="rememberpass">
@@ -50,21 +67,35 @@
                             <label class="forgot"> Quên mật khẩu?</label>
                         </div>
                     </div>
-                    <div class="div_titleSignup">
+                    <!-- <div class="div_titleSignup">
                         <label class="titleSignup">Bạn chưa có tài khoản ?</label>
                         <label class="btnSignup">Đăng kí</label>
-                    </div>
+                    </div> -->
+                    <div class="div_btnSignin">
                     <button class="btnSignin">Đăng nhập</button>
-                    <a>or</a>
-                    <div class="=div_btnFace">
-                        
-                        <button class="btnFacebook">
-                            <img class="logoface" src="../images/facebook.png" alt="Logo">
-                            Đăng nhập bằng Facebook </button>
                     </div>
-                    <button class="btnGmail">
-                        <img class="logoGmail" src="../images/google.png" alt="Logo">
-                        Đăng nhập bằng Gmail </button>
+                    <div class="or">
+                        or
+                    </div>
+                    <div class="div_btnFace">
+                        
+                        <div class="btnFacebook">
+                            <div class="div_logoface">
+                            <img class="logoface" src="../images/facebook.png" alt="Logo">
+                            <img class="logoGmail1" src="../images/google.png" alt="Logo">   
+                            </div>
+                            <label class="login_face">Đăng nhập bằng Facebook</label>
+                        </div>
+                        <div class="btnGmail">
+                            <div class="div_logogmail">
+                            <img class="logoGmail" src="../images/google.png" alt="Logo">
+                            </div>
+                            <label class="login_gmail">Đăng nhập bằng Gmail</label>
+                        </div>
+                    </div>
+                    <div class="div_signup2">
+                        Đăng Ký Tài Khoản FindWork
+                    </div>
                 </div>
             </div>
         </div>
