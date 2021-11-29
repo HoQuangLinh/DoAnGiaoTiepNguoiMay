@@ -5,7 +5,13 @@
 .div_left{
     width: 50%;
     height: 100vh;
-    background-color: white
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 .btnBack{
     width:130px;
@@ -27,18 +33,44 @@
     text-align: center;
 }
 .ads-company{
-    position: fixed;
-    top: 45%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    margin-top: 350px;
+    margin-right: 20px;
     
 }
 .logocompany{
     width: 100%;
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_sologan{
+    font-family: Roboto;
+    color: #0f73ee;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.sologan{
+    font-family: Roboto;
+    color: #0f73ee;
+    font-weight: 500;
+}
+.btn_signup{
+    font-size: 16px;
+    color: #0f73ee;
+    margin-top: 10px;
+    border: 2px solid #0f73ee;
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
 
-
+/* Bên phải */
 .div_right{
     width: 50%;
     height: 100vh;
@@ -46,91 +78,91 @@
     position: fixed;
     right: 0;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    
 }
 .div_info{
+    /* width: 450px; */
     width: 60%;
-    height: 80%;
+    /* height: 600px; */
+    height: 580px;
     background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* margin-top: 80px;
-    margin-left: 150px; */
     border-radius: 10px;
-}
-.title{
-   margin-left: 30px;
-   margin-top: 20px;
-   font-size: 30px;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: bold;
-}
-.txtUser{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    margin: 0 auto ;
 
 }
+.title{
+    margin-left: 30px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.txtUser{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .form_input1{
-    width: 300px;
+    font-family: Roboto;
+    /* width: 300px; */
+    width: 66.7%;
     height: 45px;
     border: 1px solid #a19b9b;
     border-radius: 5px;
+    padding-left: 15px;
     
 }
 .form_input2{
-    width: 300px;
+    font-family: Roboto;
+    /* width: 300px; */
+    width: 66.7%;
     height: 45px;
     margin-top: 20px;
     border: 1px solid #a19b9b;
     border-radius: 5px;
+    padding-left: 15px;
+}
+.pass{
+    display: flex;
+    padding-top: 5px;
+    width: 66.7%;
+    margin: 0 auto;
 }
 .checkshow{
     width: 15px;
     height: 15px;
-    margin-top: 180px;
-    margin-left: 80px;
     cursor: pointer;
-}
-.showpass{
-    position: absolute;
-    top:234px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-.pass{
-    display: flex;
 }
 .forgot{
-    margin-top: 180px;
-    margin-left: 90px;
+    margin-left: 25px;
+    margin-top: 3px;
     color:#0f73ee;
     cursor: pointer;
 }
+.div_titleSignup{
+    width: 66.7%;
+    padding-top: 40px;
+    margin: 0 auto;
 
+}
 .titleSignup{
-    position: absolute;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: bold;
-    top: 295px;
-    margin-left: 80px;
+
     
 }
 .btnSignup{
-    position: absolute;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: bold;
-    top: 295px;
-    margin-left:272px;
+    font-family: Roboto;
     cursor: pointer;
-    color:#0f73ee;
+    color:#2A8CFF;
     
+}
+.div_btnSignin{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
 }
 .btnSignin{
     width: 200px;
@@ -141,54 +173,216 @@
     font-weight: bold;
     border: none;
     background-color: #0f73ee;
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -62%);
+    margin: 0 auto;
     cursor: pointer;
+
 }
-a{
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -68%);
+.or{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    font-family: Roboto;
 }
+
+.div_btnFace{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .btnFacebook{
-    width: 300px;
+    /* width: 300px; */
+    width: 66.7%;
     height: 50px;
     border: 1px solid #a19b9b;
     border-radius: 5px;
     background-color: white;
-    font-size: 14px;
-    font-weight: bold;
-    position: absolute;
-    top: 79%;
-    left: 50%;
-    transform: translate(-50%, -81%);
-    cursor: pointer;
-}
-.btnGmail{
-    width: 300px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #a19b9b;
-    border-radius: 5px;
-    background-color: white;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -92%);
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
-.logoface{
-    position:absolute;
-    top: 20%;
-    left: 6%;
+.div_logoface{
+    margin-left: 20px;
+    cursor: pointer;
 }
-.logoGmail{
-    position:absolute;
-    top: 20%;
-    left: 6%;
+.login_face{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+    cursor: pointer;
+}
+.btnGmail{
+    /* width: 300px; */
+    width: 66.7%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #a19b9b;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.div_logogmail{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.login_gmail{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+    cursor: pointer;
+
+}
+.logoGmail1{
+    display: none;
+}
+.div_signup2{
+    display: none;
+}
+.btnBack2{
+    width:100px;
+    height: 40px;
+    position: fixed;
+    top: 4%;
+    left: 1%;
+    color: white;
+    background-color:#2A8CFF;
+    font-weight: bold;
+    font-size: 15px;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .div_left{
+        display: none;
+        
+    }
+    .div_right{
+        width: 100%;
+        position: fixed;
+    }
+    .btnBack2{
+        display: block;
+    }
+    .div_info{
+        width: 100%;
+        height: 75%;
+        border-radius: 0;
+    }
+    .forgot{
+        position: fixed;
+        right: 90px;
+    }
+    .btnGmail{
+        display: none;
+    }
+    .logoface{
+        width: 40px;
+    }
+    .logoGmail1{
+        display: block;
+        padding-left: 10px;
+        width: 40px;
+    }
+    .login_face{
+        display: none;
+    }
+    .btnFacebook{
+        border: none;
+    }
+    .div_logoface{
+        display: flex;
+        margin: 0 auto;
+    }
+    .logoface{
+        padding-right: 5px;
+    }
+    .div_signup2{
+        display: flex;
+        justify-content: center;
+        font-family: Roboto;
+        margin-top: 80px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #0f73ee;
+        cursor: pointer;
+        
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .div_left{
+        display: none;
+        
+    }
+    .div_right{
+        width: 100%;
+        position: fixed;
+    }
+    .btnBack2{
+        display: block;
+    }
+    .div_info{
+        width: 100%;
+        height: 75%;
+        border-radius: 0;
+    }
+
+    .forgot{
+        position: fixed;
+        right: 130px;
+        
+    }
+    .div_btnFace{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .btnFacebook{
+        width: 33%;
+        
+    }
+    .login_face{
+        font-size: 13px;
+    }
+    .btnGmail{
+        width: 33%;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    .login_gmail{
+        font-size: 13px;
+    }
+    .btnSignin{
+        width: 69%;
+        border-radius: 5px;
+    }
+    .div_signup2{
+        display: flex;
+        justify-content: center;
+        font-family: Roboto;
+        margin-top: 80px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #0f73ee;
+        cursor: pointer;
+        
+    }
 }
