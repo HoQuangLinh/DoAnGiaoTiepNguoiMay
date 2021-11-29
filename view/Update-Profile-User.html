@@ -233,6 +233,17 @@
                 <img class="icon-btn" src="../images/btn.png" alt="Logo">
                 <label class="label_btn">Thêm thông tin chung</label>
             </div>
+            <div class="collapsible">
+                <div class="row0">
+                    <div class="textbox">
+                        <span>Mô tả</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="btn-add">
+                        <a href="">Thêm</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="Description">
             <div class="title_info_user">
@@ -242,6 +253,39 @@
             <div class="btn_expand">
                 <img class="icon-btn" src="../images/btn.png" alt="Logo">
                 <label class="label_btn">Thêm kinh nghiệm làm việc</label>
+            </div>
+            <div class="collapsible">
+                <div class="row1">
+                    <div class="textbox">
+                        <span>* Chức Danh</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="textbox">
+                        <span>* Công Ty</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="textbox">
+                        <span>Từ Tháng</span>
+                        <input type="text">
+                    </div>
+                    <div class="textbox">
+                        <span>Đến Tháng</span>
+                        <input type="text">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span>Công Việc Hiện Tại</span>
+                    </div>
+                </div>
+                <div class="row3">
+                    <span>Mô Tả</span>
+                    <textarea name="desciption" cols="100" rows="10"></textarea>
+                </div>
+                <div class="btn-add">
+                    <a href="">Thêm</a>
+                </div>
             </div>
         </div>
         <div class="Description">
@@ -253,6 +297,41 @@
                 <img class="icon-btn" src="../images/btn.png" alt="Logo">
                 <label class="label_btn">Thêm mô tả</label>
             </div>
+            <div class="collapsible">
+                <div class="row0">
+                    <div class="textbox">
+                        <span>* Chuyên Ngành</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="textbox">
+                        <span>* Trường</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="textbox">
+                        <span>* Bằng Cấp</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="textbox">
+                        <span>Từ Tháng</span>
+                        <input type="text">
+                    </div>
+                    <div class="textbox">
+                        <span>Đến Tháng</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row3">
+                    <span>Thành Tựu</span>
+                    <textarea name="desciption" cols="100" rows="10"></textarea>
+                </div>
+                <div class="btn-add">
+                    <a href="">Thêm</a>
+                </div>
+            </div>
         </div>
         <div class="Description">
             <div class="title_info_user">
@@ -262,6 +341,17 @@
             <div class="btn_expand">
                 <img class="icon-btn" src="../images/btn.png" alt="Logo">
                 <label class="label_btn">Thêm mô tả</label>
+            </div>
+            <div class="collapsible">
+                <div class="row0">
+                    <div class="textbox">
+                        <span>Mô tả</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="btn-add">
+                        <a href="">Thêm</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="div_work">
@@ -293,9 +383,9 @@
             </div>
             <button class="btn_save">Lưu</button>
         </div>
-        
-        
-        
+
+
+
 
         <footer class="main-footer">
             <div class="footer-box">
@@ -387,40 +477,50 @@
             <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
         </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.swipe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.login').click(function (e) {
-                $('.dropdown-not-login').toggleClass('active');
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.login').click(function (e) {
+                    $('.dropdown-not-login').toggleClass('active');
+                })
+
+                $(".btn_expand").click(function (e) {
+                    $edit = $(this);
+                    //getting the next element
+                    $content = $edit.next();
+                    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+                    $content.slideToggle(500, function () {
+                        //execute this after slideToggle is done
+                        //change text of header based on visibility of content div
+
+                    });
+                })
             })
-        })
 
-        var navbar = document.querySelector(".navbar");
-        var menu = document.querySelector(".nav-menu");
-        var menuBtn = document.querySelector(".menu-btn");
-        var closeBtn = document.querySelector(".close-btn");
+            var navbar = document.querySelector(".navbar");
+            var menu = document.querySelector(".nav-menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
 
-        menuBtn.addEventListener("click", () => {
-            navbar.classList.add("active");
-            menu.classList.add("active");
-        })
+            menuBtn.addEventListener("click", () => {
+                navbar.classList.add("active");
+                menu.classList.add("active");
+            })
 
-        closeBtn.addEventListener("click", () => {
-            navbar.classList.remove("active");
-            menu.classList.remove("active");
-        })
-
-        navbar.addEventListener("click", (e) => {
-            if (e.target == navbar) {
+            closeBtn.addEventListener("click", () => {
                 navbar.classList.remove("active");
                 menu.classList.remove("active");
-            }
-        })
-    </script>
+            })
+
+            navbar.addEventListener("click", (e) => {
+                if (e.target == navbar) {
+                    navbar.classList.remove("active");
+                    menu.classList.remove("active");
+                }
+            })
+        </script>
 </body>
+
 </html>
