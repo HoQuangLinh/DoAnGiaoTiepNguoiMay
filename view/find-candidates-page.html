@@ -43,7 +43,9 @@
       <div class="nav-bar">
         <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
         <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
-        <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+        <a href="post-job-page.html" style="text-decoration: none">
+          <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+        </a>
       </div>
       <div class="profile-header">
         <i class="notify-icon fa-solid fa-bell"></i>
@@ -130,7 +132,7 @@
               <h3>BỘ LỌC</h3>
               <div class="career">
                 <p>Ngành nghề</p>
-                <ul>
+                <ul class="career__list">
                   <li class="init">Tất cả Ngành nghề</li>
                   <li>IT- Phần mềm</li>
                   <li>IT- Phần cứng</li>
@@ -179,42 +181,46 @@
                   <i class="fa fa-caret-down"></i>
                 </ul>
               </div>
-              <p>Năm kinh nghiệm</p>
-              <div class="row no-gutters">
-                <div class="l-6 m-6 c-6">
-                  <input
-                    style="width: 90%"
-                    class="form-control"
-                    placeholder="Từ"
-                    type="text"
-                  />
-                </div>
-                <div class="l-6 m-6 c-6">
-                  <input
-                    style="width: 100%"
-                    class="form-control"
-                    placeholder="Đến"
-                    type="text"
-                  />
+              <div class="year-of-experience">
+                <p>Năm kinh nghiệm</p>
+                <div class="row no-gutters">
+                  <div class="l-6 m-6 c-6">
+                    <input
+                      style="width: 90%"
+                      class="form-control"
+                      placeholder="Từ"
+                      type="text"
+                    />
+                  </div>
+                  <div class="l-6 m-6 c-6">
+                    <input
+                      style="width: 100%"
+                      class="form-control"
+                      placeholder="Đến"
+                      type="text"
+                    />
+                  </div>
                 </div>
               </div>
-              <p>Mức lương</p>
-              <div class="row no-gutters">
-                <div class="l-6 m-6 c-6">
-                  <input
-                    style="width: 90%"
-                    class="form-control"
-                    placeholder="Từ"
-                    type="text"
-                  />
-                </div>
-                <div class="l-6 m-6 c-6">
-                  <input
-                    style="width: 100%"
-                    class="form-control"
-                    placeholder="Đến"
-                    type="text"
-                  />
+              <div class="salary">
+                <p>Mức lương</p>
+                <div class="row no-gutters">
+                  <div class="l-6 m-6 c-6">
+                    <input
+                      style="width: 90%"
+                      class="form-control"
+                      placeholder="Từ"
+                      type="text"
+                    />
+                  </div>
+                  <div class="l-6 m-6 c-6">
+                    <input
+                      style="width: 100%"
+                      class="form-control"
+                      placeholder="Đến"
+                      type="text"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="rank">
@@ -459,6 +465,9 @@
     const closeBtn = document.querySelector(".js-close-menu");
     const menuMobile = document.querySelector(".js-menu-mobile");
     const menuMobileChild = document.querySelector(".js-menu-content");
+    const divFilterMenu = document.querySelectorAll(
+      ".filter-menu>form>div>div"
+    );
     menuBtn.addEventListener("click", function (event) {
       menuMobile.classList.add("menu-mobile-modal");
     });
