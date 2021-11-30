@@ -38,7 +38,7 @@ listCategory.forEach((category) => {
 });
 listJobHandbook.forEach((handbook) => {
   handbook.addEventListener("click", () => {
-    location.href = "./intro-company.html";
+    location.href = "./blog-detail.html";
   });
 });
 
