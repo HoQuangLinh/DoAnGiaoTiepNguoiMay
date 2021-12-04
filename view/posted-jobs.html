@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--add google font-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+
+    <!--Add icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/posted-jobs.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="body-container">
+        <div class="search-container">
+            <div class="search-container-left">
+                <div class="search-input">
+                    <input placeholder="Tìm kiếm" type="text">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="btn-search hide-on-676px">Tìm kiếm</div>
+            </div>
+            <div class="search-container-right">
+
+                <div class="filter-name">
+                    <p>Sắp xếp theo: Số thự tự</p>
+                    <i class="fas fa-chevron-down filter-btn"></i>
+                    <div class="filter-modal">
+                        <div class="filter-modal-col">
+                            <span class="filter-modal-item">Số thự tự</span>
+                            <span class="filter-modal-item">Công ty</span>
+                            <span class="filter-modal-item">Chức danh</span>
+                        </div>
+                        <div class="filter-modal-col">
+                            <span class="filter-modal-item">Thời hạn</span>
+                            <span class="filter-modal-item">Số lần xem</span>
+                            <span class="filter-modal-item">Địa điểm</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <table id="posted-job">
+                <tr>
+
+                    <th>Số thứ tự</th>
+                    <th>Công ty</th>
+                    <th>Chức danh</th>
+                    <th>Thời hạn</th>
+                    <th>Số lần xem</th>
+                    <th>Hồ sơ ứng tuyển</th>
+                    <th>Địa điểm</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Công ty cổ phần KSFINANCE</td>
+                    <td>Chuyên viên phân tích dữ liệu</td>
+                    <td>21/12/2021</td>
+                    <td>25</td>
+                    <td>34</td>
+                    <td>Hà Nội, Thành phố Hồ Chí Minh</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Công ty cổ phần KSFINANCE</td>
+                    <td>Chuyên viên phân tích dữ liệu</td>
+                    <td>21/12/2021</td>
+                    <td>25</td>
+                    <td>34</td>
+                    <td>Hà Nội, Thành phố Hồ Chí Minh</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Công ty cổ phần KSFINANCE</td>
+                    <td>Chuyên viên phân tích dữ liệu</td>
+                    <td>21/12/2021</td>
+                    <td>25</td>
+                    <td>34</td>
+                    <td>Hà Nội, Thành phố Hồ Chí Minh</td>
+                </tr>
+
+
+            </table>
+        </div>
+        <div class="pagination">
+            <div class="pagination-left">
+                <div class="cell" id="prev-btn">
+                    <i class="fas fa-caret-left"></i>
+                </div>
+                <div class="cell cell-js active ">1</div>
+                <div class="cell cell-js">2</div>
+                <div class="cell cell-js">3</div>
+                <div class="cell cell-js">4</div>
+                <div class="cell" id='next-btn'>
+                    <i class="fas fa-caret-right"></i>
+                </div>
+            </div>
+            <div class="pagination-right">
+                <p>Số hàng mỗi dòng: 10 / Tổng số công việc</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/posted-jobs.js"></script>
+</body>
+
+</html>
