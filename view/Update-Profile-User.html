@@ -1,338 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Update Profile</title>
-        <link rel="stylesheet" href="../css/Update-Profile-User.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-            rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/85a68be3b3.js" crossorigin="anonymous"></script>
-        <link
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../css/Update-Profile-User.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-        rel="stylesheet"
-      />
-        <link
-        href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-        rel="stylesheet"
-      />
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <a href="homepage.html">
-                    <img src="../images/salary_page/logo1.png" alt="Logo">
-                    FINDWORK
-                </a>
-            </div> <!-- Logo -->
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85a68be3b3.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-            <form class="searchbar">
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="homepage.html">
+                <img src="../images/salary_page/logo1.png" alt="Logo">
+                FINDWORK
+            </a>
+        </div> <!-- Logo -->
+
+        <form class="searchbar">
+            <div class="job">
                 <i class="material-icons prefix">search</i>
-                <div class="job">
-                    <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
-                </div>
+                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+            </div>
+            <div class="local">
                 <i class="material-icons prefix">location_on</i>
-                <div class="local">
-                    <input type="search" name="s" placeholder="Tất cả địa điểm">
+                <input type="search" name="s" placeholder="Tất cả khu vực">
+            </div>
+            <button class="findjobs" type="submit">Tìm Việc</button>
+        </form> <!-- searchbar -->
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <div class="close-btn">
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                 </div>
-                <button class="findjobs" type="submit">Tìm Việc</button>
-            </form> <!-- searchbar -->
+                <li class="search-sidebar">
+                    <form>
+                        <div class="job">
+                            <i class="material-icons prefix">search</i>
+                            <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+                        </div>
+                        <div class="local">
+                            <i class="material-icons prefix">location_on</i>
+                            <input type="search" name="s" placeholder="Tất cả khu vực">
+                        </div>
+                        <div class="findjobs-btn">
+                            Tìm Việc
+                        </div>
+                    </form> <!-- searchbar -->
+                </li>
+                <li><a href="#">VIỆC LÀM</a></li>
+                <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="company-page.html">CÔNG TY</a></li>
+                <li class="resp-item-fist"><a href="">Thông tin chung</a></li>
+                <li class="resp-item"><a href="">Cập nhật hồ sơ</a></li>
+                <li class="resp-item"><a href="">Quản lý tài khoản</a></li>
+                <li class="resp-item"><a href="">Đăng xuất</a></li>
+                <li>
+                    <div class="noti_login">
+                        <i class="material-icons prefix">notifications_none</i>
+                        <div class="btn-dropdown">
+                            <button class="login" type="submit">
+                                <i class="material-icons prefix">account_circle</i>
+                                <div>
+                                    Nguyễn Tiến Đạt
+                                </div>
+                            </button>
+                            <div class="dropdown-not-login">
+                                <div class="dropdown">
+                                    <a href="">
+                                        <div>
+                                            <img src="../images/manage-acc-page/general.png" alt="">
+                                        </div>
+                                        <span>Thông tin chung</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="">
+                                        <div>
+                                            <img src="../images/manage-acc-page/update.png" alt="">
+                                        </div>
+                                        <span>Cập nhật hồ sơ</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="">
+                                        <div>
+                                            <img src="../images/manage-acc-page/manage.png" alt="">
+                                        </div>
+                                        <span>Quản lý tài khoản</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="">
+                                        <div>
+                                            <img src="../images/company-page/login.png" alt="">
+                                        </div>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav> <!-- navbar -->
+    </header> <!-- header -->
+    <div class="div_body">
+        <div class="title">Cập nhật hồ sơ</div>
+        <div class="info_genaral">
+            <div class="avata">
+                <img class="icon-avata" src="../images/avata.png" alt="Logo">
+            </div>
 
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li><a href="#">VIỆC LÀM</a></li>
-                    <li><a href="#">MỨC LƯƠNG</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CÔNG TY</a></li>
-                </ul>
-            </nav> <!-- navbar -->
-            
-            <div class="noti_login">
-                <i class="material-icons prefix">notifications_none</i>
-                <div>
-                    <button class="login" type="submit">
-                        <i class="material-icons prefix">account_circle</i>
-                        Đăng Nhập
-                    </button>
+            <div class="div_genaral">
+                <div class="div_name">
+                    <label class="name">Tên*</label>
+                    <input class="input" placeholder=""></input>
+                </div>
+                <div class="div_name">
+                    <label class="name">Chức danh*</label>
+                    <input class="input" placeholder=""></input>
+                </div>
+                <div class="div_name">
+                    <label class="name">Số năm kinh nghiệm*</label>
+                    <input class="input" placeholder=""></input>
                 </div>
             </div>
-        </header> <!-- header -->
-        <div class="div_body">
-            <div class="title">Cập nhật hồ sơ</div>
-            <div class="info_genaral">
-                <div class="avata">
-                    <img class="icon-avata" src="../images/avata.png" alt="Logo">
+            <div class="div_genaral2">
+                <div class="div_name">
+                    <label class="name">Họ*</label>
+                    <input class="input" placeholder=""></input>
                 </div>
-            
+                <div class="div_name">
+                    <label class="name">Cấp bậc hiện tại*</label>
+                    <input class="input" placeholder=""></input>
+                </div>
+                <div class="div_name">
+                    <label class="name">Bằng cấp khác*</label>
+                    <input class="input" placeholder=""></input>
+                </div>
+            </div>
+        </div>
+        <!-- Thông tin cá nhân -->
+        <div class="info_user">
+            <div class="title_info_user">
+                Thông tin cá nhân
+            </div>
+            <div class="info">
                 <div class="div_genaral">
-                    <div class="div_name">
-                        <label class="name">Tên*</label>                                                                        
-                        <input class="input" placeholder=""></input>
+                    <div class="div_name1">
+                        <label class="name">Email*</label>
+                        <input class="input1" placeholder=""></input>
                     </div>
-                    <div class="div_name">
-                        <label class="name">Chức danh*</label>                                                                        
-                        <input class="input" placeholder=""></input>
+                    <div class="div_name1">
+                        <label class="name">Ngày sinh*</label>
+                        <input class="input1" placeholder=""></input>
                     </div>
-                    <div class="div_name">
-                        <label class="name">Số năm kinh nghiệm*</label>                                                                        
-                        <input class="input" placeholder=""></input>
+                    <div class="div_name1">
+                        <label class="name">Giới tính*</label>
+                        <div class="select_sex">
+                            <div class="checkbox_boy">
+                                <input type="checkbox" checked id="checkbox" />
+                                <label for="checkbox">Nam</label>
+                            </div>
+                            <div class="checkbox_girl">
+                                <input type="checkbox" checked id="checkbox1" />
+                                <label for="checkbox1">Nữ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_name1">
+                        <label class="name">Tỉnh/Thành phố*</label>
+                        <input class="input1" placeholder=""></input>
                     </div>
                 </div>
                 <div class="div_genaral2">
-                    <div class="div_name">
-                        <label class="name">Họ*</label>                                                                        
-                        <input class="input" placeholder=""></input>
+                    <div class="div_name1">
+                        <label class="name">Điện thoại*</label>
+                        <input class="input1" placeholder=""></input>
                     </div>
-                    <div class="div_name">
-                        <label class="name">Cấp bậc hiện tại*</label>                                                                        
-                        <input class="input" placeholder=""></input>
+                    <div class="div_name1">
+                        <label class="name">Quốc tịch*</label>
+                        <input class="input1" placeholder=""></input>
                     </div>
-                    <div class="div_name">
-                        <label class="name">Bằng cấp khác*</label>                                                                        
-                        <input class="input" placeholder=""></input>
-                    </div>
-                </div>
-            </div>
-            <!-- Thông tin cá nhân -->
-            <div class="info_user">
-                <div class="title_info_user">
-                    Thông tin cá nhân
-                </div>
-                <div class="info">
-                    <div class="div_genaral">
-                        <div class="div_name1">
-                            <label class="name">Email*</label>                                                                        
-                            <input class="input1" placeholder=""></input>
-                        </div>
-                        <div class="div_name1">
-                            <label class="name">Ngày sinh*</label>                                                                        
-                            <input class="input1" placeholder=""></input>
-                        </div>
-                        <div class="div_name1">
-                            <label class="name">Giới tính*</label>   
-                            <div class="select_sex">
-                                <div class="checkbox_boy">
-                                    <input type="checkbox" checked id="checkbox" />
-                                    <label for="checkbox">Nam</label>
-                                </div>
-                                <div class="checkbox_girl">
-                                    <input type="checkbox" checked id="checkbox1" />
-                                    <label for="checkbox1">Nữ</label>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="div_name1">
-                            <label class="name">Tỉnh/Thành phố*</label>                                                                        
-                            <input class="input1" placeholder=""></input>
-                        </div>
-                    </div>
-                    <div class="div_genaral2">
-                        <div class="div_name1">
-                            <label class="name">Điện thoại*</label>                                                                        
-                            <input class="input1" placeholder=""></input>
-                        </div>
-                        <div class="div_name1">
-                            <label class="name">Quốc tịch*</label>                                                                        
-                            <input class="input1" placeholder=""></input>
-                        </div>
-                        <div class="div_name1">
-                            <label class="name">Tình trạng hôn nhân*</label>   
-                            <div class="select_sex">
-                                <div class="checkbox_boy">
-                                    <input type="checkbox" checked id="checkbox" />
-                                    <label for="checkbox">Độc thân</label>
-                                </div>
-                                <div class="checkbox_girl">
-                                    <input type="checkbox" checked id="checkbox1" />
-                                    <label for="checkbox1">Đã kết hôn</label>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="div_name1">
-                            <label class="name">Quận/Huyện*</label>                                                                        
-                            <input class="input1" placeholder=""></input>
-                        </div>
-                    </div>
-                </div>
-                <div class="div_name2">
-                    <label class="name">Quận/Huyện*</label>                                                                        
-                    <input class="input2" placeholder=""></input>
-                </div>
-            </div>
-            <!-- Mô tả thông tin chung -->
-            <div class="Description">
-                <div class="title_info_user">
-                    Thông tin chung
-                </div>
-                <div class="label_title">Giới thiệu bản thân và miêu tả mục tiêu nghề nghiệp của bạn</div>
-                <div class="btn_expand">
-                    <img class="icon-btn" src="../images/btn.png" alt="Logo">
-                    <label class="label_btn">Thêm thông tin chung</label>
-                </div>
-            </div>
-            <div class="Description">
-                <div class="title_info_user">
-                    Kinh nghiệm làm việc
-                </div>
-                <div class="label_title">Giới thiệu kinh nghiệm của bạn</div>
-                <div class="btn_expand">
-                    <img class="icon-btn" src="../images/btn.png" alt="Logo">
-                    <label class="label_btn">Thêm kinh nghiệm làm việc</label>
-                </div>
-            </div>
-            <div class="Description">
-                <div class="title_info_user">
-                    Học vấn
-                </div>
-                <div class="label_title">Mô tả quá trình học vấn của bạn</div>
-                <div class="btn_expand">
-                    <img class="icon-btn" src="../images/btn.png" alt="Logo">
-                    <label class="label_btn">Thêm mô tả</label>
-                </div>
-            </div>
-            <div class="Description">
-                <div class="title_info_user">
-                    Kỹ năng
-                </div>
-                <div class="label_title">Mô tả quá kỹ năng của bạn</div>
-                <div class="btn_expand">
-                    <img class="icon-btn" src="../images/btn.png" alt="Logo">
-                    <label class="label_btn">Thêm mô tả</label>
-                </div>
-            </div>
-            <div class="div_work">
-                <div class="title_info_user">
-                    Công việc mong muốn
-                </div>
-                    <div class="info">
-                        <div class="div_genaral">
-                            <div class="div_name1">
-                                <label class="name">Nơi làm việc</label>                                                                        
-                                <input class="input1" placeholder=""></input>
+                    <div class="div_name1">
+                        <label class="name">Tình trạng hôn nhân*</label>
+                        <div class="select_sex">
+                            <div class="checkbox_boy">
+                                <input type="checkbox" checked id="checkbox" />
+                                <label for="checkbox">Độc thân</label>
                             </div>
-                            <div class="div_name1">
-                                <label class="name">Ngành nghề</label>                                                                        
-                                <input class="input1" placeholder=""></input>
-                            </div>
-
-                        </div>
-                        <div class="div_genaral2">
-                            <div class="div_name1">
-                                <label class="name">Mức lương mong muốn (VND/Tháng)</label>                                                                        
-                                <input class="input1" placeholder=""></input>
-                            </div>
-                            <div class="div_name1">
-                                <label class="name">Cấp bậc mong muốn</label>                                                                        
-                                <input class="input1" placeholder=""></input>
+                            <div class="checkbox_girl">
+                                <input type="checkbox" checked id="checkbox1" />
+                                <label for="checkbox1">Đã kết hôn</label>
                             </div>
                         </div>
+                    </div>
+                    <div class="div_name1">
+                        <label class="name">Quận/Huyện*</label>
+                        <input class="input1" placeholder=""></input>
+                    </div>
+                </div>
             </div>
-
+            <div class="div_name2">
+                <label class="name">Quận/Huyện*</label>
+                <input class="input2" placeholder=""></input>
+            </div>
         </div>
-        <button class="btn_save">
-            Lưu
-        </button>
-    </body>
-      
-    <footer class="main-footer">
-        <div class="footer-box">
-            <div class="first-box">
-                <div class="logo">
-                    <a href="homepage.html">
-                        <img src="../images/salary_page/logo1.png" alt="Logo">
-                        FINDWORK
+        <!-- Mô tả thông tin chung -->
+        <div class="Description">
+            <div class="title_info_user">
+                Thông tin chung
+            </div>
+            <div class="label_title">Giới thiệu bản thân và miêu tả mục tiêu nghề nghiệp của bạn</div>
+            <div class="btn_expand">
+                <img class="icon-btn" src="../images/btn.png" alt="Logo">
+                <label class="label_btn">Thêm thông tin chung</label>
+            </div>
+            <div class="collapsible">
+                <div class="row0">
+                    <div class="textbox">
+                        <span>Mô tả</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="btn-add">
+                        <a href="">Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Description">
+            <div class="title_info_user">
+                Kinh nghiệm làm việc
+            </div>
+            <div class="label_title">Giới thiệu kinh nghiệm của bạn</div>
+            <div class="btn_expand">
+                <img class="icon-btn" src="../images/btn.png" alt="Logo">
+                <label class="label_btn">Thêm kinh nghiệm làm việc</label>
+            </div>
+            <div class="collapsible">
+                <div class="row1">
+                    <div class="textbox">
+                        <span>* Chức Danh</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="textbox">
+                        <span>* Công Ty</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="textbox">
+                        <span>Từ Tháng</span>
+                        <input type="text">
+                    </div>
+                    <div class="textbox">
+                        <span>Đến Tháng</span>
+                        <input type="text">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span>Công Việc Hiện Tại</span>
+                    </div>
+                </div>
+                <div class="row3">
+                    <span>Mô Tả</span>
+                    <textarea name="desciption" cols="100" rows="10"></textarea>
+                </div>
+                <div class="btn-add">
+                    <a href="">Thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="Description">
+            <div class="title_info_user">
+                Học vấn
+            </div>
+            <div class="label_title">Mô tả quá trình học vấn của bạn</div>
+            <div class="btn_expand">
+                <img class="icon-btn" src="../images/btn.png" alt="Logo">
+                <label class="label_btn">Thêm mô tả</label>
+            </div>
+            <div class="collapsible">
+                <div class="row0">
+                    <div class="textbox">
+                        <span>* Chuyên Ngành</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="textbox">
+                        <span>* Trường</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="textbox">
+                        <span>* Bằng Cấp</span>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="textbox">
+                        <span>Từ Tháng</span>
+                        <input type="text">
+                    </div>
+                    <div class="textbox">
+                        <span>Đến Tháng</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row3">
+                    <span>Thành Tựu</span>
+                    <textarea name="desciption" cols="100" rows="10"></textarea>
+                </div>
+                <div class="btn-add">
+                    <a href="">Thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="Description">
+            <div class="title_info_user">
+                Kỹ năng
+            </div>
+            <div class="label_title">Mô tả quá kỹ năng của bạn</div>
+            <div class="btn_expand">
+                <img class="icon-btn" src="../images/btn.png" alt="Logo">
+                <label class="label_btn">Thêm mô tả</label>
+            </div>
+            <div class="collapsible">
+                <div class="row0">
+                    <div class="textbox">
+                        <span>Mô tả</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="btn-add">
+                        <a href="">Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div_work">
+            <div class="title_info_user">
+                Công việc mong muốn
+            </div>
+            <div class="info">
+                <div class="div_genaral">
+                    <div class="div_name1">
+                        <label class="name">Nơi làm việc</label>
+                        <input class="input1" placeholder=""></input>
+                    </div>
+                    <div class="div_name1">
+                        <label class="name">Ngành nghề</label>
+                        <input class="input1" placeholder=""></input>
+                    </div>
+
+                </div>
+                <div class="div_genaral2">
+                    <div class="div_name1">
+                        <label class="name">Mức lương mong muốn (VND/Tháng)</label>
+                        <input class="input1" placeholder=""></input>
+                    </div>
+                    <div class="div_name1">
+                        <label class="name">Cấp bậc mong muốn</label>
+                        <input class="input1" placeholder=""></input>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_save">Lưu</button>
+        </div>
+
+
+
+
+        <footer class="main-footer">
+            <div class="footer-box">
+                <div class="box">
+                    <div class="first-box">
+                        <div class="logo">
+                            <a href="homepage.html">
+                                <img src="../images/salary_page/logo1.png" alt="Logo">
+                                FINDWORK
+                            </a>
+                        </div> <!-- Logo -->
+                        <div class="description">
+                            Nơi bạn có thể tìm được những
+                            ứng cử viên sáng giá cho công ty của bạn.
+                        </div>
+                        <button class="learn-more">Tìm hiểu thêm</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Ứng cử viên</h3>
+                    <ul>
+                        <li><a href="#">Việc làm</a></li>
+                        <li><a href="#">Ngành nghề</a></li>
+                        <li><a href="#">Nộp hồ sơ</a></li>
+                        <li><a href="#">Doanh Nghiệp</a></li>
+                        <li><a href="#">Xác thực tài khoản</a></li>
+                        <li><a href="#">Nâng cấp tài khoản</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Nhà tuyển dụng</h3>
+                    <ul>
+                        <li><a href="#">Đăng tuyển dụng</a></li>
+                        <li><a href="#">Tìm kiếm hồ sơ</a></li>
+                        <li><a href="#">Quản lý dự án</a></li>
+                        <li><a href="#">Xác thực tài khoản</a></li>
+                        <li><a href="#">Nâng cấp tài khoản</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản và điều kiện</a></li>
+                        <li><a href="#">Chính sách Bản quyền</a></li>
+                        <li><a href="#">Quy tắc ứng xử</a></li>
+                        <li><a href="#">Phí và lệ phí</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Danh sách trang</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Việc làm</a></li>
+                        <li><a href="#">Mức lương</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Công ty</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer><!-- footer -->
+        <div class="follow-us">
+            Theo dõi chúng tôi
+            <span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/facebook.png" alt="Visit on Facebook">
                     </a>
-                </div> <!-- Logo -->
-                <div class="description">
-                    Nơi bạn có thể tìm được những 
-                    ứng cử viên sáng giá cho công ty của bạn.
-                </div>
-                <button class="learn-more">Tìm hiểu thêm</button>
-            </div>
-        </div>
-        <div class="footer-box">
-            <h3>Ứng cử viên</h3>
-            <ul>
-                <li><a href="#">Việc làm</a></li>
-                <li><a href="#">Ngành nghề</a></li>
-                <li><a href="#">Nộp hồ sơ</a></li>
-                <li><a href="#">Doanh Nghiệp</a></li>
-                <li><a href="#">Xác thực tài khoản</a></li>
-                <li><a href="#">Nâng cấp tài khoản</a></li>
-            </ul>
-        </div>
-        <div class="footer-box">
-            <h3>Nhà tuyển dụng</h3>
-            <ul>
-                <li><a href="#">Đăng tuyển dụng</a></li>
-                <li><a href="#">Tìm kiếm hồ sơ</a></li>
-                <li><a href="#">Quản lý dự án</a></li>
-                <li><a href="#">Xác thực tài khoản</a></li>
-                <li><a href="#">Nâng cấp tài khoản</a></li>
-            </ul>
-        </div>
-        <div class="footer-box">
-            <h3>Chính sách</h3>
-            <ul>
-                <li><a href="#">Chính sách bảo mật</a></li>
-                <li><a href="#">Điều khoản và điều kiện</a></li>
-                <li><a href="#">Chính sách Bản quyền</a></li>
-                <li><a href="#">Quy tắc ứng xử</a></li>
-                <li><a href="#">Phí và lệ phí</a></li>
-            </ul>
-        </div>
-        <div class="footer-box">
-            <h3>Danh sách trang</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Việc làm</a></li>
-                <li><a href="#">Mức lương</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Công ty</a></li>
-            </ul>
-        </div>
-        <div class="clearfix"></div>
-    </footer><!-- footer -->
-    <div class="follow-us">
-        Follow us
-        <span>
-            <span>
-                <a href="">
-                    <img src="../images/salary_page/facebook.png" alt="Visit on Facebook">
-                </a>
+                </span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/twitter.png" alt="Visit on Twitter">
+                    </a>
+                </span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/linkedin.png" alt="Visit on Linkedin">
+                    </a>
+                </span>
+                <span>
+                    <a href="">
+                        <img src="../images/salary_page/youtube.png" alt="Visit on Youtube">
+                    </a>
+                </span>
             </span>
-            <span>
-                <a href="">
-                    <img src="../images/salary_page/twitter.png" alt="Visit on Twitter">
-                </a>
-            </span>
-            <span>
-                <a href="">
-                    <img src="../images/salary_page/linkedin.png" alt="Visit on Linkedin">
-                </a>
-            </span>
-            <span>
-                <a href="">
-                    <img src="../images/salary_page/youtube.png" alt="Visit on Youtube">
-                </a>
-            </span>
-        </span>
-    </div>
-    <div class="copy">
-        <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
-    </div>
-</div>
+        </div>
+        <div class="copy">
+            <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+        </div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.swipe.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.shuffle.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.login').click(function (e) {
+                    $('.dropdown-not-login').toggleClass('active');
+                })
+
+                $(".btn_expand").click(function (e) {
+                    $edit = $(this);
+                    //getting the next element
+                    $content = $edit.next();
+                    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+                    $content.slideToggle(500, function () {
+                        //execute this after slideToggle is done
+                        //change text of header based on visibility of content div
+
+                    });
+                })
+            })
+
+            var navbar = document.querySelector(".navbar");
+            var menu = document.querySelector(".nav-menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+
+            menuBtn.addEventListener("click", () => {
+                navbar.classList.add("active");
+                menu.classList.add("active");
+            })
+
+            closeBtn.addEventListener("click", () => {
+                navbar.classList.remove("active");
+                menu.classList.remove("active");
+            })
+
+            navbar.addEventListener("click", (e) => {
+                if (e.target == navbar) {
+                    navbar.classList.remove("active");
+                    menu.classList.remove("active");
+                }
+            })
+        </script>
+</body>
 
 </html>

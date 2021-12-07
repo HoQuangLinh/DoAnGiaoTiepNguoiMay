@@ -334,6 +334,7 @@ body{
     padding: 4px;
     width: 50%;
     font-size: 15px;
+    transition: 0.2s;
 }
 .edit{
     width: 10%;
@@ -595,7 +596,10 @@ body{
         transition-property: visibility;
     }
     /* content holder */
-
+    .content input{
+        width: 60%;
+        transition: 0.2s;
+    }
     /* footer */
 
 }
@@ -657,6 +661,10 @@ body{
         padding: 0 30px;
         transition: 0.2s;
     }
+    .content input{
+        width: 70%;
+        transition: 0.2s;
+    }
     /* footer */
     .box{
         width: 50%;
@@ -677,6 +685,10 @@ body{
     .content-holder{
         margin: 55px 2% 0px 2%;
         padding: 0 10px;
+        transition: 0.2s;
+    }
+    .content input{
+        width: 80%;
         transition: 0.2s;
     }
     /* footer */
