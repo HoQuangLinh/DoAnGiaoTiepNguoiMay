@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  background-size: cover;
+  background-color: #fff;
+}
+button {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#header {
+  height: 55px;
+  background-color: #005385;
+}
+
+.body-container {
+  padding: 30px 100px 30px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-container-left {
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  position: relative;
+  width: 275px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+.search-input > input {
+  font-size: 16px;
+  vertical-align: middle;
+  padding-left: 30px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.search-input > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #333;
+  font-size: 18px;
+}
+.search-container-right {
+  display: flex;
+}
+.btn-search {
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #005385;
+}
+.filter-name {
+  position: relative;
+  display: flex;
+}
+.filter-name > i {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.filter-modal {
+  display: none;
+  transition: all 1s;
+  opacity: 0;
+  width: 250px;
+  position: absolute;
+  z-index: 1000;
+  top: 23px;
+  left: 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 10%) 0px 5px 10px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-modal.active {
+  opacity: 1;
+}
+.filter-modal-col {
+  display: flex;
+  flex-direction: column;
+}
+.filter-modal-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+}
+.filter-modal-item:hover {
+  background-color: rgb(204, 204, 204);
+}
+#posted-job {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#posted-job td,
+#posted-job th {
+  border-bottom: 1px solid #ccc;
+
+  user-select: none;
+}
+#posted-job tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.background_even {
+  background-color: #f2f2f2;
+}
+#posted-job tr:hover {
+  background-image: linear-gradient(180deg, #00b9f2, #1182cf);
+}
+#posted-job th {
+  padding: 15px;
+  color: #fff;
+  background-color: #005385;
+}
+#posted-job td {
+  text-align: center;
+  padding: 10px 5px;
+}
+.pagination {
+  font-size: 14px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.pagination-left {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.cell {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #c4c4c4;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.cell.active {
+  background-color: #00b9f2;
+}
+
+@media (max-width: 900px) {
+  .body-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+  .table-container #posted-job {
+    table-layout: fixed;
+    width: 100%;
+  }
+  #posted-job td,
+  #posted-job th {
+    width: 150px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 769px) {
+  #posted-job td:first-child,
+  #posted-job th:first-child {
+    width: 100px;
+    overflow: hidden;
+  }
+  #posted-job td:nth-child(5),
+  #posted-job th:nth-child(5) {
+    width: 100px;
+  }
+}
+@media (max-width: 730px) {
+  .hide-on-676px {
+    display: none;
+  }
+  .search-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 610px) {
+  .filter-modal {
+    flex-direction: column;
+    width: auto;
+    left: 50px;
+  }
+  .search-input {
+    width: 220px;
+  }
+  .filter-modal-item {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .body-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .search-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .search-input {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  #posted-job td,
+  #posted-job th {
+    width: 100px;
+    overflow: hidden;
+  }
+}

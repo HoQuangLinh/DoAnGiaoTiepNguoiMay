@@ -302,291 +302,30 @@ a {
 .dropdown-register a img {
   margin-right: 12px;
 }
-.management {
-  transition: top 0.5s;
-  position: fixed;
-  top: 55px;
-  left: 0;
+.blog-detail-body {
+  margin: 0 200px;
+}
+/*blog-detail-body*/
+.blog-detail-heading {
+  width: 60%;
+  margin-top: 75px;
+  padding: 10px 0 30px;
+  font-size: 30px;
+}
+.blog-detail-paragraph {
+  font-size: 19px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+.blog-detail-img > img {
   width: 100%;
-  z-index: 100;
-  background-color: #f7f7f7;
-  display: flex;
-  padding: 0 20px;
-  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0;
+  height: 520px;
+  object-fit: cover;
 }
-.management-item {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.management-item > img {
-  width: 25px;
-  margin-right: 10px;
-}
-.body-content {
-  margin-top: 100px;
-  padding: 0 150px;
-  padding-top: 20px;
-}
-.myprofile-card {
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f2f2;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
-.myprofile-avatar {
-  border: 1px solid #000;
-  height: 75px;
-  width: 75px;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.myprofile-avatar .icon {
-  font-size: 40px;
-}
-.myprofile-name {
-  font-size: 18px;
-  padding: 5px;
-}
-.myprofile-desc {
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.myprofile-desc > p {
-  font-weight: 300;
-  font-style: italic;
-}
-.myprofile-desc > span {
-  font-weight: 600;
-}
-.progressbar {
-  margin: 5px 0;
-  width: 80%;
-  background-color: #cac5c5;
-  border-radius: 13px;
-}
-.progressbar > div {
-  background-color: #2a8cff;
-  width: 40%;
-  /* Adjust with JavaScript */
-  height: 10px;
-  border-radius: 13px;
-}
-.btn-update-profile {
-  margin-top: 5px;
-  border: 1px solid #ff9900;
-  font-family: roboto;
-  border-radius: 3px;
-  padding: 5px 10px;
-  color: #ff9900;
-}
-.profile-setting-card {
-  background: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-.profile-setting-heading {
-  padding: 8px;
-
-  background: #c4c4c4;
-}
-.profile-setting-heading > h3 {
-  font-size: 18px;
-}
-.profile-setting-body {
-  padding: 10px;
-}
-.profile-setting-file-upload {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border: 1px dashed #000000;
-  background-color: #fff;
-  font-size: 14px;
-  padding: 10px;
-}
-.profile-setting-file-upload > .btn-submit {
-  margin-bottom: 5px;
-}
-.line {
-  height: 0;
-  border-bottom: 1px solid #000000;
-}
-.profile-setting-footer {
-  padding: 10px;
-}
-.profile-setting-content {
-  margin-top: 5px;
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  justify-content: space-between;
-}
-.profile-setting-content > input {
-  margin-left: 5px;
-  height: 30px;
-  width: 30px;
-}
-.hide-profile-card {
-  background: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-.hide-profile-heading {
-  padding: 8px;
-  background: #c4c4c4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hide-profile-heading > h3 {
-  font-size: 18px;
-}
-.hide-profile-heading > p {
-  color: #f7941d;
-  font-size: 13px;
-  font-weight: 700;
-}
-.hide-profile-item > b {
-  font-size: 14px;
-}
-.hide-profile-body {
-  padding: 25px;
-}
-.hide-profile-body-input {
-  margin: 15px 0;
-  position: relative;
-}
-.hide-profile-body-input > input {
-  border: 1px solid #000000;
-  border-radius: 2px;
-  padding: 7px;
-  font-size: 16px;
-  width: 100%;
-}
-.hide-profile-body-input > img {
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.careers {
-}
-.careers [class*="col"] {
-  padding: 5px;
-}
-.career-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  height: 100%;
-  background-color: #f2f2f2;
-}
-.career-card-heading > h3 {
-  font-size: 50px;
-  font-weight: 400;
-}
-.career-card-body {
-  width: 100%;
-  text-align: center;
-  height: 100%;
-}
-.career-card-body-title {
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-.career-card-body-list {
-  width: 100%;
-  display: flex;
-}
-.career-card-body-item {
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px;
-}
-
-.btn-career {
-  cursor: default;
-  user-select: none;
-  border: none;
-  width: 35px;
-  text-align: center;
-  padding: 5px 0;
-  margin-bottom: 5px;
-}
-.company {
-  background-color: #f2f2f2;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 0 30px;
-}
-.company-header {
-  padding: 30px 0;
-  font-size: 18px;
-}
-.company-item {
-  padding: 15px 0;
-  margin: 0 15px;
-  border-bottom: 1px solid #c4c4c4;
-  align-items: center;
-}
-.company-item:first-child {
-  border-top: 1px solid #c4c4c4;
-}
-.company-item:last-child {
-  border: none;
-}
-.company-item-img {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-
-.company-item > .col-2 {
-  padding-right: 15px;
-  padding-left: 0;
-}
-.company-item > .col-10 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.company-item-content .company-item-header {
-  font-size: 17px;
-  font-weight: 500;
-  margin-bottom: 2px;
-  cursor: pointer;
-}
-.company-item-info > p {
-  cursor: pointer;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #999;
-  font-size: 20px;
-  display: -webkit-box;
-
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+/*end-blog-detail-body*/
 /* footer */
 .main-footer {
   margin-top: 50px;
@@ -715,7 +454,6 @@ a {
 .copy p {
   margin: 0px;
 }
-
 /* responsive */
 @media (max-width: 1337px) {
   /* header */
@@ -796,18 +534,30 @@ a {
   .noti_login {
     display: none;
   }
+  .blog-detail-body {
+    margin: 0 150px;
+  }
 }
 
 @media (max-width: 1288px) {
-  .body-content {
-    padding: 0 100px;
-  }
   /* header */
   .searchbar {
     width: 72%;
     transition: 0.1s;
     visibility: visible;
     transition-property: visibility;
+  }
+  .blog-detail-heading {
+    width: 100%;
+  }
+  .blog-detail-body {
+    margin: 0 100px;
+  }
+  .blog-detail-img > img {
+    max-height: 400px;
+  }
+  .blog-detail-paragraph {
+    font-size: 18px;
   }
 }
 @media (max-width: 1024px) {
@@ -823,17 +573,6 @@ a {
 }
 
 @media (max-width: 830px) {
-  .career-card {
-    margin: 0 10px;
-  }
-  .company {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .management {
-    align-items: center;
-    justify-content: center;
-  }
   /* header */
   .searchbar {
     visibility: collapse;
@@ -886,6 +625,9 @@ a {
     cursor: pointer;
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
   }
+  .blog-detail-body {
+    margin: 0 60px;
+  }
   .main-footer {
     padding-left: 50px;
     padding-right: 50px;
@@ -909,35 +651,12 @@ a {
     flex: 0 0 78%;
     max-width: 78%;
   }
-  .company {
-    padding-left: 15px;
-    padding-right: 0;
-  }
-  .company-item {
-    width: 100%;
-    margin: 0;
-  }
-  .company-item-content .company-item-header {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
 }
 @media (max-width: 599px) {
   .hide-on-mobile {
     display: none;
   }
-  .management {
-    justify-content: space-between;
-  }
-  .company-item-content .company-item-header {
-    font-size: 14px;
-  }
-  .company-item-info > p {
-    font-size: 16px;
-  }
+
   .col-logo {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 30%;
@@ -952,18 +671,27 @@ a {
     flex: 0 0 70%;
     max-width: 70%;
   }
-  .body-content {
-    padding: 0 30px;
+  .blog-detail-body {
+    margin: 0 60px;
+  }
+  .blog-detail-img > img {
+    max-height: 300px;
+  }
+  .blog-detail-paragraph {
+    font-size: 15px;
   }
   .box {
     width: 100%;
   }
 }
-@media (max-width: 413px) {
-  .company-item-content .company-item-header {
-    font-size: 13px;
+@media (max-width: 415px) {
+  .blog-detail-body {
+    margin: 0 30px;
   }
-  .company-item-info > p {
-    font-size: 14px;
+  .blog-detail-heading > h3 {
+    font-size: 22px;
+  }
+  .blog-detail-img > img {
+    max-height: 250px;
   }
 }
