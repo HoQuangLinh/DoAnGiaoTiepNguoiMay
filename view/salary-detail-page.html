@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thống kê mức lương</title>
     <link rel="stylesheet" href="../css/salary-detail-page.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
         rel="stylesheet" />
@@ -18,7 +19,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="homepage.html">
+            <a href="home-page.html">
                 <img src="../images/salary_page/logo1.png" alt="Logo">
                 FINDWORK
             </a>
@@ -33,7 +34,7 @@
                 <i class="material-icons prefix">location_on</i>
                 <input type="search" name="s" placeholder="Tất cả khu vực">
             </div>
-            <button class="findjobs" type="submit">Tìm Việc</button>
+            <a class="findjobs" href="search-page.html">Tìm Việc</a>
         </form> <!-- searchbar -->
         <div class="menu-btn">
             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -53,17 +54,17 @@
                             <i class="material-icons prefix">location_on</i>
                             <input type="search" name="s" placeholder="Tất cả khu vực">
                         </div>
-                        <div class="findjobs-btn">
-                            Tìm Việc
-                        </div>
+                        <a href="./search-page.html">
+                            <div class="findjobs-btn">Tìm Việc</div>
+                        </a>
                     </form> <!-- searchbar -->
                 </li>
-                <li><a href="#">VIỆC LÀM</a></li>
+                <li><a href="search-page.html">VIỆC LÀM</a></li>
                 <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
-                <li><a href="#">BLOG</a></li>
+                <li><a href="list-blog-page.html">BLOG</a></li>
                 <li><a href="company-page.html">CÔNG TY</a></li>
-                <li class="login"><a href="">ĐĂNG NHẬP</a></li>
-                <li class="register"><a href="">ĐĂNG KÝ</a></li>
+                <li class="login"><a href="LogIn.html">ĐĂNG NHẬP</a></li>
+                <li class="register"><a href="SignUp.html">ĐĂNG KÝ</a></li>
                 <li>
                     <div class="noti_login">
                         <i class="material-icons prefix">notifications_none</i>
@@ -89,7 +90,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown">
-                                    <a href="">
+                                    <a href="LogIn.html">
                                         <div>
                                             <img src="../images/company-page/login.png" alt="">
                                         </div>
@@ -97,7 +98,7 @@
                                     </a>
                                 </div>
                                 <div class="dropdown">
-                                    <a href="">
+                                    <a href="SignUp.html">
                                         <div>
                                             <img src="../images/company-page/register.png" alt="">
                                         </div>
@@ -306,7 +307,7 @@
                     </div>
                 </div>
                 <div class="cycle-slideshow banner" data-cycle-slides="> a">
-                    <a href="#">
+                    <a href="./intro-company.html">
                         <img src="../images/salary_page/banner2.png" alt="Banner 1">
                     </a>
                     <a href="#">
@@ -368,11 +369,11 @@
             <div class="box">
                 <h3>Danh sách trang</h3>
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Việc làm</a></li>
-                    <li><a href="#">Mức lương</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Công ty</a></li>
+                    <li><a href="./home-page.html">Trang chủ</a></li>
+                    <li><a href="./search-page.html">Việc làm</a></li>
+                    <li><a href="./salary-page.html">Mức lương</a></li>
+                    <li><a href="./list-blog-page.html">Blog</a></li>
+                    <li><a href="./company-page.html">Công ty</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -529,7 +530,7 @@
             chart.draw(data, options);
         }
 
-        $(window).resize(function(){
+        $(window).resize(function () {
             drawChart();
             drawBasic();
         });
