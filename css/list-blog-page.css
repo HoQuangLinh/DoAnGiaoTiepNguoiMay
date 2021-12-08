@@ -90,11 +90,14 @@ body {
   outline: 0px;
   font-size: 15px;
 }
-.searchbar .findjobs {
-  float: right;
+.searchbar .findjobs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 17%;
-  background-color: #ffcf54;
+  text-decoration: none;
   color: #fff;
+  background-color: #ffcf54;
   font-size: 18px;
   font-weight: 700;
   border: 0px;
@@ -354,7 +357,9 @@ body {
   color: #555;
   margin: 4px 0;
 }
-
+.sub-post a{
+  text-decoration: none;
+}
 .part-4 .sub-post {
   margin-top: 20px;
 }
@@ -712,6 +717,9 @@ body {
     border: 0;
     width: 248px;
     font-size: small;
+  }
+  .search-sidebar a{
+    text-decoration: none;
   }
   .search-sidebar .findjobs-btn {
     width: max-content;

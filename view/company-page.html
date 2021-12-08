@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Công ty</title>
     <link rel="stylesheet" href="../css/company-page.css">
+    <link rel="stylesheet" href="../css/salary-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +25,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <a href="homepage.html">
+                <a href="home-page.html">
                     <img src="../images/salary_page/logo1.png" alt="Logo">
                     FINDWORK
                 </a>
@@ -39,7 +40,7 @@
                     <i class="material-icons prefix">location_on</i>
                     <input type="search" name="s" placeholder="Tất cả khu vực">
                 </div>
-                <button class="findjobs" type="submit">Tìm Việc</button>
+                <a class="findjobs" href="search-page.html">Tìm Việc</a>
             </form> <!-- searchbar -->
             <div class="menu-btn">
                 <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -59,17 +60,17 @@
                                 <i class="material-icons prefix">location_on</i>
                                 <input type="search" name="s" placeholder="Tất cả khu vực">
                             </div>
-                            <div class="findjobs-btn">
-                                Tìm Việc
-                            </div>
+                            <a href="./search-page.html">
+                                <div class="findjobs-btn">Tìm Việc</div>
+                            </a>
                         </form> <!-- searchbar -->
                     </li>
-                    <li><a href="#">VIỆC LÀM</a></li>
+                    <li><a href="search-page.html">VIỆC LÀM</a></li>
                     <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li><a href="list-blog-page.html">BLOG</a></li>
                     <li><a href="company-page.html">CÔNG TY</a></li>
-                    <li class="login"><a href="">ĐĂNG NHẬP</a></li>
-                    <li class="register"><a href="">ĐĂNG KÝ</a></li>
+                    <li class="login"><a href="LogIn.html">ĐĂNG NHẬP</a></li>
+                    <li class="register"><a href="SignUp.html">ĐĂNG KÝ</a></li>
                     <li>
                         <div class="noti_login">
                             <i class="material-icons prefix">notifications_none</i>
@@ -77,7 +78,7 @@
                                 <button class="login" type="submit">
                                     <i class="material-icons prefix">account_circle</i>
                                     <div>
-                                        Đăng nhập
+                                        Đăng Nhập
                                     </div>
                                 </button>
                                 <div class="dropdown-not-login">
@@ -95,7 +96,7 @@
                                         </div>
                                     </div>
                                     <div class="dropdown">
-                                        <a href="">
+                                        <a href="LogIn.html">
                                             <div>
                                                 <img src="../images/company-page/login.png" alt="">
                                             </div>
@@ -103,7 +104,7 @@
                                         </a>
                                     </div>
                                     <div class="dropdown">
-                                        <a href="">
+                                        <a href="SignUp.html">
                                             <div>
                                                 <img src="../images/company-page/register.png" alt="">
                                             </div>
@@ -242,9 +243,9 @@
                                 </div>
                             </div>
                             <div class="filter-box">
-                                <div class="apply-filter">
+                                <a class="apply-filter" href="">
                                     <button type="submit">Áp dụng bộ lọc</button>
-                                </div>
+                                </a>
                             </div>
 
                         </div>
@@ -954,11 +955,11 @@
                 <div class="box">
                     <h3>Danh sách trang</h3>
                     <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Việc làm</a></li>
-                        <li><a href="#">Mức lương</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Công ty</a></li>
+                        <li><a href="./home-page.html">Trang chủ</a></li>
+                        <li><a href="./search-page.html">Việc làm</a></li>
+                        <li><a href="./salary-page.html">Mức lương</a></li>
+                        <li><a href="./list-blog-page.html">Blog</a></li>
+                        <li><a href="./company-page.html">Công ty</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>

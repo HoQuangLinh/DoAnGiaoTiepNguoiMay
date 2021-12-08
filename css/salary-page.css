@@ -85,7 +85,11 @@ body{
     font-size: 15px;
 }
 .searchbar .findjobs{
-    float: right;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
     width: 17%;
     background-color: #FFCF54;
     color: #fff;
@@ -719,6 +723,9 @@ body{
         border: 0;
         width: 248px;
         font-size: small;
+    }
+    .search-sidebar a{
+        text-decoration: none;
     }
     .search-sidebar .findjobs-btn{
         width: max-content;
