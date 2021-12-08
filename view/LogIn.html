@@ -7,6 +7,9 @@
         <title>Sign In</title>
         <link rel="stylesheet" href="../css/LogIn.css">
         <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+        <link
         href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
         rel="stylesheet"
       />
@@ -16,9 +19,8 @@
             <div class="div_left">
                 <div class="circle"></div>
                 <div>
-                <button class="btnBack">
-                    <!-- <i class="bx bx-arrow-back icon"></i> -->
-                    FINDWORK</button>
+                <a style="text-decoration: none" ,style="font-family: Roboto" href= "home-page.html" class="btnBack">
+                    FINDWORK</a>
                 </div>
                 <img class="logoSignIn" src="../images/abc.png" alt="Logo">
                 <img class="titleSignIn" src="../images/title.png" alt="Logo">
@@ -31,13 +33,18 @@
                 <label class="title3">Welcome to us!</label>
             </div>
             <div class="div_right">
+                <div> 
+                    <a style="text-decoration: none" ,style="font-family: Roboto" href= "home-page.html" class="btnBack2">
+                        FINDWORK
+                    </a>
+                </div>
                 <div class="div_info">
                     <div class="title">
                         Đăng nhập
                     </div>
                     <div class="txtUser">
-                        <input class="form_input1" placeholder="  Tên đăng nhập"></input>
-                        <input class="form_input2" placeholder="  Mật khẩu"></input>
+                        <input class="form_input1" placeholder="Email đăng nhập"></input>
+                        <input class="form_input2" placeholder="Mật khẩu"></input>
                     </div>
                     <div class="pass">
                         <div class="rememberpass">
@@ -45,24 +52,37 @@
                             <label class="showpass" for="checkshow"> Hiển thị mật khẩu</label>
                         </div>
                         <div class="forgot">
-                            <label class="forgot"> Quên mật khẩu?</label>
+                            <a style="text-decoration: none" ,style="font-family: Roboto" href= "forgot-password.html" class="forgot"> Quên mật khẩu?</a>
                         </div>
                     </div>
                     <div class="div_titleSignup">
                         <label class="titleSignup">Bạn chưa có tài khoản ?</label>
-                        <label class="btnSignup">Đăng kí</label>
+                        <a href="SignUp.html" class="btnSignup">Đăng kí</a>
                     </div>
+                    <div class="div_btnSignin">
                     <button class="btnSignin">Đăng nhập</button>
-                    <a>or</a>
-                    <div class="=div_btnFace">
-                        
-                        <button class="btnFacebook">
-                            <img class="logoface" src="../images/facebook.png" alt="Logo">
-                            Đăng nhập bằng Facebook </button>
                     </div>
-                    <button class="btnGmail">
-                        <img class="logoGmail" src="../images/google.png" alt="Logo">
-                        Đăng nhập bằng Gmail </button>
+                    <div class="or">
+                        or
+                    </div>
+                    <div class="div_btnFace">
+                        
+                        <div class="btnFacebook">
+                            <div class="div_logoface">
+                            <img class="logoface" src="../images/facebook.png" alt="Logo"> 
+                            </div>
+                            <label class="login_face">Đăng nhập bằng Facebook</label>
+                        </div>
+                        <div class="btnGmail">
+                            <div class="div_logogmail">
+                            <img class="logoGmail" src="../images/google.png" alt="Logo">
+                            </div>
+                            <label class="login_gmail">Đăng nhập bằng Gmail</label>
+                        </div>
+                    </div>
+                    <div class="div_signup2">
+                        Đăng Ký Tài Khoản FindWork
+                    </div>
                 </div>
             </div>
         </div>
