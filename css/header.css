@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
 .header{
     position: fixed;
     top: 0;
@@ -110,6 +114,14 @@
 .nav-menu > li{
     display: flex;
     align-items: center;
+}
+.nav-menu .resp-item-fist{
+    display: none;
+    text-transform: uppercase;
+}
+.nav-menu .resp-item{
+    display: none;
+    text-transform: uppercase;
 }
 .nav-menu .login{
     display: none;
@@ -327,6 +339,13 @@
         background-position: center;
         cursor: pointer;
     }
+    .nav-menu .resp-item-fist{
+        display: block;
+        border-top: 1px solid #fff;
+    }
+    .nav-menu .resp-item{
+        display: block;
+    }
     .nav-menu .login{
         display: block;
         border-top: 1px solid #fff;
@@ -340,7 +359,7 @@
         align-items: center;
     }
     .nav-menu li a{
-        width: 210px;
+        width: 250px;
     }
     .menu-btn{
         color: #fff;

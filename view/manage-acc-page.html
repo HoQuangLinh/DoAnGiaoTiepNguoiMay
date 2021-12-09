@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý tài khoản</title>
     <link rel="stylesheet" href="../css/manage-acc-page.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
         rel="stylesheet" />
@@ -20,7 +21,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <a href="homepage.html">
+                <a href="home-page.html">
                     <img src="../images/salary_page/logo1.png" alt="Logo">
                     FINDWORK
                 </a>
@@ -35,7 +36,7 @@
                     <i class="material-icons prefix">location_on</i>
                     <input type="search" name="s" placeholder="Tất cả khu vực">
                 </div>
-                <button class="findjobs" type="submit">Tìm Việc</button>
+                <a class="findjobs" href="search-page.html">Tìm Việc</a>
             </form> <!-- searchbar -->
             <div class="menu-btn">
                 <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -55,19 +56,19 @@
                                 <i class="material-icons prefix">location_on</i>
                                 <input type="search" name="s" placeholder="Tất cả khu vực">
                             </div>
-                            <div class="findjobs-btn">
-                                Tìm Việc
-                            </div>
+                            <a href="./search-page.html">
+                                <div class="findjobs-btn">Tìm Việc</div>
+                            </a>
                         </form> <!-- searchbar -->
                     </li>
-                    <li><a href="#">VIỆC LÀM</a></li>
+                    <li><a href="search-page.html">VIỆC LÀM</a></li>
                     <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li><a href="list-blog-page.html">BLOG</a></li>
                     <li><a href="company-page.html">CÔNG TY</a></li>
-                    <li class="resp-item-fist"><a href="">Thông tin chung</a></li>
-                    <li class="resp-item"><a href="">Cập nhật hồ sơ</a></li>
-                    <li class="resp-item"><a href="">Quản lý tài khoản</a></li>
-                    <li class="resp-item"><a href="">Đăng xuất</a></li>
+                    <li class="resp-item-fist"><a href="profile-page.html">Thông tin chung</a></li>
+                    <li class="resp-item"><a href="Update-Profile-User.html">Cập nhật hồ sơ</a></li>
+                    <li class="resp-item"><a href="manage-acc-page.html">Quản lý tài khoản</a></li>
+                    <li class="resp-item"><a href="LogIn.html">Đăng xuất</a></li>
                     <li>
                         <div class="noti_login">
                             <i class="material-icons prefix">notifications_none</i>
@@ -80,33 +81,33 @@
                                 </button>
                                 <div class="dropdown-not-login">
                                     <div class="dropdown">
-                                        <a href="">
+                                        <a href="profile-page.html">
                                             <div>
-                                                <img src="../images/manage-acc-page/general.png" alt="">
+                                                <img src="../images/manage-acc-page/general.png" alt="Icon">
                                             </div>
                                             <span>Thông tin chung</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
-                                        <a href="">
+                                        <a href="Update-Profile-User.html">
                                             <div>
-                                                <img src="../images/manage-acc-page/update.png" alt="">
+                                                <img src="../images/manage-acc-page/update.png" alt="Icon">
                                             </div>
                                             <span>Cập nhật hồ sơ</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
-                                        <a href="">
+                                        <a href="manage-acc-page.html">
                                             <div>
-                                                <img src="../images/manage-acc-page/manage.png" alt="">
+                                                <img src="../images/manage-acc-page/manage.png" alt="Icon">
                                             </div>
                                             <span>Quản lý tài khoản</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
-                                        <a href="">
+                                        <a href="LogIn.html">
                                             <div>
-                                                <img src="../images/company-page/login.png" alt="">
+                                                <img src="../images/company-page/login.png" alt="Icon">
                                             </div>
                                             <span>Đăng xuất</span>
                                         </a>
@@ -342,11 +343,11 @@
                 <div class="box">
                     <h3>Danh sách trang</h3>
                     <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Việc làm</a></li>
-                        <li><a href="#">Mức lương</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Công ty</a></li>
+                        <li><a href="./home-page.html">Trang chủ</a></li>
+                        <li><a href="./search-page.html">Việc làm</a></li>
+                        <li><a href="./salary-page.html">Mức lương</a></li>
+                        <li><a href="./list-blog-page.html">Blog</a></li>
+                        <li><a href="./company-page.html">Công ty</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
