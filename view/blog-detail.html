@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bình Dương: Cần thêm hơn 47000 công nhân sau tết</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/blog-detail.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,26 +20,26 @@
 
 <body>
     <div class="blog-detail-page">
+        <!--header-->
         <header class="header">
-            <div class="header-logo">
-                <a href="homepage.html">
-                    <img src="../images/salary_page/logo1.png" alt="Logo" />
-                    <span>FINDWORK</span>
+            <div class="logo">
+                <a href="home-page.html">
+                    <img src="../images/salary_page/logo1.png" alt="Logo">
+                    FINDWORK
                 </a>
-            </div>
-            <!-- Logo -->
+            </div> <!-- Logo -->
 
             <form class="searchbar">
                 <div class="job">
                     <i class="material-icons prefix">search</i>
-                    <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+                    <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
                 </div>
                 <div class="local">
                     <i class="material-icons prefix">location_on</i>
-                    <input type="search" name="s" placeholder="Tất cả khu vực" />
+                    <input type="search" name="s" placeholder="Tất cả khu vực">
                 </div>
-                <button class="findjobs" type="submit">Tìm Việc</button>
-            </form>
+                <a class="findjobs" href="search-page.html">Tìm Việc</a>
+            </form> <!-- searchbar -->
             <div class="menu-btn">
                 <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
             </div>
@@ -51,68 +52,76 @@
                         <form>
                             <div class="job">
                                 <i class="material-icons prefix">search</i>
-                                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+                                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
                             </div>
                             <div class="local">
                                 <i class="material-icons prefix">location_on</i>
-                                <input type="search" name="s" placeholder="Tất cả khu vực" />
+                                <input type="search" name="s" placeholder="Tất cả khu vực">
                             </div>
-                            <div onclick="location.href = './home-page.html'" class="findjobs-btn">Tìm Việc</div>
-                        </form>
-                        <!-- searchbar -->
+                            <a href="./search-page.html">
+                                <div class="findjobs-btn">Tìm Việc</div>
+                            </a>
+                        </form> <!-- searchbar -->
                     </li>
-                    <li><a href="./search-page.html">VIỆC LÀM</a></li>
-                    <li><a href="./salary-page.html">MỨC LƯƠNG</a></li>
-                    <li><a href="./company-page.html">BLOG</a></li>
-                    <li><a href="./company-page.html">CÔNG TY</a></li>
-                    <li class="login"><a href="./LogIn.html">ĐĂNG NHẬP</a></li>
-                    <li class="register"><a href="./SignUp.html">ĐĂNG KÝ</a></li>
+                    <li><a href="search-page.html">VIỆC LÀM</a></li>
+                    <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
+                    <li><a href="list-blog-page.html">BLOG</a></li>
+                    <li><a href="company-page.html">CÔNG TY</a></li>
+                    <li class="resp-item-fist"><a href="profile-page.html">Thông tin chung</a></li>
+                    <li class="resp-item"><a href="Update-Profile-User.html">Cập nhật hồ sơ</a></li>
+                    <li class="resp-item"><a href="manage-acc-page.html">Quản lý tài khoản</a></li>
+                    <li class="resp-item"><a href="LogIn.html">Đăng xuất</a></li>
                     <li>
                         <div class="noti_login">
                             <i class="material-icons prefix">notifications_none</i>
                             <div class="btn-dropdown">
-                                <button class="btn-dropdown-login" type="submit">
+                                <button class="login" type="submit">
                                     <i class="material-icons prefix">account_circle</i>
-                                    Chí Đạt
+                                    <div>
+                                        Nguyễn Tiến Đạt
+                                    </div>
                                 </button>
-                                <ul class="dropdown-profile">
-                                    <a href="./profile-page.html">
-                                        <li>
-                                            <i class="fas fa-briefcase"></i>
+                                <div class="dropdown-not-login">
+                                    <div class="dropdown">
+                                        <a href="profile-page.html">
+                                            <div>
+                                                <img src="../images/manage-acc-page/general.png" alt="Icon">
+                                            </div>
                                             <span>Thông tin chung</span>
-                                        </li>
-
-
-
-                                    </a>
-                                    <a href="./Update-Profile-User.html">
-                                        <li>
-                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="Update-Profile-User.html">
+                                            <div>
+                                                <img src="../images/manage-acc-page/update.png" alt="Icon">
+                                            </div>
                                             <span>Cập nhật hồ sơ</span>
-                                        </li>
-                                    </a>
-                                    <a href="./manage-acc-page.html">
-                                        <li>
-                                            <i class="fas fa-user-alt"></i>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="manage-acc-page.html">
+                                            <div>
+                                                <img src="../images/manage-acc-page/manage.png" alt="Icon">
+                                            </div>
                                             <span>Quản lý tài khoản</span>
-                                        </li>
-                                    </a>
-                                    <a href="./LogIn.html">
-                                        <li>
-                                            <i class="fas fa-sign-out-alt"></i>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="LogIn.html">
+                                            <div>
+                                                <img src="../images/company-page/login.png" alt="Icon">
+                                            </div>
                                             <span>Đăng xuất</span>
-                                        </li>
-                                    </a>
-
-                                </ul>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
                 </ul>
-            </nav>
-            <!-- navbar -->
-        </header>
-        <!--end header -->
+            </nav> <!-- navbar -->
+        </header> <!-- header -->
+
         <!--Blog detail body-->
         <div class="blog-detail-body">
             <div class="blog-detail-heading">
@@ -210,11 +219,11 @@
             <div class="box">
                 <h3>Danh sách trang</h3>
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Việc làm</a></li>
-                    <li><a href="#">Mức lương</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Công ty</a></li>
+                    <li><a href="./home-page.html">Trang chủ</a></li>
+                    <li><a href="./search-page.html">Việc làm</a></li>
+                    <li><a href="./salary-page.html">Mức lương</a></li>
+                    <li><a href="./list-blog-page.html">Blog</a></li>
+                    <li><a href="./company-page.html">Công ty</a></li>
                 </ul>
             </div>
 
@@ -251,7 +260,18 @@
         </div>
         <!--end footer-->
     </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/blog-detail.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.login').click(function (e) {
+                $('.dropdown-not-login').toggleClass('active');
+            })
+        })
+
+    </script>
 </body>
 
 </html>

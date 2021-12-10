@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+    scroll-behavior: smooth;
 }
 header{
     z-index: 999;
@@ -125,7 +126,7 @@ header{
     top: 40px;
     left: 100px;
     color: #000;
-    z-index: 999;
+    z-index: 990;
     border: 1px solid #ccc;
     border-radius: 2px;
     cursor: default;
@@ -352,6 +353,7 @@ section{
 .content-holder{
     width: 100%;
     display: block;
+    scroll-behavior: smooth;
 }
 .content-holder div h1{
     margin: 40px 0px 20px 0px;
