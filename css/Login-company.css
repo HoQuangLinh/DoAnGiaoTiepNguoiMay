@@ -150,10 +150,7 @@
     margin: 0 auto;
 
 }
-.titleSignup{
 
-    
-}
 .btnSignup{
     font-family: Roboto;
     cursor: pointer;
@@ -249,24 +246,29 @@
 .div_signup2{
     display: none;
 }
+.logocompany1{
+    width: 60px;
+}
 .btnBack2{
-    width:100px;
+    display: none;
+}
+.btnBack2{
+    width:90px;
     height: 40px;
-    position: fixed;
-    top: 4%;
-    left: 1%;
     color: white;
-    background-color:#2A8CFF;
+    background-color: #0f73ee;
     font-weight: bold;
     font-size: 15px;
     border:none;
     cursor: pointer;
     display: flex;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: Roboto;
+    margin-top: -30px;
+    margin-left: 5px;
     display: none;
 }
 /* Mobile: width < 740px */
@@ -275,12 +277,19 @@
         display: none;
         
     }
+    .title{
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .div_right{
         width: 100%;
         position: fixed;
     }
     .btnBack2{
         display: block;
+        
     }
     .div_info{
         width: 100%;
@@ -291,35 +300,12 @@
         position: fixed;
         right: 90px;
     }
-    .btnGmail{
-        display: none;
-    }
-    .logoface{
-        width: 40px;
-    }
-    .logoGmail1{
-        display: block;
-        padding-left: 10px;
-        width: 40px;
-    }
-    .login_face{
-        display: none;
-    }
-    .btnFacebook{
-        border: none;
-    }
-    .div_logoface{
-        display: flex;
-        margin: 0 auto;
-    }
-    .logoface{
-        padding-right: 5px;
-    }
+
     .div_signup2{
         display: flex;
         justify-content: center;
         font-family: Roboto;
-        margin-top: 80px;
+        margin-top: 30px;
         font-size: 14px;
         font-weight: 500;
         color: #0f73ee;
@@ -334,10 +320,13 @@
     }
     .div_right{
         width: 100%;
-        position: fixed;
+        position: fixed;    
     }
     .btnBack2{
-        display: block;
+        display: flex;
+        width: 100px;
+        height: 50px;
+        margin-top: -50px
     }
     .div_info{
         width: 100%;
