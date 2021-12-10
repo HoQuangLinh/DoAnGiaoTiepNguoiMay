@@ -117,11 +117,11 @@
 }
 .nav-menu .resp-item-fist{
     display: none;
-    text-transform: uppercase;
+
 }
 .nav-menu .resp-item{
     display: none;
-    text-transform: uppercase;
+
 }
 .nav-menu .login{
     display: none;
@@ -318,7 +318,7 @@
         right: -100%;
         visibility: hidden;
         overflow-y: auto;
-        padding: 60px 12px;
+        padding: 60px 0;
         height: 100vh;
         z-index: 900;
         transition: 0.5s;
@@ -369,6 +369,39 @@
     }
     .noti_login{
         display: none;
+    }
+    /* in-out btn */
+    .resp-item .in-up-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #fff;
+        padding: 17px;
+        border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    }
+    .resp-item .circle-avatar{
+        top: 0;
+        left: 36%;
+        position: absolute;
+        border-radius: 100px;
+        background-color: #fff;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .in-up-btn a{
+        font-family: sans-serif, Roboto;
+        padding: 15px;
+        color: #00b9f2;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        width: max-content;
     }
 }
 @media (max-width: 1288px){

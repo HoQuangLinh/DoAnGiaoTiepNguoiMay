@@ -468,7 +468,7 @@ button {
   margin: 0px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1335px) {
   .hide-on-1109px {
     display: none;
   }
