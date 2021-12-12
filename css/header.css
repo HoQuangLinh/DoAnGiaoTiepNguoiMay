@@ -285,6 +285,7 @@
 .dropdown a i{
     display: flex;
     align-items: center;
+    font-size: 20px;
     margin-right: 12px;
     min-width: 25px;
 }
@@ -453,6 +454,7 @@
     }
     .nav-menu-res li i{
         width: 32px;
+        font-size: 20px;
     }
     .nav-menu-res li a:hover{
         background-color: #f0f0f0;

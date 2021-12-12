@@ -29,6 +29,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -38,157 +41,165 @@
   <body>
     <header class="header">
       <div class="logo">
-          <a href="./home-page.html">
-              <img src="../images/salary_page/logo1.png" alt="Logo">
-              FINDWORK
-          </a>
-      </div> <!-- Logo -->
+        <a href="./home-page.html">
+          <img src="../images/salary_page/logo1.png" alt="Logo" />
+          FINDWORK
+        </a>
+      </div>
+      <!-- Logo -->
 
       <form class="searchbar">
-          <div class="job">
-              <i class="material-icons prefix">search</i>
-              <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
-          </div>
-          <div class="local">
-              <i class="material-icons prefix">location_on</i>
-              <input type="search" name="s" placeholder="Tất cả khu vực">
-          </div>
-          <button class="findjobs" type="submit">Tìm Việc</button>
-      </form> <!-- searchbar -->
+        <div class="job">
+          <i class="material-icons prefix">search</i>
+          <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+        </div>
+        <div class="local">
+          <i class="material-icons prefix">location_on</i>
+          <input type="search" name="s" placeholder="Tất cả khu vực" />
+        </div>
+        <a class="findjobs" href="./search-page.html">
+          Tìm Việc
+        </a>
+      </form>
+      <!-- searchbar -->
       <div class="menu-btn">
-          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </div>
       <nav class="navbar">
-          <ul class="nav-menu">
-              <div class="close-btn">
-                  <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        <ul class="nav-menu">
+          <li class="search-sidebar">
+            <form>
+              <div class="job">
+                <i class="material-icons prefix">search</i>
+                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
               </div>
-              <li class="search-sidebar">
-                  <form>
-                      <div class="job">
-                          <i class="material-icons prefix">search</i>
-                          <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
-                      </div>
-                      <div class="local">
-                          <i class="material-icons prefix">location_on</i>
-                          <input type="search" name="s" placeholder="Tất cả khu vực">
-                      </div>
-                      <div class="findjobs-btn">
-                          Tìm Việc
-                      </div>
-                  </form> <!-- searchbar -->
-              </li>
-              <li><a href="search-page.html">VIỆC LÀM</a></li>
-              <li><a href="salary-page.html">MỨC LƯƠNG</a></li>
-              <li><a href="list-blog-page.html">BLOG</a></li>
-              <li><a href="company-page.html">CÔNG TY</a></li>
-              <li class="login"><a href="LogIn.html">ĐĂNG NHẬP</a></li>
-              <li class="register"><a href="SignUp.html">ĐĂNG KÝ</a></li>
-              <li>
-                  <div class="noti_login">
-                      <i class="material-icons prefix">notifications_none</i>
-                      <div class="btn-dropdown">
-                          <button class="login" type="submit">
-                              <i class="material-icons prefix">account_circle</i>
-                              <div>
-                                  Đăng nhập
-                              </div>
-                          </button>
-                          <div class="dropdown-not-login">
-                              <div class="title">
-                                  <span>Người tìm việc đăng nhập</span>
-                                  <div class="social-login">
-                                      <a href="">
-                                          <img src="../images/company-page/facebook.png" alt="">
-                                          <span>với Facebook</span>
-                                      </a>
-                                      <a href="">
-                                          <img src="../images//company-page/google.png" alt="">
-                                          <span>với Google</span>
-                                      </a>
-                                  </div>
-                              </div>
-                              <div class="dropdown">
-                                  <a href="LogIn.html">
-                                      <div>
-                                          <img src="../images/company-page/login.png" alt="icon">
-                                      </div>
-                                      <span>Đăng nhập</span>
-                                  </a>
-                              </div>
-                              <div class="dropdown">
-                                  <a href="SignUp.html">
-                                      <div>
-                                          <img src="../images/company-page/register.png" alt="icon">
-                                      </div>
-                                      <span>Tạo tài khoản mới</span>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
+              <div class="local">
+                <i class="material-icons prefix">location_on</i>
+                <input type="search" name="s" placeholder="Tất cả khu vực" />
+              </div>
+              <a href="./search-page.html">
+                <div class="findjobs-btn">Tìm Việc</div>
+              </a>
+            </form>
+            <!-- searchbar -->
+          </li>
+          <li><a href="./search-page.html">VIỆC LÀM</a></li>
+          <li><a href="./salary-page.html">MỨC LƯƠNG</a></li>
+          <li><a href="./list-blog-page.html">BLOG</a></li>
+          <li><a href="./company-page.html">CÔNG TY</a></li>
+          <li>
+            <div class="noti_login">
+              <i class="material-icons prefix">notifications_none</i>
+              <div class="btn-dropdown">
+                <button class="login" type="submit">
+                  <i class="material-icons prefix">account_circle</i>
+                  <div>James</div>
+                </button>
+                <div class="dropdown-not-login">
+                  <div class="dropdown">
+                    <a href="./profile-page.html">
+                      <i class="fa fa-address-card" aria-hidden="true"></i>
+                      <span>Thông tin chung</span>
+                    </a>
                   </div>
-              </li>
-          </ul>
-      </nav> <!-- navbar -->
+                  <div class="dropdown">
+                    <a href="./Update-Profile-User.html">
+                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      <span>Cập nhật hồ sơ</span>
+                    </a>
+                  </div>
+                  <div class="dropdown">
+                    <a href="./manage-acc-page.html">
+                      <i class="fa fa-tasks" aria-hidden="true"></i>
+                      <span>Quản lý tài khoản</span>
+                    </a>
+                  </div>
+                  <div class="dropdown">
+                    <a href="LogIn.html">
+                      <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      <span>Đăng xuất</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- navbar -->
 
       <nav class="nav-res">
         <ul class="nav-menu-res">
-            <div class="close-btn">
-                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+          <div class="close-btn">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="search-sidebar">
+            <div class="job">
+              <i class="material-icons prefix">search</i>
+              <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
             </div>
-            <div class="search-sidebar">
-                <div class="job">
-                    <i class="material-icons prefix">search</i>
-                    <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
-                </div>
-                <div class="local">
-                    <i class="material-icons prefix">location_on</i>
-                    <input type="search" name="s" placeholder="Tất cả khu vực">
-                </div>
-                <a href="./search-page.html">
-                    Tìm Việc
-                </a>
+            <div class="local">
+              <i class="material-icons prefix">location_on</i>
+              <input type="search" name="s" placeholder="Tất cả khu vực">
             </div>
-            <div class="resp-top">
-                <div class="circle-avatar">
-                    <i class="fa fa-user fa-3x" aria-hidden="true"></i>
-                </div>
-                <div class="in-up-btn">
-                    <div class="login-btn">
-                        <a href="LogIn.html">Đăng nhập</a>
-                    </div>
-                    <div class="signup-btn">
-                        <a href="SignUp.html">Đăng kí</a>
-                    </div>
-                </div>
+            <a href="./search-page.html">
+              Tìm Việc
+            </a>
+          </div>
+          <div class="resp-top">
+            <div class="circle-avatar">
+              <i class="fa fa-user fa-3x" aria-hidden="true"></i>
             </div>
-            <li><a href="home-page.html">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                    Trang chủ</a>
-            </li>
-            <li><a href="search-page.html">
-                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    Việc làm</a>
-            </li>
-            <li><a href="salary-page.html">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-                    Mức lương</a>
-            </li>
-            <li><a href="list-blog-page.html">
-                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    Blog</a>
-            </li>
-            <li><a href="company-page.html">
-                <i class="fa fa-building" aria-hidden="true"></i>
-                    Công ty</a>
-            </li>
-            <li><a href="./employer/home-page.html">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                    Cho nhà tuyển dụng</a>
-            </li>
+            <div class="infor-card">
+              <div class="infor">
+                <div class="name">James Nguyen</div>
+                <a class="email" href="mailto:jamesnguyen@gmail.com">jamesnguyen@gmail.com</a>
+              </div>
+              <a class="logout" href="LogIn.html">
+                <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <li><a href="home-page.html">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              Trang chủ</a>
+          </li>
+          <li><a href="search-page.html">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              Việc làm</a>
+          </li>
+          <li><a href="salary-page.html">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+              Mức lương</a>
+          </li>
+          <li><a href="list-blog-page.html">
+              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+              Blog</a>
+          </li>
+          <li><a href="company-page.html">
+              <i class="fa fa-building" aria-hidden="true"></i>
+              Công ty</a>
+          </li>
+          <li><a href="./employer/home-page.html">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              Cho nhà tuyển dụng</a>
+          </li>
+          <li><a href="profile-page.html">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+              Thông tin chung</a>
+          </li>
+          <li><a href="Update-Profile-User.html">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              Cập nhật hồ sơ</a>
+          </li>
+          <li><a href="manage-acc-page.html">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+              Quản lý tài khoản</a>
+          </li>
         </ul>
-    </nav>
-  </header> <!-- header -->
+      </nav>
+    </header>
+    <!-- header -->
 
     <div class="gird body">
       <div class="row filter"></div>
