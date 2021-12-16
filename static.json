@@ -1,3 +1,5 @@
 {
-  "root": "dist/"
+  "routes": {
+    "/**": "view/homepage.html"
+  }
 }
