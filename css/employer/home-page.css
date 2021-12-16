@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+    scroll-behavior: smooth;
 }
 header{
     z-index: 999;
@@ -125,7 +126,7 @@ header{
     top: 40px;
     left: 100px;
     color: #000;
-    z-index: 999;
+    z-index: 990;
     border: 1px solid #ccc;
     border-radius: 2px;
     cursor: default;
@@ -304,34 +305,23 @@ header .login-nav .noti_login::before{
     width: 22px;
     margin-right: 12px;
 }
-.dropdown-login, .dropdown-register{
+.dropdown{
     padding: 12px 12px;
     cursor: pointer;
     box-sizing: border-box;
     border-top: 0.5px solid rgba(0, 0, 0, 0.3);
 }
-.dropdown-login:hover{
+.dropdown:hover{
     background-color: rgb(241, 240, 240);
 }
-.dropdown-register:hover{
-    background-color: rgb(241, 240, 240);
-}
-.dropdown-login a{
+.dropdown a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: #000;
 }
-.dropdown-login a img{
-    margin-right: 12px;
-}
-.dropdown-register a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.5);
-}
-.dropdown-register a img{
+.dropdown a i{
+    font-size: 20px;
     margin-right: 12px;
 }
 /* content-holder */
@@ -352,6 +342,7 @@ section{
 .content-holder{
     width: 100%;
     display: block;
+    scroll-behavior: smooth;
 }
 .content-holder div h1{
     margin: 40px 0px 20px 0px;

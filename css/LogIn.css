@@ -182,12 +182,18 @@
     margin: 0 auto;
 
 }
+.titleSignup{
+    font-family: Roboto;
+    font-size: 14px;
+}
 
 .btnSignup{
     font-family: Roboto;
     cursor: pointer;
     color:#2A8CFF;
-    
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
 }
 .div_btnSignin{
     padding-top: 40px;
@@ -195,6 +201,11 @@
     align-items: center;
 }
 .btnSignin{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
     width: 200px;
     height: 50px;
     border-radius: 25px;
@@ -224,6 +235,8 @@
 
 .btnFacebook{
     /* width: 300px; */
+    text-decoration: none;
+    color: black;
     width: 66.7%;
     height: 50px;
     border: 1px solid #a19b9b;
@@ -247,6 +260,8 @@
 }
 .btnGmail{
     /* width: 300px; */
+    text-decoration: none;
+    color: black;
     width: 66.7%;
     height: 50px;
     margin-top: 10px;
