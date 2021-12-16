@@ -591,3 +591,157 @@ body {
   font-weight: 400;
   --fa-animation-duration: 0s !important;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  
+}
+.popup title{
+  display: flex;
+}
+.popup h3 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .leftContentPopup {
+  margin-left: 5%;   
+  font-weight: bold;
+  text-align: right;
+  float: left;
+}
+.popup .rightContentPopup {
+  text-align: left;
+}
+.popup .contentPopup{
+  padding: 10px;
+}
+.popup .contentbtn{
+  padding: 5px;
+}
+.popup .bodyPopup{
+  margin-top: 10px;
+}
+.popup .box1{
+  width: 100%;
+  border: 2px dashed #6190ff;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+.popup .box1 .avatar{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.popup .box1 .name{
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.popup .box1 .position{ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: rgba(17, 18, 18, 0.62);
+}
+.popup .footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+  margin-right: auto;
+}
+.popup .rightSize {
+  padding: 10px;
+  margin: 10px;
+}
+.popup .btn {
+  font-size: 1em;
+  padding: 10px;
+  color: #F7941D;
+  border: 2px solid #F7941D;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.popup .btn:hover {
+  background: #F7941D;
+  color: #fff;
+}
+.btn ~ .btn {
+  margin-left :  10px;
+}
+
+@media screen and (max-width: 700px){
+  
+  .popup{
+    width: 85%;
+  }
+  .popup .box1{
+    width: 100%;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+  }
+  .popup .box1 .avatar{
+    margin: 0px;
+    margin-right: 10px;
+    background: #ccc;  
+  }
+  .popup .leftContent {
+    margin-left: 0%;   
+    font-weight: bold;
+    text-align: right;
+    float: left;
+  }
+  
+}
