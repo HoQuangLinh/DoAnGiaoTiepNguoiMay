@@ -1,577 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Việc làm</title>
-    <!-- Add grid css-->
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="stylesheet" href="../css/search-page.css" />
-    <link rel="stylesheet" href="../css/header.css">
-    <!--add google font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-      rel="stylesheet"
-    />
 
-    <!--Add icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Việc làm</title>
+  <!-- Add grid css-->
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/search-page.css" />
+  <link rel="stylesheet" href="../css/header.css">
+  <!--add google font-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+    rel="stylesheet" />
+
+  <!--Add icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <a href="./home-page.html">
-          <img src="../images/salary_page/logo1.png" alt="Logo" />
-          FINDWORK
-        </a>
-      </div>
-      <!-- Logo -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-      <form class="searchbar">
-        <div class="job">
-          <i class="material-icons prefix">search</i>
-          <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
-        </div>
-        <div class="local">
-          <i class="material-icons prefix">location_on</i>
-          <input type="search" name="s" placeholder="Tất cả khu vực" />
-        </div>
-        <a class="findjobs" href="./search-page.html">
-          Tìm Việc
-        </a>
-      </form>
-      <!-- searchbar -->
-      <div class="menu-btn">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </div>
-      <nav class="navbar">
-        <ul class="nav-menu">
-          <li class="search-sidebar">
-            <form>
-              <div class="job">
-                <i class="material-icons prefix">search</i>
-                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
-              </div>
-              <div class="local">
-                <i class="material-icons prefix">location_on</i>
-                <input type="search" name="s" placeholder="Tất cả khu vực" />
-              </div>
-              <a href="./search-page.html">
-                <div class="findjobs-btn">Tìm Việc</div>
-              </a>
-            </form>
-            <!-- searchbar -->
-          </li>
-          <li><a href="./search-page.html">VIỆC LÀM</a></li>
-          <li><a href="./salary-page.html">MỨC LƯƠNG</a></li>
-          <li><a href="./list-blog-page.html">BLOG</a></li>
-          <li><a href="./company-page.html">CÔNG TY</a></li>
-          <li>
-            <div class="noti_login">
-              <i class="material-icons prefix">notifications_none</i>
-              <div class="btn-dropdown">
-                <button class="login" type="submit">
-                  <i class="material-icons prefix">account_circle</i>
-                  <div>James</div>
-                </button>
-                <div class="dropdown-not-login">
-                  <div class="dropdown">
-                    <a href="./profile-page.html">
-                      <i class="fa fa-address-card" aria-hidden="true"></i>
-                      <span>Thông tin chung</span>
-                    </a>
-                  </div>
-                  <div class="dropdown">
-                    <a href="./Update-Profile-User.html">
-                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                      <span>Cập nhật hồ sơ</span>
-                    </a>
-                  </div>
-                  <div class="dropdown">
-                    <a href="./manage-acc-page.html">
-                      <i class="fa fa-tasks" aria-hidden="true"></i>
-                      <span>Quản lý tài khoản</span>
-                    </a>
-                  </div>
-                  <div class="dropdown">
-                    <a href="LogIn.html">
-                      <i class="fa fa-sign-out" aria-hidden="true"></i>
-                      <span>Đăng xuất</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <!-- navbar -->
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="./">
+        <img src="../images/salary_page/logo1.png" alt="Logo" />
+        FINDWORK
+      </a>
+    </div>
+    <!-- Logo -->
 
-      <nav class="nav-res">
-        <ul class="nav-menu-res">
-          <div class="close-btn">
-            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-          </div>
-          <div class="search-sidebar">
+    <form class="searchbar">
+      <div class="job">
+        <i class="material-icons prefix">search</i>
+        <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+      </div>
+      <div class="local">
+        <i class="material-icons prefix">location_on</i>
+        <input type="search" name="s" placeholder="Tất cả khu vực" />
+      </div>
+      <a class="findjobs" href="./search-page.html">
+        Tìm Việc
+      </a>
+    </form>
+    <!-- searchbar -->
+    <div class="menu-btn">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="search-sidebar">
+          <form>
             <div class="job">
               <i class="material-icons prefix">search</i>
-              <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+              <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
             </div>
             <div class="local">
               <i class="material-icons prefix">location_on</i>
-              <input type="search" name="s" placeholder="Tất cả khu vực">
+              <input type="search" name="s" placeholder="Tất cả khu vực" />
             </div>
             <a href="./search-page.html">
-              Tìm Việc
+              <div class="findjobs-btn">Tìm Việc</div>
+            </a>
+          </form>
+          <!-- searchbar -->
+        </li>
+        <li><a href="./search-page.html">VIỆC LÀM</a></li>
+        <li><a href="./salary-page.html">MỨC LƯƠNG</a></li>
+        <li><a href="./list-blog-page.html">BLOG</a></li>
+        <li><a href="./company-page.html">CÔNG TY</a></li>
+        <li>
+          <div class="noti_login">
+            <i class="material-icons prefix">notifications_none</i>
+            <div class="btn-dropdown">
+              <button class="login" type="submit">
+                <i class="material-icons prefix">account_circle</i>
+                <div>James</div>
+              </button>
+              <div class="dropdown-not-login">
+                <div class="dropdown">
+                  <a href="./profile-page.html">
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                    <span>Thông tin chung</span>
+                  </a>
+                </div>
+                <div class="dropdown">
+                  <a href="./Update-Profile-User.html">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    <span>Cập nhật hồ sơ</span>
+                  </a>
+                </div>
+                <div class="dropdown">
+                  <a href="./manage-acc-page.html">
+                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                    <span>Quản lý tài khoản</span>
+                  </a>
+                </div>
+                <div class="dropdown">
+                  <a href="LogIn.html">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <span>Đăng xuất</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar -->
+
+    <nav class="nav-res">
+      <ul class="nav-menu-res">
+        <div class="close-btn">
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="search-sidebar">
+          <div class="job">
+            <i class="material-icons prefix">search</i>
+            <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
+          </div>
+          <div class="local">
+            <i class="material-icons prefix">location_on</i>
+            <input type="search" name="s" placeholder="Tất cả khu vực">
+          </div>
+          <a href="./search-page.html">
+            Tìm Việc
+          </a>
+        </div>
+        <div class="resp-top">
+          <div class="circle-avatar">
+            <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+          </div>
+          <div class="infor-card">
+            <div class="infor">
+              <div class="name">James Nguyen</div>
+              <a class="email" href="mailto:jamesnguyen@gmail.com">jamesnguyen@gmail.com</a>
+            </div>
+            <a class="logout" href="LogIn.html">
+              <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="resp-top">
-            <div class="circle-avatar">
-              <i class="fa fa-user fa-3x" aria-hidden="true"></i>
-            </div>
-            <div class="infor-card">
-              <div class="infor">
-                <div class="name">James Nguyen</div>
-                <a class="email" href="mailto:jamesnguyen@gmail.com">jamesnguyen@gmail.com</a>
-              </div>
-              <a class="logout" href="LogIn.html">
-                <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-          <li><a href="home-page.html">
-              <i class="fa fa-home" aria-hidden="true"></i>
-              Trang chủ</a>
-          </li>
-          <li><a href="search-page.html">
-              <i class="fa fa-briefcase" aria-hidden="true"></i>
-              Việc làm</a>
-          </li>
-          <li><a href="salary-page.html">
-              <i class="fa fa-usd" aria-hidden="true"></i>
-              Mức lương</a>
-          </li>
-          <li><a href="list-blog-page.html">
-              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-              Blog</a>
-          </li>
-          <li><a href="company-page.html">
-              <i class="fa fa-building" aria-hidden="true"></i>
-              Công ty</a>
-          </li>
-          <li><a href="./employer/home-page.html">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              Cho nhà tuyển dụng</a>
-          </li>
-          <li><a href="profile-page.html">
-            <i class="fa fa-address-card" aria-hidden="true"></i>
-              Thông tin chung</a>
-          </li>
-          <li><a href="Update-Profile-User.html">
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              Cập nhật hồ sơ</a>
-          </li>
-          <li><a href="manage-acc-page.html">
-            <i class="fa fa-tasks" aria-hidden="true"></i>
-              Quản lý tài khoản</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- header -->
-
-    <div class="gird body">
-      <div class="row filter"></div>
-      <div class="row no-gutters">
-        <div class="side-bar col l-4 m-5 c-12">
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
-          <div class="job-card row no-gutters">
-            <div class="col l-3 m-3 c-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-9 m-9 c-9">
-              <div class="job-detail">
-                <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
-                <div class="company-name">Robert Bosch Engineer Vietnam</div>
-                <div class="job-salary">$1000 up to $2500 Monthly</div>
-                <div class="job-category">Full time</div>
-                <div class="job-address">
-                  Tan Phu District, Ho Chi Minh City
-                </div>
-              </div>
-              <a class="apply-button" href="#popup1">Apply Now</a>
-              <i
-                class="fa-solid fa-heart fa-beat"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </div>
-          </div>
         </div>
-        <div class="content col l-8 m-7 c-0">
-          <div class="company-info row no-gutters">
-            <div class="col l-2 m-3">
-              <div class="job-picture"></div>
-            </div>
-            <div class="col l-10 m-9">
+        <li><a href="./">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Trang chủ</a>
+        </li>
+        <li><a href="search-page.html">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            Việc làm</a>
+        </li>
+        <li><a href="salary-page.html">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+            Mức lương</a>
+        </li>
+        <li><a href="list-blog-page.html">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            Blog</a>
+        </li>
+        <li><a href="company-page.html">
+            <i class="fa fa-building" aria-hidden="true"></i>
+            Công ty</a>
+        </li>
+        <li><a href="./employer/home-page.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Cho nhà tuyển dụng</a>
+        </li>
+        <li><a href="profile-page.html">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            Thông tin chung</a>
+        </li>
+        <li><a href="Update-Profile-User.html">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            Cập nhật hồ sơ</a>
+        </li>
+        <li><a href="manage-acc-page.html">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            Quản lý tài khoản</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header -->
+
+  <div class="gird body">
+    <div class="row filter"></div>
+    <div class="row no-gutters">
+      <div class="side-bar col l-4 m-5 c-12">
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
               <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
               <div class="company-name">Robert Bosch Engineer Vietnam</div>
-            </div>
-          </div>
-          <div class="job-benfits row no-gutters">
-            <div class="title l-12 m-12">Benefits for you:</div>
-            <div class="descript l-12 m-12">
-              13th-month bonus + yearly performance bonus + annual salary
-              appraisal<br />
-              Premium health insurance for employee + 2 family members<br />
-              16++ days of paid leave per year
-            </div>
-          </div>
-          <div class="job-description row no-gutters">
-            <div class="title l-12 m-12">Job description:</div>
-            <div class="descript l-12 m-12">
-              Welcome to Bosch – A perfect fit for every techie.<br />
-              From software development and testing to data processing, we are
-              offering a variety of career opportunities to build a strong
-              international team and deliver cutting-edge IT solutions. Join in
-              and feel the difference.<br />
-              - Learn web application development framework and process<br />
-              - Learn to design & implement applications to ensure best possible
-              performance & quality<br />
-              - Develop web application features under supervision of Senior
-              Engineers<br />
-              - Contributing in all phases of development life-cycle<br />
-              - Ensure continuously professional self-improvement<br />
-            </div>
-          </div>
-          <div class="job-requirement row no-gutters">
-            <div class="title l-12 m-12">Job requirements:</div>
-            <div class="descript l-12 m-12">
-              Nearly/Fresh graduate or less than 1 year of experience in
-              relevant major (Information Technology; Computer Science; Software
-              Engineering...)<br />
-              - Good knowledge in Java OR .NET<br />
-              - Good knowledge in HTML/ Javascript/ CSS.<br />
-              - Have knowledge in Angular/ ReactJS is an advantage<br />
-              - Willing to do fullstack in long-term<br />
-            </div>
-          </div>
-          <div class="job-address row no-gutters">
-            <div class="title l-12 m-12">Work location:</div>
-            <div class="descript l-12 m-12">
-              364 Cộng Hòa, Phường 13, Tân Bình, Hồ Chí Minh, Vietnam<br />
-              17 P. Ngô Quyền, French Quarter, Tràng Tiền, Hoàn Kiếm, Hà Nội,
-              Vietnam
-            </div>
-          </div>
-          <div class="button-section row">
-            <a class="apply-btn l-o-8 m-o-7" href="#popup1">Apply Now</a>
-            <div class="save-btn">
-              <i class="fa-solid fa-heart fa-beat"></i>Save
-            </div>
-          </div>
-        </div>
-        <div id="popup1" class="overlay">
-          <div class="popup">
-            <div class='title' >
-              <h3>Bạn đang ứng tuyển Sofware Engineer Fresher (Java.net) </h3>
-            </div>
-            
-            <a class="close" href="#">&times;</a>
-            <div class ='box1'>
-              <img src="https://chinhsuaanh.vn/wp-content/uploads/2021/01/1.jpg" alt="" class="avatar">
-              <div > 
-                <div class ='name'> Nguyễn Đức Chí Đạt</div>
-    
-                <div class = 'position'> Công việc : Quản lý, coder, designer</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
               </div>
             </div>
-    
-            <div class ='bodyPopup'>
-                <div class = 'leftContentPopup'> 
-                  <div class="contentPopup"> Email :</div>
-                  <div class= "contentPopup"> Số điện thoại :</div>
-                  <div class="contentPopup"> CV :</div>
-                </div>
-                <div class = 'rightContentPopup'> 
-                  <div class="contentPopup"> nguyenducchidat@gmail.com</div>
-                  
-                  <div class="contentPopup"> 0915 090 909</div>
-                  <button class="contentbtn"> Import CV</button>
-                </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
             </div>
-    
-            <div class="footer" >
-              <a class="btn" href="#">Trở về</a>
-              <a class="btn" href="#">Nộp đơn</a>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
             </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+        <div class="job-card row no-gutters">
+          <div class="col l-3 m-3 c-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-9 m-9 c-9">
+            <div class="job-detail">
+              <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+              <div class="company-name">Robert Bosch Engineer Vietnam</div>
+              <div class="job-salary">$1000 up to $2500 Monthly</div>
+              <div class="job-category">Full time</div>
+              <div class="job-address">
+                Tan Phu District, Ho Chi Minh City
+              </div>
+            </div>
+            <a class="apply-button" href="#popup1">Apply Now</a>
+            <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 3s"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content col l-8 m-7 c-0">
+        <div class="company-info row no-gutters">
+          <div class="col l-2 m-3">
+            <div class="job-picture"></div>
+          </div>
+          <div class="col l-10 m-9">
+            <div class="job-name">Sofware Engineer Fresher (Java.net)</div>
+            <div class="company-name">Robert Bosch Engineer Vietnam</div>
+          </div>
+        </div>
+        <div class="job-benfits row no-gutters">
+          <div class="title l-12 m-12">Benefits for you:</div>
+          <div class="descript l-12 m-12">
+            13th-month bonus + yearly performance bonus + annual salary
+            appraisal<br />
+            Premium health insurance for employee + 2 family members<br />
+            16++ days of paid leave per year
+          </div>
+        </div>
+        <div class="job-description row no-gutters">
+          <div class="title l-12 m-12">Job description:</div>
+          <div class="descript l-12 m-12">
+            Welcome to Bosch – A perfect fit for every techie.<br />
+            From software development and testing to data processing, we are
+            offering a variety of career opportunities to build a strong
+            international team and deliver cutting-edge IT solutions. Join in
+            and feel the difference.<br />
+            - Learn web application development framework and process<br />
+            - Learn to design & implement applications to ensure best possible
+            performance & quality<br />
+            - Develop web application features under supervision of Senior
+            Engineers<br />
+            - Contributing in all phases of development life-cycle<br />
+            - Ensure continuously professional self-improvement<br />
+          </div>
+        </div>
+        <div class="job-requirement row no-gutters">
+          <div class="title l-12 m-12">Job requirements:</div>
+          <div class="descript l-12 m-12">
+            Nearly/Fresh graduate or less than 1 year of experience in
+            relevant major (Information Technology; Computer Science; Software
+            Engineering...)<br />
+            - Good knowledge in Java OR .NET<br />
+            - Good knowledge in HTML/ Javascript/ CSS.<br />
+            - Have knowledge in Angular/ ReactJS is an advantage<br />
+            - Willing to do fullstack in long-term<br />
+          </div>
+        </div>
+        <div class="job-address row no-gutters">
+          <div class="title l-12 m-12">Work location:</div>
+          <div class="descript l-12 m-12">
+            364 Cộng Hòa, Phường 13, Tân Bình, Hồ Chí Minh, Vietnam<br />
+            17 P. Ngô Quyền, French Quarter, Tràng Tiền, Hoàn Kiếm, Hà Nội,
+            Vietnam
+          </div>
+        </div>
+        <div class="button-section row">
+          <a class="apply-btn l-o-8 m-o-7" href="#popup1">Apply Now</a>
+          <div class="save-btn">
+            <i class="fa-solid fa-heart fa-beat"></i>Save
+          </div>
+        </div>
+      </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <div class='title'>
+            <h3>Bạn đang ứng tuyển Sofware Engineer Fresher (Java.net) </h3>
+          </div>
+
+          <a class="close" href="#">&times;</a>
+          <div class='box1'>
+            <img src="https://chinhsuaanh.vn/wp-content/uploads/2021/01/1.jpg" alt="" class="avatar">
+            <div>
+              <div class='name'> Nguyễn Đức Chí Đạt</div>
+
+              <div class='position'> Công việc : Quản lý, coder, designer</div>
+            </div>
+          </div>
+
+          <div class='bodyPopup'>
+            <div class='leftContentPopup'>
+              <div class="contentPopup"> Email :</div>
+              <div class="contentPopup"> Số điện thoại :</div>
+              <div class="contentPopup"> CV :</div>
+            </div>
+            <div class='rightContentPopup'>
+              <div class="contentPopup"> nguyenducchidat@gmail.com</div>
+
+              <div class="contentPopup"> 0915 090 909</div>
+              <button class="contentbtn"> Import CV</button>
+            </div>
+          </div>
+
+          <div class="footer">
+            <a class="btn" href="#">Trở về</a>
+            <a class="btn" href="#">Nộp đơn</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-    <script src="../js/header.js"></script>
-    <script type="text/javascript">
-        // Script for combobox
-        $(document).ready(function () {
-            $('.login').click(function (e) {
-                $('.dropdown-not-login').toggleClass('active');
-            })
-        })
-    </script>
-  </body>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script src="../js/header.js"></script>
+  <script type="text/javascript">
+    // Script for combobox
+    $(document).ready(function () {
+      $('.login').click(function (e) {
+        $('.dropdown-not-login').toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
 </html>

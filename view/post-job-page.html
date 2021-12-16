@@ -1,137 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đăng bài tuyển dụng</title>
-    <!-- Add grid css-->
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="stylesheet" href="../css/post-job.css" />
-    <!--add google font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-      rel="stylesheet"
-    />
 
-    <!--Add icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="header">
-      <div class="logo">
-        <div class="logo-img"></div>
-        <p class="logo-name">Findwork</p>
-      </div>
-      <!-- Nav bar -->
-      <div class="nav-bar">
-        <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
-        <a href="find-candidates-page.html" style="text-decoration: none">
-          <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
-        </a>
-        <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
-      </div>
-      <div class="profile-header">
-        <i class="notify-icon fa-solid fa-bell"></i>
-        <div class="profile-btn js-profile-btn"><i class="fa-solid fa-user"></i>Mr. James</div>
-        <div class="profile-menu">
-            <div class="row no-gutters profile-menu-header">
-                <div class="col l-3 m-3">
-                    <div class="profile-img">
-                    </div>
-                </div>
-                <div class="col l-9 m-9">
-                    <div class="name">James Nguyen</div>
-                    <div class="email">jamesnguyen1108@gmail.com</div>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng bài tuyển dụng</title>
+  <!-- Add grid css-->
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/post-job.css" />
+  <!--add google font-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+    rel="stylesheet" />
+
+  <!--Add icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="logo">
+      <div class="logo-img"></div>
+      <p class="logo-name">Findwork</p>
+    </div>
+    <!-- Nav bar -->
+    <div class="nav-bar">
+      <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
+      <a href="find-candidates-page.html" style="text-decoration: none">
+        <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
+      </a>
+      <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+    </div>
+    <div class="profile-header">
+      <i class="notify-icon fa-solid fa-bell"></i>
+      <div class="profile-btn js-profile-btn"><i class="fa-solid fa-user"></i>Mr. James</div>
+      <div class="profile-menu">
+        <div class="row no-gutters profile-menu-header">
+          <div class="col l-3 m-3">
+            <div class="profile-img">
             </div>
-            <div class="row no-gutters manage-account">
-                <i class="fas fa-cog"></i> Quản lý tài khoản
-            </div>
-            <a href="update-company-info-page.html" style= "text-decoration: none">
-            <div class="row no-gutters company-info">
-                <i class="fas fa-info-circle"></i> Thông tin công ty
-            </div>
-          </a>
-            <div class="row no-gutters log-out-btn">
-                <i class="fas fa-sign-out-alt"></i> Đăng xuất
-            </div>
+          </div>
+          <div class="col l-9 m-9">
+            <div class="name">James Nguyen</div>
+            <div class="email">jamesnguyen1108@gmail.com</div>
+          </div>
         </div>
-      </div>
-      <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
-      <div class="menu-mobile js-menu-mobile">
-        <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
-        <div class="mobile-menu-content js-menu-content">
-          <div class="profile-mobile row no-gutters">
-            <div class="col">
-              <div class="profile-img"></div>
-            </div>
-            <div class="col">
-              <div class="name">James Nguyen</div>
-              <div class="infor">Thông tin cá nhân</div>
-
-              <div class="sign-out">
-                <i class="fas fa-sign-out-alt"></i>Đăng xuất
-              </div>
-            </div>
+        <div class="row no-gutters manage-account">
+          <i class="fas fa-cog"></i> Quản lý tài khoản
+        </div>
+        <a href="update-company-info-page.html" style="text-decoration: none">
+          <div class="row no-gutters company-info">
+            <i class="fas fa-info-circle"></i> Thông tin công ty
           </div>
-          <ul class="menu-list">
-            <li>
-              <a class="job-posted-mobile" href="#"
-                ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
-              >
-            </li>
-            <li>
-              <a class="find-candidates-mobile" href="#"
-                ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
-              >
-            </li>
-            <li>
-              <a class="post-job-mobile" href="#"
-                ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
-              >
-            </li>
-          </ul>
-          <div>
-            <a class="notify-mobile" href="#"
-              ><i class="fas fa-bell"></i> Thông báo</a
-            >
-          </div>
+        </a>
+        <div class="row no-gutters log-out-btn">
+          <i class="fas fa-sign-out-alt"></i> Đăng xuất
         </div>
       </div>
     </div>
-    <div id="content" class="grid wide">
-        
-      <div class="content-title row">
-        <i class="fas fa-briefcase"></i>Mô Tả công việc
+    <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
+    <div class="menu-mobile js-menu-mobile">
+      <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
+      <div class="mobile-menu-content js-menu-content">
+        <div class="profile-mobile row no-gutters">
+          <div class="col">
+            <div class="profile-img"></div>
+          </div>
+          <div class="col">
+            <div class="name">James Nguyen</div>
+            <div class="infor">Thông tin cá nhân</div>
+
+            <div class="sign-out">
+              <i class="fas fa-sign-out-alt"></i>Đăng xuất
+            </div>
+          </div>
+        </div>
+        <ul class="menu-list">
+          <li>
+            <a class="job-posted-mobile" href="#"><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a>
+          </li>
+          <li>
+            <a class="find-candidates-mobile" href="#"><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
+          </li>
+          <li>
+            <a class="post-job-mobile" href="#"><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a>
+          </li>
+        </ul>
+        <div>
+          <a class="notify-mobile" href="#"><i class="fas fa-bell"></i> Thông báo</a>
+        </div>
       </div>
-      <form action="" id="form1">
+    </div>
+  </div>
+  <div id="content" class="grid wide">
+
+    <div class="content-title row">
+      <i class="fas fa-briefcase"></i>Mô Tả công việc
+    </div>
+    <form action="" id="form1">
       <div class="row">
         <div class="col l-2 m-3 c-12">
           <div class="title-input">Chức danh</div>
         </div>
         <div class="col l-10 m-9 c-12">
-          <input required
-            type="text"
-            class="input-row"
-            placeholder="Eg. Senior UX Designer"
-          />
+          <input required type="text" class="input-row" placeholder="Eg. Senior UX Designer" />
         </div>
       </div>
       <div class="row">
@@ -139,7 +118,7 @@
           <div class="title-input">Cấp bậc</div>
         </div>
         <div class="col l-10 m-9 c-12">
-          <select  class="dropdown-menu rank">
+          <select class="dropdown-menu rank">
             <option class="init">Cấp bậc</option>
             <option>Nhân viên</option>
             <option>Trưởng phòng</option>
@@ -164,9 +143,9 @@
         </div>
         <div class="col l-10 m-9 c-12">
           <select class="dropdown-menu form-of-employment">
-            <option  class="init">Chọn ngành nghề</option>
-            <option >IT - Phần mềm</option>
-            <option >IT - Phần cứng</option>
+            <option class="init">Chọn ngành nghề</option>
+            <option>IT - Phần mềm</option>
+            <option>IT - Phần cứng</option>
           </select>
         </div>
       </div>
@@ -192,19 +171,14 @@
             <option>Hà Nội</option>
             <i class="fa fa-caret-down"></i>
           </select>
-          <select style="margin-top:5px"  class="dropdown-menu district">
+          <select style="margin-top:5px" class="dropdown-menu district">
             <option class="init">Quận/Huyện</option>
             <option>Quận Thanh Xuân</option>
             <option>Quận Hoàng Mai</option>
             <option>Quận Cầu Giấy</option>
             <i class="fa fa-caret-down"></i>
           </select>
-          <input  required
-          style="margin-top:5px"
-            type="text"
-            class="input-row"
-            placeholder="Số nhà, tên đường..."
-          />
+          <input required style="margin-top:5px" type="text" class="input-row" placeholder="Số nhà, tên đường..." />
         </div>
       </div>
       <div class="row">
@@ -212,11 +186,8 @@
           <div class="title-input">Mô tả</div>
         </div>
         <div class="col l-10 m-9 c-12">
-          <textarea  required
-            class="input-row"
-            placeholder="Ví dụ: - Phối hợp cùng đội ngũ marketing trực tuyến nhằm thiết kế, xây dựng layout và trải nghiệm người dùng (User experience) cho website của công ty (và các trang subpage)&#10;- Chịu trách nhiệm cập nhật trang web (đăng tải nội dung và hình ảnh), giải quyết các vấn đề về hoạt động, tính ổn định và bảo mật của trang web công ty.&#10;...&#10;...
-            "
-          ></textarea>
+          <textarea required class="input-row" placeholder="Ví dụ: - Phối hợp cùng đội ngũ marketing trực tuyến nhằm thiết kế, xây dựng layout và trải nghiệm người dùng (User experience) cho website của công ty (và các trang subpage)&#10;- Chịu trách nhiệm cập nhật trang web (đăng tải nội dung và hình ảnh), giải quyết các vấn đề về hoạt động, tính ổn định và bảo mật của trang web công ty.&#10;...&#10;...
+            "></textarea>
         </div>
       </div>
       <div class="row">
@@ -224,10 +195,8 @@
           <div class="title-input">Yêu cầu công việc</div>
         </div>
         <div class="col l-10 m-9 c-12">
-          <textarea  required
-            class="input-row"
-            placeholder="- Có kinh nghiệm tối thiểu từ 2 - 5 năm kinh nghiệm lập trình ReactJS / React Native.../ Backend.&#10; - Đã từng làm việc và có kinh nghiệm triển khai HRM, CRM và các sản phẩm thanh toán thương mại điện tử theo cấu trúc Microservice là một lợi thế...&#10;...&#10;..."
-          ></textarea>
+          <textarea required class="input-row"
+            placeholder="- Có kinh nghiệm tối thiểu từ 2 - 5 năm kinh nghiệm lập trình ReactJS / React Native.../ Backend.&#10; - Đã từng làm việc và có kinh nghiệm triển khai HRM, CRM và các sản phẩm thanh toán thương mại điện tử theo cấu trúc Microservice là một lợi thế...&#10;...&#10;..."></textarea>
         </div>
       </div>
       <div class="row">
@@ -236,25 +205,19 @@
           <div class="title-sub-input">(VND)</div>
         </div>
         <div class="col l-5 m-5 c-6">
-          <input  required
-            class="input-row"
-            placeholder="Từ"
-          ></input>
+          <input required class="input-row" placeholder="Từ"></input>
         </div>
         <div class="col l-5 m-4 c-6">
-          <input  required
-            class="input-row"
-            placeholder="Đến"
-          ></input>
+          <input required class="input-row" placeholder="Đến"></input>
         </div>
         <div class="col l-10 m-9 c-5 l-o-2 m-o-3 ">
-            <div class="toggle-salary">
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
+          <div class="toggle-salary">
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
             <p>Hiển thị mức lương</p>
-            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -264,11 +227,7 @@
 
         </div>
         <div class="col l-10 m-9 c-12">
-          <input  required
-            type="text"
-            class="input-row"
-            placeholder="Ví dụ: Giao tiếp, Anh văn..."
-          />
+          <input required type="text" class="input-row" placeholder="Ví dụ: Giao tiếp, Anh văn..." />
         </div>
       </div>
       <div class="row">
@@ -278,11 +237,7 @@
 
         </div>
         <div class="col l-10 m-9 c-12">
-          <input  required
-            type="text"
-            class="input-row"
-            placeholder="Ví dụ: Nguyễn Văn A"
-          />
+          <input required type="text" class="input-row" placeholder="Ví dụ: Nguyễn Văn A" />
         </div>
       </div>
       <div class="row">
@@ -291,167 +246,152 @@
           <div class="title-sub-input">(Tối đa 5 thẻ)</div>
         </div>
         <div class="col l-10 m-9 c-12">
-          <input  required
-            type="email"
-            class="input-row"
-            placeholder="abcxyz@gmail.com"
-          />
+          <input required type="email" class="input-row" placeholder="abcxyz@gmail.com" />
         </div>
       </div>
       <div class="row submit">
         <button type="submit" form="form1" value="Submit">LƯU</button>
       </div>
     </form>
-    </div>
+  </div>
 
-  </body>
+</body>
 
-  <footer class="main-footer">
-    <div class="footer-box grid wide">
-      <div class="box col l-3 m-3 c-12">
-        <h3>Công ty</h3>
-        <ul class="l-12 m-12 c-0">
-          <li><a href="#">Giới Thiệu</a></li>
-          <li><a href="#">Dịch Vụ</a></li>
-          <li><a href="#">Bảo Mật Thông Tin</a></li>
-          <li><a href="#">Quy Định Sử Dụng</a></li>
-          <li><a href="#">Hỏi Đáp</a></li>
-          <li><a href="#">Nâng Cấp Tài Khoản</a></li>
-        </ul>
-      </div>
-      <div class="box col l-3 m-3 c-12">
-        <h3>Chính sách</h3>
-        <ul class="l-12 m-12 c-0">
-          <li><a href="#">Chính sách bảo mật</a></li>
-          <li><a href="#">Điều khoản và điều kiện</a></li>
-          <li><a href="#">Chính sách Bản quyền</a></li>
-          <li><a href="#">Quy tắc ứng xử</a></li>
-          <li><a href="#">Phí và lệ phí</a></li>
-        </ul>
-      </div>
-      <div class="box col l-3 m-3 c-12">
-        <h3>Danh sách trang</h3>
-        <ul>
-          <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Dịch vụ</a></li>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Quản lý tuyển dụng</a></li>
-          <li><a href="#">Cho người tìm việc</a></li>
-        </ul>
-      </div>
-      <div class="box col l-3 m-3 c-12">
-        <h3>Thông tin liên hệ</h3>
-        <ul>
-          <li>
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
-          </li>
-          <li>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
-          </li>
-          <li>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
-          </li>
-        </ul>
-      </div>
+<footer class="main-footer">
+  <div class="footer-box grid wide">
+    <div class="box col l-3 m-3 c-12">
+      <h3>Công ty</h3>
+      <ul class="l-12 m-12 c-0">
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="#">Dịch Vụ</a></li>
+        <li><a href="#">Bảo Mật Thông Tin</a></li>
+        <li><a href="#">Quy Định Sử Dụng</a></li>
+        <li><a href="#">Hỏi Đáp</a></li>
+        <li><a href="#">Nâng Cấp Tài Khoản</a></li>
+      </ul>
     </div>
-  </footer>
-  <!-- footer -->
-  <div class="follow-us">
-    Theo dõi chúng tôi<br /><br />
+    <div class="box col l-3 m-3 c-12">
+      <h3>Chính sách</h3>
+      <ul class="l-12 m-12 c-0">
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản và điều kiện</a></li>
+        <li><a href="#">Chính sách Bản quyền</a></li>
+        <li><a href="#">Quy tắc ứng xử</a></li>
+        <li><a href="#">Phí và lệ phí</a></li>
+      </ul>
+    </div>
+    <div class="box col l-3 m-3 c-12">
+      <h3>Danh sách trang</h3>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Quản lý tuyển dụng</a></li>
+        <li><a href="#">Cho người tìm việc</a></li>
+      </ul>
+    </div>
+    <div class="box col l-3 m-3 c-12">
+      <h3>Thông tin liên hệ</h3>
+      <ul>
+        <li>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
+        </li>
+        <li>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
+        </li>
+        <li>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+<div class="follow-us">
+  Theo dõi chúng tôi<br /><br />
+  <span>
     <span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/facebook.png"
-            alt="Visit on Facebook"
-          />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/twitter.png"
-            alt="Visit on Twitter"
-          />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/linkedin.png"
-            alt="Visit on Linkedin"
-          />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/youtube.png"
-            alt="Visit on Youtube"
-          />
-        </a>
-      </span>
+      <a href="">
+        <img src="../../images/salary_page/facebook.png" alt="Visit on Facebook" />
+      </a>
     </span>
-  </div>
-  <div class="copy">
-    <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
-  </div>
-  <script>
-    const menuBtn = document.querySelector(".js-menu-bar");
-    const closeBtn = document.querySelector(".js-close-menu");
-    const menuMobile = document.querySelector(".js-menu-mobile");
-    const menuMobileChild = document.querySelector(".js-menu-content");
-    const profileBtn = document.querySelector(".js-profile-btn")
-    const profileMenu = document.querySelector(".profile-menu")
-    const body = document.querySelector("body")
-    
-    body.addEventListener("click",function (event) {
-        profileMenu.classList.remove("display-block");
-    })
-    profileBtn.addEventListener("click",function (event) {
-        event.stopPropagation();
-        profileMenu.classList.toggle("display-block");
-    })
-    profileMenu.addEventListener("click",function (event) {
-        event.stopPropagation();
-    })
-    menuBtn.addEventListener("click", function (event) {
-      menuMobile.classList.add("menu-mobile-modal");
+    <span>
+      <a href="">
+        <img src="../../images/salary_page/twitter.png" alt="Visit on Twitter" />
+      </a>
+    </span>
+    <span>
+      <a href="">
+        <img src="../../images/salary_page/linkedin.png" alt="Visit on Linkedin" />
+      </a>
+    </span>
+    <span>
+      <a href="">
+        <img src="../../images/salary_page/youtube.png" alt="Visit on Youtube" />
+      </a>
+    </span>
+  </span>
+</div>
+<div class="copy">
+  <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+</div>
+<script>
+  const menuBtn = document.querySelector(".js-menu-bar");
+  const closeBtn = document.querySelector(".js-close-menu");
+  const menuMobile = document.querySelector(".js-menu-mobile");
+  const menuMobileChild = document.querySelector(".js-menu-content");
+  const profileBtn = document.querySelector(".js-profile-btn")
+  const profileMenu = document.querySelector(".profile-menu")
+  const body = document.querySelector("body")
+
+  body.addEventListener("click", function (event) {
+    profileMenu.classList.remove("display-block");
+  })
+  profileBtn.addEventListener("click", function (event) {
+    event.stopPropagation();
+    profileMenu.classList.toggle("display-block");
+  })
+  profileMenu.addEventListener("click", function (event) {
+    event.stopPropagation();
+  })
+  menuBtn.addEventListener("click", function (event) {
+    menuMobile.classList.add("menu-mobile-modal");
+  });
+  closeBtn.addEventListener("click", function (event) {
+    menuMobile.classList.remove("menu-mobile-modal");
+  });
+  menuMobile.addEventListener("click", function (event) {
+    menuMobile.classList.remove("menu-mobile-modal");
+  });
+  menuMobileChild.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+  //Drop down menu
+  const init = document.querySelectorAll(".init");
+  rankOptions = document.querySelectorAll(".rank li:not(.init)");
+  formOptions = document.querySelectorAll(
+    ".form-of-employment li:not(.init)"
+  );
+  function DropdownOptions(n, init, optionsSearchBar) {
+    init[n].addEventListener("click", function (event) {
+      for (let i = 0; i < optionsSearchBar.length; i++) {
+        optionsSearchBar[i].classList.toggle("list-item");
+        optionsSearchBar[i].addEventListener("click", function (event) {
+          for (let a = 0; a < optionsSearchBar.length; a++) {
+            optionsSearchBar[a].classList.remove("selected");
+            optionsSearchBar[a].classList.remove("list-item");
+          }
+          optionsSearchBar[i].classList.add("selected");
+          init[n].innerHTML = optionsSearchBar[i].innerHTML;
+        });
+      }
     });
-    closeBtn.addEventListener("click", function (event) {
-      menuMobile.classList.remove("menu-mobile-modal");
-    });
-    menuMobile.addEventListener("click", function (event) {
-      menuMobile.classList.remove("menu-mobile-modal");
-    });
-    menuMobileChild.addEventListener("click", function (event) {
-      event.stopPropagation();
-    });
-    //Drop down menu
-    const init = document.querySelectorAll(".init");
-    rankOptions = document.querySelectorAll(".rank li:not(.init)");
-    formOptions = document.querySelectorAll(
-      ".form-of-employment li:not(.init)"
-    );
-    function DropdownOptions(n, init, optionsSearchBar) {
-      init[n].addEventListener("click", function (event) {
-        for (let i = 0; i < optionsSearchBar.length; i++) {
-          optionsSearchBar[i].classList.toggle("list-item");
-          optionsSearchBar[i].addEventListener("click", function (event) {
-            for (let a = 0; a < optionsSearchBar.length; a++) {
-              optionsSearchBar[a].classList.remove("selected");
-              optionsSearchBar[a].classList.remove("list-item");
-            }
-            optionsSearchBar[i].classList.add("selected");
-            init[n].innerHTML = optionsSearchBar[i].innerHTML;
-          });
-        }
-      });
-    }
-    DropdownOptions(0, init, rankOptions);
-    DropdownOptions(1, init, formOptions);
-  </script>
+  }
+  DropdownOptions(0, init, rankOptions);
+  DropdownOptions(1, init, formOptions);
+</script>
+
 </html>
