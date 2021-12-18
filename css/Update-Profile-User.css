@@ -316,7 +316,15 @@ body{
     margin-left: 40px;
     
 }
+.div_genaral1{
+    display: none;
+}
 .div_genaral2{
+   
+    margin-left: 40px;
+    
+}
+.div_genaral3{
    
     margin-left: 40px;
     
@@ -835,5 +843,125 @@ body{
     }
     .box ul{
         padding: 0px 100px;
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .info_genaral{
+        width: 90%;
+    }
+    .div_genaral2{
+        display: none;
+    }
+    .div_genaral1{
+        display: block;
+    }
+    .avata{
+        margin-left: 20px;
+    }
+    .div_genaral{
+        margin-left: 5px;
+    }
+
+    .info_user{
+        width: 90%;
+    }
+    .info{
+        flex-direction: column;
+    }
+
+    .div_genaral3{
+        margin-left: 5px;
+    }
+    .input1{
+        width: 95%;
+    }
+    .div_name2{
+        margin-left: 35px;
+    }
+    .input2{
+        width: 95%;
+    }
+    .Description{
+        width: 90%;
+    }
+    .div_work{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 46.1875em){
+    .title{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info_genaral{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .avata{
+        width: 180px;
+        height: 180px;
+        margin: 0px;
+        border: 1px solid #6e6b6b ;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .icon-avata{
+        width: 140px;
+        height: 140px;
+        padding-right: 5px;
+    }
+    .div_genaral2{
+        display: none;
+    }
+    .div_genaral1{
+        display: block;
+    }
+    .avata{
+        margin-left: 20px;
+    }
+    .div_genaral{
+        margin-left: 5px;
+    }
+    .input{
+        height: 45px;
+    }
+    .info_user{
+        width: 100%;
+    }
+    .info{
+        flex-direction: column;
+    }
+
+    .div_genaral3{
+        margin-left: 5px;
+    }
+    .input1{
+        width: 95%;
+        height: 45px;
+    }
+    .div_name2{
+        margin-left: 35px;
+    }
+    .input2{
+        width: 95%;
+        height: 45px;
+    }
+    .Description{
+        width: 100%;
+    }
+    .div_work{
+        width: 100%;
+    }
+    .btn_save{
+        width: 100%;
+    
     }
 }
