@@ -284,19 +284,14 @@ body {
   list-style: none;
   position: relative;
   border: 2px solid #ccc;
-  z-index: 1;
+  padding: 6.5px 0;
+  width: 100%;
 }
-.filter-search > li {
+.filter-search > option {
   padding: 0 5px;
   line-height: 30px;
   display: flex;
   background: #fff;
-}
-.filter-search > li > a {
-  width: 100%;
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-  font-size: 16px;
 }
 .filter-search > i {
   line-height: 30px;
@@ -304,14 +299,6 @@ body {
   top: 0;
   right: 6px;
   cursor: pointer;
-}
-.filter-search li:not(.init) {
-  display: none;
-  animation: dropdown 0.2s ease-out;
-}
-.filter-search li:not(.init):hover,
-.filter-search li.selected:not(.init) {
-  background: rgb(234, 234, 234);
 }
 
 .search-bar .search-btn {
@@ -323,14 +310,12 @@ body {
   height: 34px;
 }
 .filter-menu {
-  position: relative;
 }
 
 .filter-menu > form {
   padding: 15px 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  height: 600px;
 }
 .filter-menu h3 {
   padding: 5px 0;
@@ -340,82 +325,36 @@ body {
 .filter-menu p {
   padding: 10px 0px 4px 0px;
 }
-.filter-menu ul {
+.filter-menu select {
   border: 1px solid #ccc;
   list-style: none;
   padding: 0;
   margin-bottom: 5px;
-  position: relative;
+  width: 100%;
+  padding: 5px 2px;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  /* font-family: ; */
 }
-.filter-menu ul > li {
+.filter-menu select > option {
   text-decoration: none;
   cursor: pointer;
   padding: 2px 0 2px 5px;
   color: rgba(0, 0, 0, 0.745);
   background-color: #fff;
 }
-ul.city {
-  z-index: 1;
-  width: 100%;
-}
-ul.district {
-  position: absolute;
-  width: 100%;
-  top: 68px;
-}
-.filter-menu ul > i {
-  position: absolute;
+
+.filter-menu select > i {
   line-height: 26px;
   top: 0;
   right: 4px;
   cursor: pointer;
 }
-.filter-menu li:not(.init) {
-  display: none;
-  animation: dropdown 0.2s ease-out;
-}
-.filter-menu ul li:not(.init):hover,
-.filter-menu ul li.selected:not(.init) {
-  background: rgb(234, 234, 234);
-}
-
-.filter-menu > form > div > div {
-  position: absolute;
-  width: 90%;
-}
-.filter-menu .career {
-  top: 50px;
-  z-index: 8;
-}
-.filter-menu .workplace-desired {
-  top: 112px;
-  z-index: 7;
-}
-.filter-menu .address-of-candidate {
-  top: 205px;
-  z-index: 6;
-}
-.filter-menu .lastUpdate {
-  top: 301px;
-  z-index: 5;
-}
-.filter-menu .year-of-experience {
-  top: 365px;
-  z-index: 4;
-}
-.filter-menu .salary {
-  top: 420px;
-  z-index: 3;
-}
-.filter-menu .rank {
-  top: 478px;
-  z-index: 2;
-}
 .filter-menu .search-btn {
   color: #0079c5;
   border: 1px solid #0079c5;
   margin: 0 auto;
-  margin-top: 500px;
+  margin-top: 20px;
   text-align: center;
   cursor: pointer;
   line-height: 30px;

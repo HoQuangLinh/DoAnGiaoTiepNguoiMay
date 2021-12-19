@@ -1,3 +1,69 @@
+  <script>
+    const menuBtn = document.querySelector(".js-menu-bar");
+    const closeBtn = document.querySelector(".js-close-menu");
+    const menuMobile = document.querySelector(".js-menu-mobile");
+    const menuMobileChild = document.querySelector(".js-menu-content");
+    const divFilterMenu = document.querySelectorAll(
+      ".filter-menu>form>div>div"
+    );
+    menuBtn.addEventListener("click", function (event) {
+      menuMobile.classList.add("menu-mobile-modal");
+    });
+    closeBtn.addEventListener("click", function (event) {
+      menuMobile.classList.remove("menu-mobile-modal");
+    });
+    menuMobile.addEventListener("click", function (event) {
+      menuMobile.classList.remove("menu-mobile-modal");
+    });
+    menuMobileChild.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+    //Drop down menu
+    const init = document.querySelectorAll(".init");
+    optionsSearchBar = document.querySelectorAll(
+      ".filter-search li:not(.init)"
+    );
+    careerOptions = document.querySelectorAll(".career li:not(.init)");
+    districtWorkplaceDesired = document.querySelectorAll(
+      ".workplace-desired ul.district li:not(.init)"
+    );
+    cityWorkplaceDesired = document.querySelectorAll(
+      ".workplace-desired ul.city li:not(.init)"
+    );
+    districtAddressOfCandidate = document.querySelectorAll(
+      ".address-of-candidate ul.district li:not(.init)"
+    );
+    cityAddressOfCandidate = document.querySelectorAll(
+      ".address-of-candidate ul.city li:not(.init)"
+    );
+    optionsUpdate = document.querySelectorAll(".lastUpdate li:not(.init)");
+    optionsRank = document.querySelectorAll(".rank li:not(.init)");
+    function DropdownOptions(n, init, optionsSearchBar) {
+      init[n].addEventListener("click", function (event) {
+        for (let i = 0; i < optionsSearchBar.length; i++) {
+          optionsSearchBar[i].classList.toggle("list-item");
+          optionsSearchBar[i].addEventListener("click", function (event) {
+            for (let a = 0; a < optionsSearchBar.length; a++) {
+              optionsSearchBar[a].classList.remove("selected");
+              optionsSearchBar[a].classList.remove("list-item");
+            }
+            optionsSearchBar[i].classList.add("selected");
+            init[n].innerHTML = optionsSearchBar[i].innerHTML;
+          });
+        }
+      });
+    }
+    DropdownOptions(0, init, optionsSearchBar);
+    DropdownOptions(1, init, careerOptions);
+    DropdownOptions(2, init, cityWorkplaceDesired);
+    DropdownOptions(3, init, districtWorkplaceDesired);
+    DropdownOptions(4, init, cityAddressOfCandidate);
+    DropdownOptions(5, init, districtAddressOfCandidate);
+    DropdownOptions(6, init, optionsUpdate);
+    DropdownOptions(7, init, optionsRank);
+  </script>
+
+
 :root {
   --header-height: 89px;
   --filter-height: 70px;
@@ -281,9 +347,6 @@ body {
 }
 /* responsive */
 @media (max-width: 1437px) {
-  body .row.filter select {
-    margin-right: 18px;
-  }
   /* header */
   .header {
     padding: 4px -16px;
@@ -426,50 +489,17 @@ body {
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
   }
 }
-
-/* Body */
-
-body .row.filter {
-  margin-top: 56px;
-}
-body .row.filter select {
-  border: none;
-  cursor: pointer;
-  font-family: Nunito, Helvetica, sans-serif;
-  font-size: 16px;
-  margin-right: 45px;
-}
-body .row.filter select option {
-  cursor: pointer;
-}
-body .row.filter select:focus-visible {
-  border: none;
-  outline: none;
-}
-body .row.filter .filter2,
-body .row.filter .filter1 {
-  border-bottom: 1px solid #f5f5f5;
-  margin: 0;
-}
-body .row.filter .filter1 {
-  padding: 8px 0px 4px 30px;
-}
-body .row.filter .filter2 {
-  padding: 4px 0px 8px 30px;
-}
-.div-filter-check {
-  cursor: pointer;
-}
 .side-bar,
 .content {
   overflow: scroll;
-  height: calc(100vh - 86px);
+  height: calc(100vh - 58px);
 }
 
 .body {
-  /* margin-top: 86px; */
+  margin-top: 58px;
 }
-body .row.no-gutters .job-card {
+
+.job-card {
   position: relative;
   border-bottom: 5px solid rgb(228, 228, 228);
   padding: 15px 15px;
@@ -653,9 +683,7 @@ body .row.no-gutters .job-card {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 650px;
-  min-width: 500px;
-  font-family: Nunito, Helvetica, sans-serif;
+  width: 40%;
   position: relative;
 }
 .popup title {
@@ -666,7 +694,7 @@ body .row.no-gutters .job-card {
   display: inline-block;
   margin-top: 0;
   color: #333;
-  font-family: Nunito, Helvetica, sans-serif;
+  font-family: Tahoma, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -708,17 +736,6 @@ body .row.no-gutters .job-card {
 .popup .bodyPopup {
   margin-top: 10px;
 }
-.popup .bodyPopup .info-popup {
-  padding: 5px 0;
-  font-size: 17px;
-}
-.popup .bodyPopup .left {
-  text-align: right;
-  padding-right: 10px;
-}
-.popup .bodyPopup .right {
-}
-
 .popup .box1 {
   width: 100%;
   padding: 20px;
@@ -753,7 +770,7 @@ body .row.no-gutters .job-card {
   color: rgba(17, 18, 18, 0.62);
 }
 .popup .footer {
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
   justify-content: right;
   margin-right: auto;
@@ -769,13 +786,13 @@ body .row.no-gutters .job-card {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: #f7941d;
+  background-color: #ec9730;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .popup .btn:hover {
-  background: #f7941dd4;
+  background: #f7941d;
   color: #fff;
 }
 .btn ~ .btn {
@@ -783,19 +800,15 @@ body .row.no-gutters .job-card {
 }
 
 @media screen and (max-width: 700px) {
-  body .row.filter select {
-    margin-right: 10px;
-  }
   .popup {
     width: 85%;
   }
   .popup .box1 {
     width: 100%;
-    padding: 10px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
     display: flex;
-    margin-top: 8px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    padding: 10px;
   }
   .popup .box1 .avatar {
     margin: 0px;
