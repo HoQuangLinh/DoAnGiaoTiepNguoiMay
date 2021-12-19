@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Việc làm đã đăng</title>
+    <link rel="icon" href="../images/logotab2.png">
     <!--add google font-->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +26,7 @@
 
 <body>
     <div id="header">
-        <div class="logo">
+        <div onclick="location.href='./employer/home-page.html'" class="logo">
             <div class="logo-img"></div>
             <p class="logo-name">Findwork</p>
         </div>
@@ -35,7 +36,9 @@
             <a href="find-candidates-page.html" style="text-decoration: none">
                 <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
             </a>
-            <div class="job-posted-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+            <a href="./post-job-page.html">
+                <div class="job-posted-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+            </a>
         </div>
         <div class="profile-header">
             <i class="notify-icon fa-solid fa-bell"></i>
@@ -51,17 +54,22 @@
                         <div class="email">jamesnguyen1108@gmail.com</div>
                     </div>
                 </div>
-                <div class="row no-gutters manage-account">
-                    <i class="fas fa-cog"></i> Quản lý tài khoản
-                </div>
+                <a href="./employer/manage-acc-page.html  ">
+                    <div class="row no-gutters manage-account">
+                        <i class="fas fa-cog"></i> Quản lý tài
+                        khoản
+                    </div>
+                </a>
                 <a href="update-company-info-page.html" style="text-decoration: none">
                     <div class="row no-gutters company-info">
                         <i class="fas fa-info-circle"></i> Thông tin công ty
                     </div>
                 </a>
-                <div class="row no-gutters log-out-btn">
-                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
-                </div>
+                <a href="./LogIn.html">
+                    <div class="row no-gutters log-out-btn">
+                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                    </div>
+                </a>
             </div>
         </div>
         <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
@@ -76,7 +84,7 @@
                         <div class="name">James Nguyen</div>
                         <div class="infor">Thông tin cá nhân</div>
 
-                        <div class="sign-out">
+                        <div onclick="location.href='./LogIn.html'" class="sign-out">
                             <i class="fas fa-sign-out-alt"></i>Đăng xuất
                         </div>
                     </div>
@@ -86,10 +94,12 @@
                         <a class="job-posted-mobile" href="#"><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a>
                     </li>
                     <li>
-                        <a class="find-candidates-mobile" href="#"><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
+                        <a class="find-candidates-mobile" href="./find-candidates-page.html"><i
+                                class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
                     </li>
                     <li>
-                        <a class="post-job-mobile" href="#"><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a>
+                        <a class="post-job-mobile" href="./post-job-page.html"><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN
+                            DỤNG</a>
                     </li>
                 </ul>
                 <div>
