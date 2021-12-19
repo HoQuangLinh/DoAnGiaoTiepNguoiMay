@@ -53,8 +53,8 @@
         </a>
       </div>
       <div class="profile-header">
-        <i class="notify-icon fa-solid fa-bell"></i>
-        <div class="profile-btn js-profile-btn">
+        <i class="notify-icon fa-solid fa-bell notify-js"></i>
+        <div class="profile-btn js-profile-btn" style="user-select: none">
           <i class="fa-solid fa-user"></i>Mr. James
         </div>
         <div class="profile-menu">
@@ -67,15 +67,25 @@
               <div class="email">jamesnguyen1108@gmail.com</div>
             </div>
           </div>
-          <div class="row no-gutters manage-account">
-            <i class="fas fa-cog"></i> Quản lý tài khoản
-          </div>
-          <div class="row no-gutters company-info">
-            <i class="fas fa-info-circle"></i> Thông tin công ty
-          </div>
-          <div class="row no-gutters log-out-btn">
-            <i class="fas fa-sign-out-alt"></i> Đăng xuất
-          </div>
+          <a
+            href="./employer/manage-acc-page.html"
+            style="text-decoration: none; user-select: none;"
+          >
+            <div class="row no-gutters manage-account">
+              <i class="fas fa-cog"></i> Quản lý tài khoản
+            </div>
+          </a>
+          <a href="#" style="text-decoration: none; user-select: none;" >
+            <div style="background-color: rgb(230, 230, 230);" 
+            class="row no-gutters company-info">
+              <i class="fas fa-info-circle"></i> Thông tin công ty
+            </div>
+          </a>
+          <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+            <div class="row no-gutters log-out-btn">
+              <i class="fas fa-sign-out-alt"></i> Đăng xuất
+            </div>
+          </a>
         </div>
       </div>
       <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
@@ -88,26 +98,45 @@
             </div>
             <div class="col">
               <div class="name">James Nguyen</div>
-              <div class="infor">Thông tin cá nhân</div>
-
+              <a
+                style="text-decoration: none"
+                href="#"
+              >
+                <div class="infor">Thông tin công ty</div>
+              </a>
+              <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
               <div class="sign-out">
                 <i class="fas fa-sign-out-alt"></i>Đăng xuất
-              </div>
+              </div></a>
             </div>
           </div>
           <ul class="menu-list">
             <li>
-              <a class="job-posted-mobile" href="#"
+              <a class="job-posted-mobile" href="./employer/manage-acc-page.html"
+                ><i class="fas fa-cog"></i>QUẢN LÝ TÀI KHOẢN</a
+              >
+            </li>
+            <li>
+              <a
+              style="background-color: #ededed"
+              class="job-posted-mobile" href="#"
+                ><i class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a
+              >
+            </li>
+            <li>
+              <a class="job-posted-mobile" href="posted-jobs.html"
                 ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
               >
             </li>
             <li>
-              <a class="find-candidates-mobile" href="#"
+              <a
+                class="find-candidates-mobile"
+                href="#"
                 ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
               >
             </li>
             <li>
-              <a class="post-job-mobile" href="#"
+              <a class="post-job-mobile" href="post-job-page.html"
                 ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
               >
             </li>

@@ -29,43 +29,53 @@
   <div id="header">
     <div class="logo">
       <div class="logo-img"></div>
-      <p class="logo-name">Findwork</p>
+      <a href="./employer/home-page.html">
+        <p style="user-select: none" class="logo-name">Findwork</p>
+      </a>
     </div>
     <!-- Nav bar -->
     <div class="nav-bar">
       <a href="posted-jobs.html" style="text-decoration: none">
-        <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
+        <div style="user-select: none" class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
       </a>
       <a href="find-candidates-page.html" style="text-decoration: none">
-        <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
+        <div style="user-select: none" class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
       </a>
-      <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+      <div style="user-select: none" class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
     </div>
     <div class="profile-header">
-      <i class="notify-icon fa-solid fa-bell"></i>
-      <div class="profile-btn js-profile-btn"><i class="fa-solid fa-user"></i>Mr. James</div>
+      <i class="notify-icon fa-solid fa-bell notify-js"></i>
+      <div class="profile-btn js-profile-btn" style="user-select: none">
+        <i class="fa-solid fa-user"></i>Mr. James
+      </div>
       <div class="profile-menu">
         <div class="row no-gutters profile-menu-header">
           <div class="col l-3 m-3">
-            <div class="profile-img">
-            </div>
+            <div class="profile-img"></div>
           </div>
           <div class="col l-9 m-9">
             <div class="name">James Nguyen</div>
             <div class="email">jamesnguyen1108@gmail.com</div>
           </div>
         </div>
-        <div class="row no-gutters manage-account">
-          <i class="fas fa-cog"></i> Quản lý tài khoản
-        </div>
-        <a href="update-company-info-page.html" style="text-decoration: none">
+        <a
+          href="./employer/manage-acc-page.html"
+          style="text-decoration: none; user-select: none;"
+        >
+          <div class="row no-gutters manage-account">
+            <i class="fas fa-cog"></i> Quản lý tài khoản
+          </div>
+        </a>
+        <a href="update-company-info-page.html" style="text-decoration: none; user-select: none;">
           <div class="row no-gutters company-info">
             <i class="fas fa-info-circle"></i> Thông tin công ty
           </div>
         </a>
-        <div class="row no-gutters log-out-btn">
-          <i class="fas fa-sign-out-alt"></i> Đăng xuất
-        </div>
+        <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+          <div class="row no-gutters log-out-btn">
+            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+          </div>
+        </a>
       </div>
     </div>
     <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
@@ -78,26 +88,54 @@
           </div>
           <div class="col">
             <div class="name">James Nguyen</div>
-            <div class="infor">Thông tin cá nhân</div>
-
+            <a
+              style="text-decoration: none"
+              href="update-company-info-page.html"
+            >
+              <div class="infor">Thông tin công ty</div>
+            </a>
+            <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
             <div class="sign-out">
               <i class="fas fa-sign-out-alt"></i>Đăng xuất
-            </div>
+            </div></a>
           </div>
         </div>
         <ul class="menu-list">
           <li>
-            <a class="job-posted-mobile" href="#"><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a>
+            <a class="job-posted-mobile" href="./employer/manage-acc-page.html"
+              ><i class="fas fa-cog"></i>QUẢN LÝ TÀI KHOẢN</a
+            >
           </li>
           <li>
-            <a class="find-candidates-mobile" href="#"><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
+            <a class="job-posted-mobile" href="update-company-info-page.html"
+              ><i class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a
+            >
           </li>
           <li>
-            <a class="post-job-mobile" href="#"><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a>
+            <a class="job-posted-mobile" href="posted-jobs.html"
+              ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
+            >
+          </li>
+          <li>
+            <a
+              
+              class="find-candidates-mobile"
+              href="#"
+              ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
+            >
+          </li>
+          <li>
+            <a
+            style="background-color: #ededed"
+            class="post-job-mobile" href="#"
+              ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
+            >
           </li>
         </ul>
         <div>
-          <a class="notify-mobile" href="#"><i class="fas fa-bell"></i> Thông báo</a>
+          <a class="notify-mobile" href="#"
+            ><i class="fas fa-bell"></i> Thông báo</a
+          >
         </div>
       </div>
     </div>
@@ -373,28 +411,7 @@
     event.stopPropagation();
   });
   //Drop down menu
-  const init = document.querySelectorAll(".init");
-  rankOptions = document.querySelectorAll(".rank li:not(.init)");
-  formOptions = document.querySelectorAll(
-    ".form-of-employment li:not(.init)"
-  );
-  function DropdownOptions(n, init, optionsSearchBar) {
-    init[n].addEventListener("click", function (event) {
-      for (let i = 0; i < optionsSearchBar.length; i++) {
-        optionsSearchBar[i].classList.toggle("list-item");
-        optionsSearchBar[i].addEventListener("click", function (event) {
-          for (let a = 0; a < optionsSearchBar.length; a++) {
-            optionsSearchBar[a].classList.remove("selected");
-            optionsSearchBar[a].classList.remove("list-item");
-          }
-          optionsSearchBar[i].classList.add("selected");
-          init[n].innerHTML = optionsSearchBar[i].innerHTML;
-        });
-      }
-    });
-  }
-  DropdownOptions(0, init, rankOptions);
-  DropdownOptions(1, init, formOptions);
+
 </script>
 
 </html>

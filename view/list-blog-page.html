@@ -1,673 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin tức và cẩm năng tìm việc</title>
+    <link rel="icon" href="../images/logotab1.png" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/list-blog-page.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tin tức và cẩm năng tìm việc</title>
-  <link rel="icon" href="../images/logotab1.png">
-  <link rel="stylesheet" href="../css/responsive.css" />
-  <link rel="stylesheet" href="../css/list-blog-page.css" />
-  <link rel="stylesheet" href="../css/header.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">
-        <a href="./">
-          <img src="../images/salary_page/logo1.png" alt="Logo" />
-          FINDWORK
-        </a>
-      </div>
-      <!-- Logo -->
-
-      <form class="searchbar">
-        <div class="job">
-          <i class="material-icons prefix">search</i>
-          <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a href="./">
+            <img src="../images/salary_page/logo1.png" alt="Logo" />
+            FINDWORK
+          </a>
         </div>
-        <div class="local">
-          <i class="material-icons prefix">location_on</i>
-          <input type="search" name="s" placeholder="Tất cả khu vực" />
+        <!-- Logo -->
+
+        <form class="searchbar">
+          <div class="job">
+            <i class="material-icons prefix">search</i>
+            <input
+              type="search"
+              name="s"
+              placeholder="Tìm kiếm việc làm, công ty, kĩ năng"
+            />
+          </div>
+          <div class="local">
+            <i class="material-icons prefix">location_on</i>
+            <input type="search" name="s" placeholder="Tất cả khu vực" />
+          </div>
+          <a class="findjobs" href="./search-page.html"> Tìm Việc </a>
+        </form>
+        <!-- searchbar -->
+        <div class="menu-btn">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </div>
-        <a class="findjobs" href="./search-page.html">
-          Tìm Việc
-        </a>
-      </form>
-      <!-- searchbar -->
-      <div class="menu-btn">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </div>
-      <nav class="navbar">
-        <ul class="nav-menu">
-          <li class="search-sidebar">
-            <form>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="search-sidebar">
+              <form>
+                <div class="job">
+                  <i class="material-icons prefix">search</i>
+                  <input
+                    type="search"
+                    name="s"
+                    placeholder="Tìm kiếm việc làm, công ty, kĩ năng"
+                  />
+                </div>
+                <div class="local">
+                  <i class="material-icons prefix">location_on</i>
+                  <input type="search" name="s" placeholder="Tất cả khu vực" />
+                </div>
+                <a href="./search-page.html">
+                  <div class="findjobs-btn">Tìm Việc</div>
+                </a>
+              </form>
+              <!-- searchbar -->
+            </li>
+            <li><a href="./search-page.html">VIỆC LÀM</a></li>
+            <li><a href="./salary-page.html">MỨC LƯƠNG</a></li>
+            <li><a href="./list-blog-page.html">BLOG</a></li>
+            <li><a href="./company-page.html">CÔNG TY</a></li>
+            <li>
+              <div class="noti_login">
+                <i class="material-icons prefix">notifications_none</i>
+                <div class="btn-dropdown">
+                  <button class="login" type="submit">
+                    <i class="material-icons prefix">account_circle</i>
+                    <div>James</div>
+                  </button>
+                  <div class="dropdown-not-login">
+                    <div class="dropdown">
+                      <a href="./profile-page.html">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <span>Thông tin chung</span>
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a href="./Update-Profile-User.html">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <span>Cập nhật hồ sơ</span>
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a href="./manage-acc-page.html">
+                        <i class="fa fa-tasks" aria-hidden="true"></i>
+                        <span>Quản lý tài khoản</span>
+                      </a>
+                    </div>
+                    <div class="dropdown">
+                      <a href="LogIn.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span>Đăng xuất</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- navbar -->
+
+        <nav class="nav-res">
+          <ul class="nav-menu-res">
+            <div class="close-btn">
+              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="search-sidebar">
               <div class="job">
                 <i class="material-icons prefix">search</i>
-                <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng" />
+                <input
+                  type="search"
+                  name="s"
+                  placeholder="Tìm kiếm việc làm, công ty, kĩ năng"
+                />
               </div>
               <div class="local">
                 <i class="material-icons prefix">location_on</i>
                 <input type="search" name="s" placeholder="Tất cả khu vực" />
               </div>
-              <a href="./search-page.html">
-                <div class="findjobs-btn">Tìm Việc</div>
-              </a>
-            </form>
-            <!-- searchbar -->
-          </li>
-          <li><a href="./search-page.html">VIỆC LÀM</a></li>
-          <li><a href="./salary-page.html">MỨC LƯƠNG</a></li>
-          <li><a href="./list-blog-page.html">BLOG</a></li>
-          <li><a href="./company-page.html">CÔNG TY</a></li>
-          <li>
-            <div class="noti_login">
-              <i class="material-icons prefix">notifications_none</i>
-              <div class="btn-dropdown">
-                <button class="login" type="submit">
-                  <i class="material-icons prefix">account_circle</i>
-                  <div>James</div>
-                </button>
-                <div class="dropdown-not-login">
-                  <div class="dropdown">
-                    <a href="./profile-page.html">
-                      <i class="fa fa-address-card" aria-hidden="true"></i>
-                      <span>Thông tin chung</span>
-                    </a>
-                  </div>
-                  <div class="dropdown">
-                    <a href="./Update-Profile-User.html">
-                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                      <span>Cập nhật hồ sơ</span>
-                    </a>
-                  </div>
-                  <div class="dropdown">
-                    <a href="./manage-acc-page.html">
-                      <i class="fa fa-tasks" aria-hidden="true"></i>
-                      <span>Quản lý tài khoản</span>
-                    </a>
-                  </div>
-                  <div class="dropdown">
-                    <a href="LogIn.html">
-                      <i class="fa fa-sign-out" aria-hidden="true"></i>
-                      <span>Đăng xuất</span>
-                    </a>
-                  </div>
+              <a href="./search-page.html"> Tìm Việc </a>
+            </div>
+            <div class="resp-top">
+              <div class="circle-avatar">
+                <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class="infor-card">
+                <div class="infor">
+                  <div class="name">James Nguyen</div>
+                  <a class="email" href="mailto:jamesnguyen@gmail.com"
+                    >jamesnguyen@gmail.com</a
+                  >
                 </div>
+                <a class="logout" href="LogIn.html">
+                  <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <!-- navbar -->
-
-      <nav class="nav-res">
-        <ul class="nav-menu-res">
-          <div class="close-btn">
-            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-          </div>
-          <div class="search-sidebar">
-            <div class="job">
-              <i class="material-icons prefix">search</i>
-              <input type="search" name="s" placeholder="Tìm kiếm việc làm, công ty, kĩ năng">
-            </div>
-            <div class="local">
-              <i class="material-icons prefix">location_on</i>
-              <input type="search" name="s" placeholder="Tất cả khu vực">
-            </div>
-            <a href="./search-page.html">
-              Tìm Việc
-            </a>
-          </div>
-          <div class="resp-top">
-            <div class="circle-avatar">
-              <i class="fa fa-user fa-3x" aria-hidden="true"></i>
-            </div>
-            <div class="infor-card">
-              <div class="infor">
-                <div class="name">James Nguyen</div>
-                <a class="email" href="mailto:jamesnguyen@gmail.com">jamesnguyen@gmail.com</a>
-              </div>
-              <a class="logout" href="LogIn.html">
-                <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-          <li><a href="./">
-              <i class="fa fa-home" aria-hidden="true"></i>
-              Trang chủ</a>
-          </li>
-          <li><a href="search-page.html">
-              <i class="fa fa-briefcase" aria-hidden="true"></i>
-              Việc làm</a>
-          </li>
-          <li><a href="salary-page.html">
-              <i class="fa fa-usd" aria-hidden="true"></i>
-              Mức lương</a>
-          </li>
-          <li><a href="list-blog-page.html">
-              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-              Blog</a>
-          </li>
-          <li><a href="company-page.html">
-              <i class="fa fa-building" aria-hidden="true"></i>
-              Công ty</a>
-          </li>
-          <li><a href="./employer/home-page.html">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              Cho nhà tuyển dụng</a>
-          </li>
-          <li><a href="profile-page.html">
-              <i class="fa fa-address-card" aria-hidden="true"></i>
-              Thông tin chung</a>
-          </li>
-          <li><a href="Update-Profile-User.html">
-              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              Cập nhật hồ sơ</a>
-          </li>
-          <li><a href="manage-acc-page.html">
-              <i class="fa fa-tasks" aria-hidden="true"></i>
-              Quản lý tài khoản</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- header -->
-
-    <div id="banner"></div>
-    <div id="content">
-      <div class="grid wide">
-        <div class="row part-1">
-          <h2 class="col l-12 m-12 c-12 type-of-post">Tuyển dụng</h2>
-          <div class="col l-6 m-12 c-12">
-            <div class="main-post">
-              <div class="main-picture-post"></div>
-              <p class="name-post">
-                Bình Dương: Cần thêm hơn 47000 công nhân sau Tết Thành Đặng
-              </p>
-              <p class="desc-post">
-                Ngày 21/2, Liên đoàn Lao động (LĐLĐ) tỉnh Bình Dương, cho
-                biết: Đầu năm 2019; do mở rộng sản xuất, 345 doanh nghiệp
-                thông báo tuyển mới hơn 47500 công nhân. Những doanh nghiệp
-                tuyển dụng thêm công nhân hầu hết là doanh nghiệp có 100% vốn
-                đầu tư nước ngoài ở các lĩnh vực dệt may;...
-              </p>
-            </div>
-          </div>
-          <div class="col l-6 m-12 c-12">
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row part-1">
-          <h2 class="col l-12 m-12 c-12 type-of-post">Góc Kỹ Năng</h2>
-
-          <div class="col l-6 m-12 c-12">
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col l-6 m-12 c-12">
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row no-gutters sub-post">
-              <div class="col l-4 m-4 c-4">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-8 m-8 c-8">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row part-3">
-          <div class="nav-banner">
-            <div class="title">
-              TÌM VIỆC LÀM
-              <p>NGAY HÔM NAY</p>
-            </div>
-            <a href="./" style="text-decoration: none">
-              <div class="title-2">
-                <p>với</p>
-                FINDWORK.COM
-              </div>
-            </a>
-
-            <a href="employer/home-page.html" style="text-decoration: none">
-              <div class="recruitment">Bạn là Nhà tuyển dụng</div>
-            </a>
-            <a href="./" style="text-decoration: none">
-              <div class="finder">Bạn là Người tìm việc</div>
-            </a>
-          </div>
-
-          <div class="col l-12 m-12 c-12">
-            <div class="row">
-              <div class="banner-1 l-4 c-4 m-4"></div>
-              <div class="banner-2 l-8 c-8 m-8"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row part-4">
-          <div class="col l-4 m-6 c-12">
-            <h2 class="type-of-post">Sinh viên</h2>
-            <div class="main-post">
-              <div class="main-picture-post"></div>
-              <p class="name-post">
-                Sau dịch, doanh nghiệp ra sức tuyển dụng, tăng lương để thu
-                hút người lao động
-              </p>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col l-4 m-6 c-12">
-            <h2 class="type-of-post">Xã hội</h2>
-            <div class="main-post">
-              <div class="main-picture-post"></div>
-              <p class="name-post">
-                Sau dịch, doanh nghiệp ra sức tuyển dụng, tăng lương để thu
-                hút người lao động
-              </p>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col l-4 m-6 c-12">
-            <h2 class="type-of-post">Doanh nghiệp</h2>
-            <div class="main-post">
-              <div class="main-picture-post"></div>
-              <p class="name-post">
-                Sau dịch, doanh nghiệp ra sức tuyển dụng, tăng lương để thu
-                hút người lao động
-              </p>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-            <div class="row sub-post">
-              <div class="col l-3 m-3 c-3">
-                <div class="picture-post"></div>
-              </div>
-              <div class="col l-9 m-9 c-9">
-                <div class="name">
-                  Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt động
-                  trở lại
-                </div>
-                <div class="desc-post">
-                  56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
-                  sát sẽ tuyển dụng ngay ...
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- content holder -->
-
-    <footer class="main-footer">
-      <div class="footer-box">
-        <div class="box">
-          <div class="first-box">
-            <div class="logo">
+            <li>
               <a href="./">
-                <img src="../images/salary_page/logo1.png" alt="Logo" />
-                FINDWORK
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Trang chủ</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                Việc làm</a
+              >
+            </li>
+            <li>
+              <a href="salary-page.html">
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                Mức lương</a
+              >
+            </li>
+            <li>
+              <a href="list-blog-page.html">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog</a
+              >
+            </li>
+            <li>
+              <a href="company-page.html">
+                <i class="fa fa-building" aria-hidden="true"></i>
+                Công ty</a
+              >
+            </li>
+            <li>
+              <a href="./employer/home-page.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Cho nhà tuyển dụng</a
+              >
+            </li>
+            <li>
+              <a href="profile-page.html">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                Thông tin chung</a
+              >
+            </li>
+            <li>
+              <a href="Update-Profile-User.html">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                Cập nhật hồ sơ</a
+              >
+            </li>
+            <li>
+              <a href="manage-acc-page.html">
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                Quản lý tài khoản</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header -->
+
+      <div id="banner"></div>
+      <div id="content">
+        <div class="grid wide">
+          <div class="row part-1">
+            <h2 class="col l-12 m-12 c-12 type-of-post">Tuyển dụng</h2>
+            <div class="col l-6 m-12 c-12">
+              <div class="main-post">
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <div
+                    style="
+                      background-image: url(https://i.postimg.cc/BZydy8bY/tien-luong-7461.jpg);
+                    "
+                    class="main-picture-post"
+                  ></div>
+                </a>
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <p style="font-size: 18px" class="name-post">
+                    Lương nhân viên IT kinh nghiệm bằng sếp ngành khác
+                  </p>
+                </a>
+                <p style="color: rgb(82, 82, 82)" class="desc-post">
+                  Theo khảo sát của Navigos Group, lương nhân viên IT có kinh
+                  nghiệm sẽ bằng lương của cấp bậc quản lý tại nhiều ngành nghề
+                  khác...
+                </p>
+              </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/76vyzfzQ/settop-1581930674-3745-1581930951-1.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Công ty ITSOL tuyển dụng 70 lập trình viên Java
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    ITSOL tuyển 50 - 70 lập trình viên Java, 10 - 20 lập trình
+                    viên Mobile và nhiều vị trí khác từ nay đến tháng sáu...
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/tCcvJ8WB/t-i-xu-ng.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Navigos Group xây hệ sinh thái phát triển nhân tài
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Navigos Group tăng ứng dụng công nghệ, phát triển đa dạng
+                    sản phẩm, dịch vụ đáp ứng nhu cầu học hỏi và phát triển
+                    không ngừng của từng cá nhân...
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/zDKGx1Xg/cg2a2453-1587202540-5819-15872-5623-9111-1587203716.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Việc làm mùa dịch - nơi thiếu chỗ thừa
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Ngành ngân hàng đang ngưng tuyển dụng trong khi thương mại
+                    điện tử, viễn thông, Fintech vẫn tăng nhu cầu và trả lương
+                    cũng cao hơn....
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/76NQL6nz/images.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Bằng cấp chỉ là bộ lọc giảm thiểu thời gian tuyển dụng
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Không ai buộc doanh nghiệp phải tuyển dụng nhân sự thế nào,
+                    yêu cầu bằng cấp có nên chỉ là bộ lọc giảm thiểu thời gian
+                    cho của doanh nghiệp...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row part-1">
+            <h2 class="col l-12 m-12 c-12 type-of-post">Góc Kỹ Năng</h2>
+            <div class="col l-6 m-12 c-12">
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/mrBYgSXd/image001-1594953166-7955-1595210417.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Sinh viên trực tuyến học kỹ năng mềm như thế nào?
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Được rèn kỹ năng, kinh nghiệm qua các buổi gặp gỡ, kết nối,
+                    sinh viên FUNiX học online tự tin về vốn kỹ năng mềm.
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/9MSwZPbH/image001-4530-1606723602.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      30.000 bạn trẻ TP HCM tham gia rèn luyện kỹ năng mềm
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Chương trình "Đánh thức khát vọng" do MobiFone tổ chức từng
+                    bước trở thành hoạt động dành cho giới trẻ cả nước về kỹ
+                    năng mềm.
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/RZQtyHSw/mg4448jpg-1574652094-157465210-3748-2719-1574652172.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Kỹ năng mềm giúp người trẻ 'sống khỏe'
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Hiểu biết về công nghệ, có thái độ đúng đắn trong làm việc
+                    và tiếp nhận thử thách là những kỹ năng giúp người trẻ tiến
+                    xa trong công việc.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/G3KpynLJ/1671968725-w500-1563786159-8111-1563786230.png);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      5 lý do sinh viên cần phát triển kỹ năng mềm
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Các kỹ năng mà nhà tuyển dụng đánh giá cao ở ứng viên - đáng
+                    tin cậy, chính trực, khả năng thích ứng... đều là kỹ năng
+                    mềm.
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/PJyNXBxy/1096115474-w500-1544525711-9364-1544525797.png);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Những điểm yếu của cử nhân khi đi xin việc
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Đơn vị tuyển dụng yêu cầu cao về chuyên môn, kỹ năng làm
+                    việc nhưng nhiều ứng viên thiếu kiến thức, yếu ngoại ngữ,
+                    doanh nghiệp phải đào tạo lại.
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters sub-post">
+                <div class="col l-4 m-4 c-4">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/1z1SdvR3/15-6-201530-7799-1434336696.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-8 m-8 c-8">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Định hướng tương lai tốt nhờ kỹ năng nghề nghiệp
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Kỹ năng nghề nghiệp gồm những kỹ năng mềm giúp sinh viên
+                    đánh giá đúng năng lực cá nhân, thị trường công việc từ đó
+                    có thể xác định và theo đuổi hướng đi phù hợp với bản thân.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row part-3">
+            <div class="nav-banner">
+              <div class="title">
+                TÌM VIỆC LÀM
+                <p>NGAY HÔM NAY</p>
+              </div>
+              <a href="./" style="text-decoration: none">
+                <div class="title-2">
+                  <p>với</p>
+                  FINDWORK.COM
+                </div>
+              </a>
+
+              <a href="employer/home-page.html" style="text-decoration: none">
+                <div class="recruitment">Bạn là Nhà tuyển dụng</div>
+              </a>
+              <a href="./" style="text-decoration: none">
+                <div class="finder">Bạn là Người tìm việc</div>
               </a>
             </div>
-            <!-- Logo -->
-            <div class="description">
-              Nơi bạn có thể tìm được những ứng cử viên sáng giá cho công ty
-              của bạn.
+
+            <div class="col l-12 m-12 c-12">
+              <div class="row">
+                <div class="banner-1 l-4 c-4 m-4"></div>
+                <div class="banner-2 l-8 c-8 m-8"></div>
+              </div>
             </div>
-            <button class="learn-more">Tìm hiểu thêm</button>
+          </div>
+          <div class="row part-4">
+            <div class="col l-4 m-6 c-12">
+              <h2 class="type-of-post">Doanh nghiệp</h2>
+              <div class="main-post">
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <div
+                    style="
+                      background-image: url(https://i.postimg.cc/Y0cVVY91/Nganh-QTDN-1.jpg);
+                    "
+                    class="main-picture-post"
+                  ></div>
+                </a>
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <p class="name-post">
+                    3 lời khuyên giúp doanh nghiệp tiết kiệm chi phí vẫn giữ
+                    chân nhân tài
+                  </p>
+                </a>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="picture-post"></div>
+                  </a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Nhiều doanh nghiệp sẽ tuyển dụng ngay lập tức khi hoạt
+                      động trở lại
+                    </div>
+                  </a>
+                  <div class="desc-post">
+                    56,7% doanh nghiệp trong số 400 doanh nghiệp tham gia khảo
+                    sát sẽ tuyển dụng ngay ...
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/VL0vX8yp/2020-08-11-47319f6b7bad16f407202c3c3b452d69.jpg);
+                      "
+                      class="picture-post"
+                    ></div>
+                  </a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Bật mí kinh nghiệm tuyển dụng nhân sự hiệu quả, chất lượng
+                      nhất
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Cân nhắc kỹ trước khi quyết định tuyển dụng nhân sự ...
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/gjm9j3WG/Quy-trinh-tuyen-dung-nhan-su.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Quy trình tuyển dụng nhân sự: Bí quyết phát triển nhân tài
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Bước lập kế hoạch tuyển dụng bao gồm việc phân tích đặc điểm
+                    trình độ, kinh nghiệm và ...
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12">
+              <h2 class="type-of-post">Xã Hội</h2>
+              <div class="main-post">
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <div
+                    style="
+                      background-image: url(https://i.postimg.cc/pLcpjYqV/job-fair-1637579750-4413-1637580740.jpg);
+                    "
+                    class="main-picture-post"
+                  ></div>
+                </a>
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <p class="name-post">
+                    Tương lai tươi sáng cho lao động toàn cầu năm 2022
+                  </p>
+                </a>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/0ywCXQFs/26-1637917610-3592-1637917834.jpg);
+                      "
+                      class="picture-post"
+                    ></div>
+                  </a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Sinh viên mới tốt nghiệp ảo tưởng lương 10-15 triệu đồng
+                    </div>
+                  </a>
+                  <div class="desc-post">
+                    Sinh viên mới ra trường không có kinh nghiệm, kỹ năng yếu,
+                    ngoại ngữ kém, doanh nghiệp phải đào tạo lại từ đầu, nhưng
+                    luôn đòi hỏi lương cao...
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/3wjV69VY/NGUYENANHVIET-1628227345-8543-1628227408.jpg);
+                      "
+                      class="picture-post"
+                    ></div>
+                  </a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Lập trình viên 9X Việt 'chinh phục' nhà tuyển dụng
+                      Singapore
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Dành hai tháng viết CV, ôn các bài tập lập trình, kỹ năng
+                    phỏng vấn giúp Anh Việt trúng tuyển Shopee Singapore...
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/Jz5SYP9m/anhbiatoeic4kynangjpg-16266602-8894-1173-1626667600.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Doanh nghiệp Việt Nam và thế giới yêu cầu TOEIC bao nhiêu?
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Packard Bell - doanh nghiệp về CNTT tại Pháp yêu cầu đầu vào
+                    TOEIC từ 650 đến 850 điểm; tại Việt Nam, Viettel yêu cầu
+                    chứng chỉ TOEIC từ 550 đến 900...
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12">
+              <h2 class="type-of-post">Sinh viên</h2>
+              <div class="main-post">
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <div
+                    style="
+                      background-image: url(https://i.postimg.cc/FzdWVZQy/4022164-1632327996-1632328039-1408-1632328159.jpg);
+                    "
+                    class="main-picture-post"
+                  ></div>
+                </a>
+                <a style="text-decoration: none" href="./blog-detail.html">
+                  <p class="name-post">
+                    4 mẹo trả lời 'Vì sao bạn muốn công việc này?
+                  </p>
+                </a>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/4xV3Sk1M/unnamed.png);
+                      "
+                      class="picture-post"
+                    ></div>
+                  </a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Tôi không tuyển dụng sinh viên 'nghiện' làm shipper
+                    </div>
+                  </a>
+                  <div class="desc-post">
+                    Tôi không muốn làm việc với những người không dành thời gian
+                    cho những mục tiêu cụ thể như kết quả học tập, các kỹ năng
+                    hay kiến thức...
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/WpGXTh1b/15698350626.jpg);
+                      "
+                      class="picture-post"
+                    ></div>
+                  </a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Người học nên đạt 700 TOEIC trở lên
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Theo nhà sáng lập IMAP Việt Nam, khi đạt mục tiêu từ 700
+                    TOEIC, bạn vừa xây ...
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-post">
+                <div class="col l-3 m-3 c-3">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div
+                      style="
+                        background-image: url(https://i.postimg.cc/BZ59kZW2/960x0-1-1635245016-7066-1635245135.jpg);
+                      "
+                      class="picture-post"
+                    ></div
+                  ></a>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                  <a style="text-decoration: none" href="./blog-detail.html">
+                    <div class="name">
+                      Cách trả lời câu hỏi phỏng vấn thông dụng bằng tiếng Anh
+                    </div></a
+                  >
+                  <div class="desc-post">
+                    Khi nhà tuyển dụng hỏi ưu điểm, không nên liệt kê hàng loạt
+                    tính từ như "punctual" (đúng giờ), "ambitious" mà...
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="box">
-          <h3>Ứng cử viên</h3>
-          <ul>
-            <li><a href="#">Việc làm</a></li>
-            <li><a href="#">Ngành nghề</a></li>
-            <li><a href="#">Nộp hồ sơ</a></li>
-            <li><a href="#">Doanh Nghiệp</a></li>
-            <li><a href="#">Xác thực tài khoản</a></li>
-            <li><a href="#">Nâng cấp tài khoản</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Nhà tuyển dụng</h3>
-          <ul>
-            <li><a href="#">Đăng tuyển dụng</a></li>
-            <li><a href="#">Tìm kiếm hồ sơ</a></li>
-            <li><a href="#">Quản lý dự án</a></li>
-            <li><a href="#">Xác thực tài khoản</a></li>
-            <li><a href="#">Nâng cấp tài khoản</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Chính sách</h3>
-          <ul>
-            <li><a href="#">Chính sách bảo mật</a></li>
-            <li><a href="#">Điều khoản và điều kiện</a></li>
-            <li><a href="#">Chính sách Bản quyền</a></li>
-            <li><a href="#">Quy tắc ứng xử</a></li>
-            <li><a href="#">Phí và lệ phí</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Danh sách trang</h3>
-          <ul>
-            <li><a href="./">Trang chủ</a></li>
-            <li><a href="./search-page.html">Việc làm</a></li>
-            <li><a href="./salary-page.html">Mức lương</a></li>
-            <li><a href="./list-blog-page.html">Blog</a></li>
-            <li><a href="./company-page.html">Công ty</a></li>
-          </ul>
-        </div>
-        <div class="clearfix"></div>
       </div>
-    </footer>
-    <!-- footer -->
-    <div class="follow-us">
-      Theo dõi chúng tôi
-      <span>
-        <span>
-          <a href="">
-            <img src="../images/salary_page/facebook.png" alt="Visit on Facebook" />
-          </a>
-        </span>
-        <span>
-          <a href="">
-            <img src="../images/salary_page/twitter.png" alt="Visit on Twitter" />
-          </a>
-        </span>
-        <span>
-          <a href="">
-            <img src="../images/salary_page/linkedin.png" alt="Visit on Linkedin" />
-          </a>
-        </span>
-        <span>
-          <a href="">
-            <img src="../images/salary_page/youtube.png" alt="Visit on Youtube" />
-          </a>
-        </span>
-      </span>
-    </div>
-    <div class="copy">
-      <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
-    </div>
-  </div>
+      <!-- content holder -->
 
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".login").click(function (e) {
-        $(".dropdown-not-login").toggleClass("active");
+      <footer class="main-footer">
+        <div class="footer-box">
+          <div class="box">
+            <div class="first-box">
+              <div class="logo">
+                <a href="./">
+                  <img src="../images/salary_page/logo1.png" alt="Logo" />
+                  FINDWORK
+                </a>
+              </div>
+              <!-- Logo -->
+              <div class="description">
+                Nơi bạn có thể tìm được những ứng cử viên sáng giá cho công ty
+                của bạn.
+              </div>
+              <button class="learn-more">Tìm hiểu thêm</button>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Ứng cử viên</h3>
+            <ul>
+              <li><a href="#">Việc làm</a></li>
+              <li><a href="#">Ngành nghề</a></li>
+              <li><a href="#">Nộp hồ sơ</a></li>
+              <li><a href="#">Doanh Nghiệp</a></li>
+              <li><a href="#">Xác thực tài khoản</a></li>
+              <li><a href="#">Nâng cấp tài khoản</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Nhà tuyển dụng</h3>
+            <ul>
+              <li><a href="#">Đăng tuyển dụng</a></li>
+              <li><a href="#">Tìm kiếm hồ sơ</a></li>
+              <li><a href="#">Quản lý dự án</a></li>
+              <li><a href="#">Xác thực tài khoản</a></li>
+              <li><a href="#">Nâng cấp tài khoản</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Chính sách</h3>
+            <ul>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Điều khoản và điều kiện</a></li>
+              <li><a href="#">Chính sách Bản quyền</a></li>
+              <li><a href="#">Quy tắc ứng xử</a></li>
+              <li><a href="#">Phí và lệ phí</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Danh sách trang</h3>
+            <ul>
+              <li><a href="./">Trang chủ</a></li>
+              <li><a href="./search-page.html">Việc làm</a></li>
+              <li><a href="./salary-page.html">Mức lương</a></li>
+              <li><a href="./list-blog-page.html">Blog</a></li>
+              <li><a href="./company-page.html">Công ty</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </footer>
+      <!-- footer -->
+      <div class="follow-us">
+        Theo dõi chúng tôi
+        <span>
+          <span>
+            <a href="">
+              <img
+                src="../images/salary_page/facebook.png"
+                alt="Visit on Facebook"
+              />
+            </a>
+          </span>
+          <span>
+            <a href="">
+              <img
+                src="../images/salary_page/twitter.png"
+                alt="Visit on Twitter"
+              />
+            </a>
+          </span>
+          <span>
+            <a href="">
+              <img
+                src="../images/salary_page/linkedin.png"
+                alt="Visit on Linkedin"
+              />
+            </a>
+          </span>
+          <span>
+            <a href="">
+              <img
+                src="../images/salary_page/youtube.png"
+                alt="Visit on Youtube"
+              />
+            </a>
+          </span>
+        </span>
+      </div>
+      <div class="copy">
+        <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".login").click(function (e) {
+          $(".dropdown-not-login").toggleClass("active");
+        });
       });
-    });
-  </script>
-  <script src="../js/header.js"></script>
-</body>
-
+    </script>
+    <script src="../js/header.js"></script>
+  </body>
 </html>

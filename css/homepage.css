@@ -92,6 +92,7 @@ button {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
+  user-select: none;
 }
 .menu > a > li:hover {
   border-radius: 5px;
@@ -345,7 +346,7 @@ button {
 .main-footer {
   padding: 20px 100px;
 
-  background-color: #2a8cff;
+  background-color: #30c1ff;
   color: white;
   width: 100%;
 
@@ -431,7 +432,7 @@ button {
 .follow-us {
   display: grid;
   width: 100%;
-  background-color: #2a8cff;
+  background-color: #30c1ff;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
@@ -461,7 +462,7 @@ button {
   padding: 10px;
   font-size: small;
   text-align: center;
-  background-color: #2a8cff;
+  background-color: #30c1ff;
   color: #fff;
 }
 .copy p {

@@ -1,327 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Việc làm đã đăng</title>
-    <link rel="icon" href="../images/logotab2.png">
+    <link rel="icon" href="../images/logotab2.png" />
     <!--add google font-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Add icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/posted-jobs.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/posted-jobs.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div onclick="location.href='./employer/home-page.html'" class="logo">
-            <div class="logo-img"></div>
-            <p class="logo-name">Findwork</p>
+      <div onclick="location.href='./employer/home-page.html'" class="logo">
+        <div class="logo-img"></div>
+        <a href="./employer/home-page.html">
+          <p style="user-select: none" class="logo-name">Findwork</p>
+        </a>
+      </div>
+      <!-- Nav bar -->
+      <div class="nav-bar">
+        <div style="user-select: none" class="post-job-btn job-posted-btn">
+          VIỆC LÀM ĐÃ ĐĂNG
         </div>
-        <!-- Nav bar -->
-        <div class="nav-bar">
-            <div class="post-job-btn job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
-            <a href="find-candidates-page.html" style="text-decoration: none">
-                <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
-            </a>
-            <a href="./post-job-page.html">
-                <div class="job-posted-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
-            </a>
+        <a href="find-candidates-page.html" style="text-decoration: none">
+          <div style="user-select: none" class="find-candidates-btn">
+            TÌM ỨNG CỬ VIÊN
+          </div>
+        </a>
+        <a href="./post-job-page.html">
+          <div style="user-select: none" class="post-job-btn">
+            ĐĂNG BÀI TUYỂN DỤNG
+          </div>
+        </a>
+      </div>
+      <div class="profile-header">
+        <i class="notify-icon fa-solid fa-bell notify-js"></i>
+        <div class="profile-btn js-profile-btn" style="user-select: none">
+          <i class="fa-solid fa-user"></i>Mr. James
         </div>
-        <div class="profile-header">
-            <i class="notify-icon fa-solid fa-bell"></i>
-            <div class="profile-btn js-profile-btn"><i class="fa-solid fa-user"></i>Mr. James</div>
-            <div class="profile-menu">
-                <div class="row no-gutters profile-menu-header">
-                    <div class="col l-3 m-3">
-                        <div class="profile-img">
-                        </div>
-                    </div>
-                    <div class="col l-9 m-9">
-                        <div class="name">James Nguyen</div>
-                        <div class="email">jamesnguyen1108@gmail.com</div>
-                    </div>
-                </div>
-                <a href="./employer/manage-acc-page.html  ">
-                    <div class="row no-gutters manage-account">
-                        <i class="fas fa-cog"></i> Quản lý tài
-                        khoản
-                    </div>
-                </a>
-                <a href="update-company-info-page.html" style="text-decoration: none">
-                    <div class="row no-gutters company-info">
-                        <i class="fas fa-info-circle"></i> Thông tin công ty
-                    </div>
-                </a>
-                <a href="./LogIn.html">
-                    <div class="row no-gutters log-out-btn">
-                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
-                    </div>
-                </a>
+        <div class="profile-menu">
+          <div class="row no-gutters profile-menu-header">
+            <div class="col l-3 m-3">
+              <div class="profile-img"></div>
             </div>
-        </div>
-        <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
-        <div class="menu-mobile js-menu-mobile">
-            <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
-            <div class="mobile-menu-content js-menu-content">
-                <div class="profile-mobile row no-gutters">
-                    <div class="col">
-                        <div class="profile-img"></div>
-                    </div>
-                    <div class="col">
-                        <div class="name">James Nguyen</div>
-                        <div class="infor">Thông tin cá nhân</div>
-
-                        <div onclick="location.href='./LogIn.html'" class="sign-out">
-                            <i class="fas fa-sign-out-alt"></i>Đăng xuất
-                        </div>
-                    </div>
-                </div>
-                <ul class="menu-list">
-                    <li>
-                        <a class="job-posted-mobile" href="#"><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a>
-                    </li>
-                    <li>
-                        <a class="find-candidates-mobile" href="./find-candidates-page.html"><i
-                                class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
-                    </li>
-                    <li>
-                        <a class="post-job-mobile" href="./post-job-page.html"><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN
-                            DỤNG</a>
-                    </li>
-                </ul>
-                <div>
-                    <a class="notify-mobile" href="#"><i class="fas fa-bell"></i> Thông báo</a>
-                </div>
+            <div class="col l-9 m-9">
+              <div class="name">James Nguyen</div>
+              <div class="email">jamesnguyen1108@gmail.com</div>
             </div>
+          </div>
+          <a
+            href="./employer/manage-acc-page.html"
+            style="text-decoration: none; user-select: none;"
+          >
+            <div class="row no-gutters manage-account">
+              <i class="fas fa-cog"></i> Quản lý tài khoản
+            </div>
+          </a>
+          <a href="update-company-info-page.html" style="text-decoration: none; user-select: none;">
+            <div class="row no-gutters company-info">
+              <i class="fas fa-info-circle"></i> Thông tin công ty
+            </div>
+          </a>
+          <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+            <div class="row no-gutters log-out-btn">
+              <i class="fas fa-sign-out-alt"></i> Đăng xuất
+            </div>
+          </a>
         </div>
+      </div>
+      <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
+      <div class="menu-mobile js-menu-mobile">
+        <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
+        <div class="mobile-menu-content js-menu-content">
+          <div class="profile-mobile row no-gutters">
+            <div class="col">
+              <div class="profile-img"></div>
+            </div>
+            <div class="col">
+              <div class="name">James Nguyen</div>
+              <a
+                style="text-decoration: none"
+                href="update-company-info-page.html"
+              >
+                <div class="infor">Thông tin công ty</div>
+              </a>
+              <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+              <div class="sign-out">
+                <i class="fas fa-sign-out-alt"></i>Đăng xuất
+              </div></a>
+            </div>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <a class="job-posted-mobile" href="./employer/manage-acc-page.html"
+                ><i class="fas fa-cog"></i>QUẢN LÝ TÀI KHOẢN</a
+              >
+            </li>
+            <li>
+              <a class="job-posted-mobile" href="update-company-info-page.html"
+                ><i class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a
+              >
+            </li>
+            <li>
+              <a class="job-posted-mobile" 
+              style="background-color: #ededed"
+              href="#"
+                ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
+              >
+            </li>
+            <li>
+              <a
+                
+                class="find-candidates-mobile"
+                href="#"
+                ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
+              >
+            </li>
+            <li>
+              <a class="post-job-mobile" href="post-job-page.html"
+                ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
+              >
+            </li>
+          </ul>
+          <div>
+            <a class="notify-mobile" href="#"
+              ><i class="fas fa-bell"></i> Thông báo</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <!--Endheader-->
     <div class="body-container">
-        <div class="search-container">
-            <div class="search-container-left">
-                <div class="search-input">
-                    <input placeholder="Tìm kiếm" type="text">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="btn-search hide-on-676px">Tìm kiếm</div>
-            </div>
-            <div class="search-container-right">
-
-                <div class="filter-name">
-                    <p>Sắp xếp theo: Số thự tự</p>
-                    <i class="fas fa-chevron-down filter-btn"></i>
-                    <div class="filter-modal">
-                        <div class="filter-modal-col">
-                            <span class="filter-modal-item">Số thự tự</span>
-                            <span class="filter-modal-item">Công ty</span>
-                            <span class="filter-modal-item">Chức danh</span>
-                        </div>
-                        <div class="filter-modal-col">
-                            <span class="filter-modal-item">Thời hạn</span>
-                            <span class="filter-modal-item">Số lần xem</span>
-                            <span class="filter-modal-item">Địa điểm</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      <div class="search-container">
+        <div class="search-container-left">
+          <div class="search-input">
+            <input placeholder="Tìm kiếm" type="text" />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="btn-search hide-on-676px">Tìm kiếm</div>
         </div>
-        <div class="table-container">
-            <table id="posted-job">
-                <tr>
-
-                    <th>Số thứ tự</th>
-                    <th>Công ty</th>
-                    <th>Chức danh</th>
-                    <th>Thời hạn</th>
-                    <th>Số lần xem</th>
-                    <th>Hồ sơ ứng tuyển</th>
-                    <th>Địa điểm</th>
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <td>Công ty cổ phần KSFINANCE</td>
-                    <td>Chuyên viên phân tích dữ liệu</td>
-                    <td>21/12/2021</td>
-                    <td>25</td>
-                    <td>34</td>
-                    <td>Hà Nội, Thành phố Hồ Chí Minh</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Công ty cổ phần KSFINANCE</td>
-                    <td>Chuyên viên phân tích dữ liệu</td>
-                    <td>21/12/2021</td>
-                    <td>25</td>
-                    <td>34</td>
-                    <td>Hà Nội, Thành phố Hồ Chí Minh</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Công ty cổ phần KSFINANCE</td>
-                    <td>Chuyên viên phân tích dữ liệu</td>
-                    <td>21/12/2021</td>
-                    <td>25</td>
-                    <td>34</td>
-                    <td>Hà Nội, Thành phố Hồ Chí Minh</td>
-                </tr>
-
-
-            </table>
-        </div>
-        <div class="pagination">
-            <div class="pagination-left">
-                <div class="cell" id="prev-btn">
-                    <i class="fas fa-caret-left"></i>
-                </div>
-                <div class="cell cell-js active ">1</div>
-                <div class="cell cell-js">2</div>
-                <div class="cell cell-js">3</div>
-                <div class="cell cell-js">4</div>
-                <div class="cell" id='next-btn'>
-                    <i class="fas fa-caret-right"></i>
-                </div>
+        <div class="search-container-right">
+          <div class="filter-name">
+            <p>Sắp xếp theo: Số thự tự</p>
+            <i class="fas fa-chevron-down filter-btn"></i>
+            <div class="filter-modal">
+              <div class="filter-modal-col">
+                <span class="filter-modal-item">Số thự tự</span>
+                <span class="filter-modal-item">Công ty</span>
+                <span class="filter-modal-item">Chức danh</span>
+              </div>
+              <div class="filter-modal-col">
+                <span class="filter-modal-item">Thời hạn</span>
+                <span class="filter-modal-item">Số lần xem</span>
+                <span class="filter-modal-item">Địa điểm</span>
+              </div>
             </div>
-            <div class="pagination-right">
-                <p>Số hàng mỗi dòng: 10 / Tổng số công việc</p>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="table-container">
+        <table id="posted-job">
+          <tr>
+            <th>Số thứ tự</th>
+            <th>Công ty</th>
+            <th>Chức danh</th>
+            <th>Thời hạn</th>
+            <th>Số lần xem</th>
+            <th>Hồ sơ ứng tuyển</th>
+            <th>Địa điểm</th>
+          </tr>
 
+          <tr>
+            <td>1</td>
+            <td>Công ty cổ phần KSFINANCE</td>
+            <td>Chuyên viên phân tích dữ liệu</td>
+            <td>21/12/2021</td>
+            <td>25</td>
+            <td>34</td>
+            <td>Hà Nội, Thành phố Hồ Chí Minh</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Công ty cổ phần KSFINANCE</td>
+            <td>Chuyên viên phân tích dữ liệu</td>
+            <td>21/12/2021</td>
+            <td>25</td>
+            <td>34</td>
+            <td>Hà Nội, Thành phố Hồ Chí Minh</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Công ty cổ phần KSFINANCE</td>
+            <td>Chuyên viên phân tích dữ liệu</td>
+            <td>21/12/2021</td>
+            <td>25</td>
+            <td>34</td>
+            <td>Hà Nội, Thành phố Hồ Chí Minh</td>
+          </tr>
+        </table>
+      </div>
+      <div class="pagination">
+        <div class="pagination-left">
+          <div class="cell" id="prev-btn">
+            <i class="fas fa-caret-left"></i>
+          </div>
+          <div class="cell cell-js active">1</div>
+          <div class="cell cell-js">2</div>
+          <div class="cell cell-js">3</div>
+          <div class="cell cell-js">4</div>
+          <div class="cell" id="next-btn">
+            <i class="fas fa-caret-right"></i>
+          </div>
+        </div>
+        <div class="pagination-right">
+          <p>Số hàng mỗi dòng: 10 / Tổng số công việc</p>
+        </div>
+      </div>
     </div>
     <!--footer-->
     <div class="footer">
-        <div class="footer-col">
-            <h3>Thông tin liên hệ</h3>
-            <ul>
-                <li>
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
-                </li>
-                <li>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
-                </li>
-                <li>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Công ty</h3>
-            <ul>
-                <li><a href="#">Giới Thiệu</a></li>
-                <li><a href="#">Dịch Vụ</a></li>
-                <li><a href="#">Bảo Mật Thông Tin</a></li>
-                <li><a href="#">Quy Định Sử Dụng</a></li>
-                <li><a href="#">Hỏi Đáp</a></li>
-                <li><a href="#">Nâng Cấp Tài Khoản</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Chính sách</h3>
-            <ul>
-                <li><a href="#">Chính sách bảo mật</a></li>
-                <li><a href="#">Điều khoản và điều kiện</a></li>
-                <li><a href="#">Chính sách Bản quyền</a></li>
-                <li><a href="#">Quy tắc ứng xử</a></li>
-                <li><a href="#">Phí và lệ phí</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Danh sách trang</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Quản lý tuyển dụng</a></li>
-                <li><a href="#">Cho người tìm việc</a></li>
-            </ul>
-        </div>
+      <div class="footer-col">
+        <h3>Thông tin liên hệ</h3>
+        <ul>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Công ty</h3>
+        <ul>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="#">Dịch Vụ</a></li>
+          <li><a href="#">Bảo Mật Thông Tin</a></li>
+          <li><a href="#">Quy Định Sử Dụng</a></li>
+          <li><a href="#">Hỏi Đáp</a></li>
+          <li><a href="#">Nâng Cấp Tài Khoản</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Chính sách</h3>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Điều khoản và điều kiện</a></li>
+          <li><a href="#">Chính sách Bản quyền</a></li>
+          <li><a href="#">Quy tắc ứng xử</a></li>
+          <li><a href="#">Phí và lệ phí</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Danh sách trang</h3>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Dịch vụ</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Quản lý tuyển dụng</a></li>
+          <li><a href="#">Cho người tìm việc</a></li>
+        </ul>
+      </div>
     </div>
     <!--End footer-->
     <!--Follow us-->
     <div class="follow-us">
-        <b>Theo dõi chúng tôi</b>
-        <div class="follow-us-list-img">
-            <div class="follow-us-img-item">
-                <a href="">
-                    <img src="../images/salary_page/facebook.png" alt="Visit on Facebook">
-                </a>
-            </div>
-            <div class="follow-us-img-item">
-                <a href="">
-                    <img src="../images/salary_page/twitter.png" alt="Visit on Twitter">
-                </a>
-            </div>
-            <div class="follow-us-img-item">
-                <a href="">
-                    <img src="../images/salary_page/linkedin.png" alt="Visit on Linkedin">
-                </a>
-            </div>
-            <div class="follow-us-img-item">
-                <a href="">
-                    <img src="../images/salary_page/youtube.png" alt="Visit on Youtube">
-                </a>
-            </div>
+      <b>Theo dõi chúng tôi</b>
+      <div class="follow-us-list-img">
+        <div class="follow-us-img-item">
+          <a href="">
+            <img
+              src="../images/salary_page/facebook.png"
+              alt="Visit on Facebook"
+            />
+          </a>
         </div>
-
+        <div class="follow-us-img-item">
+          <a href="">
+            <img
+              src="../images/salary_page/twitter.png"
+              alt="Visit on Twitter"
+            />
+          </a>
+        </div>
+        <div class="follow-us-img-item">
+          <a href="">
+            <img
+              src="../images/salary_page/linkedin.png"
+              alt="Visit on Linkedin"
+            />
+          </a>
+        </div>
+        <div class="follow-us-img-item">
+          <a href="">
+            <img
+              src="../images/salary_page/youtube.png"
+              alt="Visit on Youtube"
+            />
+          </a>
+        </div>
+      </div>
     </div>
     <div class="copy">
-        <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+      <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
     </div>
-
 
     <!--End follow us-->
 
     <script>
-        const menuBtn = document.querySelector(".js-menu-bar");
-        const closeBtn = document.querySelector(".js-close-menu");
-        const menuMobile = document.querySelector(".js-menu-mobile");
-        const menuMobileChild = document.querySelector(".js-menu-content");
-        const profileBtn = document.querySelector(".js-profile-btn")
-        const profileMenu = document.querySelector(".profile-menu")
-        const body = document.querySelector("body")
+      const menuBtn = document.querySelector(".js-menu-bar");
+      const closeBtn = document.querySelector(".js-close-menu");
+      const menuMobile = document.querySelector(".js-menu-mobile");
+      const menuMobileChild = document.querySelector(".js-menu-content");
+      const profileBtn = document.querySelector(".js-profile-btn");
+      const profileMenu = document.querySelector(".profile-menu");
+      const body = document.querySelector("body");
 
-        body.addEventListener("click", function (event) {
-            profileMenu.classList.remove("display-block");
-        })
-        profileBtn.addEventListener("click", function (event) {
-            event.stopPropagation();
-            profileMenu.classList.toggle("display-block");
-        })
-        profileMenu.addEventListener("click", function (event) {
-            event.stopPropagation();
-        })
-        menuBtn.addEventListener("click", function (event) {
-            menuMobile.classList.add("menu-mobile-modal");
-        });
-        closeBtn.addEventListener("click", function (event) {
-            menuMobile.classList.remove("menu-mobile-modal");
-        });
-        menuMobile.addEventListener("click", function (event) {
-            menuMobile.classList.remove("menu-mobile-modal");
-        });
-        menuMobileChild.addEventListener("click", function (event) {
-            event.stopPropagation();
-        });
+      body.addEventListener("click", function (event) {
+        profileMenu.classList.remove("display-block");
+      });
+      profileBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        profileMenu.classList.toggle("display-block");
+      });
+      profileMenu.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+      menuBtn.addEventListener("click", function (event) {
+        menuMobile.classList.add("menu-mobile-modal");
+      });
+      closeBtn.addEventListener("click", function (event) {
+        menuMobile.classList.remove("menu-mobile-modal");
+      });
+      menuMobile.addEventListener("click", function (event) {
+        menuMobile.classList.remove("menu-mobile-modal");
+      });
+      menuMobileChild.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
     </script>
     <script src="../js/posted-jobs.js"></script>
-
-</body>
-
+  </body>
 </html>

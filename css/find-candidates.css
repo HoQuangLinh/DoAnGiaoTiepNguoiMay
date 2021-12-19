@@ -18,6 +18,14 @@ body {
   display: list-item !important;
   z-index: 1;
 }
+/* ------------------------ */
+/* Header copy từ đây */
+.display-none {
+  display: none !important;
+}
+.display-block {
+  display: block !important;
+}
 #header {
   background-color: #005385;
   position: fixed;
@@ -135,7 +143,19 @@ body {
   right: 20px;
   border-radius: 4px;
   box-shadow: 2px 4px 4px 4px #8e8e8e66;
+  animation: profile-menu 1s;
 }
+@keyframes profile-menu {
+  from {
+    opacity: 0.8;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .profile-menu .profile-img {
   background: no-repeat top center/contain
     url(https://i.postimg.cc/nzBkRnkL/241033659-1117393065335246-4555161892376511591-n.png);
@@ -245,7 +265,10 @@ body {
   padding-top: 5px;
 }
 .profile-mobile .infor {
-  font-size: 14px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 2px 0px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.71);
 }
@@ -305,6 +328,10 @@ body {
   border-top: 1px solid #ccc;
   padding-top: 25px;
 }
+
+/* End Header */
+/* ---------------- */
+
 #content {
   margin-top: var(--header-height);
   margin-bottom: 50px;

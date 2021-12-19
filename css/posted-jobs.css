@@ -63,6 +63,14 @@ img {
   display: list-item !important;
   z-index: 1;
 }
+/* ------------------------ */
+/* Header copy từ đây */
+.display-none {
+  display: none !important;
+}
+.display-block {
+  display: block !important;
+}
 #header {
   background-color: #005385;
   position: fixed;
@@ -114,7 +122,8 @@ img {
   height: var(--header-height);
   line-height: var(--header-height);
 }
-.nav-bar .post-job-btn {
+
+.nav-bar .job-posted-btn {
   background-color: #337ab7;
 }
 
@@ -179,8 +188,19 @@ img {
   right: 20px;
   border-radius: 4px;
   box-shadow: 2px 4px 4px 4px #8e8e8e66;
-  padding: 10px;
+  animation: profile-menu 1s;
 }
+@keyframes profile-menu {
+  from {
+    opacity: 0.8;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .profile-menu .profile-img {
   background: no-repeat top center/contain
     url(https://i.postimg.cc/nzBkRnkL/241033659-1117393065335246-4555161892376511591-n.png);
@@ -223,7 +243,6 @@ img {
 .profile-menu .log-out-btn:hover {
   background-color: rgb(230, 230, 230);
 }
-
 @media (min-width: 1024px) and (max-width: 1399px) {
   .nav-bar {
     left: 200px;
@@ -273,10 +292,10 @@ img {
   height: 100%;
   background-color: #ffffff;
 }
-.menu-mobile .profile-mobile {
+.profile-mobile {
   padding: 20px 0px 20px 15px;
 }
-.menu-mobile .profile-mobile .profile-img {
+.profile-mobile .profile-img {
   background: no-repeat top center/contain
     url(https://i.postimg.cc/nzBkRnkL/241033659-1117393065335246-4555161892376511591-n.png);
   height: 80px;
@@ -285,20 +304,23 @@ img {
   margin-right: 20px;
 }
 
-.menu-mobile .profile-mobile .name {
+.profile-mobile .name {
   font-weight: bold;
   font-size: 18px;
   padding-top: 5px;
 }
-.menu-mobile .profile-mobile .infor {
-  font-size: 14px;
+.profile-mobile .infor {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 2px 0px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.71);
 }
-.menu-mobile .profile-mobile .sign-out i {
+.profile-mobile .sign-out i {
   padding-right: 4px;
 }
-.menu-mobile .profile-mobile .sign-out {
+.profile-mobile .sign-out {
   padding-top: 10px;
   font-size: 14px;
   color: #005285d8;
@@ -310,7 +332,7 @@ img {
   animation: mobile-menu-content 0.5s ease-out;
 }
 
-.menu-mobile .menu-list {
+.menu-list {
   background-color: #fff;
 }
 .menu-mobile ul {
@@ -318,8 +340,8 @@ img {
   padding: 25px 0;
   border-top: 1px solid #ccc;
 }
-.menu-mobile .menu-list > li > a,
-.menu-mobile .notify-mobile {
+.menu-list > li > a,
+.notify-mobile {
   text-decoration: none;
   color: #292929;
   font-size: 18px;
@@ -328,30 +350,33 @@ img {
   background-color: #fff;
   line-height: 25px;
 }
-.menu-mobile .menu-list > li > a:hover,
-.menu-mobile .notify-mobile:hover {
+.menu-list > li > a:hover,
+.notify-mobile:hover {
   color: #0079c5;
   background-color: rgb(236, 236, 236);
 }
-.menu-mobile .menu-list > li > a > i,
-.menu-mobile .notify-mobile > i {
+.menu-list > li > a > i,
+.notify-mobile > i {
   font-size: 25px;
   padding-right: 20px;
 }
 
-.menu-mobile .notify-mobile {
+.notify-mobile {
   padding-top: 25px;
   border-top: 1px solid #ccc;
 }
 
-.menu-mobile .menu-list .post-job-mobile {
+.menu-list .post-job-mobile {
 }
 
-.menu-mobile .menu-list .notify-mobile {
+.menu-list .notify-mobile {
   border-top: 1px solid #ccc;
   padding-top: 25px;
 }
 
+/* End Header */
+/* ---------------- */
+/* Content ----------- */
 .body-container {
   margin-top: var(--header-height);
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logotab2.png" />
     <title>Tìm ứng cử viên</title>
     <!-- Add grid css-->
     <link rel="stylesheet" href="../css/responsive.css" />
@@ -38,21 +39,29 @@
     <div id="header">
       <div class="logo">
         <div class="logo-img"></div>
-        <p class="logo-name">Findwork</p>
+        <a href="./employer/home-page.html">
+          <p style="user-select: none" class="logo-name">Findwork</p>
+        </a>
       </div>
       <!-- Nav bar -->
       <div class="nav-bar">
-        <a href="posted-jobs.html" style="text-decoration: none">
-          <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
+        <a href="posted-jobs.html" style="text-decoration: none; user-select: none;">
+          <div style="user-select: none" class="job-posted-btn">
+            VIỆC LÀM ĐÃ ĐĂNG
+          </div>
         </a>
-        <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
-        <a href="post-job-page.html" style="text-decoration: none">
-          <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+        <div style="user-select: none" class="find-candidates-btn">
+          TÌM ỨNG CỬ VIÊN
+        </div>
+        <a href="post-job-page.html" style="text-decoration: none; user-select: none;">
+          <div style="user-select: none" class="post-job-btn">
+            ĐĂNG BÀI TUYỂN DỤNG
+          </div>
         </a>
       </div>
       <div class="profile-header">
-        <i class="notify-icon fa-solid fa-bell"></i>
-        <div class="profile-btn js-profile-btn">
+        <i class="notify-icon fa-solid fa-bell notify-js"></i>
+        <div class="profile-btn js-profile-btn" style="user-select: none">
           <i class="fa-solid fa-user"></i>Mr. James
         </div>
         <div class="profile-menu">
@@ -65,17 +74,24 @@
               <div class="email">jamesnguyen1108@gmail.com</div>
             </div>
           </div>
-          <div class="row no-gutters manage-account">
-            <i class="fas fa-cog"></i> Quản lý tài khoản
-          </div>
-          <a href="update-company-info-page.html" style="text-decoration: none">
+          <a
+            href="./employer/manage-acc-page.html"
+            style="text-decoration: none; user-select: none;"
+          >
+            <div class="row no-gutters manage-account">
+              <i class="fas fa-cog"></i> Quản lý tài khoản
+            </div>
+          </a>
+          <a href="update-company-info-page.html" style="text-decoration: none; user-select: none;">
             <div class="row no-gutters company-info">
               <i class="fas fa-info-circle"></i> Thông tin công ty
             </div>
           </a>
-          <div class="row no-gutters log-out-btn">
-            <i class="fas fa-sign-out-alt"></i> Đăng xuất
-          </div>
+          <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+            <div class="row no-gutters log-out-btn">
+              <i class="fas fa-sign-out-alt"></i> Đăng xuất
+            </div>
+          </a>
         </div>
       </div>
       <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
@@ -88,26 +104,44 @@
             </div>
             <div class="col">
               <div class="name">James Nguyen</div>
-              <div class="infor">Thông tin cá nhân</div>
-
+              <a
+                style="text-decoration: none"
+                href="update-company-info-page.html"
+              >
+                <div class="infor">Thông tin công ty</div>
+              </a>
+              <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
               <div class="sign-out">
                 <i class="fas fa-sign-out-alt"></i>Đăng xuất
-              </div>
+              </div></a>
             </div>
           </div>
           <ul class="menu-list">
             <li>
-              <a class="job-posted-mobile" href="#"
+              <a class="job-posted-mobile" href="./employer/manage-acc-page.html"
+                ><i class="fas fa-cog"></i>QUẢN LÝ TÀI KHOẢN</a
+              >
+            </li>
+            <li>
+              <a class="job-posted-mobile" href="update-company-info-page.html"
+                ><i class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a
+              >
+            </li>
+            <li>
+              <a class="job-posted-mobile" href="posted-jobs.html"
                 ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
               >
             </li>
             <li>
-              <a class="find-candidates-mobile" href="#"
+              <a
+                style="background-color: #ededed"
+                class="find-candidates-mobile"
+                href="#"
                 ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
               >
             </li>
             <li>
-              <a class="post-job-mobile" href="#"
+              <a class="post-job-mobile" href="post-job-page.html"
                 ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
               >
             </li>
@@ -150,7 +184,12 @@
             <option><a href="#">Chức danh</a></option>
           </select>
         </div>
-        <div class="col l-2 m-2 c-2 search-btn">TÌM KIẾM</div>
+        <div
+          style="user-select: none; cursor: pointer"
+          class="col l-2 m-2 c-2 search-btn"
+        >
+          TÌM KIẾM
+        </div>
       </div>
       <div class="row">
         <div class="col l-3 m-4 c-0 filter-menu">
@@ -488,13 +527,26 @@
     <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
   </div>
   <script>
+    // Script cho profile header
+    const profileBtn = document.querySelector(".js-profile-btn");
+    const profileMenu = document.querySelector(".profile-menu");
+    const body = document.querySelector("body");
+
+    body.addEventListener("click", function (event) {
+      profileMenu.classList.remove("display-block");
+    });
+    profileBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      profileMenu.classList.toggle("display-block");
+    });
+    profileMenu.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+
     const menuBtn = document.querySelector(".js-menu-bar");
     const closeBtn = document.querySelector(".js-close-menu");
     const menuMobile = document.querySelector(".js-menu-mobile");
     const menuMobileChild = document.querySelector(".js-menu-content");
-    const divFilterMenu = document.querySelectorAll(
-      ".filter-menu>form>div>div"
-    );
     menuBtn.addEventListener("click", function (event) {
       menuMobile.classList.add("menu-mobile-modal");
     });
@@ -507,48 +559,7 @@
     menuMobileChild.addEventListener("click", function (event) {
       event.stopPropagation();
     });
-    //Drop down menu
-    const init = document.querySelectorAll(".init");
-    optionsSearchBar = document.querySelectorAll(
-      ".filter-search li:not(.init)"
-    );
-    careerOptions = document.querySelectorAll(".career li:not(.init)");
-    districtWorkplaceDesired = document.querySelectorAll(
-      ".workplace-desired ul.district li:not(.init)"
-    );
-    cityWorkplaceDesired = document.querySelectorAll(
-      ".workplace-desired ul.city li:not(.init)"
-    );
-    districtAddressOfCandidate = document.querySelectorAll(
-      ".address-of-candidate ul.district li:not(.init)"
-    );
-    cityAddressOfCandidate = document.querySelectorAll(
-      ".address-of-candidate ul.city li:not(.init)"
-    );
-    optionsUpdate = document.querySelectorAll(".lastUpdate li:not(.init)");
-    optionsRank = document.querySelectorAll(".rank li:not(.init)");
-    function DropdownOptions(n, init, optionsSearchBar) {
-      init[n].addEventListener("click", function (event) {
-        for (let i = 0; i < optionsSearchBar.length; i++) {
-          optionsSearchBar[i].classList.toggle("list-item");
-          optionsSearchBar[i].addEventListener("click", function (event) {
-            for (let a = 0; a < optionsSearchBar.length; a++) {
-              optionsSearchBar[a].classList.remove("selected");
-              optionsSearchBar[a].classList.remove("list-item");
-            }
-            optionsSearchBar[i].classList.add("selected");
-            init[n].innerHTML = optionsSearchBar[i].innerHTML;
-          });
-        }
-      });
-    }
-    DropdownOptions(0, init, optionsSearchBar);
-    DropdownOptions(1, init, careerOptions);
-    DropdownOptions(2, init, cityWorkplaceDesired);
-    DropdownOptions(3, init, districtWorkplaceDesired);
-    DropdownOptions(4, init, cityAddressOfCandidate);
-    DropdownOptions(5, init, districtAddressOfCandidate);
-    DropdownOptions(6, init, optionsUpdate);
-    DropdownOptions(7, init, optionsRank);
+
+
   </script>
 </html>
