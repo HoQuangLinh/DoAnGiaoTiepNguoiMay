@@ -9,6 +9,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+/* Common class */
+.display-none {
+  display: none !important;
+}
 
 .header {
   position: fixed;
@@ -460,6 +464,8 @@ body .row.filter .filter2 {
 .div-filter-check {
   cursor: pointer;
 }
+
+/* Content */
 .side-bar,
 .content {
   overflow: scroll;
@@ -612,7 +618,6 @@ body .row.no-gutters .job-card {
   color: #ffffff;
   border: 1px solid #34a0b3;
 }
-
 .button-section {
   padding: 20px 0px;
 }
@@ -632,6 +637,40 @@ body .row.no-gutters .job-card {
   font-weight: 400;
   --fa-animation-duration: 0s !important;
 }
+
+/* Content mobile */
+.content-mobile {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background: #fff;
+  padding-top: 30px;
+  height: 100vh;
+  animation: content-mobile 1s;
+}
+.content-mobile .back i {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.content-mobile .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 21px;
+  color: #fff;
+  background: #2ba9df;
+  width: 100%;
+}
+.content-mobile .content {
+  width: 100%;
+  overflow: unset;
+}
+.content-mobile .content .button-section {
+  padding: 20px 40px;
+  justify-content: end;
+}
+
+/* Popup apply */
 .overlay {
   position: fixed;
   top: 0;
@@ -807,5 +846,16 @@ body .row.no-gutters .job-card {
     font-weight: bold;
     text-align: right;
     float: left;
+  }
+}
+
+@keyframes content-mobile {
+  0% {
+    opacity: 100%;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
   }
 }

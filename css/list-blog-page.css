@@ -90,7 +90,7 @@ body {
   outline: 0px;
   font-size: 15px;
 }
-.searchbar .findjobs{
+.searchbar .findjobs {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,6 +307,7 @@ body {
   color: #2aaaff;
   font-weight: bold;
   line-height: 32px;
+  margin-bottom: 10px;
 }
 #content .part-1 .type-of-post::after {
   margin-left: 12px;
@@ -357,7 +358,7 @@ body {
   color: #555;
   margin: 4px 0;
 }
-.sub-post a{
+.sub-post a {
   text-decoration: none;
 }
 .part-4 .sub-post {
@@ -718,7 +719,7 @@ body {
     width: 248px;
     font-size: small;
   }
-  .search-sidebar a{
+  .search-sidebar a {
     text-decoration: none;
   }
   .search-sidebar .findjobs-btn {
