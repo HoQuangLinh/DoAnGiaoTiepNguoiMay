@@ -72,11 +72,6 @@ body {
   height: var(--header-height);
   line-height: var(--header-height);
 }
-
-.nav-bar .post-job-btn {
-  background-color: #337ab7;
-}
-
 .profile-header {
   position: absolute;
   top: 50%;
