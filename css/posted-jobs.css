@@ -40,13 +40,13 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto";
   margin: 0px;
   background-size: cover;
   background-color: #fff;
 }
 button {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto";
 }
 img {
   max-width: 100%;
