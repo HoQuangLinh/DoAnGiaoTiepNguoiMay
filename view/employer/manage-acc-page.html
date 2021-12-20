@@ -8,13 +8,133 @@
     <title>Quản lý tài khoản</title>
     <link rel="icon" href="../../images/logotab2.png">
     <link rel="stylesheet" href="../../css/employer/manage-acc-page.css">
+    <link rel="stylesheet" href="../../css/responsive.css" />
+    <!--add google font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!--Add icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
+    <div id="header">
+        <div class="logo">
+            <div class="logo-img"></div>
+            <a style="text-decoration: none;" href="home-page.html">
+                <p style="user-select: none" class="logo-name">Findwork</p>
+            </a>
+        </div>
+        <!-- Nav bar -->
+        <div class="nav-bar">
+            <a href="../posted-jobs.html" style="text-decoration: none; user-select: none;">
+                <div style="user-select: none" class="job-posted-btn">
+                    VIỆC LÀM ĐÃ ĐĂNG
+                </div>
+            </a>
+            <a href="../find-candidates-page.html" style="text-decoration: none; user-select: none;">
+                <div style="user-select: none" class="job-posted-btn">
+                    TÌM ỨNG CỬ VIÊN
+                </div>
+            </a>
+            <a href="../post-job-page.html" style="text-decoration: none; user-select: none;">
+                <div style="user-select: none" class="post-job-btn">
+                    ĐĂNG BÀI TUYỂN DỤNG
+                </div>
+            </a>
+        </div>
+        <div class="profile-header">
+            <i class="notify-icon fa-solid fa-bell notify-js"></i>
+            <div class="profile-btn js-profile-btn" style="user-select: none">
+                <i class="fa-solid fa-user"></i>Mr. James
+            </div>
+            <div class="profile-menu">
+                <div class="row no-gutters profile-menu-header">
+                    <div class="col l-3 m-3">
+                        <div class="profile-img"></div>
+                    </div>
+                    <div class="col l-9 m-9">
+                        <div class="name">James Nguyen</div>
+                        <div class="email">jamesnguyen1108@gmail.com</div>
+                    </div>
+                </div>
+                <a href="manage-acc-page.html" style="text-decoration: none; user-select: none;">
+                    <div class="row no-gutters manage-account">
+                        <i class="fas fa-cog"></i> Quản lý tài khoản
+                    </div>
+                </a>
+                <a href="../update-company-info-page.html" style="text-decoration: none; user-select: none;">
+                    <div class="row no-gutters company-info">
+                        <i class="fas fa-info-circle"></i> Thông tin công ty
+                    </div>
+                </a>
+                <a href="../Login-company.html" style="text-decoration: none; user-select: none;">
+                    <div class="row no-gutters log-out-btn">
+                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
+        <div class="menu-mobile js-menu-mobile">
+            <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
+            <div class="mobile-menu-content js-menu-content">
+                <div class="profile-mobile row no-gutters">
+                    <div class="col">
+                        <div class="profile-img"></div>
+                    </div>
+                    <div class="col">
+                        <div class="name">James Nguyen</div>
+                        <a style="text-decoration: none" href="../update-company-info-page.html">
+                            <div class="infor">Thông tin công ty</div>
+                        </a>
+                        <a href="../Login-company.html" style="text-decoration: none; user-select: none;">
+                            <div class="sign-out">
+                                <i class="fas fa-sign-out-alt"></i>Đăng xuất
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li>
+                        <a class="job-posted-mobile" href="manage-acc-page.html">
+                            <i class="fas fa-cog"></i>QUẢN LÝ TÀI
+                            KHOẢN</a>
+                    </li>
+                    <li>
+                        <a class="job-posted-mobile" href="../update-company-info-page.html"><i
+                                class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a>
+                    </li>
+                    <li>
+                        <a class="job-posted-mobile" href="../posted-jobs.html">
+                            <i class="fas fa-clipboard-check"></i>VIỆC
+                            LÀM ĐÃ ĐĂNG</a>
+                    </li>
+                    <li>
+                        <a class="find-candidates-mobile" href="../find-candidates-page.html"><i
+                                class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
+                    </li>
+                    <li>
+                        <a class="post-job-mobile" href="../post-job-page.html">
+                            <i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN
+                            DỤNG</a>
+                    </li>
+                </ul>
+                <div>
+                    <a class="notify-mobile" href="#"><i class="fas fa-bell"></i> Thông báo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="content-holder">
         <div class="content-title">
             <span>Quản lý tài khoản</span>
@@ -301,6 +421,42 @@
                 $('#ImgUploadBack').trigger('click');
             })
         })
+    </script>
+    <script>
+        // Script cho profile header
+        const profileBtn = document.querySelector(".js-profile-btn");
+        const profileMenu = document.querySelector(".profile-menu");
+        const body = document.querySelector("body");
+
+        body.addEventListener("click", function (event) {
+            profileMenu.classList.remove("display-block");
+        });
+        profileBtn.addEventListener("click", function (event) {
+            event.stopPropagation();
+            profileMenu.classList.toggle("display-block");
+        });
+        profileMenu.addEventListener("click", function (event) {
+            event.stopPropagation();
+        });
+
+        const menuBtn = document.querySelector(".js-menu-bar");
+        const closeBtn = document.querySelector(".js-close-menu");
+        const menuMobile = document.querySelector(".js-menu-mobile");
+        const menuMobileChild = document.querySelector(".js-menu-content");
+        menuBtn.addEventListener("click", function (event) {
+            menuMobile.classList.add("menu-mobile-modal");
+        });
+        closeBtn.addEventListener("click", function (event) {
+            menuMobile.classList.remove("menu-mobile-modal");
+        });
+        menuMobile.addEventListener("click", function (event) {
+            menuMobile.classList.remove("menu-mobile-modal");
+        });
+        menuMobileChild.addEventListener("click", function (event) {
+            event.stopPropagation();
+        });
+
+
     </script>
 </body>
 
