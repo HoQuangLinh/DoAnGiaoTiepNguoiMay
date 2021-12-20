@@ -107,16 +107,15 @@ button {
 .btn-login {
   font-size: 19px;
   height: 100%;
+  border-radius: 7px;
 }
 .btn-login:hover {
   background-color: #2196f3;
-  border-radius: 7px;
-  margin: 0 5px;
 }
 .btn-signup {
   height: 100%;
   background: #00bfff;
-  border: 1px solid #ffffff;
+
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 19px;

@@ -1,437 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thông tin công ty</title>
-    <link rel="icon" href="../images/logotab2.png">
-    <!-- Add grid css-->
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="stylesheet" href="../css/update-company-info-page.css" />
-    <!--add google font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
-      rel="stylesheet"
-    />
 
-    <!--Add icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="header">
-      <div class="logo">
-        <div class="logo-img"></div>
-        <a style="text-decoration: none;" href="./employer/home-page.html">
-          <p style="user-select: none" class="logo-name">Findwork</p>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thông tin công ty</title>
+  <link rel="icon" href="../images/logotab2.png">
+  <!-- Add grid css-->
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/update-company-info-page.css" />
+  <!--add google font-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+    rel="stylesheet" />
+
+  <!--Add icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="logo">
+      <div class="logo-img"></div>
+      <a style="text-decoration: none;" href="./employer/home-page.html">
+        <p style="user-select: none" class="logo-name">Findwork</p>
+      </a>
+    </div>
+    <!-- Nav bar -->
+    <div class="nav-bar">
+      <a href="posted-jobs.html" style="text-decoration: none">
+        <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
+      </a>
+      <a href="find-candidates-page.html" style="text-decoration: none">
+        <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
+      </a>
+      <a href="post-job-page.html" style="text-decoration: none">
+        <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
+      </a>
+    </div>
+    <div class="profile-header">
+      <i class="notify-icon fa-solid fa-bell notify-js"></i>
+      <div class="profile-btn js-profile-btn" style="user-select: none">
+        <i class="fa-solid fa-user"></i>Mr. James
       </div>
-      <!-- Nav bar -->
-      <div class="nav-bar">
-        <a href="posted-jobs.html" style="text-decoration: none">
-          <div class="job-posted-btn">VIỆC LÀM ĐÃ ĐĂNG</div>
-        </a>
-        <a href="find-candidates-page.html" style="text-decoration: none">
-          <div class="find-candidates-btn">TÌM ỨNG CỬ VIÊN</div>
-        </a>
-        <a href="post-job-page.html" style="text-decoration: none">
-          <div class="post-job-btn">ĐĂNG BÀI TUYỂN DỤNG</div>
-        </a>
-      </div>
-      <div class="profile-header">
-        <i class="notify-icon fa-solid fa-bell notify-js"></i>
-        <div class="profile-btn js-profile-btn" style="user-select: none">
-          <i class="fa-solid fa-user"></i>Mr. James
-        </div>
-        <div class="profile-menu">
-          <div class="row no-gutters profile-menu-header">
-            <div class="col l-3 m-3">
-              <div class="profile-img"></div>
-            </div>
-            <div class="col l-9 m-9">
-              <div class="name">James Nguyen</div>
-              <div class="email">jamesnguyen1108@gmail.com</div>
-            </div>
+      <div class="profile-menu">
+        <div class="row no-gutters profile-menu-header">
+          <div class="col l-3 m-3">
+            <div class="profile-img"></div>
           </div>
-          <a
-            href="./employer/manage-acc-page.html"
-            style="text-decoration: none; user-select: none;"
-          >
-            <div class="row no-gutters manage-account">
-              <i class="fas fa-cog"></i> Quản lý tài khoản
-            </div>
-          </a>
-          <a href="#" style="text-decoration: none; user-select: none;" >
-            <div style="background-color: rgb(230, 230, 230);" 
-            class="row no-gutters company-info">
-              <i class="fas fa-info-circle"></i> Thông tin công ty
-            </div>
-          </a>
-          <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
-            <div class="row no-gutters log-out-btn">
-              <i class="fas fa-sign-out-alt"></i> Đăng xuất
-            </div>
-          </a>
+          <div class="col l-9 m-9">
+            <div class="name">James Nguyen</div>
+            <div class="email">jamesnguyen1108@gmail.com</div>
+          </div>
         </div>
+        <a href="./employer/manage-acc-page.html" style="text-decoration: none; user-select: none;">
+          <div class="row no-gutters manage-account">
+            <i class="fas fa-cog"></i> Quản lý tài khoản
+          </div>
+        </a>
+        <a href="#" style="text-decoration: none; user-select: none;">
+          <div style="background-color: rgb(230, 230, 230);" class="row no-gutters company-info">
+            <i class="fas fa-info-circle"></i> Thông tin công ty
+          </div>
+        </a>
+        <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+          <div class="row no-gutters log-out-btn">
+            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+          </div>
+        </a>
       </div>
-      <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
-      <div class="menu-mobile js-menu-mobile">
-        <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
-        <div class="mobile-menu-content js-menu-content">
-          <div class="profile-mobile row no-gutters">
-            <div class="col">
-              <div class="profile-img"></div>
-            </div>
-            <div class="col">
-              <div class="name">James Nguyen</div>
-              <a
-                style="text-decoration: none"
-                href="#"
-              >
-                <div class="infor">Thông tin công ty</div>
-              </a>
-              <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
+    </div>
+    <div class="menu-bar js-menu-bar"><i class="fas fa-bars"></i></div>
+    <div class="menu-mobile js-menu-mobile">
+      <div class="close-menu js-close-menu"><i class="fas fa-times"></i></div>
+      <div class="mobile-menu-content js-menu-content">
+        <div class="profile-mobile row no-gutters">
+          <div class="col">
+            <div class="profile-img"></div>
+          </div>
+          <div class="col">
+            <div class="name">James Nguyen</div>
+            <a style="text-decoration: none" href="#">
+              <div class="infor">Thông tin công ty</div>
+            </a>
+            <a href="./Login-company.html" style="text-decoration: none; user-select: none;">
               <div class="sign-out">
                 <i class="fas fa-sign-out-alt"></i>Đăng xuất
-              </div></a>
-            </div>
+              </div>
+            </a>
           </div>
-          <ul class="menu-list">
-            <li>
-              <a class="job-posted-mobile" href="./employer/manage-acc-page.html"
-                ><i class="fas fa-cog"></i>QUẢN LÝ TÀI KHOẢN</a
-              >
-            </li>
-            <li>
-              <a
-              style="background-color: #ededed"
-              class="job-posted-mobile" href="#"
-                ><i class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a
-              >
-            </li>
-            <li>
-              <a class="job-posted-mobile" href="posted-jobs.html"
-                ><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ ĐĂNG</a
-              >
-            </li>
-            <li>
-              <a
-                class="find-candidates-mobile"
-                href="#"
-                ><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a
-              >
-            </li>
-            <li>
-              <a class="post-job-mobile" href="post-job-page.html"
-                ><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a
-              >
-            </li>
-          </ul>
-          <div>
-            <a class="notify-mobile" href="#"
-              ><i class="fas fa-bell"></i> Thông báo</a
-            >
-          </div>
+        </div>
+        <ul class="menu-list">
+          <li>
+            <a class="job-posted-mobile" href="./employer/manage-acc-page.html"><i class="fas fa-cog"></i>QUẢN LÝ TÀI
+              KHOẢN</a>
+          </li>
+          <li>
+            <a style="background-color: #ededed" class="job-posted-mobile" href="#"><i
+                class="fas fa-info-circle"></i></i>THÔNG TIN CÔNG TY</a>
+          </li>
+          <li>
+            <a class="job-posted-mobile" href="posted-jobs.html"><i class="fas fa-clipboard-check"></i>VIỆC LÀM ĐÃ
+              ĐĂNG</a>
+          </li>
+          <li>
+            <a class="find-candidates-mobile" href="#"><i class="fas fa-search"></i>TÌM ỨNG CỬ VIÊN</a>
+          </li>
+          <li>
+            <a class="post-job-mobile" href="post-job-page.html"><i class="fas fa-pen"></i>ĐĂNG BÀI TUYỂN DỤNG</a>
+          </li>
+        </ul>
+        <div>
+          <a class="notify-mobile" href="#"><i class="fas fa-bell"></i> Thông báo</a>
         </div>
       </div>
     </div>
-    <div id="content" class="grid wide">
-      <div class="content-title row">
-        <i class="fas fa-building"></i>Thông tin công ty
+  </div>
+  <div id="content" class="grid wide">
+    <div class="content-title row">
+      <i class="fas fa-building"></i>Thông tin công ty
+    </div>
+    <form action="" id="form1">
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input required">Tên công ty</div>
+        </div>
+        <div class="col l-10 m-9 c-12">
+          <input required type="text" class="input-row" placeholder="Công ty TNHH Apple Vietnam" />
+        </div>
       </div>
-      <form action="" id="form1">
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input required">Tên công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <input
-              required
-              type="text"
-              class="input-row"
-              placeholder="Công ty TNHH Apple Vietnam"
-            />
-          </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input required">Quy mô công ty</div>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input required">Quy mô công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <select class="dropdown-menu rank">
-              <option class="init">Vui lòng chọn</option>
-              <option>Nhỏ</option>
-              <option>Vừa</option>
-              <option>Lớn</option>
-            </select>
-          </div>
+        <div class="col l-10 m-9 c-12">
+          <select class="dropdown-menu rank">
+            <option class="init">Vui lòng chọn</option>
+            <option>Nhỏ</option>
+            <option>Vừa</option>
+            <option>Lớn</option>
+          </select>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input required">Địa chỉ công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <input
-              required
-              type="text"
-              class="input-row"
-              placeholder="33 Đường Lê Lợi, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh"
-            />
-          </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input required">Địa chỉ công ty</div>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input required">Thông tin công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <textarea
-              required
-              class="input-row"
-              placeholder="...&#10;...&#10;...
-            "
-            ></textarea>
-          </div>
+        <div class="col l-10 m-9 c-12">
+          <input required type="text" class="input-row"
+            placeholder="33 Đường Lê Lợi, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh" />
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input">Quy mô công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <select class="dropdown-menu rank">
-              <option class="init">Vui lòng chọn</option>
-              <option>Nhỏ</option>
-              <option>Vừa</option>
-              <option>Lớn</option>
-            </select>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input required">Thông tin công ty</div>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input required">Phúc lợi từ công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <textarea
-              required
-              class="input-row"
-              placeholder="- Miễn phí đồ ăn/nước uống khi làm việc ngoài giờ&#10;- Có phòng nghỉ ngơi hay khu vực giải trí&#10;..."
-            ></textarea>
-          </div>
+        <div class="col l-10 m-9 c-12">
+          <textarea required class="input-row" placeholder="...&#10;...&#10;...
+            "></textarea>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input">Logo công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <input
-              required
-              type="file"
-              class="input-row"
-              accept="image/png, image/jpeg"
-            />
-            <p class="note-input">
-              (Tập tin với phần mở rộng .jpg .jpeg .png và kích thước <1MB)
-            </p>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input">Quy mô công ty</div>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input">Hình ảnh công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <input
-              required
-              type="file"
-              class="input-row"
-              accept="image/png, image/jpeg"
-            />
-            <p class="note-input">
-              (Tập tin với phần mở rộng .jpg .jpeg .png và kích thước <1MB)
-            </p>
-          </div>
+        <div class="col l-10 m-9 c-12">
+          <select class="dropdown-menu rank">
+            <option class="init">Vui lòng chọn</option>
+            <option>Nhỏ</option>
+            <option>Vừa</option>
+            <option>Lớn</option>
+          </select>
         </div>
-        <div class="row">
-          <div class="col l-2 m-3 c-12">
-            <div class="title-input">Video công ty</div>
-          </div>
-          <div class="col l-10 m-9 c-12">
-            <input
-              required
-              type="text"
-              class="input-row"
-              placeholder="Sao chép và dán liên kết youtube vào đây https://www.youtube.com/watch..."
-            />
-          </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input required">Phúc lợi từ công ty</div>
         </div>
+        <div class="col l-10 m-9 c-12">
+          <textarea required class="input-row"
+            placeholder="- Miễn phí đồ ăn/nước uống khi làm việc ngoài giờ&#10;- Có phòng nghỉ ngơi hay khu vực giải trí&#10;..."></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input">Logo công ty</div>
+        </div>
+        <div class="col l-10 m-9 c-12">
+          <input required type="file" class="input-row" accept="image/png, image/jpeg" />
+          <p class="note-input">
+            (Tập tin với phần mở rộng .jpg .jpeg .png và kích thước <1MB) </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input">Hình ảnh công ty</div>
+        </div>
+        <div class="col l-10 m-9 c-12">
+          <input required type="file" class="input-row" accept="image/png, image/jpeg" />
+          <p class="note-input">
+            (Tập tin với phần mở rộng .jpg .jpeg .png và kích thước <1MB) </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l-2 m-3 c-12">
+          <div class="title-input">Video công ty</div>
+        </div>
+        <div class="col l-10 m-9 c-12">
+          <input required type="text" class="input-row"
+            placeholder="Sao chép và dán liên kết youtube vào đây https://www.youtube.com/watch..." />
+        </div>
+      </div>
 
-        <div class="row submit">
-          <button type="submit" form="form1" value="Submit">LƯU</button>
-        </div>
-      </form>
-    </div>
-  </body>
+      <div class="row submit">
+        <button type="submit" form="form1" value="Submit">LƯU</button>
+      </div>
+    </form>
+  </div>
+</body>
 
-  <footer class="main-footer">
-    <div class="footer-box grid wide">
-      <div class="box col l-3 m-3 c-12">
-        <h3>Công ty</h3>
-        <ul class="l-12 m-12 c-0">
-          <li><a href="#">Giới Thiệu</a></li>
-          <li><a href="#">Dịch Vụ</a></li>
-          <li><a href="#">Bảo Mật Thông Tin</a></li>
-          <li><a href="#">Quy Định Sử Dụng</a></li>
-          <li><a href="#">Hỏi Đáp</a></li>
-          <li><a href="#">Nâng Cấp Tài Khoản</a></li>
-        </ul>
-      </div>
-      <div class="box col l-3 m-3 c-12">
-        <h3>Chính sách</h3>
-        <ul class="l-12 m-12 c-0">
-          <li><a href="#">Chính sách bảo mật</a></li>
-          <li><a href="#">Điều khoản và điều kiện</a></li>
-          <li><a href="#">Chính sách Bản quyền</a></li>
-          <li><a href="#">Quy tắc ứng xử</a></li>
-          <li><a href="#">Phí và lệ phí</a></li>
-        </ul>
-      </div>
-      <div class="box col l-3 m-3 c-12">
-        <h3>Danh sách trang</h3>
-        <ul>
-          <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Dịch vụ</a></li>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Quản lý tuyển dụng</a></li>
-          <li><a href="#">Cho người tìm việc</a></li>
-        </ul>
-      </div>
-      <div class="box col l-3 m-3 c-12">
-        <h3>Thông tin liên hệ</h3>
-        <ul>
-          <li>
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
-          </li>
-          <li>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
-          </li>
-          <li>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
-          </li>
-        </ul>
-      </div>
+<footer class="main-footer">
+  <div class="footer-box grid wide">
+    <div class="box col l-3 m-3 c-12">
+      <h3>Công ty</h3>
+      <ul class="l-12 m-12 c-0">
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="#">Dịch Vụ</a></li>
+        <li><a href="#">Bảo Mật Thông Tin</a></li>
+        <li><a href="#">Quy Định Sử Dụng</a></li>
+        <li><a href="#">Hỏi Đáp</a></li>
+        <li><a href="#">Nâng Cấp Tài Khoản</a></li>
+      </ul>
     </div>
-  </footer>
-  <!-- footer -->
-  <div class="follow-us">
-    Theo dõi chúng tôi<br /><br />
+    <div class="box col l-3 m-3 c-12">
+      <h3>Chính sách</h3>
+      <ul class="l-12 m-12 c-0">
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản và điều kiện</a></li>
+        <li><a href="#">Chính sách Bản quyền</a></li>
+        <li><a href="#">Quy tắc ứng xử</a></li>
+        <li><a href="#">Phí và lệ phí</a></li>
+      </ul>
+    </div>
+    <div class="box col l-3 m-3 c-12">
+      <h3>Danh sách trang</h3>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Quản lý tuyển dụng</a></li>
+        <li><a href="#">Cho người tìm việc</a></li>
+      </ul>
+    </div>
+    <div class="box col l-3 m-3 c-12">
+      <h3>Thông tin liên hệ</h3>
+      <ul>
+        <li>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <a href="tel:0123456789">Hồ Chí Minh: (+84) 123456789</a>
+        </li>
+        <li>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="tel:0123123123">Hồ Chí Minh: (+84) 123123123</a>
+        </li>
+        <li>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:suppoter@findwork.com">Suppoter@findwork.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+<div class="follow-us">
+  Theo dõi chúng tôi<br /><br />
+  <span>
     <span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/facebook.png"
-            alt="Visit on Facebook"
-          />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/twitter.png"
-            alt="Visit on Twitter"
-          />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/linkedin.png"
-            alt="Visit on Linkedin"
-          />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../images/salary_page/youtube.png"
-            alt="Visit on Youtube"
-          />
-        </a>
-      </span>
+      <a href="">
+        <img src="../../images/salary_page/facebook.png" alt="Visit on Facebook" />
+      </a>
     </span>
-  </div>
-  <div class="copy">
-    <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
-  </div>
-  <script>
-    const menuBtn = document.querySelector(".js-menu-bar");
-    const closeBtn = document.querySelector(".js-close-menu");
-    const menuMobile = document.querySelector(".js-menu-mobile");
-    const menuMobileChild = document.querySelector(".js-menu-content");
-    const profileBtn = document.querySelector(".js-profile-btn");
-    const profileMenu = document.querySelector(".profile-menu");
-    const body = document.querySelector("body");
+    <span>
+      <a href="">
+        <img src="../../images/salary_page/twitter.png" alt="Visit on Twitter" />
+      </a>
+    </span>
+    <span>
+      <a href="">
+        <img src="../../images/salary_page/linkedin.png" alt="Visit on Linkedin" />
+      </a>
+    </span>
+    <span>
+      <a href="">
+        <img src="../../images/salary_page/youtube.png" alt="Visit on Youtube" />
+      </a>
+    </span>
+  </span>
+</div>
+<div class="copy">
+  <p><small>Copyright &copy; 2021. All Rights Reserved.</small></p>
+</div>
+<script>
+  const menuBtn = document.querySelector(".js-menu-bar");
+  const closeBtn = document.querySelector(".js-close-menu");
+  const menuMobile = document.querySelector(".js-menu-mobile");
+  const menuMobileChild = document.querySelector(".js-menu-content");
+  const profileBtn = document.querySelector(".js-profile-btn");
+  const profileMenu = document.querySelector(".profile-menu");
+  const body = document.querySelector("body");
 
-    body.addEventListener("click", function (event) {
-      profileMenu.classList.remove("display-block");
+  body.addEventListener("click", function (event) {
+    profileMenu.classList.remove("display-block");
+  });
+  profileBtn.addEventListener("click", function (event) {
+    event.stopPropagation();
+    profileMenu.classList.toggle("display-block");
+  });
+  profileMenu.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+  menuBtn.addEventListener("click", function (event) {
+    menuMobile.classList.add("menu-mobile-modal");
+  });
+  closeBtn.addEventListener("click", function (event) {
+    menuMobile.classList.remove("menu-mobile-modal");
+  });
+  menuMobile.addEventListener("click", function (event) {
+    menuMobile.classList.remove("menu-mobile-modal");
+  });
+  menuMobileChild.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+  //Drop down menu
+  const init = document.querySelectorAll(".init");
+  rankOptions = document.querySelectorAll(".rank li:not(.init)");
+  formOptions = document.querySelectorAll(
+    ".form-of-employment li:not(.init)"
+  );
+  function DropdownOptions(n, init, optionsSearchBar) {
+    init[n].addEventListener("click", function (event) {
+      for (let i = 0; i < optionsSearchBar.length; i++) {
+        optionsSearchBar[i].classList.toggle("list-item");
+        optionsSearchBar[i].addEventListener("click", function (event) {
+          for (let a = 0; a < optionsSearchBar.length; a++) {
+            optionsSearchBar[a].classList.remove("selected");
+            optionsSearchBar[a].classList.remove("list-item");
+          }
+          optionsSearchBar[i].classList.add("selected");
+          init[n].innerHTML = optionsSearchBar[i].innerHTML;
+        });
+      }
     });
-    profileBtn.addEventListener("click", function (event) {
-      event.stopPropagation();
-      profileMenu.classList.toggle("display-block");
-    });
-    profileMenu.addEventListener("click", function (event) {
-      event.stopPropagation();
-    });
-    menuBtn.addEventListener("click", function (event) {
-      menuMobile.classList.add("menu-mobile-modal");
-    });
-    closeBtn.addEventListener("click", function (event) {
-      menuMobile.classList.remove("menu-mobile-modal");
-    });
-    menuMobile.addEventListener("click", function (event) {
-      menuMobile.classList.remove("menu-mobile-modal");
-    });
-    menuMobileChild.addEventListener("click", function (event) {
-      event.stopPropagation();
-    });
-    //Drop down menu
-    const init = document.querySelectorAll(".init");
-    rankOptions = document.querySelectorAll(".rank li:not(.init)");
-    formOptions = document.querySelectorAll(
-      ".form-of-employment li:not(.init)"
-    );
-    function DropdownOptions(n, init, optionsSearchBar) {
-      init[n].addEventListener("click", function (event) {
-        for (let i = 0; i < optionsSearchBar.length; i++) {
-          optionsSearchBar[i].classList.toggle("list-item");
-          optionsSearchBar[i].addEventListener("click", function (event) {
-            for (let a = 0; a < optionsSearchBar.length; a++) {
-              optionsSearchBar[a].classList.remove("selected");
-              optionsSearchBar[a].classList.remove("list-item");
-            }
-            optionsSearchBar[i].classList.add("selected");
-            init[n].innerHTML = optionsSearchBar[i].innerHTML;
-          });
-        }
-      });
-    }
-    DropdownOptions(0, init, rankOptions);
-    DropdownOptions(1, init, formOptions);
-  </script>
+  }
+  DropdownOptions(0, init, rankOptions);
+  DropdownOptions(1, init, formOptions);
+</script>
+
 </html>
