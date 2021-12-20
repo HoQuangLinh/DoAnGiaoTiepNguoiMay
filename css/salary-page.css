@@ -154,15 +154,10 @@ body{
     height: auto;
     float: right;
 }
-.sidebar div a{
-    padding: 0px 12px;
-}
-.sidebar div img{
-    max-width: 100%;
-}
 .sidebar div a img{
     max-width: 100%;
 }
+
 
 /* footer */
 .main-footer{
