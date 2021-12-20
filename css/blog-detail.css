@@ -331,7 +331,7 @@ a {
   margin-top: 50px;
   padding: 20px 100px;
 
-  background-color: #2a8cff;
+  background-color: #30C1FF;
   color: white;
   width: 100%;
 
@@ -418,7 +418,7 @@ a {
 .follow-us {
   display: grid;
   width: 100%;
-  background-color: #2a8cff;
+  background-color: #30C1FF;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
@@ -448,7 +448,7 @@ a {
   padding: 10px;
   font-size: small;
   text-align: center;
-  background-color: #2a8cff;
+  background-color: #30C1FF;
   color: #fff;
 }
 .copy p {
