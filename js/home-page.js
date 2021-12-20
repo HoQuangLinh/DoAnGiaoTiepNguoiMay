@@ -10,14 +10,15 @@ const btnCancel = document.querySelector(".navbar-mobile-btn-cancel");
 //Auto scroll to list job when click button search
 buttonSearch.addEventListener("click", () => {
   console.log("test");
-  const best_work_top = document.getElementById("best-work-top");
-  // buttonSearch.scrollIntoView();
+  location.href = "./search-page.html";
+  // const best_work_top = document.getElementById("best-work-top");
+  // // buttonSearch.scrollIntoView();
 
-  best_work_top.scrollIntoView({
-    behavior: "smooth",
-    block: "nearest",
-    inline: "nearest",
-  });
+  // best_work_top.scrollIntoView({
+  //   behavior: "smooth",
+  //   block: "nearest",
+  //   inline: "nearest",
+  // });
 });
 
 //Add event click for each card on home page
