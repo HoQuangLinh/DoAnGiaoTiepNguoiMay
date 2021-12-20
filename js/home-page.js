@@ -24,7 +24,8 @@ buttonSearch.addEventListener("click", () => {
 //Add event click for each card on home page
 listCompany.forEach((company) => {
   company.addEventListener("click", () => {
-    location.href = "./intro-company.html";
+    // location.href = "./intro-company.html";
+    window.open("./intro-company.html", "_blank");
   });
 });
 listBestWork.forEach((work) => {
